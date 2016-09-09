@@ -1,0 +1,1414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		026FCE82253375653AAE06D7C2DBD94B /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B8C053B9E480A760E8491EC82293F /* NSLayoutConstraint+PureLayout.m */; };
+		06C50B2BCF358C0458AFD7DCBC4E7EF5 /* Pods-PhoneAFriendTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F156EAF44ED3AB6369F9FEE559B9FA /* Pods-PhoneAFriendTests-dummy.m */; };
+		164A3DB3D5FA04644C62FE5E1A2B0BAE /* SwiftyCustomContentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8824DABBB687B26FC4A44C8E40E237 /* SwiftyCustomContentButton.swift */; };
+		1C03485979F5DF99579405171A0BE657 /* TextFieldEffects-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C22A4C51B45D47D3299ADAC34EA25C /* TextFieldEffects-dummy.m */; };
+		2340DA6964727C504B44DEE97AB14C0B /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23887C72AF25AFF36CD745749C7E694A /* YoshikoTextField.swift */; };
+		291165AE722C55126D1E45FDFE6A1C92 /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0EA5F9E1EF9EAF975B3F85C8B8D86E /* AkiraTextField.swift */; };
+		2E33D53B3A32FEEBDBA3FF6602DA981A /* PureLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A8E6F2390013F549A6646FD4BA7E2A /* PureLayout.framework */; };
+		4232F0521651EDDAC75BF29975F00260 /* PureLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CBEB2903290A906C29FF4D3402AA357E /* PureLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49A00366A43C1EA43740F4A7F6896CEB /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF240050524A40BCB80F68882129F73 /* NSArray+PureLayout.m */; };
+		5236556BBF44D7E1D63196AE09F8ED33 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9D195422A09205D5062E1F9506F1C7 /* Foundation.framework */; };
+		55DB5970F9720A492668DAF012D35A64 /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C441ED9DC4C2B75DF2AB9F6F804114 /* HoshiTextField.swift */; };
+		570A89FAADC41C5E36A3ED099A4348AB /* Pods-PhoneAFriendTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CFBCA6113D587BF40F610B5AD2215ACD /* Pods-PhoneAFriendTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5BA8F38D4F3E812EF734E55C8C61BBDB /* PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DA1E9C01DBE7EA0979FF265C6BD0EE8 /* PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C5286CB1C88FE31ABC788DE3D4ADC2C /* PureLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BDEEB13FDC8DF358BE3F0EBDFD5933F6 /* PureLayout-dummy.m */; };
+		5CF76B415A3EF4CE5BED0B6BE9C1BB8E /* YokoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0992153E652A7D762753B925586EAD8A /* YokoTextField.swift */; };
+		670900951383EC63603A4663A18506AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9D195422A09205D5062E1F9506F1C7 /* Foundation.framework */; };
+		79011387F75E19F4B6ED1565A862CB67 /* Pods-PhoneAFriendUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFA8DEF5CFE2200E6CC6456B81C6F2 /* Pods-PhoneAFriendUITests-dummy.m */; };
+		7D70FD6848092B3C05AD439C1C0F6F93 /* Pods-PhoneAFriend-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30061275D8A36DF8676A0953080F0106 /* Pods-PhoneAFriend-dummy.m */; };
+		834FCDB5023C42807D76DDBB2459A48A /* PureLayout+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 90AF5D390F327AE662CE6DE513FF3337 /* PureLayout+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86A20D5522299E7EFDD160595E8910BF /* SwiftyButton+ResizableImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B11016BE8E89E874BE1B0A108CD834 /* SwiftyButton+ResizableImage.swift */; };
+		8C2C685DDD0B5A5195B1CCE31CCDD674 /* NSArray+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = DFE8F4ED27C9CC83D58AA161C006D061 /* NSArray+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93829736F4F24ACFCC73C8FA68F49304 /* MadokaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F9D280112FF40DA234BA305004B2DF /* MadokaTextField.swift */; };
+		9760683481DFD725D5B974886567C1F2 /* SwiftyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AA04CA7BFD333E9125478030466CBF /* SwiftyButton.swift */; };
+		9C80505A799E7352A0BCEC8557947412 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9D195422A09205D5062E1F9506F1C7 /* Foundation.framework */; };
+		9C9631A1808B031388DD9A13ACCB1E26 /* KaedeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066302CEFA13436A1B1EE299632B05F5 /* KaedeTextField.swift */; };
+		AFCF9DE1A80EF37A1040902F3A216884 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 269E684E2A098B81FC437326735AAC83 /* UIKit.framework */; };
+		BCB6B8E5E136168790BB36BABF06117C /* TextFieldsEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFFF2DC2611FBEE4C4F25E8B675AF8C /* TextFieldsEffects.swift */; };
+		C444DD4F706624AAE9D390552736555C /* JiroTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541C142B0B19CA3B3AA5B485A498BF57 /* JiroTextField.swift */; };
+		C4D6C781BD12BEC9F64AED63A1A0035F /* IsaoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D72337F03379B46981496E1B5744B32 /* IsaoTextField.swift */; };
+		C4F1E679A3D3F4F1DE3274056C8E660E /* Pods-PhoneAFriend-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0511C4E35F411C8C2194AB1FD62C4829 /* Pods-PhoneAFriend-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7E8B96FADD7956E1DCF175A8AC109E0 /* MinoruTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48275DD48AE0E6F01144450D3D0EE8AE /* MinoruTextField.swift */; };
+		DE51D261C75B1B551CF8505237AF1784 /* PureLayoutDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = A5DEAE4158D7BFA3907EC14C9568C382 /* PureLayoutDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E59A996EDC5067BBE1175F59EFB3F4BC /* ALView+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 091E671BFFC31F626A326D05E6472EFA /* ALView+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9656CCB851685C988F1A0E61BC9B1D2 /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C097D5465444FE83B1BDB0A675541FB2 /* ALView+PureLayout.m */; };
+		ED0D93EBAEB8A2C069C59E00C6E7B837 /* Pods-PhoneAFriendUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F9CD1538FCEAC1DD8BFC1F76B8A69DC3 /* Pods-PhoneAFriendUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDAE8FB6DF3218A63C7616CBB060B072 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9D195422A09205D5062E1F9506F1C7 /* Foundation.framework */; };
+		F1604395ADD28BE262B063C1C211741F /* SwiftyButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ABDF2F5F28319D14CC25AAA2ED2F2038 /* SwiftyButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3B1B55CAF3F48C9C844C23D8904DC13 /* NSLayoutConstraint+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = F73E0034FC67508FC72FE2CD679C9A3F /* NSLayoutConstraint+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4C2586D967D259DE2D16AD1EB0BE608 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9D195422A09205D5062E1F9506F1C7 /* Foundation.framework */; };
+		F8AB0A8A19BCE4B0F39D0EFFA93CC21F /* SwiftyButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E788429BC26C98F655A7C0EFD5436DF9 /* SwiftyButton-dummy.m */; };
+		FAD112CFF36FFFE23049A3923D9B17ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9D195422A09205D5062E1F9506F1C7 /* Foundation.framework */; };
+		FDB5B2A451A7B20970960CFC7F0F0246 /* TextFieldEffects-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 294A5F2735F7D0D4D5267FDE589DDA1B /* TextFieldEffects-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C0AEAB6ED0490D7645F71F5E1DB5A58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D5BDABCBD50B1B2C19771A23B89420C;
+			remoteInfo = PureLayout;
+		};
+		97C4DE3ED1C13847F4BB9211C4A9D347 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64698EEECEE9410A44CDFDB30EAFD1DC;
+			remoteInfo = SwiftyButton;
+		};
+		DA96564026BCE5ABE45101CCE57540B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C254D7C25D2E15DBE895C7BB2E8663D;
+			remoteInfo = TextFieldEffects;
+		};
+		F004952486C790A9F7794BFFB5211754 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D5BDABCBD50B1B2C19771A23B89420C;
+			remoteInfo = PureLayout;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0313D5E96E9C6514E8330C4DF17161DD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0317B708401F072454B5FE599F751EB9 /* PureLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PureLayout.xcconfig; sourceTree = "<group>"; };
+		0511C4E35F411C8C2194AB1FD62C4829 /* Pods-PhoneAFriend-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PhoneAFriend-umbrella.h"; sourceTree = "<group>"; };
+		066302CEFA13436A1B1EE299632B05F5 /* KaedeTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaedeTextField.swift; path = TextFieldEffects/TextFieldEffects/KaedeTextField.swift; sourceTree = "<group>"; };
+		073B0C7128F44F1FBE1C4255E7E38524 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		091E671BFFC31F626A326D05E6472EFA /* ALView+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ALView+PureLayout.h"; path = "PureLayout/PureLayout/ALView+PureLayout.h"; sourceTree = "<group>"; };
+		0992153E652A7D762753B925586EAD8A /* YokoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YokoTextField.swift; path = TextFieldEffects/TextFieldEffects/YokoTextField.swift; sourceTree = "<group>"; };
+		0A4866946E7B3D52CD8B2A76A8198883 /* Pods_PhoneAFriendTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhoneAFriendTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B37EC07D9BF91E11D36E5661FA53CAC /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
+		1B9A2F4097EE78146640E267365B1AEC /* Pods-PhoneAFriend-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PhoneAFriend-resources.sh"; sourceTree = "<group>"; };
+		1E8AD2BDDD0C44D4B272533F0130447F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F3B8C053B9E480A760E8491EC82293F /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+PureLayout.m"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
+		21C797C658A4125DFF58980385C33427 /* Pods-PhoneAFriendTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PhoneAFriendTests.release.xcconfig"; sourceTree = "<group>"; };
+		23887C72AF25AFF36CD745749C7E694A /* YoshikoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YoshikoTextField.swift; path = TextFieldEffects/TextFieldEffects/YoshikoTextField.swift; sourceTree = "<group>"; };
+		269E684E2A098B81FC437326735AAC83 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		294A5F2735F7D0D4D5267FDE589DDA1B /* TextFieldEffects-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-umbrella.h"; sourceTree = "<group>"; };
+		30061275D8A36DF8676A0953080F0106 /* Pods-PhoneAFriend-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PhoneAFriend-dummy.m"; sourceTree = "<group>"; };
+		37C32302D92C6EEDF10172A17224D2F1 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		3BF240050524A40BCB80F68882129F73 /* NSArray+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+PureLayout.m"; path = "PureLayout/PureLayout/NSArray+PureLayout.m"; sourceTree = "<group>"; };
+		3D4AFC288FF95A2318C4C02B85C034B9 /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleNetworkingUtilities.framework; path = Frameworks/GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
+		4300559AEDD5627E4095A7557102DFE6 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Headers/Firebase.h; sourceTree = "<group>"; };
+		44F9D280112FF40DA234BA305004B2DF /* MadokaTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MadokaTextField.swift; path = TextFieldEffects/TextFieldEffects/MadokaTextField.swift; sourceTree = "<group>"; };
+		48275DD48AE0E6F01144450D3D0EE8AE /* MinoruTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MinoruTextField.swift; path = TextFieldEffects/TextFieldEffects/MinoruTextField.swift; sourceTree = "<group>"; };
+		48B11016BE8E89E874BE1B0A108CD834 /* SwiftyButton+ResizableImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwiftyButton+ResizableImage.swift"; path = "SwiftyButton/SwiftyButton+ResizableImage.swift"; sourceTree = "<group>"; };
+		49F156EAF44ED3AB6369F9FEE559B9FA /* Pods-PhoneAFriendTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PhoneAFriendTests-dummy.m"; sourceTree = "<group>"; };
+		4C290FBB318F05E162E9DE45EBEA200D /* Pods-PhoneAFriend.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PhoneAFriend.modulemap"; sourceTree = "<group>"; };
+		4C782935A55A920C78520B8A22DCAEF8 /* Pods-PhoneAFriendUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PhoneAFriendUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		4D72337F03379B46981496E1B5744B32 /* IsaoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IsaoTextField.swift; path = TextFieldEffects/TextFieldEffects/IsaoTextField.swift; sourceTree = "<group>"; };
+		4D9D195422A09205D5062E1F9506F1C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4F8824DABBB687B26FC4A44C8E40E237 /* SwiftyCustomContentButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyCustomContentButton.swift; path = SwiftyButton/SwiftyCustomContentButton.swift; sourceTree = "<group>"; };
+		5118EFD65D142B79CE9F1F27CBE99731 /* Pods_PhoneAFriendUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhoneAFriendUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		515D8FB293597BA524A171C2631FA21A /* SwiftyButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyButton.modulemap; sourceTree = "<group>"; };
+		541C142B0B19CA3B3AA5B485A498BF57 /* JiroTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JiroTextField.swift; path = TextFieldEffects/TextFieldEffects/JiroTextField.swift; sourceTree = "<group>"; };
+		57C22A4C51B45D47D3299ADAC34EA25C /* TextFieldEffects-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TextFieldEffects-dummy.m"; sourceTree = "<group>"; };
+		59948457839833C0E90F46E3CF955B66 /* Pods-PhoneAFriendUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PhoneAFriendUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5BAE0431EA28AF0E8B9DED17754A609A /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAuth.framework; path = Frameworks/frameworks/FirebaseAuth.framework; sourceTree = "<group>"; };
+		5CD7FA40D44866DF44F39D4429CD1066 /* TextFieldEffects.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TextFieldEffects.modulemap; sourceTree = "<group>"; };
+		651E1DD2A600A3024358B94B875E8752 /* Pods-PhoneAFriendTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PhoneAFriendTests-frameworks.sh"; sourceTree = "<group>"; };
+		6FEFA8DEF5CFE2200E6CC6456B81C6F2 /* Pods-PhoneAFriendUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PhoneAFriendUITests-dummy.m"; sourceTree = "<group>"; };
+		702C5499CCE3C3EFF27186C77706D63B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		738E3DEAEBC6F1F0FEBA102275F1581B /* Pods-PhoneAFriend-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PhoneAFriend-frameworks.sh"; sourceTree = "<group>"; };
+		76664F73484CD78AEDA4EC92D27B5E26 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		776F56455FD3CE26C0797C9A94787834 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		7E5330F238A75599ED02D2E89D224FF6 /* Pods-PhoneAFriendUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PhoneAFriendUITests.release.xcconfig"; sourceTree = "<group>"; };
+		84A10664972979820824527A783EA864 /* Pods-PhoneAFriendTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PhoneAFriendTests.debug.xcconfig"; sourceTree = "<group>"; };
+		90AF5D390F327AE662CE6DE513FF3337 /* PureLayout+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PureLayout+Internal.h"; path = "PureLayout/PureLayout/PureLayout+Internal.h"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93B5AA614FC3C268683C12DCF8D69C8C /* Pods-PhoneAFriendUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PhoneAFriendUITests.modulemap"; sourceTree = "<group>"; };
+		97A8E6F2390013F549A6646FD4BA7E2A /* PureLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PureLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98D5EA99EC6163D02D47A580613AB674 /* Pods-PhoneAFriend-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PhoneAFriend-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9D0EA5F9E1EF9EAF975B3F85C8B8D86E /* AkiraTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AkiraTextField.swift; path = TextFieldEffects/TextFieldEffects/AkiraTextField.swift; sourceTree = "<group>"; };
+		9DA1E9C01DBE7EA0979FF265C6BD0EE8 /* PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayout.h; path = PureLayout/PureLayout/PureLayout.h; sourceTree = "<group>"; };
+		9FFFF2DC2611FBEE4C4F25E8B675AF8C /* TextFieldsEffects.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFieldsEffects.swift; path = TextFieldEffects/TextFieldEffects/TextFieldsEffects.swift; sourceTree = "<group>"; };
+		A1810E249CF08851267279D605633385 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
+		A5DEAE4158D7BFA3907EC14C9568C382 /* PureLayoutDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayoutDefines.h; path = PureLayout/PureLayout/PureLayoutDefines.h; sourceTree = "<group>"; };
+		A5F2B8A3CAB6FE8AD5B53406037EA6DD /* TextFieldEffects.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TextFieldEffects.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A71BDCEB810D422CBC621291EDC88ACC /* Pods-PhoneAFriendUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PhoneAFriendUITests-resources.sh"; sourceTree = "<group>"; };
+		A76376BD62A723DB80F409127609B648 /* Pods-PhoneAFriendTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PhoneAFriendTests-resources.sh"; sourceTree = "<group>"; };
+		ABDF2F5F28319D14CC25AAA2ED2F2038 /* SwiftyButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyButton-umbrella.h"; sourceTree = "<group>"; };
+		AD2953644BD006421B62950C39C5F4BE /* Pods-PhoneAFriendUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PhoneAFriendUITests-frameworks.sh"; sourceTree = "<group>"; };
+		AD563BCAD6DF12A33F313317E544EF4E /* PureLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-prefix.pch"; sourceTree = "<group>"; };
+		B218E0CB273A3A1935C149E178260430 /* SwiftyButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyButton-prefix.pch"; sourceTree = "<group>"; };
+		B4D8F52C22BBBC0C044B6964895B96CC /* Pods-PhoneAFriendTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PhoneAFriendTests.modulemap"; sourceTree = "<group>"; };
+		BC5E6B7AA0AEEDB9302F24101D58ADF6 /* GoogleParsingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleParsingUtilities.framework; path = Frameworks/GoogleParsingUtilities.framework; sourceTree = "<group>"; };
+		BDEEB13FDC8DF358BE3F0EBDFD5933F6 /* PureLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PureLayout-dummy.m"; sourceTree = "<group>"; };
+		C097D5465444FE83B1BDB0A675541FB2 /* ALView+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ALView+PureLayout.m"; path = "PureLayout/PureLayout/ALView+PureLayout.m"; sourceTree = "<group>"; };
+		C1852ED1C757F404B343EFA2B912ED53 /* Pods-PhoneAFriendUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PhoneAFriendUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C2C441ED9DC4C2B75DF2AB9F6F804114 /* HoshiTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HoshiTextField.swift; path = TextFieldEffects/TextFieldEffects/HoshiTextField.swift; sourceTree = "<group>"; };
+		C3021A8E49D8A92CDC87CBC568DC445A /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Headers/Public/FIRInstanceID.h; sourceTree = "<group>"; };
+		C817B30977AC629A1C1C421F710F9DAC /* Pods-PhoneAFriend-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PhoneAFriend-acknowledgements.plist"; sourceTree = "<group>"; };
+		CBAF6AA3EEE65584CBF3B19600CAB611 /* SwiftyButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyButton.xcconfig; sourceTree = "<group>"; };
+		CBEB2903290A906C29FF4D3402AA357E /* PureLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-umbrella.h"; sourceTree = "<group>"; };
+		CBF7100599537AF64F990FF971DAAF84 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFBCA6113D587BF40F610B5AD2215ACD /* Pods-PhoneAFriendTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PhoneAFriendTests-umbrella.h"; sourceTree = "<group>"; };
+		D0AA04CA7BFD333E9125478030466CBF /* SwiftyButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyButton.swift; path = SwiftyButton/SwiftyButton.swift; sourceTree = "<group>"; };
+		D37A2C58DB31CE8FB9A2D29BAB300643 /* TextFieldEffects.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TextFieldEffects.xcconfig; sourceTree = "<group>"; };
+		D9D21E06A60BDF06A72E49FC164C6B4E /* Pods-PhoneAFriend.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PhoneAFriend.release.xcconfig"; sourceTree = "<group>"; };
+		D9D62B61E7FA432D071AE1C374C047D3 /* TextFieldEffects-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-prefix.pch"; sourceTree = "<group>"; };
+		DFE8F4ED27C9CC83D58AA161C006D061 /* NSArray+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+PureLayout.h"; path = "PureLayout/PureLayout/NSArray+PureLayout.h"; sourceTree = "<group>"; };
+		E07755CBE017F1562F6213D61FB81CC6 /* Pods-PhoneAFriend.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PhoneAFriend.debug.xcconfig"; sourceTree = "<group>"; };
+		E788429BC26C98F655A7C0EFD5436DF9 /* SwiftyButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyButton-dummy.m"; sourceTree = "<group>"; };
+		E8C499ACEB6CF6AB8C2B0A8C30A8C8C3 /* Pods_PhoneAFriend.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhoneAFriend.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9D75D8ED394019C68C5E724A761F29B /* Pods-PhoneAFriendTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PhoneAFriendTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EC35E35D81B245E537A0329EAC9C2E17 /* PureLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PureLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFDBB75193A023FA92FFAA2B10CD6D49 /* PureLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = PureLayout.modulemap; sourceTree = "<group>"; };
+		F6DE3CBC1A0481373AA4A51C545B8A1B /* Pods-PhoneAFriendTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PhoneAFriendTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F73E0034FC67508FC72FE2CD679C9A3F /* NSLayoutConstraint+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+PureLayout.h"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.h"; sourceTree = "<group>"; };
+		F9CD1538FCEAC1DD8BFC1F76B8A69DC3 /* Pods-PhoneAFriendUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PhoneAFriendUITests-umbrella.h"; sourceTree = "<group>"; };
+		FBDA77397CD5900228B899364D4FDB72 /* SwiftyButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBF3D6A8C87DD0FACB3D2686006EFDC3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08F243AE5D479DE75F3D50891703A782 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD112CFF36FFFE23049A3923D9B17ED /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33092C1E4B48CDEC5DE64E4FD3470017 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5236556BBF44D7E1D63196AE09F8ED33 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		547C567F32BAAA6AC5E61B1DF8D2E81F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C80505A799E7352A0BCEC8557947412 /* Foundation.framework in Frameworks */,
+				2E33D53B3A32FEEBDBA3FF6602DA981A /* PureLayout.framework in Frameworks */,
+				AFCF9DE1A80EF37A1040902F3A216884 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6411B8FA3CE95C239505BC70E4455DA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				670900951383EC63603A4663A18506AB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		800330625CC5BEA4CAB52630190CBE8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4C2586D967D259DE2D16AD1EB0BE608 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3DC3E68CBFB64EB91E49E1EBE35C759 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDAE8FB6DF3218A63C7616CBB060B072 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03DD22C6017D7CFCF076802066C72DA7 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				97078F738877E1E5BE3AA9641973B9A8 /* Pods-PhoneAFriend */,
+				621C5BFB9934C13C0146F6DB856624CB /* Pods-PhoneAFriendTests */,
+				BD1EAD347F4A16C6CBCED578CEB4978B /* Pods-PhoneAFriendUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		0A32C59C7399B75DC7E3291E7E23FB65 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC5E6B7AA0AEEDB9302F24101D58ADF6 /* GoogleParsingUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0A74397DAE2B30C5DB16FFC3BF7F890E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1E8AD2BDDD0C44D4B272533F0130447F /* Info.plist */,
+				515D8FB293597BA524A171C2631FA21A /* SwiftyButton.modulemap */,
+				CBAF6AA3EEE65584CBF3B19600CAB611 /* SwiftyButton.xcconfig */,
+				E788429BC26C98F655A7C0EFD5436DF9 /* SwiftyButton-dummy.m */,
+				B218E0CB273A3A1935C149E178260430 /* SwiftyButton-prefix.pch */,
+				ABDF2F5F28319D14CC25AAA2ED2F2038 /* SwiftyButton-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyButton";
+			sourceTree = "<group>";
+		};
+		1519C195D54700FB444475A55681DC45 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				4300559AEDD5627E4095A7557102DFE6 /* Firebase.h */,
+			);
+			name = Analytics;
+			sourceTree = "<group>";
+		};
+		2E8A13586C8940644741098E6AE002AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1810E249CF08851267279D605633385 /* GoogleUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F26854F3B3C8DB67A18C583CD85F3CE /* CustomContent */ = {
+			isa = PBXGroup;
+			children = (
+				4F8824DABBB687B26FC4A44C8E40E237 /* SwiftyCustomContentButton.swift */,
+			);
+			name = CustomContent;
+			sourceTree = "<group>";
+		};
+		427618D8431E33F4E119B24A0F32B0FA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4D9D195422A09205D5062E1F9506F1C7 /* Foundation.framework */,
+				269E684E2A098B81FC437326735AAC83 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5DBCD60E888221E7A020B988F44CF36A /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				1519C195D54700FB444475A55681DC45 /* Analytics */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		605A0BC1485254A2621C2ED7143CE8FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				776F56455FD3CE26C0797C9A94787834 /* FirebaseAnalytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		621C5BFB9934C13C0146F6DB856624CB /* Pods-PhoneAFriendTests */ = {
+			isa = PBXGroup;
+			children = (
+				073B0C7128F44F1FBE1C4255E7E38524 /* Info.plist */,
+				B4D8F52C22BBBC0C044B6964895B96CC /* Pods-PhoneAFriendTests.modulemap */,
+				E9D75D8ED394019C68C5E724A761F29B /* Pods-PhoneAFriendTests-acknowledgements.markdown */,
+				F6DE3CBC1A0481373AA4A51C545B8A1B /* Pods-PhoneAFriendTests-acknowledgements.plist */,
+				49F156EAF44ED3AB6369F9FEE559B9FA /* Pods-PhoneAFriendTests-dummy.m */,
+				651E1DD2A600A3024358B94B875E8752 /* Pods-PhoneAFriendTests-frameworks.sh */,
+				A76376BD62A723DB80F409127609B648 /* Pods-PhoneAFriendTests-resources.sh */,
+				CFBCA6113D587BF40F610B5AD2215ACD /* Pods-PhoneAFriendTests-umbrella.h */,
+				84A10664972979820824527A783EA864 /* Pods-PhoneAFriendTests.debug.xcconfig */,
+				21C797C658A4125DFF58980385C33427 /* Pods-PhoneAFriendTests.release.xcconfig */,
+			);
+			name = "Pods-PhoneAFriendTests";
+			path = "Target Support Files/Pods-PhoneAFriendTests";
+			sourceTree = "<group>";
+		};
+		6522EF03C90BDA5F56BE42D141F30525 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D4AFC288FF95A2318C4C02B85C034B9 /* GoogleNetworkingUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		70D9266EF34C9BBE367847A001902E07 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7100599537AF64F990FF971DAAF84 /* Info.plist */,
+				5CD7FA40D44866DF44F39D4429CD1066 /* TextFieldEffects.modulemap */,
+				D37A2C58DB31CE8FB9A2D29BAB300643 /* TextFieldEffects.xcconfig */,
+				57C22A4C51B45D47D3299ADAC34EA25C /* TextFieldEffects-dummy.m */,
+				D9D62B61E7FA432D071AE1C374C047D3 /* TextFieldEffects-prefix.pch */,
+				294A5F2735F7D0D4D5267FDE589DDA1B /* TextFieldEffects-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TextFieldEffects";
+			sourceTree = "<group>";
+		};
+		7B8692115B83CF0603FBB14AC029C28F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				97A8E6F2390013F549A6646FD4BA7E2A /* PureLayout.framework */,
+				427618D8431E33F4E119B24A0F32B0FA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				7B8692115B83CF0603FBB14AC029C28F /* Frameworks */,
+				D7F5A81D42E2965DC69A134B6916094F /* Pods */,
+				E086CC7EF7323A987BB7B79A128B829E /* Products */,
+				03DD22C6017D7CFCF076802066C72DA7 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8A85F985C4BC6725A7C2378285309421 /* FirebaseAuth */ = {
+			isa = PBXGroup;
+			children = (
+				FF19B31042349B1F2C728908020E2B5C /* Frameworks */,
+			);
+			path = FirebaseAuth;
+			sourceTree = "<group>";
+		};
+		8C643F6F80264167312B3AB10111DF57 /* FirebaseInstanceID */ = {
+			isa = PBXGroup;
+			children = (
+				C3021A8E49D8A92CDC87CBC568DC445A /* FIRInstanceID.h */,
+				F7343B1F77A8E53DF822C76B47D73461 /* Frameworks */,
+			);
+			path = FirebaseInstanceID;
+			sourceTree = "<group>";
+		};
+		97078F738877E1E5BE3AA9641973B9A8 /* Pods-PhoneAFriend */ = {
+			isa = PBXGroup;
+			children = (
+				FBF3D6A8C87DD0FACB3D2686006EFDC3 /* Info.plist */,
+				4C290FBB318F05E162E9DE45EBEA200D /* Pods-PhoneAFriend.modulemap */,
+				98D5EA99EC6163D02D47A580613AB674 /* Pods-PhoneAFriend-acknowledgements.markdown */,
+				C817B30977AC629A1C1C421F710F9DAC /* Pods-PhoneAFriend-acknowledgements.plist */,
+				30061275D8A36DF8676A0953080F0106 /* Pods-PhoneAFriend-dummy.m */,
+				738E3DEAEBC6F1F0FEBA102275F1581B /* Pods-PhoneAFriend-frameworks.sh */,
+				1B9A2F4097EE78146640E267365B1AEC /* Pods-PhoneAFriend-resources.sh */,
+				0511C4E35F411C8C2194AB1FD62C4829 /* Pods-PhoneAFriend-umbrella.h */,
+				E07755CBE017F1562F6213D61FB81CC6 /* Pods-PhoneAFriend.debug.xcconfig */,
+				D9D21E06A60BDF06A72E49FC164C6B4E /* Pods-PhoneAFriend.release.xcconfig */,
+			);
+			name = "Pods-PhoneAFriend";
+			path = "Target Support Files/Pods-PhoneAFriend";
+			sourceTree = "<group>";
+		};
+		9914415CF3E119C0C1EFF49C506AFAB5 /* GoogleSymbolUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				C1E1FB54463A48C3C01652F9F1FBD334 /* Frameworks */,
+			);
+			path = GoogleSymbolUtilities;
+			sourceTree = "<group>";
+		};
+		A312FD0D1D7C4516133F4FEB24013CED /* GoogleParsingUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				0A32C59C7399B75DC7E3291E7E23FB65 /* Frameworks */,
+			);
+			path = GoogleParsingUtilities;
+			sourceTree = "<group>";
+		};
+		A4A02FA97F2FAD5A2321C571B9A92B39 /* TextFieldEffects */ = {
+			isa = PBXGroup;
+			children = (
+				9D0EA5F9E1EF9EAF975B3F85C8B8D86E /* AkiraTextField.swift */,
+				C2C441ED9DC4C2B75DF2AB9F6F804114 /* HoshiTextField.swift */,
+				4D72337F03379B46981496E1B5744B32 /* IsaoTextField.swift */,
+				541C142B0B19CA3B3AA5B485A498BF57 /* JiroTextField.swift */,
+				066302CEFA13436A1B1EE299632B05F5 /* KaedeTextField.swift */,
+				44F9D280112FF40DA234BA305004B2DF /* MadokaTextField.swift */,
+				48275DD48AE0E6F01144450D3D0EE8AE /* MinoruTextField.swift */,
+				9FFFF2DC2611FBEE4C4F25E8B675AF8C /* TextFieldsEffects.swift */,
+				0992153E652A7D762753B925586EAD8A /* YokoTextField.swift */,
+				23887C72AF25AFF36CD745749C7E694A /* YoshikoTextField.swift */,
+				70D9266EF34C9BBE367847A001902E07 /* Support Files */,
+			);
+			path = TextFieldEffects;
+			sourceTree = "<group>";
+		};
+		A9B1F98F190C3A87EE366DC2FC602E4B /* SwiftyButton */ = {
+			isa = PBXGroup;
+			children = (
+				D0AA04CA7BFD333E9125478030466CBF /* SwiftyButton.swift */,
+				48B11016BE8E89E874BE1B0A108CD834 /* SwiftyButton+ResizableImage.swift */,
+				3F26854F3B3C8DB67A18C583CD85F3CE /* CustomContent */,
+				0A74397DAE2B30C5DB16FFC3BF7F890E /* Support Files */,
+			);
+			path = SwiftyButton;
+			sourceTree = "<group>";
+		};
+		B06DF45693D8E84515201176EDA23AD4 /* FirebaseAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				605A0BC1485254A2621C2ED7143CE8FB /* Frameworks */,
+			);
+			path = FirebaseAnalytics;
+			sourceTree = "<group>";
+		};
+		BD1EAD347F4A16C6CBCED578CEB4978B /* Pods-PhoneAFriendUITests */ = {
+			isa = PBXGroup;
+			children = (
+				702C5499CCE3C3EFF27186C77706D63B /* Info.plist */,
+				93B5AA614FC3C268683C12DCF8D69C8C /* Pods-PhoneAFriendUITests.modulemap */,
+				59948457839833C0E90F46E3CF955B66 /* Pods-PhoneAFriendUITests-acknowledgements.markdown */,
+				4C782935A55A920C78520B8A22DCAEF8 /* Pods-PhoneAFriendUITests-acknowledgements.plist */,
+				6FEFA8DEF5CFE2200E6CC6456B81C6F2 /* Pods-PhoneAFriendUITests-dummy.m */,
+				AD2953644BD006421B62950C39C5F4BE /* Pods-PhoneAFriendUITests-frameworks.sh */,
+				A71BDCEB810D422CBC621291EDC88ACC /* Pods-PhoneAFriendUITests-resources.sh */,
+				F9CD1538FCEAC1DD8BFC1F76B8A69DC3 /* Pods-PhoneAFriendUITests-umbrella.h */,
+				C1852ED1C757F404B343EFA2B912ED53 /* Pods-PhoneAFriendUITests.debug.xcconfig */,
+				7E5330F238A75599ED02D2E89D224FF6 /* Pods-PhoneAFriendUITests.release.xcconfig */,
+			);
+			name = "Pods-PhoneAFriendUITests";
+			path = "Target Support Files/Pods-PhoneAFriendUITests";
+			sourceTree = "<group>";
+		};
+		BD62CBA10EE854B05BBD85B3CFB0E80B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0313D5E96E9C6514E8330C4DF17161DD /* Info.plist */,
+				EFDBB75193A023FA92FFAA2B10CD6D49 /* PureLayout.modulemap */,
+				0317B708401F072454B5FE599F751EB9 /* PureLayout.xcconfig */,
+				BDEEB13FDC8DF358BE3F0EBDFD5933F6 /* PureLayout-dummy.m */,
+				AD563BCAD6DF12A33F313317E544EF4E /* PureLayout-prefix.pch */,
+				CBEB2903290A906C29FF4D3402AA357E /* PureLayout-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PureLayout";
+			sourceTree = "<group>";
+		};
+		BEB9284DB5865931BAE8ABB6DC450294 /* PureLayout */ = {
+			isa = PBXGroup;
+			children = (
+				091E671BFFC31F626A326D05E6472EFA /* ALView+PureLayout.h */,
+				C097D5465444FE83B1BDB0A675541FB2 /* ALView+PureLayout.m */,
+				DFE8F4ED27C9CC83D58AA161C006D061 /* NSArray+PureLayout.h */,
+				3BF240050524A40BCB80F68882129F73 /* NSArray+PureLayout.m */,
+				F73E0034FC67508FC72FE2CD679C9A3F /* NSLayoutConstraint+PureLayout.h */,
+				1F3B8C053B9E480A760E8491EC82293F /* NSLayoutConstraint+PureLayout.m */,
+				9DA1E9C01DBE7EA0979FF265C6BD0EE8 /* PureLayout.h */,
+				90AF5D390F327AE662CE6DE513FF3337 /* PureLayout+Internal.h */,
+				A5DEAE4158D7BFA3907EC14C9568C382 /* PureLayoutDefines.h */,
+				BD62CBA10EE854B05BBD85B3CFB0E80B /* Support Files */,
+			);
+			path = PureLayout;
+			sourceTree = "<group>";
+		};
+		C1E1FB54463A48C3C01652F9F1FBD334 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37C32302D92C6EEDF10172A17224D2F1 /* GoogleSymbolUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D7F5A81D42E2965DC69A134B6916094F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5DBCD60E888221E7A020B988F44CF36A /* Firebase */,
+				B06DF45693D8E84515201176EDA23AD4 /* FirebaseAnalytics */,
+				8A85F985C4BC6725A7C2378285309421 /* FirebaseAuth */,
+				8C643F6F80264167312B3AB10111DF57 /* FirebaseInstanceID */,
+				DACFBD3C3EC7DC69B30FBFB7BB167E58 /* GoogleInterchangeUtilities */,
+				DE5AF46D6274DA1C7E499AAD88674DC3 /* GoogleNetworkingUtilities */,
+				A312FD0D1D7C4516133F4FEB24013CED /* GoogleParsingUtilities */,
+				9914415CF3E119C0C1EFF49C506AFAB5 /* GoogleSymbolUtilities */,
+				E60FA4EEEB0E991FC95E1D9D699D3893 /* GoogleUtilities */,
+				BEB9284DB5865931BAE8ABB6DC450294 /* PureLayout */,
+				A9B1F98F190C3A87EE366DC2FC602E4B /* SwiftyButton */,
+				A4A02FA97F2FAD5A2321C571B9A92B39 /* TextFieldEffects */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DACFBD3C3EC7DC69B30FBFB7BB167E58 /* GoogleInterchangeUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				F7C34498A8437CAC18E379F0F06B1ECE /* Frameworks */,
+			);
+			path = GoogleInterchangeUtilities;
+			sourceTree = "<group>";
+		};
+		DE5AF46D6274DA1C7E499AAD88674DC3 /* GoogleNetworkingUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				6522EF03C90BDA5F56BE42D141F30525 /* Frameworks */,
+			);
+			path = GoogleNetworkingUtilities;
+			sourceTree = "<group>";
+		};
+		E086CC7EF7323A987BB7B79A128B829E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8C499ACEB6CF6AB8C2B0A8C30A8C8C3 /* Pods_PhoneAFriend.framework */,
+				0A4866946E7B3D52CD8B2A76A8198883 /* Pods_PhoneAFriendTests.framework */,
+				5118EFD65D142B79CE9F1F27CBE99731 /* Pods_PhoneAFriendUITests.framework */,
+				EC35E35D81B245E537A0329EAC9C2E17 /* PureLayout.framework */,
+				FBDA77397CD5900228B899364D4FDB72 /* SwiftyButton.framework */,
+				A5F2B8A3CAB6FE8AD5B53406037EA6DD /* TextFieldEffects.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E60FA4EEEB0E991FC95E1D9D699D3893 /* GoogleUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				2E8A13586C8940644741098E6AE002AD /* Frameworks */,
+			);
+			path = GoogleUtilities;
+			sourceTree = "<group>";
+		};
+		F7343B1F77A8E53DF822C76B47D73461 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76664F73484CD78AEDA4EC92D27B5E26 /* FirebaseInstanceID.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F7C34498A8437CAC18E379F0F06B1ECE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B37EC07D9BF91E11D36E5661FA53CAC /* GoogleInterchangeUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF19B31042349B1F2C728908020E2B5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5BAE0431EA28AF0E8B9DED17754A609A /* FirebaseAuth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		05E34421D48BA9330532E877BD386DE9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				570A89FAADC41C5E36A3ED099A4348AB /* Pods-PhoneAFriendTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0814224BC454EE440DFFE443DCFA1EA3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E59A996EDC5067BBE1175F59EFB3F4BC /* ALView+PureLayout.h in Headers */,
+				8C2C685DDD0B5A5195B1CCE31CCDD674 /* NSArray+PureLayout.h in Headers */,
+				F3B1B55CAF3F48C9C844C23D8904DC13 /* NSLayoutConstraint+PureLayout.h in Headers */,
+				834FCDB5023C42807D76DDBB2459A48A /* PureLayout+Internal.h in Headers */,
+				4232F0521651EDDAC75BF29975F00260 /* PureLayout-umbrella.h in Headers */,
+				5BA8F38D4F3E812EF734E55C8C61BBDB /* PureLayout.h in Headers */,
+				DE51D261C75B1B551CF8505237AF1784 /* PureLayoutDefines.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1177202D6E7A2C0486FA7A3EBF330FEB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1604395ADD28BE262B063C1C211741F /* SwiftyButton-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		541BDCC888566935D735766A19E55E44 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED0D93EBAEB8A2C069C59E00C6E7B837 /* Pods-PhoneAFriendUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6F58F9F132F0B47AD9E1EF416B21EA4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4F1E679A3D3F4F1DE3274056C8E660E /* Pods-PhoneAFriend-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B02AB718BB439F5419E0F4DCCAB328C3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDB5B2A451A7B20970960CFC7F0F0246 /* TextFieldEffects-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0C254D7C25D2E15DBE895C7BB2E8663D /* TextFieldEffects */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D67DEA2F3F674BC24012D4EAFAD14D0 /* Build configuration list for PBXNativeTarget "TextFieldEffects" */;
+			buildPhases = (
+				28045D42C14519B036182FB9DA5318DA /* Sources */,
+				33092C1E4B48CDEC5DE64E4FD3470017 /* Frameworks */,
+				B02AB718BB439F5419E0F4DCCAB328C3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TextFieldEffects;
+			productName = TextFieldEffects;
+			productReference = A5F2B8A3CAB6FE8AD5B53406037EA6DD /* TextFieldEffects.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1929BDFE368BAF7E7F91DDBEF96139EB /* Pods-PhoneAFriendTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2173CDFDB384C745D0D372C61681A751 /* Build configuration list for PBXNativeTarget "Pods-PhoneAFriendTests" */;
+			buildPhases = (
+				8679813F66CA6618FD258F7D0CEF3F70 /* Sources */,
+				800330625CC5BEA4CAB52630190CBE8B /* Frameworks */,
+				05E34421D48BA9330532E877BD386DE9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-PhoneAFriendTests";
+			productName = "Pods-PhoneAFriendTests";
+			productReference = 0A4866946E7B3D52CD8B2A76A8198883 /* Pods_PhoneAFriendTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		64698EEECEE9410A44CDFDB30EAFD1DC /* SwiftyButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F130EEF6CC6D823086FBD25674178D4 /* Build configuration list for PBXNativeTarget "SwiftyButton" */;
+			buildPhases = (
+				C59DFF7CC1F29DE6997A15FAED0014A6 /* Sources */,
+				547C567F32BAAA6AC5E61B1DF8D2E81F /* Frameworks */,
+				1177202D6E7A2C0486FA7A3EBF330FEB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2A3623105FE52FE223CD878A543D0EA /* PBXTargetDependency */,
+			);
+			name = SwiftyButton;
+			productName = SwiftyButton;
+			productReference = FBDA77397CD5900228B899364D4FDB72 /* SwiftyButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7E246E5E5F84A7FFB20EBE27D04D27CD /* Pods-PhoneAFriendUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FD1FA45416784DD428E9F5BFE8516F4 /* Build configuration list for PBXNativeTarget "Pods-PhoneAFriendUITests" */;
+			buildPhases = (
+				5FBD09B86DAA8F8EAB9CD1DB2E6FD9E0 /* Sources */,
+				08F243AE5D479DE75F3D50891703A782 /* Frameworks */,
+				541BDCC888566935D735766A19E55E44 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-PhoneAFriendUITests";
+			productName = "Pods-PhoneAFriendUITests";
+			productReference = 5118EFD65D142B79CE9F1F27CBE99731 /* Pods_PhoneAFriendUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9D5BDABCBD50B1B2C19771A23B89420C /* PureLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD532D1B1B984034289BB96EE74EBA08 /* Build configuration list for PBXNativeTarget "PureLayout" */;
+			buildPhases = (
+				F79FCDC8B4C9441D61EB923C3285C813 /* Sources */,
+				6411B8FA3CE95C239505BC70E4455DA3 /* Frameworks */,
+				0814224BC454EE440DFFE443DCFA1EA3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PureLayout;
+			productName = PureLayout;
+			productReference = EC35E35D81B245E537A0329EAC9C2E17 /* PureLayout.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FE8F22BF81024F58A4D18E9A94C508A9 /* Pods-PhoneAFriend */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71297D940E3A1C5739FCDC265ACDF1B1 /* Build configuration list for PBXNativeTarget "Pods-PhoneAFriend" */;
+			buildPhases = (
+				77A415490CD7B9E00D4A069E07DA2B85 /* Sources */,
+				E3DC3E68CBFB64EB91E49E1EBE35C759 /* Frameworks */,
+				A6F58F9F132F0B47AD9E1EF416B21EA4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00F6E77BDF8B615B6D104B8DF278843B /* PBXTargetDependency */,
+				06568B05D541F5B810C29D3AE21439E1 /* PBXTargetDependency */,
+				71FA0D7EDA0725D21CC5C6184B4DBD5B /* PBXTargetDependency */,
+			);
+			name = "Pods-PhoneAFriend";
+			productName = "Pods-PhoneAFriend";
+			productReference = E8C499ACEB6CF6AB8C2B0A8C30A8C8C3 /* Pods_PhoneAFriend.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = E086CC7EF7323A987BB7B79A128B829E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE8F22BF81024F58A4D18E9A94C508A9 /* Pods-PhoneAFriend */,
+				1929BDFE368BAF7E7F91DDBEF96139EB /* Pods-PhoneAFriendTests */,
+				7E246E5E5F84A7FFB20EBE27D04D27CD /* Pods-PhoneAFriendUITests */,
+				9D5BDABCBD50B1B2C19771A23B89420C /* PureLayout */,
+				64698EEECEE9410A44CDFDB30EAFD1DC /* SwiftyButton */,
+				0C254D7C25D2E15DBE895C7BB2E8663D /* TextFieldEffects */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28045D42C14519B036182FB9DA5318DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				291165AE722C55126D1E45FDFE6A1C92 /* AkiraTextField.swift in Sources */,
+				55DB5970F9720A492668DAF012D35A64 /* HoshiTextField.swift in Sources */,
+				C4D6C781BD12BEC9F64AED63A1A0035F /* IsaoTextField.swift in Sources */,
+				C444DD4F706624AAE9D390552736555C /* JiroTextField.swift in Sources */,
+				9C9631A1808B031388DD9A13ACCB1E26 /* KaedeTextField.swift in Sources */,
+				93829736F4F24ACFCC73C8FA68F49304 /* MadokaTextField.swift in Sources */,
+				D7E8B96FADD7956E1DCF175A8AC109E0 /* MinoruTextField.swift in Sources */,
+				1C03485979F5DF99579405171A0BE657 /* TextFieldEffects-dummy.m in Sources */,
+				BCB6B8E5E136168790BB36BABF06117C /* TextFieldsEffects.swift in Sources */,
+				5CF76B415A3EF4CE5BED0B6BE9C1BB8E /* YokoTextField.swift in Sources */,
+				2340DA6964727C504B44DEE97AB14C0B /* YoshikoTextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FBD09B86DAA8F8EAB9CD1DB2E6FD9E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79011387F75E19F4B6ED1565A862CB67 /* Pods-PhoneAFriendUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77A415490CD7B9E00D4A069E07DA2B85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D70FD6848092B3C05AD439C1C0F6F93 /* Pods-PhoneAFriend-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8679813F66CA6618FD258F7D0CEF3F70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06C50B2BCF358C0458AFD7DCBC4E7EF5 /* Pods-PhoneAFriendTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C59DFF7CC1F29DE6997A15FAED0014A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86A20D5522299E7EFDD160595E8910BF /* SwiftyButton+ResizableImage.swift in Sources */,
+				F8AB0A8A19BCE4B0F39D0EFFA93CC21F /* SwiftyButton-dummy.m in Sources */,
+				9760683481DFD725D5B974886567C1F2 /* SwiftyButton.swift in Sources */,
+				164A3DB3D5FA04644C62FE5E1A2B0BAE /* SwiftyCustomContentButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F79FCDC8B4C9441D61EB923C3285C813 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9656CCB851685C988F1A0E61BC9B1D2 /* ALView+PureLayout.m in Sources */,
+				49A00366A43C1EA43740F4A7F6896CEB /* NSArray+PureLayout.m in Sources */,
+				026FCE82253375653AAE06D7C2DBD94B /* NSLayoutConstraint+PureLayout.m in Sources */,
+				5C5286CB1C88FE31ABC788DE3D4ADC2C /* PureLayout-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00F6E77BDF8B615B6D104B8DF278843B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PureLayout;
+			target = 9D5BDABCBD50B1B2C19771A23B89420C /* PureLayout */;
+			targetProxy = 3C0AEAB6ED0490D7645F71F5E1DB5A58 /* PBXContainerItemProxy */;
+		};
+		06568B05D541F5B810C29D3AE21439E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyButton;
+			target = 64698EEECEE9410A44CDFDB30EAFD1DC /* SwiftyButton */;
+			targetProxy = 97C4DE3ED1C13847F4BB9211C4A9D347 /* PBXContainerItemProxy */;
+		};
+		71FA0D7EDA0725D21CC5C6184B4DBD5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TextFieldEffects;
+			target = 0C254D7C25D2E15DBE895C7BB2E8663D /* TextFieldEffects */;
+			targetProxy = DA96564026BCE5ABE45101CCE57540B0 /* PBXContainerItemProxy */;
+		};
+		B2A3623105FE52FE223CD878A543D0EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PureLayout;
+			target = 9D5BDABCBD50B1B2C19771A23B89420C /* PureLayout */;
+			targetProxy = F004952486C790A9F7794BFFB5211754 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0D0FD16C1E0971E99324A9A65C6672A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0317B708401F072454B5FE599F751EB9 /* PureLayout.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PureLayout/PureLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PureLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PureLayout/PureLayout.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PureLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		10229FED33805F7945784915FFDE702D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D37A2C58DB31CE8FB9A2D29BAB300643 /* TextFieldEffects.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TextFieldEffects/TextFieldEffects-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TextFieldEffects/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TextFieldEffects/TextFieldEffects.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = TextFieldEffects;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3CA9978AAAC14FD3A541BFF4FC5BC7BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E07755CBE017F1562F6213D61FB81CC6 /* Pods-PhoneAFriend.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PhoneAFriend/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PhoneAFriend/Pods-PhoneAFriend.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PhoneAFriend;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3FA451D268613890FA8A5A03801E11D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		411D03D6754744C5613A713E6AA747E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBAF6AA3EEE65584CBF3B19600CAB611 /* SwiftyButton.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyButton/SwiftyButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyButton/SwiftyButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4FDEDAD37474806EE0B67492455A6D5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E5330F238A75599ED02D2E89D224FF6 /* Pods-PhoneAFriendUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PhoneAFriendUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PhoneAFriendUITests/Pods-PhoneAFriendUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PhoneAFriendUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		872E517E905A8335A698E9288E8A90B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBAF6AA3EEE65584CBF3B19600CAB611 /* SwiftyButton.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyButton/SwiftyButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyButton/SwiftyButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A3FCE7511D824DC9D6B54B92DEC97C65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D37A2C58DB31CE8FB9A2D29BAB300643 /* TextFieldEffects.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TextFieldEffects/TextFieldEffects-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TextFieldEffects/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TextFieldEffects/TextFieldEffects.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = TextFieldEffects;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A5FC93FBD6D0E9F1E51E62CC9606AFE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1852ED1C757F404B343EFA2B912ED53 /* Pods-PhoneAFriendUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PhoneAFriendUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PhoneAFriendUITests/Pods-PhoneAFriendUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PhoneAFriendUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C1FD10FD33E44BEC9C2777CF8806E8A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9D21E06A60BDF06A72E49FC164C6B4E /* Pods-PhoneAFriend.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PhoneAFriend/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PhoneAFriend/Pods-PhoneAFriend.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PhoneAFriend;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C6D32EC9DA11699BD5DCA19AC4A6CABF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0317B708401F072454B5FE599F751EB9 /* PureLayout.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PureLayout/PureLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PureLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PureLayout/PureLayout.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PureLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CC858788E9CFDB21AFBD54974B847F68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84A10664972979820824527A783EA864 /* Pods-PhoneAFriendTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PhoneAFriendTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PhoneAFriendTests/Pods-PhoneAFriendTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PhoneAFriendTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D2C39035794BA7647DFAEC5D79C429E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21C797C658A4125DFF58980385C33427 /* Pods-PhoneAFriendTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PhoneAFriendTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PhoneAFriendTests/Pods-PhoneAFriendTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PhoneAFriendTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0FD1FA45416784DD428E9F5BFE8516F4 /* Build configuration list for PBXNativeTarget "Pods-PhoneAFriendUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5FC93FBD6D0E9F1E51E62CC9606AFE0 /* Debug */,
+				4FDEDAD37474806EE0B67492455A6D5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F130EEF6CC6D823086FBD25674178D4 /* Build configuration list for PBXNativeTarget "SwiftyButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				411D03D6754744C5613A713E6AA747E8 /* Debug */,
+				872E517E905A8335A698E9288E8A90B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2173CDFDB384C745D0D372C61681A751 /* Build configuration list for PBXNativeTarget "Pods-PhoneAFriendTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC858788E9CFDB21AFBD54974B847F68 /* Debug */,
+				D2C39035794BA7647DFAEC5D79C429E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */,
+				3FA451D268613890FA8A5A03801E11D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71297D940E3A1C5739FCDC265ACDF1B1 /* Build configuration list for PBXNativeTarget "Pods-PhoneAFriend" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CA9978AAAC14FD3A541BFF4FC5BC7BB /* Debug */,
+				C1FD10FD33E44BEC9C2777CF8806E8A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D67DEA2F3F674BC24012D4EAFAD14D0 /* Build configuration list for PBXNativeTarget "TextFieldEffects" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10229FED33805F7945784915FFDE702D /* Debug */,
+				A3FCE7511D824DC9D6B54B92DEC97C65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD532D1B1B984034289BB96EE74EBA08 /* Build configuration list for PBXNativeTarget "PureLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6D32EC9DA11699BD5DCA19AC4A6CABF /* Debug */,
+				0D0FD16C1E0971E99324A9A65C6672A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
