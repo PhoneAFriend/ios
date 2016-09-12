@@ -24,6 +24,7 @@
 		AF2FB68F1D820B0D003EB3AA /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2FB68E1D820B0D003EB3AA /* LandingPageViewController.swift */; };
 		AF2FB6931D826BB7003EB3AA /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2FB6921D826BB7003EB3AA /* CurrentUser.swift */; };
 		AF2FB6951D826DA4003EB3AA /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2FB6941D826DA4003EB3AA /* HomePageViewController.swift */; };
+		AF62D3B91D8712A200C59234 /* CreateAQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF62D3B81D8712A200C59234 /* CreateAQuestionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		AF2FB68E1D820B0D003EB3AA /* LandingPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
 		AF2FB6921D826BB7003EB3AA /* CurrentUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentUser.swift; sourceTree = "<group>"; };
 		AF2FB6941D826DA4003EB3AA /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		AF62D3B81D8712A200C59234 /* CreateAQuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAQuestionViewController.swift; sourceTree = "<group>"; };
 		C928DFEED22FBBEE1A0E6E9A /* Pods-PhoneAFriendUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoneAFriendUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhoneAFriendUITests/Pods-PhoneAFriendUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FDB211F8A55A4DA18EA3B419 /* Pods-PhoneAFriend.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoneAFriend.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhoneAFriend/Pods-PhoneAFriend.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -132,6 +134,7 @@
 				AF2FB6881D82034E003EB3AA /* LoginViewController.swift */,
 				AF0DD9BB1D77792F009B1F38 /* AppDelegate.swift */,
 				AF2FB6861D820266003EB3AA /* constants.swift */,
+				AF62D3B81D8712A200C59234 /* CreateAQuestionViewController.swift */,
 				AF2FB6841D8201BD003EB3AA /* DataLoadViewController.swift */,
 				AF0DD9BF1D77792F009B1F38 /* Main.storyboard */,
 				AF2FB68E1D820B0D003EB3AA /* LandingPageViewController.swift */,
@@ -457,6 +460,7 @@
 				AF2FB6951D826DA4003EB3AA /* HomePageViewController.swift in Sources */,
 				AF2FB6851D8201BD003EB3AA /* DataLoadViewController.swift in Sources */,
 				AF0DD9BC1D77792F009B1F38 /* AppDelegate.swift in Sources */,
+				AF62D3B91D8712A200C59234 /* CreateAQuestionViewController.swift in Sources */,
 				AF2FB6871D820266003EB3AA /* constants.swift in Sources */,
 				AF2FB6931D826BB7003EB3AA /* CurrentUser.swift in Sources */,
 				AF2FB68B1D820387003EB3AA /* SignUpViewController.swift in Sources */,

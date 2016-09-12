@@ -950,6 +950,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E07755CBE017F1562F6213D61FB81CC6 /* Pods-PhoneAFriend.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -1218,6 +1219,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D9D21E06A60BDF06A72E49FC164C6B4E /* Pods-PhoneAFriend.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
