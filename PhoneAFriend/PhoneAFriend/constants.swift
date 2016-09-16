@@ -7,8 +7,9 @@
 //
 
 import Foundation
-
+import Firebase
 var currentUser : CurrentUser?
+var posts : [Post] = []
 var currentUsername = ""
 let firebaseURL = "https://phoneafriend-7fb6b.firebaseio.com/"
 

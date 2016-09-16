@@ -461,6 +461,9 @@
                                     <constraint firstAttribute="width" constant="175" id="g6J-4v-Uoz"/>
                                 </constraints>
                                 <state key="normal" title="Post Question"/>
+                                <connections>
+                                    <action selector="postQuestion:" destination="mHo-eb-gDt" eventType="touchUpInside" id="Vh7-o5-2ex"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -488,6 +491,8 @@
                     <navigationItem key="navigationItem" title="Create a Question" id="Tqe-UX-oyl"/>
                     <connections>
                         <outlet property="picker" destination="a3h-CY-Bt8" id="hmJ-hT-erX"/>
+                        <outlet property="questionTextField" destination="5CQ-KB-NdY" id="YMO-pB-9W1"/>
+                        <outlet property="questionTitleField" destination="ZEZ-Nk-AZs" id="lTG-QT-56f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NSr-aU-Mfi" userLabel="First Responder" sceneMemberID="firstResponder"/>

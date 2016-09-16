@@ -7,48 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		026FCE82253375653AAE06D7C2DBD94B /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B8C053B9E480A760E8491EC82293F /* NSLayoutConstraint+PureLayout.m */; };
+		026FCE82253375653AAE06D7C2DBD94B /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D2129F7E0760C05D1202DE851EAF5F /* NSLayoutConstraint+PureLayout.m */; };
 		06C50B2BCF358C0458AFD7DCBC4E7EF5 /* Pods-PhoneAFriendTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F156EAF44ED3AB6369F9FEE559B9FA /* Pods-PhoneAFriendTests-dummy.m */; };
-		164A3DB3D5FA04644C62FE5E1A2B0BAE /* SwiftyCustomContentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8824DABBB687B26FC4A44C8E40E237 /* SwiftyCustomContentButton.swift */; };
-		1C03485979F5DF99579405171A0BE657 /* TextFieldEffects-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C22A4C51B45D47D3299ADAC34EA25C /* TextFieldEffects-dummy.m */; };
-		2340DA6964727C504B44DEE97AB14C0B /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23887C72AF25AFF36CD745749C7E694A /* YoshikoTextField.swift */; };
-		291165AE722C55126D1E45FDFE6A1C92 /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0EA5F9E1EF9EAF975B3F85C8B8D86E /* AkiraTextField.swift */; };
+		164A3DB3D5FA04644C62FE5E1A2B0BAE /* SwiftyCustomContentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81695761AEFC9C4A15FBC51EF7103B81 /* SwiftyCustomContentButton.swift */; };
+		1C03485979F5DF99579405171A0BE657 /* TextFieldEffects-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5A06BDF1597F5204334262CFB239B9 /* TextFieldEffects-dummy.m */; };
+		2340DA6964727C504B44DEE97AB14C0B /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F688671BD67F0A51DCBB2E4138A221BA /* YoshikoTextField.swift */; };
+		291165AE722C55126D1E45FDFE6A1C92 /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E345C93F42D1E99E36FA2DDBDD499893 /* AkiraTextField.swift */; };
 		2E33D53B3A32FEEBDBA3FF6602DA981A /* PureLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A8E6F2390013F549A6646FD4BA7E2A /* PureLayout.framework */; };
-		4232F0521651EDDAC75BF29975F00260 /* PureLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CBEB2903290A906C29FF4D3402AA357E /* PureLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		49A00366A43C1EA43740F4A7F6896CEB /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF240050524A40BCB80F68882129F73 /* NSArray+PureLayout.m */; };
+		4232F0521651EDDAC75BF29975F00260 /* PureLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D9E36EEF9B7B0231D9261C82FCB15203 /* PureLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49A00366A43C1EA43740F4A7F6896CEB /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A42E9CC38B46E7A69F42DC923F511E09 /* NSArray+PureLayout.m */; };
 		5236556BBF44D7E1D63196AE09F8ED33 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9D195422A09205D5062E1F9506F1C7 /* Foundation.framework */; };
-		55DB5970F9720A492668DAF012D35A64 /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C441ED9DC4C2B75DF2AB9F6F804114 /* HoshiTextField.swift */; };
+		55DB5970F9720A492668DAF012D35A64 /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C492D9D47E5F528163EA6042A1841B01 /* HoshiTextField.swift */; };
 		570A89FAADC41C5E36A3ED099A4348AB /* Pods-PhoneAFriendTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CFBCA6113D587BF40F610B5AD2215ACD /* Pods-PhoneAFriendTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5BA8F38D4F3E812EF734E55C8C61BBDB /* PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DA1E9C01DBE7EA0979FF265C6BD0EE8 /* PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5C5286CB1C88FE31ABC788DE3D4ADC2C /* PureLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BDEEB13FDC8DF358BE3F0EBDFD5933F6 /* PureLayout-dummy.m */; };
-		5CF76B415A3EF4CE5BED0B6BE9C1BB8E /* YokoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0992153E652A7D762753B925586EAD8A /* YokoTextField.swift */; };
+		5BA8F38D4F3E812EF734E55C8C61BBDB /* PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = E6EF870F67EF00FCC3FEFE768D4333EF /* PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C5286CB1C88FE31ABC788DE3D4ADC2C /* PureLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A596E8A89433F5608E88AA371D46AF55 /* PureLayout-dummy.m */; };
+		5CF76B415A3EF4CE5BED0B6BE9C1BB8E /* YokoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D634193A04B2DDB09275AB17CAF11C /* YokoTextField.swift */; };
 		670900951383EC63603A4663A18506AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9D195422A09205D5062E1F9506F1C7 /* Foundation.framework */; };
 		79011387F75E19F4B6ED1565A862CB67 /* Pods-PhoneAFriendUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFA8DEF5CFE2200E6CC6456B81C6F2 /* Pods-PhoneAFriendUITests-dummy.m */; };
 		7D70FD6848092B3C05AD439C1C0F6F93 /* Pods-PhoneAFriend-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30061275D8A36DF8676A0953080F0106 /* Pods-PhoneAFriend-dummy.m */; };
-		834FCDB5023C42807D76DDBB2459A48A /* PureLayout+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 90AF5D390F327AE662CE6DE513FF3337 /* PureLayout+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		86A20D5522299E7EFDD160595E8910BF /* SwiftyButton+ResizableImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B11016BE8E89E874BE1B0A108CD834 /* SwiftyButton+ResizableImage.swift */; };
-		8C2C685DDD0B5A5195B1CCE31CCDD674 /* NSArray+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = DFE8F4ED27C9CC83D58AA161C006D061 /* NSArray+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		93829736F4F24ACFCC73C8FA68F49304 /* MadokaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F9D280112FF40DA234BA305004B2DF /* MadokaTextField.swift */; };
-		9760683481DFD725D5B974886567C1F2 /* SwiftyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AA04CA7BFD333E9125478030466CBF /* SwiftyButton.swift */; };
+		834FCDB5023C42807D76DDBB2459A48A /* PureLayout+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = F36B32C7C597E8ECF01FA72795F69C57 /* PureLayout+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86A20D5522299E7EFDD160595E8910BF /* SwiftyButton+ResizableImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5379D475179E1D0BBDCFB4DA4812D1F2 /* SwiftyButton+ResizableImage.swift */; };
+		8C2C685DDD0B5A5195B1CCE31CCDD674 /* NSArray+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = BF772BB751F29F750EE10495132B5670 /* NSArray+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93829736F4F24ACFCC73C8FA68F49304 /* MadokaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0015D68ABAF7F25E44BEDC0488C69726 /* MadokaTextField.swift */; };
+		9760683481DFD725D5B974886567C1F2 /* SwiftyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB34B36B21B305A246D8C99E2A5FA38 /* SwiftyButton.swift */; };
 		9C80505A799E7352A0BCEC8557947412 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9D195422A09205D5062E1F9506F1C7 /* Foundation.framework */; };
-		9C9631A1808B031388DD9A13ACCB1E26 /* KaedeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066302CEFA13436A1B1EE299632B05F5 /* KaedeTextField.swift */; };
+		9C9631A1808B031388DD9A13ACCB1E26 /* KaedeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8840085CAF3629FBC5F76A7C7E8EC77A /* KaedeTextField.swift */; };
 		AFCF9DE1A80EF37A1040902F3A216884 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 269E684E2A098B81FC437326735AAC83 /* UIKit.framework */; };
-		BCB6B8E5E136168790BB36BABF06117C /* TextFieldsEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFFF2DC2611FBEE4C4F25E8B675AF8C /* TextFieldsEffects.swift */; };
-		C444DD4F706624AAE9D390552736555C /* JiroTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541C142B0B19CA3B3AA5B485A498BF57 /* JiroTextField.swift */; };
-		C4D6C781BD12BEC9F64AED63A1A0035F /* IsaoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D72337F03379B46981496E1B5744B32 /* IsaoTextField.swift */; };
+		BCB6B8E5E136168790BB36BABF06117C /* TextFieldsEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B96C2AAA6622DBE2BFC294A64D50143 /* TextFieldsEffects.swift */; };
+		C444DD4F706624AAE9D390552736555C /* JiroTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AE6DB28AB9A9FD38BC228CE0876F47 /* JiroTextField.swift */; };
+		C4D6C781BD12BEC9F64AED63A1A0035F /* IsaoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4EB46D780D8B369647F55D48451E8B /* IsaoTextField.swift */; };
 		C4F1E679A3D3F4F1DE3274056C8E660E /* Pods-PhoneAFriend-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0511C4E35F411C8C2194AB1FD62C4829 /* Pods-PhoneAFriend-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D7E8B96FADD7956E1DCF175A8AC109E0 /* MinoruTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48275DD48AE0E6F01144450D3D0EE8AE /* MinoruTextField.swift */; };
-		DE51D261C75B1B551CF8505237AF1784 /* PureLayoutDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = A5DEAE4158D7BFA3907EC14C9568C382 /* PureLayoutDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E59A996EDC5067BBE1175F59EFB3F4BC /* ALView+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 091E671BFFC31F626A326D05E6472EFA /* ALView+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E9656CCB851685C988F1A0E61BC9B1D2 /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C097D5465444FE83B1BDB0A675541FB2 /* ALView+PureLayout.m */; };
+		D7E8B96FADD7956E1DCF175A8AC109E0 /* MinoruTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC932A3D4851C4F103F98DE3D4FF1967 /* MinoruTextField.swift */; };
+		DE51D261C75B1B551CF8505237AF1784 /* PureLayoutDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = B85D0BFB47600E20C2F5A17DC07CDFF3 /* PureLayoutDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E59A996EDC5067BBE1175F59EFB3F4BC /* ALView+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = C5590DD301D849DA15D4C619B6651CFE /* ALView+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9656CCB851685C988F1A0E61BC9B1D2 /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 274926157AE58C5E5870D539BCCEE5DB /* ALView+PureLayout.m */; };
 		ED0D93EBAEB8A2C069C59E00C6E7B837 /* Pods-PhoneAFriendUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F9CD1538FCEAC1DD8BFC1F76B8A69DC3 /* Pods-PhoneAFriendUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EDAE8FB6DF3218A63C7616CBB060B072 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9D195422A09205D5062E1F9506F1C7 /* Foundation.framework */; };
-		F1604395ADD28BE262B063C1C211741F /* SwiftyButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ABDF2F5F28319D14CC25AAA2ED2F2038 /* SwiftyButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F3B1B55CAF3F48C9C844C23D8904DC13 /* NSLayoutConstraint+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = F73E0034FC67508FC72FE2CD679C9A3F /* NSLayoutConstraint+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1604395ADD28BE262B063C1C211741F /* SwiftyButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B40833CDA9DE80FD26E8A62C4D161673 /* SwiftyButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3B1B55CAF3F48C9C844C23D8904DC13 /* NSLayoutConstraint+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F6C07567D57856EAFD7F9F4AA195196 /* NSLayoutConstraint+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F4C2586D967D259DE2D16AD1EB0BE608 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9D195422A09205D5062E1F9506F1C7 /* Foundation.framework */; };
-		F8AB0A8A19BCE4B0F39D0EFFA93CC21F /* SwiftyButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E788429BC26C98F655A7C0EFD5436DF9 /* SwiftyButton-dummy.m */; };
+		F8AB0A8A19BCE4B0F39D0EFFA93CC21F /* SwiftyButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 63EF6599402C09D4A6BFC1874EF99C2A /* SwiftyButton-dummy.m */; };
 		FAD112CFF36FFFE23049A3923D9B17ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9D195422A09205D5062E1F9506F1C7 /* Foundation.framework */; };
-		FDB5B2A451A7B20970960CFC7F0F0246 /* TextFieldEffects-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 294A5F2735F7D0D4D5267FDE589DDA1B /* TextFieldEffects-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDB5B2A451A7B20970960CFC7F0F0246 /* TextFieldEffects-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FD454CBE7E787043AEA5986FFEA22436 /* TextFieldEffects-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,96 +83,97 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0313D5E96E9C6514E8330C4DF17161DD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0317B708401F072454B5FE599F751EB9 /* PureLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PureLayout.xcconfig; sourceTree = "<group>"; };
+		0015D68ABAF7F25E44BEDC0488C69726 /* MadokaTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MadokaTextField.swift; path = TextFieldEffects/TextFieldEffects/MadokaTextField.swift; sourceTree = "<group>"; };
 		0511C4E35F411C8C2194AB1FD62C4829 /* Pods-PhoneAFriend-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PhoneAFriend-umbrella.h"; sourceTree = "<group>"; };
-		066302CEFA13436A1B1EE299632B05F5 /* KaedeTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaedeTextField.swift; path = TextFieldEffects/TextFieldEffects/KaedeTextField.swift; sourceTree = "<group>"; };
 		073B0C7128F44F1FBE1C4255E7E38524 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		091E671BFFC31F626A326D05E6472EFA /* ALView+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ALView+PureLayout.h"; path = "PureLayout/PureLayout/ALView+PureLayout.h"; sourceTree = "<group>"; };
-		0992153E652A7D762753B925586EAD8A /* YokoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YokoTextField.swift; path = TextFieldEffects/TextFieldEffects/YokoTextField.swift; sourceTree = "<group>"; };
 		0A4866946E7B3D52CD8B2A76A8198883 /* Pods_PhoneAFriendTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhoneAFriendTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0B37EC07D9BF91E11D36E5661FA53CAC /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
+		1B0B41A41FD2440DC7173B5E8D443A2B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B9A2F4097EE78146640E267365B1AEC /* Pods-PhoneAFriend-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PhoneAFriend-resources.sh"; sourceTree = "<group>"; };
-		1E8AD2BDDD0C44D4B272533F0130447F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1F3B8C053B9E480A760E8491EC82293F /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+PureLayout.m"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
+		20223BAB1A9BA636F58622BBCC3121E9 /* SwiftyButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyButton.modulemap; sourceTree = "<group>"; };
+		2043E67136C8FEF80B3CC99437210E21 /* SwiftyButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyButton-prefix.pch"; sourceTree = "<group>"; };
 		21C797C658A4125DFF58980385C33427 /* Pods-PhoneAFriendTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PhoneAFriendTests.release.xcconfig"; sourceTree = "<group>"; };
-		23887C72AF25AFF36CD745749C7E694A /* YoshikoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YoshikoTextField.swift; path = TextFieldEffects/TextFieldEffects/YoshikoTextField.swift; sourceTree = "<group>"; };
 		269E684E2A098B81FC437326735AAC83 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		294A5F2735F7D0D4D5267FDE589DDA1B /* TextFieldEffects-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-umbrella.h"; sourceTree = "<group>"; };
+		274926157AE58C5E5870D539BCCEE5DB /* ALView+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ALView+PureLayout.m"; path = "PureLayout/PureLayout/ALView+PureLayout.m"; sourceTree = "<group>"; };
+		2DB34B36B21B305A246D8C99E2A5FA38 /* SwiftyButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyButton.swift; path = SwiftyButton/SwiftyButton.swift; sourceTree = "<group>"; };
 		30061275D8A36DF8676A0953080F0106 /* Pods-PhoneAFriend-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PhoneAFriend-dummy.m"; sourceTree = "<group>"; };
-		37C32302D92C6EEDF10172A17224D2F1 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
-		3BF240050524A40BCB80F68882129F73 /* NSArray+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+PureLayout.m"; path = "PureLayout/PureLayout/NSArray+PureLayout.m"; sourceTree = "<group>"; };
-		3D4AFC288FF95A2318C4C02B85C034B9 /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleNetworkingUtilities.framework; path = Frameworks/GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
-		4300559AEDD5627E4095A7557102DFE6 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Headers/Firebase.h; sourceTree = "<group>"; };
-		44F9D280112FF40DA234BA305004B2DF /* MadokaTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MadokaTextField.swift; path = TextFieldEffects/TextFieldEffects/MadokaTextField.swift; sourceTree = "<group>"; };
-		48275DD48AE0E6F01144450D3D0EE8AE /* MinoruTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MinoruTextField.swift; path = TextFieldEffects/TextFieldEffects/MinoruTextField.swift; sourceTree = "<group>"; };
-		48B11016BE8E89E874BE1B0A108CD834 /* SwiftyButton+ResizableImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwiftyButton+ResizableImage.swift"; path = "SwiftyButton/SwiftyButton+ResizableImage.swift"; sourceTree = "<group>"; };
+		31D634193A04B2DDB09275AB17CAF11C /* YokoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YokoTextField.swift; path = TextFieldEffects/TextFieldEffects/YokoTextField.swift; sourceTree = "<group>"; };
+		3B96C2AAA6622DBE2BFC294A64D50143 /* TextFieldsEffects.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFieldsEffects.swift; path = TextFieldEffects/TextFieldEffects/TextFieldsEffects.swift; sourceTree = "<group>"; };
+		3F7718BCCD07B5062B17CBABCDDB6E5B /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAuth.framework; path = Frameworks/frameworks/FirebaseAuth.framework; sourceTree = "<group>"; };
+		40A666FBA875E642518F1383D8B5AAC2 /* TextFieldEffects-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-prefix.pch"; sourceTree = "<group>"; };
+		437713B77228EA0B18BD01A860D22D09 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		47C68C1DDEDFE0551B4697F46BC101C0 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		496281FF6B775D0A3BA160D47EF09B2D /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Headers/Public/FIRInstanceID.h; sourceTree = "<group>"; };
+		497E4AA36407400471EF95D53F3B49D4 /* PureLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PureLayout.xcconfig; sourceTree = "<group>"; };
 		49F156EAF44ED3AB6369F9FEE559B9FA /* Pods-PhoneAFriendTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PhoneAFriendTests-dummy.m"; sourceTree = "<group>"; };
 		4C290FBB318F05E162E9DE45EBEA200D /* Pods-PhoneAFriend.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PhoneAFriend.modulemap"; sourceTree = "<group>"; };
 		4C782935A55A920C78520B8A22DCAEF8 /* Pods-PhoneAFriendUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PhoneAFriendUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		4D72337F03379B46981496E1B5744B32 /* IsaoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IsaoTextField.swift; path = TextFieldEffects/TextFieldEffects/IsaoTextField.swift; sourceTree = "<group>"; };
 		4D9D195422A09205D5062E1F9506F1C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		4F8824DABBB687B26FC4A44C8E40E237 /* SwiftyCustomContentButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyCustomContentButton.swift; path = SwiftyButton/SwiftyCustomContentButton.swift; sourceTree = "<group>"; };
 		5118EFD65D142B79CE9F1F27CBE99731 /* Pods_PhoneAFriendUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhoneAFriendUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		515D8FB293597BA524A171C2631FA21A /* SwiftyButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyButton.modulemap; sourceTree = "<group>"; };
-		541C142B0B19CA3B3AA5B485A498BF57 /* JiroTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JiroTextField.swift; path = TextFieldEffects/TextFieldEffects/JiroTextField.swift; sourceTree = "<group>"; };
-		57C22A4C51B45D47D3299ADAC34EA25C /* TextFieldEffects-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TextFieldEffects-dummy.m"; sourceTree = "<group>"; };
+		5379D475179E1D0BBDCFB4DA4812D1F2 /* SwiftyButton+ResizableImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwiftyButton+ResizableImage.swift"; path = "SwiftyButton/SwiftyButton+ResizableImage.swift"; sourceTree = "<group>"; };
 		59948457839833C0E90F46E3CF955B66 /* Pods-PhoneAFriendUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PhoneAFriendUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5BAE0431EA28AF0E8B9DED17754A609A /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAuth.framework; path = Frameworks/frameworks/FirebaseAuth.framework; sourceTree = "<group>"; };
-		5CD7FA40D44866DF44F39D4429CD1066 /* TextFieldEffects.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TextFieldEffects.modulemap; sourceTree = "<group>"; };
+		5F6C07567D57856EAFD7F9F4AA195196 /* NSLayoutConstraint+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+PureLayout.h"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.h"; sourceTree = "<group>"; };
+		63EF6599402C09D4A6BFC1874EF99C2A /* SwiftyButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyButton-dummy.m"; sourceTree = "<group>"; };
 		651E1DD2A600A3024358B94B875E8752 /* Pods-PhoneAFriendTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PhoneAFriendTests-frameworks.sh"; sourceTree = "<group>"; };
+		67BC0794012198B64911AA0E013E4D66 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Headers/Firebase.h; sourceTree = "<group>"; };
+		6E5A06BDF1597F5204334262CFB239B9 /* TextFieldEffects-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TextFieldEffects-dummy.m"; sourceTree = "<group>"; };
 		6FEFA8DEF5CFE2200E6CC6456B81C6F2 /* Pods-PhoneAFriendUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PhoneAFriendUITests-dummy.m"; sourceTree = "<group>"; };
 		702C5499CCE3C3EFF27186C77706D63B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		738E3DEAEBC6F1F0FEBA102275F1581B /* Pods-PhoneAFriend-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PhoneAFriend-frameworks.sh"; sourceTree = "<group>"; };
-		76664F73484CD78AEDA4EC92D27B5E26 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
-		776F56455FD3CE26C0797C9A94787834 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		75BCD4E0F6739F240365CEBEEA42B897 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		7E4511535B426A9B332FE01C48ED51C9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E5330F238A75599ED02D2E89D224FF6 /* Pods-PhoneAFriendUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PhoneAFriendUITests.release.xcconfig"; sourceTree = "<group>"; };
+		806BFC1A4B31387BB2D4B8C1DAE667B1 /* SwiftyButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyButton.xcconfig; sourceTree = "<group>"; };
+		81695761AEFC9C4A15FBC51EF7103B81 /* SwiftyCustomContentButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyCustomContentButton.swift; path = SwiftyButton/SwiftyCustomContentButton.swift; sourceTree = "<group>"; };
 		84A10664972979820824527A783EA864 /* Pods-PhoneAFriendTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PhoneAFriendTests.debug.xcconfig"; sourceTree = "<group>"; };
-		90AF5D390F327AE662CE6DE513FF3337 /* PureLayout+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PureLayout+Internal.h"; path = "PureLayout/PureLayout/PureLayout+Internal.h"; sourceTree = "<group>"; };
+		8840085CAF3629FBC5F76A7C7E8EC77A /* KaedeTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaedeTextField.swift; path = TextFieldEffects/TextFieldEffects/KaedeTextField.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93B5AA614FC3C268683C12DCF8D69C8C /* Pods-PhoneAFriendUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PhoneAFriendUITests.modulemap"; sourceTree = "<group>"; };
+		955C281071D422B5FC377E1259B39B88 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97A8E6F2390013F549A6646FD4BA7E2A /* PureLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PureLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9859B24FCA4589AD248F3167B4F9599D /* TextFieldEffects.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TextFieldEffects.modulemap; sourceTree = "<group>"; };
 		98D5EA99EC6163D02D47A580613AB674 /* Pods-PhoneAFriend-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PhoneAFriend-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9D0EA5F9E1EF9EAF975B3F85C8B8D86E /* AkiraTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AkiraTextField.swift; path = TextFieldEffects/TextFieldEffects/AkiraTextField.swift; sourceTree = "<group>"; };
-		9DA1E9C01DBE7EA0979FF265C6BD0EE8 /* PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayout.h; path = PureLayout/PureLayout/PureLayout.h; sourceTree = "<group>"; };
-		9FFFF2DC2611FBEE4C4F25E8B675AF8C /* TextFieldsEffects.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFieldsEffects.swift; path = TextFieldEffects/TextFieldEffects/TextFieldsEffects.swift; sourceTree = "<group>"; };
-		A1810E249CF08851267279D605633385 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
-		A5DEAE4158D7BFA3907EC14C9568C382 /* PureLayoutDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayoutDefines.h; path = PureLayout/PureLayout/PureLayoutDefines.h; sourceTree = "<group>"; };
+		A19CAFB467B75753182EE6505FF08AD1 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
+		A42E9CC38B46E7A69F42DC923F511E09 /* NSArray+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+PureLayout.m"; path = "PureLayout/PureLayout/NSArray+PureLayout.m"; sourceTree = "<group>"; };
+		A596E8A89433F5608E88AA371D46AF55 /* PureLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PureLayout-dummy.m"; sourceTree = "<group>"; };
 		A5F2B8A3CAB6FE8AD5B53406037EA6DD /* TextFieldEffects.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TextFieldEffects.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A71BDCEB810D422CBC621291EDC88ACC /* Pods-PhoneAFriendUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PhoneAFriendUITests-resources.sh"; sourceTree = "<group>"; };
 		A76376BD62A723DB80F409127609B648 /* Pods-PhoneAFriendTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PhoneAFriendTests-resources.sh"; sourceTree = "<group>"; };
-		ABDF2F5F28319D14CC25AAA2ED2F2038 /* SwiftyButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyButton-umbrella.h"; sourceTree = "<group>"; };
+		A7AD50714C48DCB69E8935F14A7EA4EC /* PureLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = PureLayout.modulemap; sourceTree = "<group>"; };
+		ABBB8BC3171A6E16ED3E3AE9A1320942 /* GoogleParsingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleParsingUtilities.framework; path = Frameworks/GoogleParsingUtilities.framework; sourceTree = "<group>"; };
 		AD2953644BD006421B62950C39C5F4BE /* Pods-PhoneAFriendUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PhoneAFriendUITests-frameworks.sh"; sourceTree = "<group>"; };
-		AD563BCAD6DF12A33F313317E544EF4E /* PureLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-prefix.pch"; sourceTree = "<group>"; };
-		B218E0CB273A3A1935C149E178260430 /* SwiftyButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyButton-prefix.pch"; sourceTree = "<group>"; };
+		B40833CDA9DE80FD26E8A62C4D161673 /* SwiftyButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyButton-umbrella.h"; sourceTree = "<group>"; };
 		B4D8F52C22BBBC0C044B6964895B96CC /* Pods-PhoneAFriendTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PhoneAFriendTests.modulemap"; sourceTree = "<group>"; };
-		BC5E6B7AA0AEEDB9302F24101D58ADF6 /* GoogleParsingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleParsingUtilities.framework; path = Frameworks/GoogleParsingUtilities.framework; sourceTree = "<group>"; };
-		BDEEB13FDC8DF358BE3F0EBDFD5933F6 /* PureLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PureLayout-dummy.m"; sourceTree = "<group>"; };
-		C097D5465444FE83B1BDB0A675541FB2 /* ALView+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ALView+PureLayout.m"; path = "PureLayout/PureLayout/ALView+PureLayout.m"; sourceTree = "<group>"; };
+		B85D0BFB47600E20C2F5A17DC07CDFF3 /* PureLayoutDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayoutDefines.h; path = PureLayout/PureLayout/PureLayoutDefines.h; sourceTree = "<group>"; };
+		BF772BB751F29F750EE10495132B5670 /* NSArray+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+PureLayout.h"; path = "PureLayout/PureLayout/NSArray+PureLayout.h"; sourceTree = "<group>"; };
 		C1852ED1C757F404B343EFA2B912ED53 /* Pods-PhoneAFriendUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PhoneAFriendUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		C2C441ED9DC4C2B75DF2AB9F6F804114 /* HoshiTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HoshiTextField.swift; path = TextFieldEffects/TextFieldEffects/HoshiTextField.swift; sourceTree = "<group>"; };
-		C3021A8E49D8A92CDC87CBC568DC445A /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Headers/Public/FIRInstanceID.h; sourceTree = "<group>"; };
+		C492D9D47E5F528163EA6042A1841B01 /* HoshiTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HoshiTextField.swift; path = TextFieldEffects/TextFieldEffects/HoshiTextField.swift; sourceTree = "<group>"; };
+		C5590DD301D849DA15D4C619B6651CFE /* ALView+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ALView+PureLayout.h"; path = "PureLayout/PureLayout/ALView+PureLayout.h"; sourceTree = "<group>"; };
 		C817B30977AC629A1C1C421F710F9DAC /* Pods-PhoneAFriend-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PhoneAFriend-acknowledgements.plist"; sourceTree = "<group>"; };
-		CBAF6AA3EEE65584CBF3B19600CAB611 /* SwiftyButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyButton.xcconfig; sourceTree = "<group>"; };
-		CBEB2903290A906C29FF4D3402AA357E /* PureLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-umbrella.h"; sourceTree = "<group>"; };
-		CBF7100599537AF64F990FF971DAAF84 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBC1477F37398AF9BFC1B4661E5F55F8 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
+		CD4EB46D780D8B369647F55D48451E8B /* IsaoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IsaoTextField.swift; path = TextFieldEffects/TextFieldEffects/IsaoTextField.swift; sourceTree = "<group>"; };
 		CFBCA6113D587BF40F610B5AD2215ACD /* Pods-PhoneAFriendTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PhoneAFriendTests-umbrella.h"; sourceTree = "<group>"; };
-		D0AA04CA7BFD333E9125478030466CBF /* SwiftyButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyButton.swift; path = SwiftyButton/SwiftyButton.swift; sourceTree = "<group>"; };
-		D37A2C58DB31CE8FB9A2D29BAB300643 /* TextFieldEffects.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TextFieldEffects.xcconfig; sourceTree = "<group>"; };
+		D36D1A8BAD0E18F8335837598CF1B343 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
+		D386B2D5E844D965BE97DB5EBBF57D6B /* PureLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-prefix.pch"; sourceTree = "<group>"; };
 		D9D21E06A60BDF06A72E49FC164C6B4E /* Pods-PhoneAFriend.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PhoneAFriend.release.xcconfig"; sourceTree = "<group>"; };
-		D9D62B61E7FA432D071AE1C374C047D3 /* TextFieldEffects-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-prefix.pch"; sourceTree = "<group>"; };
-		DFE8F4ED27C9CC83D58AA161C006D061 /* NSArray+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+PureLayout.h"; path = "PureLayout/PureLayout/NSArray+PureLayout.h"; sourceTree = "<group>"; };
+		D9E36EEF9B7B0231D9261C82FCB15203 /* PureLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-umbrella.h"; sourceTree = "<group>"; };
+		DFB70794E8FE3DEA58A2462304A8C075 /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleNetworkingUtilities.framework; path = Frameworks/GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
 		E07755CBE017F1562F6213D61FB81CC6 /* Pods-PhoneAFriend.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PhoneAFriend.debug.xcconfig"; sourceTree = "<group>"; };
-		E788429BC26C98F655A7C0EFD5436DF9 /* SwiftyButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyButton-dummy.m"; sourceTree = "<group>"; };
+		E2D2129F7E0760C05D1202DE851EAF5F /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+PureLayout.m"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
+		E345C93F42D1E99E36FA2DDBDD499893 /* AkiraTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AkiraTextField.swift; path = TextFieldEffects/TextFieldEffects/AkiraTextField.swift; sourceTree = "<group>"; };
+		E6EF870F67EF00FCC3FEFE768D4333EF /* PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayout.h; path = PureLayout/PureLayout/PureLayout.h; sourceTree = "<group>"; };
 		E8C499ACEB6CF6AB8C2B0A8C30A8C8C3 /* Pods_PhoneAFriend.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhoneAFriend.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E973F7C594586CADAB9993B53584549F /* TextFieldEffects.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TextFieldEffects.xcconfig; sourceTree = "<group>"; };
 		E9D75D8ED394019C68C5E724A761F29B /* Pods-PhoneAFriendTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PhoneAFriendTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		EC35E35D81B245E537A0329EAC9C2E17 /* PureLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PureLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EFDBB75193A023FA92FFAA2B10CD6D49 /* PureLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = PureLayout.modulemap; sourceTree = "<group>"; };
+		F36B32C7C597E8ECF01FA72795F69C57 /* PureLayout+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PureLayout+Internal.h"; path = "PureLayout/PureLayout/PureLayout+Internal.h"; sourceTree = "<group>"; };
+		F688671BD67F0A51DCBB2E4138A221BA /* YoshikoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YoshikoTextField.swift; path = TextFieldEffects/TextFieldEffects/YoshikoTextField.swift; sourceTree = "<group>"; };
 		F6DE3CBC1A0481373AA4A51C545B8A1B /* Pods-PhoneAFriendTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PhoneAFriendTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		F73E0034FC67508FC72FE2CD679C9A3F /* NSLayoutConstraint+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+PureLayout.h"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.h"; sourceTree = "<group>"; };
+		F8AE6DB28AB9A9FD38BC228CE0876F47 /* JiroTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JiroTextField.swift; path = TextFieldEffects/TextFieldEffects/JiroTextField.swift; sourceTree = "<group>"; };
 		F9CD1538FCEAC1DD8BFC1F76B8A69DC3 /* Pods-PhoneAFriendUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PhoneAFriendUITests-umbrella.h"; sourceTree = "<group>"; };
 		FBDA77397CD5900228B899364D4FDB72 /* SwiftyButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF3D6A8C87DD0FACB3D2686006EFDC3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC932A3D4851C4F103F98DE3D4FF1967 /* MinoruTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MinoruTextField.swift; path = TextFieldEffects/TextFieldEffects/MinoruTextField.swift; sourceTree = "<group>"; };
+		FD454CBE7E787043AEA5986FFEA22436 /* TextFieldEffects-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +230,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01F8BEDF24F3A04E3A5FD7A406125F41 /* CustomContent */ = {
+			isa = PBXGroup;
+			children = (
+				81695761AEFC9C4A15FBC51EF7103B81 /* SwiftyCustomContentButton.swift */,
+			);
+			name = CustomContent;
+			sourceTree = "<group>";
+		};
+		031D3F69640FF39B40444F38DFDE71C6 /* GoogleInterchangeUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				B5F1282CF6FA991E1A43FDA473DD844D /* Frameworks */,
+			);
+			path = GoogleInterchangeUtilities;
+			sourceTree = "<group>";
+		};
 		03DD22C6017D7CFCF076802066C72DA7 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,50 +256,76 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		0A32C59C7399B75DC7E3291E7E23FB65 /* Frameworks */ = {
+		0DC38C3D5E1B9EA32846F899D27E1476 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BC5E6B7AA0AEEDB9302F24101D58ADF6 /* GoogleParsingUtilities.framework */,
+				D36D1A8BAD0E18F8335837598CF1B343 /* GoogleUtilities.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		0A74397DAE2B30C5DB16FFC3BF7F890E /* Support Files */ = {
+		0F0BC7EFE3D76379E76339267F0D700B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				1E8AD2BDDD0C44D4B272533F0130447F /* Info.plist */,
-				515D8FB293597BA524A171C2631FA21A /* SwiftyButton.modulemap */,
-				CBAF6AA3EEE65584CBF3B19600CAB611 /* SwiftyButton.xcconfig */,
-				E788429BC26C98F655A7C0EFD5436DF9 /* SwiftyButton-dummy.m */,
-				B218E0CB273A3A1935C149E178260430 /* SwiftyButton-prefix.pch */,
-				ABDF2F5F28319D14CC25AAA2ED2F2038 /* SwiftyButton-umbrella.h */,
+				955C281071D422B5FC377E1259B39B88 /* Info.plist */,
+				9859B24FCA4589AD248F3167B4F9599D /* TextFieldEffects.modulemap */,
+				E973F7C594586CADAB9993B53584549F /* TextFieldEffects.xcconfig */,
+				6E5A06BDF1597F5204334262CFB239B9 /* TextFieldEffects-dummy.m */,
+				40A666FBA875E642518F1383D8B5AAC2 /* TextFieldEffects-prefix.pch */,
+				FD454CBE7E787043AEA5986FFEA22436 /* TextFieldEffects-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/SwiftyButton";
+			path = "../Target Support Files/TextFieldEffects";
 			sourceTree = "<group>";
 		};
-		1519C195D54700FB444475A55681DC45 /* Analytics */ = {
+		1291B9AE3D8461CA02287C97DDA7D9FC /* GoogleNetworkingUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				4300559AEDD5627E4095A7557102DFE6 /* Firebase.h */,
+				BC537ABB4CBB5D0B2E57B40F4DB96CFD /* Frameworks */,
 			);
-			name = Analytics;
+			path = GoogleNetworkingUtilities;
 			sourceTree = "<group>";
 		};
-		2E8A13586C8940644741098E6AE002AD /* Frameworks */ = {
+		222CA0D3E949AF55A1275EE654C2C426 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A1810E249CF08851267279D605633385 /* GoogleUtilities.framework */,
+				7E4511535B426A9B332FE01C48ED51C9 /* Info.plist */,
+				A7AD50714C48DCB69E8935F14A7EA4EC /* PureLayout.modulemap */,
+				497E4AA36407400471EF95D53F3B49D4 /* PureLayout.xcconfig */,
+				A596E8A89433F5608E88AA371D46AF55 /* PureLayout-dummy.m */,
+				D386B2D5E844D965BE97DB5EBBF57D6B /* PureLayout-prefix.pch */,
+				D9E36EEF9B7B0231D9261C82FCB15203 /* PureLayout-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PureLayout";
+			sourceTree = "<group>";
+		};
+		2EEF454B28FA03A9F208A44FAE78C4BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75BCD4E0F6739F240365CEBEEA42B897 /* GoogleSymbolUtilities.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3F26854F3B3C8DB67A18C583CD85F3CE /* CustomContent */ = {
+		2FA101A1F5116C4757E1B64EC0CFDCC2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4F8824DABBB687B26FC4A44C8E40E237 /* SwiftyCustomContentButton.swift */,
+				5B3142EDFD1E214E237B867489C75E89 /* Firebase */,
+				CE60EFBF8894E9382FAF417397C0D46F /* FirebaseAnalytics */,
+				F074D29D22BFFC12FE3769DE7E805351 /* FirebaseAuth */,
+				A442CE4EAD0FB4EF75478CB1060D39B1 /* FirebaseDatabase */,
+				FA6980349C7835A05B41B0BB584A14ED /* FirebaseInstanceID */,
+				031D3F69640FF39B40444F38DFDE71C6 /* GoogleInterchangeUtilities */,
+				1291B9AE3D8461CA02287C97DDA7D9FC /* GoogleNetworkingUtilities */,
+				AA33727597DB2A7E9A2951CC6B704895 /* GoogleParsingUtilities */,
+				95FF973EBC32FECC7C6D9D6E2DD3BDBA /* GoogleSymbolUtilities */,
+				93E09B0CFE67BBD579044E59F068A7B6 /* GoogleUtilities */,
+				8073CB1A39D62ABD7B3DC8ED32A023B1 /* PureLayout */,
+				ADD752B0777F3688D0AD7276F26021F2 /* SwiftyButton */,
+				E3B516E49A248ED6FFA4F24E0030E16A /* TextFieldEffects */,
 			);
-			name = CustomContent;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		427618D8431E33F4E119B24A0F32B0FA /* iOS */ = {
@@ -294,20 +337,20 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		5DBCD60E888221E7A020B988F44CF36A /* Firebase */ = {
+		4C0E350BF1A99526724A5BB8C66C6B6C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1519C195D54700FB444475A55681DC45 /* Analytics */,
-			);
-			path = Firebase;
-			sourceTree = "<group>";
-		};
-		605A0BC1485254A2621C2ED7143CE8FB /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				776F56455FD3CE26C0797C9A94787834 /* FirebaseAnalytics.framework */,
+				3F7718BCCD07B5062B17CBABCDDB6E5B /* FirebaseAuth.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5B3142EDFD1E214E237B867489C75E89 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				6AF3ED3BC577DC4F6FE950EB7389EABA /* Analytics */,
+			);
+			path = Firebase;
 			sourceTree = "<group>";
 		};
 		621C5BFB9934C13C0146F6DB856624CB /* Pods-PhoneAFriendTests */ = {
@@ -328,26 +371,34 @@
 			path = "Target Support Files/Pods-PhoneAFriendTests";
 			sourceTree = "<group>";
 		};
-		6522EF03C90BDA5F56BE42D141F30525 /* Frameworks */ = {
+		661FA3D75E69C235FD0612430D22AC14 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3D4AFC288FF95A2318C4C02B85C034B9 /* GoogleNetworkingUtilities.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		70D9266EF34C9BBE367847A001902E07 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				CBF7100599537AF64F990FF971DAAF84 /* Info.plist */,
-				5CD7FA40D44866DF44F39D4429CD1066 /* TextFieldEffects.modulemap */,
-				D37A2C58DB31CE8FB9A2D29BAB300643 /* TextFieldEffects.xcconfig */,
-				57C22A4C51B45D47D3299ADAC34EA25C /* TextFieldEffects-dummy.m */,
-				D9D62B61E7FA432D071AE1C374C047D3 /* TextFieldEffects-prefix.pch */,
-				294A5F2735F7D0D4D5267FDE589DDA1B /* TextFieldEffects-umbrella.h */,
+				1B0B41A41FD2440DC7173B5E8D443A2B /* Info.plist */,
+				20223BAB1A9BA636F58622BBCC3121E9 /* SwiftyButton.modulemap */,
+				806BFC1A4B31387BB2D4B8C1DAE667B1 /* SwiftyButton.xcconfig */,
+				63EF6599402C09D4A6BFC1874EF99C2A /* SwiftyButton-dummy.m */,
+				2043E67136C8FEF80B3CC99437210E21 /* SwiftyButton-prefix.pch */,
+				B40833CDA9DE80FD26E8A62C4D161673 /* SwiftyButton-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/TextFieldEffects";
+			path = "../Target Support Files/SwiftyButton";
+			sourceTree = "<group>";
+		};
+		6AF3ED3BC577DC4F6FE950EB7389EABA /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				67BC0794012198B64911AA0E013E4D66 /* Firebase.h */,
+			);
+			name = Analytics;
+			sourceTree = "<group>";
+		};
+		74B434E0C3026ACBC02E201F7B2722A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABBB8BC3171A6E16ED3E3AE9A1320942 /* GoogleParsingUtilities.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		7B8692115B83CF0603FBB14AC029C28F /* Frameworks */ = {
@@ -364,27 +415,43 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				7B8692115B83CF0603FBB14AC029C28F /* Frameworks */,
-				D7F5A81D42E2965DC69A134B6916094F /* Pods */,
+				2FA101A1F5116C4757E1B64EC0CFDCC2 /* Pods */,
 				E086CC7EF7323A987BB7B79A128B829E /* Products */,
 				03DD22C6017D7CFCF076802066C72DA7 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8A85F985C4BC6725A7C2378285309421 /* FirebaseAuth */ = {
+		8073CB1A39D62ABD7B3DC8ED32A023B1 /* PureLayout */ = {
 			isa = PBXGroup;
 			children = (
-				FF19B31042349B1F2C728908020E2B5C /* Frameworks */,
+				C5590DD301D849DA15D4C619B6651CFE /* ALView+PureLayout.h */,
+				274926157AE58C5E5870D539BCCEE5DB /* ALView+PureLayout.m */,
+				BF772BB751F29F750EE10495132B5670 /* NSArray+PureLayout.h */,
+				A42E9CC38B46E7A69F42DC923F511E09 /* NSArray+PureLayout.m */,
+				5F6C07567D57856EAFD7F9F4AA195196 /* NSLayoutConstraint+PureLayout.h */,
+				E2D2129F7E0760C05D1202DE851EAF5F /* NSLayoutConstraint+PureLayout.m */,
+				E6EF870F67EF00FCC3FEFE768D4333EF /* PureLayout.h */,
+				F36B32C7C597E8ECF01FA72795F69C57 /* PureLayout+Internal.h */,
+				B85D0BFB47600E20C2F5A17DC07CDFF3 /* PureLayoutDefines.h */,
+				222CA0D3E949AF55A1275EE654C2C426 /* Support Files */,
 			);
-			path = FirebaseAuth;
+			path = PureLayout;
 			sourceTree = "<group>";
 		};
-		8C643F6F80264167312B3AB10111DF57 /* FirebaseInstanceID */ = {
+		93E09B0CFE67BBD579044E59F068A7B6 /* GoogleUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				C3021A8E49D8A92CDC87CBC568DC445A /* FIRInstanceID.h */,
-				F7343B1F77A8E53DF822C76B47D73461 /* Frameworks */,
+				0DC38C3D5E1B9EA32846F899D27E1476 /* Frameworks */,
 			);
-			path = FirebaseInstanceID;
+			path = GoogleUtilities;
+			sourceTree = "<group>";
+		};
+		95FF973EBC32FECC7C6D9D6E2DD3BDBA /* GoogleSymbolUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				2EEF454B28FA03A9F208A44FAE78C4BB /* Frameworks */,
+			);
+			path = GoogleSymbolUtilities;
 			sourceTree = "<group>";
 		};
 		97078F738877E1E5BE3AA9641973B9A8 /* Pods-PhoneAFriend */ = {
@@ -405,57 +472,71 @@
 			path = "Target Support Files/Pods-PhoneAFriend";
 			sourceTree = "<group>";
 		};
-		9914415CF3E119C0C1EFF49C506AFAB5 /* GoogleSymbolUtilities */ = {
+		A442CE4EAD0FB4EF75478CB1060D39B1 /* FirebaseDatabase */ = {
 			isa = PBXGroup;
 			children = (
-				C1E1FB54463A48C3C01652F9F1FBD334 /* Frameworks */,
+				AE8B2004EE1F19439A216BA1977FFE65 /* Frameworks */,
 			);
-			path = GoogleSymbolUtilities;
+			path = FirebaseDatabase;
 			sourceTree = "<group>";
 		};
-		A312FD0D1D7C4516133F4FEB24013CED /* GoogleParsingUtilities */ = {
+		A5B96521F76A2F3916555BB356392F2B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0A32C59C7399B75DC7E3291E7E23FB65 /* Frameworks */,
+				47C68C1DDEDFE0551B4697F46BC101C0 /* FirebaseAnalytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA33727597DB2A7E9A2951CC6B704895 /* GoogleParsingUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				74B434E0C3026ACBC02E201F7B2722A4 /* Frameworks */,
 			);
 			path = GoogleParsingUtilities;
 			sourceTree = "<group>";
 		};
-		A4A02FA97F2FAD5A2321C571B9A92B39 /* TextFieldEffects */ = {
+		AA9EA3D1148CAC9A80D24B79CD10A618 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9D0EA5F9E1EF9EAF975B3F85C8B8D86E /* AkiraTextField.swift */,
-				C2C441ED9DC4C2B75DF2AB9F6F804114 /* HoshiTextField.swift */,
-				4D72337F03379B46981496E1B5744B32 /* IsaoTextField.swift */,
-				541C142B0B19CA3B3AA5B485A498BF57 /* JiroTextField.swift */,
-				066302CEFA13436A1B1EE299632B05F5 /* KaedeTextField.swift */,
-				44F9D280112FF40DA234BA305004B2DF /* MadokaTextField.swift */,
-				48275DD48AE0E6F01144450D3D0EE8AE /* MinoruTextField.swift */,
-				9FFFF2DC2611FBEE4C4F25E8B675AF8C /* TextFieldsEffects.swift */,
-				0992153E652A7D762753B925586EAD8A /* YokoTextField.swift */,
-				23887C72AF25AFF36CD745749C7E694A /* YoshikoTextField.swift */,
-				70D9266EF34C9BBE367847A001902E07 /* Support Files */,
+				437713B77228EA0B18BD01A860D22D09 /* FirebaseInstanceID.framework */,
 			);
-			path = TextFieldEffects;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A9B1F98F190C3A87EE366DC2FC602E4B /* SwiftyButton */ = {
+		ADD752B0777F3688D0AD7276F26021F2 /* SwiftyButton */ = {
 			isa = PBXGroup;
 			children = (
-				D0AA04CA7BFD333E9125478030466CBF /* SwiftyButton.swift */,
-				48B11016BE8E89E874BE1B0A108CD834 /* SwiftyButton+ResizableImage.swift */,
-				3F26854F3B3C8DB67A18C583CD85F3CE /* CustomContent */,
-				0A74397DAE2B30C5DB16FFC3BF7F890E /* Support Files */,
+				2DB34B36B21B305A246D8C99E2A5FA38 /* SwiftyButton.swift */,
+				5379D475179E1D0BBDCFB4DA4812D1F2 /* SwiftyButton+ResizableImage.swift */,
+				01F8BEDF24F3A04E3A5FD7A406125F41 /* CustomContent */,
+				661FA3D75E69C235FD0612430D22AC14 /* Support Files */,
 			);
 			path = SwiftyButton;
 			sourceTree = "<group>";
 		};
-		B06DF45693D8E84515201176EDA23AD4 /* FirebaseAnalytics */ = {
+		AE8B2004EE1F19439A216BA1977FFE65 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				605A0BC1485254A2621C2ED7143CE8FB /* Frameworks */,
+				CBC1477F37398AF9BFC1B4661E5F55F8 /* FirebaseDatabase.framework */,
 			);
-			path = FirebaseAnalytics;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5F1282CF6FA991E1A43FDA473DD844D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A19CAFB467B75753182EE6505FF08AD1 /* GoogleInterchangeUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC537ABB4CBB5D0B2E57B40F4DB96CFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DFB70794E8FE3DEA58A2462304A8C075 /* GoogleNetworkingUtilities.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		BD1EAD347F4A16C6CBCED578CEB4978B /* Pods-PhoneAFriendUITests */ = {
@@ -476,78 +557,12 @@
 			path = "Target Support Files/Pods-PhoneAFriendUITests";
 			sourceTree = "<group>";
 		};
-		BD62CBA10EE854B05BBD85B3CFB0E80B /* Support Files */ = {
+		CE60EFBF8894E9382FAF417397C0D46F /* FirebaseAnalytics */ = {
 			isa = PBXGroup;
 			children = (
-				0313D5E96E9C6514E8330C4DF17161DD /* Info.plist */,
-				EFDBB75193A023FA92FFAA2B10CD6D49 /* PureLayout.modulemap */,
-				0317B708401F072454B5FE599F751EB9 /* PureLayout.xcconfig */,
-				BDEEB13FDC8DF358BE3F0EBDFD5933F6 /* PureLayout-dummy.m */,
-				AD563BCAD6DF12A33F313317E544EF4E /* PureLayout-prefix.pch */,
-				CBEB2903290A906C29FF4D3402AA357E /* PureLayout-umbrella.h */,
+				A5B96521F76A2F3916555BB356392F2B /* Frameworks */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/PureLayout";
-			sourceTree = "<group>";
-		};
-		BEB9284DB5865931BAE8ABB6DC450294 /* PureLayout */ = {
-			isa = PBXGroup;
-			children = (
-				091E671BFFC31F626A326D05E6472EFA /* ALView+PureLayout.h */,
-				C097D5465444FE83B1BDB0A675541FB2 /* ALView+PureLayout.m */,
-				DFE8F4ED27C9CC83D58AA161C006D061 /* NSArray+PureLayout.h */,
-				3BF240050524A40BCB80F68882129F73 /* NSArray+PureLayout.m */,
-				F73E0034FC67508FC72FE2CD679C9A3F /* NSLayoutConstraint+PureLayout.h */,
-				1F3B8C053B9E480A760E8491EC82293F /* NSLayoutConstraint+PureLayout.m */,
-				9DA1E9C01DBE7EA0979FF265C6BD0EE8 /* PureLayout.h */,
-				90AF5D390F327AE662CE6DE513FF3337 /* PureLayout+Internal.h */,
-				A5DEAE4158D7BFA3907EC14C9568C382 /* PureLayoutDefines.h */,
-				BD62CBA10EE854B05BBD85B3CFB0E80B /* Support Files */,
-			);
-			path = PureLayout;
-			sourceTree = "<group>";
-		};
-		C1E1FB54463A48C3C01652F9F1FBD334 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				37C32302D92C6EEDF10172A17224D2F1 /* GoogleSymbolUtilities.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D7F5A81D42E2965DC69A134B6916094F /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				5DBCD60E888221E7A020B988F44CF36A /* Firebase */,
-				B06DF45693D8E84515201176EDA23AD4 /* FirebaseAnalytics */,
-				8A85F985C4BC6725A7C2378285309421 /* FirebaseAuth */,
-				8C643F6F80264167312B3AB10111DF57 /* FirebaseInstanceID */,
-				DACFBD3C3EC7DC69B30FBFB7BB167E58 /* GoogleInterchangeUtilities */,
-				DE5AF46D6274DA1C7E499AAD88674DC3 /* GoogleNetworkingUtilities */,
-				A312FD0D1D7C4516133F4FEB24013CED /* GoogleParsingUtilities */,
-				9914415CF3E119C0C1EFF49C506AFAB5 /* GoogleSymbolUtilities */,
-				E60FA4EEEB0E991FC95E1D9D699D3893 /* GoogleUtilities */,
-				BEB9284DB5865931BAE8ABB6DC450294 /* PureLayout */,
-				A9B1F98F190C3A87EE366DC2FC602E4B /* SwiftyButton */,
-				A4A02FA97F2FAD5A2321C571B9A92B39 /* TextFieldEffects */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		DACFBD3C3EC7DC69B30FBFB7BB167E58 /* GoogleInterchangeUtilities */ = {
-			isa = PBXGroup;
-			children = (
-				F7C34498A8437CAC18E379F0F06B1ECE /* Frameworks */,
-			);
-			path = GoogleInterchangeUtilities;
-			sourceTree = "<group>";
-		};
-		DE5AF46D6274DA1C7E499AAD88674DC3 /* GoogleNetworkingUtilities */ = {
-			isa = PBXGroup;
-			children = (
-				6522EF03C90BDA5F56BE42D141F30525 /* Frameworks */,
-			);
-			path = GoogleNetworkingUtilities;
+			path = FirebaseAnalytics;
 			sourceTree = "<group>";
 		};
 		E086CC7EF7323A987BB7B79A128B829E /* Products */ = {
@@ -563,36 +578,39 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E60FA4EEEB0E991FC95E1D9D699D3893 /* GoogleUtilities */ = {
+		E3B516E49A248ED6FFA4F24E0030E16A /* TextFieldEffects */ = {
 			isa = PBXGroup;
 			children = (
-				2E8A13586C8940644741098E6AE002AD /* Frameworks */,
+				E345C93F42D1E99E36FA2DDBDD499893 /* AkiraTextField.swift */,
+				C492D9D47E5F528163EA6042A1841B01 /* HoshiTextField.swift */,
+				CD4EB46D780D8B369647F55D48451E8B /* IsaoTextField.swift */,
+				F8AE6DB28AB9A9FD38BC228CE0876F47 /* JiroTextField.swift */,
+				8840085CAF3629FBC5F76A7C7E8EC77A /* KaedeTextField.swift */,
+				0015D68ABAF7F25E44BEDC0488C69726 /* MadokaTextField.swift */,
+				FC932A3D4851C4F103F98DE3D4FF1967 /* MinoruTextField.swift */,
+				3B96C2AAA6622DBE2BFC294A64D50143 /* TextFieldsEffects.swift */,
+				31D634193A04B2DDB09275AB17CAF11C /* YokoTextField.swift */,
+				F688671BD67F0A51DCBB2E4138A221BA /* YoshikoTextField.swift */,
+				0F0BC7EFE3D76379E76339267F0D700B /* Support Files */,
 			);
-			path = GoogleUtilities;
+			path = TextFieldEffects;
 			sourceTree = "<group>";
 		};
-		F7343B1F77A8E53DF822C76B47D73461 /* Frameworks */ = {
+		F074D29D22BFFC12FE3769DE7E805351 /* FirebaseAuth */ = {
 			isa = PBXGroup;
 			children = (
-				76664F73484CD78AEDA4EC92D27B5E26 /* FirebaseInstanceID.framework */,
+				4C0E350BF1A99526724A5BB8C66C6B6C /* Frameworks */,
 			);
-			name = Frameworks;
+			path = FirebaseAuth;
 			sourceTree = "<group>";
 		};
-		F7C34498A8437CAC18E379F0F06B1ECE /* Frameworks */ = {
+		FA6980349C7835A05B41B0BB584A14ED /* FirebaseInstanceID */ = {
 			isa = PBXGroup;
 			children = (
-				0B37EC07D9BF91E11D36E5661FA53CAC /* GoogleInterchangeUtilities.framework */,
+				496281FF6B775D0A3BA160D47EF09B2D /* FIRInstanceID.h */,
+				AA9EA3D1148CAC9A80D24B79CD10A618 /* Frameworks */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		FF19B31042349B1F2C728908020E2B5C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5BAE0431EA28AF0E8B9DED17754A609A /* FirebaseAuth.framework */,
-			);
-			name = Frameworks;
+			path = FirebaseInstanceID;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -889,7 +907,7 @@
 /* Begin XCBuildConfiguration section */
 		0D0FD16C1E0971E99324A9A65C6672A5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0317B708401F072454B5FE599F751EB9 /* PureLayout.xcconfig */;
+			baseConfigurationReference = 497E4AA36407400471EF95D53F3B49D4 /* PureLayout.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -918,7 +936,7 @@
 		};
 		10229FED33805F7945784915FFDE702D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D37A2C58DB31CE8FB9A2D29BAB300643 /* TextFieldEffects.xcconfig */;
+			baseConfigurationReference = E973F7C594586CADAB9993B53584549F /* TextFieldEffects.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -950,7 +968,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E07755CBE017F1562F6213D61FB81CC6 /* Pods-PhoneAFriend.debug.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -1021,7 +1038,7 @@
 		};
 		411D03D6754744C5613A713E6AA747E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CBAF6AA3EEE65584CBF3B19600CAB611 /* SwiftyButton.xcconfig */;
+			baseConfigurationReference = 806BFC1A4B31387BB2D4B8C1DAE667B1 /* SwiftyButton.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1126,7 +1143,7 @@
 		};
 		872E517E905A8335A698E9288E8A90B0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CBAF6AA3EEE65584CBF3B19600CAB611 /* SwiftyButton.xcconfig */;
+			baseConfigurationReference = 806BFC1A4B31387BB2D4B8C1DAE667B1 /* SwiftyButton.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1155,7 +1172,7 @@
 		};
 		A3FCE7511D824DC9D6B54B92DEC97C65 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D37A2C58DB31CE8FB9A2D29BAB300643 /* TextFieldEffects.xcconfig */;
+			baseConfigurationReference = E973F7C594586CADAB9993B53584549F /* TextFieldEffects.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1219,7 +1236,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D9D21E06A60BDF06A72E49FC164C6B4E /* Pods-PhoneAFriend.release.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -1251,7 +1267,7 @@
 		};
 		C6D32EC9DA11699BD5DCA19AC4A6CABF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0317B708401F072454B5FE599F751EB9 /* PureLayout.xcconfig */;
+			baseConfigurationReference = 497E4AA36407400471EF95D53F3B49D4 /* PureLayout.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
