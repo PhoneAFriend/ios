@@ -16,16 +16,26 @@
 		AF0DD9C61D77792F009B1F38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF0DD9C41D77792F009B1F38 /* LaunchScreen.storyboard */; };
 		AF0DD9D11D77792F009B1F38 /* PhoneAFriendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0DD9D01D77792F009B1F38 /* PhoneAFriendTests.swift */; };
 		AF0DD9DC1D77792F009B1F38 /* PhoneAFriendUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0DD9DB1D77792F009B1F38 /* PhoneAFriendUITests.swift */; };
-		AF2FB6851D8201BD003EB3AA /* DataLoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2FB6841D8201BD003EB3AA /* DataLoadViewController.swift */; };
+		AF2F5AC71DD3E5940035DEBD /* UserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F5AC61DD3E5940035DEBD /* UserTableViewController.swift */; };
+		AF2F5AC91DD3E6900035DEBD /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F5AC81DD3E6900035DEBD /* UserTableViewCell.swift */; };
 		AF2FB6871D820266003EB3AA /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2FB6861D820266003EB3AA /* constants.swift */; };
 		AF2FB6891D82034E003EB3AA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2FB6881D82034E003EB3AA /* LoginViewController.swift */; };
 		AF2FB68B1D820387003EB3AA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2FB68A1D820387003EB3AA /* SignUpViewController.swift */; };
 		AF2FB68D1D820849003EB3AA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF2FB68C1D820849003EB3AA /* GoogleService-Info.plist */; };
 		AF2FB68F1D820B0D003EB3AA /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2FB68E1D820B0D003EB3AA /* LandingPageViewController.swift */; };
-		AF2FB6931D826BB7003EB3AA /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2FB6921D826BB7003EB3AA /* CurrentUser.swift */; };
+		AF2FB6931D826BB7003EB3AA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2FB6921D826BB7003EB3AA /* User.swift */; };
 		AF2FB6951D826DA4003EB3AA /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2FB6941D826DA4003EB3AA /* HomePageViewController.swift */; };
+		AF446F691D9310DA00812996 /* SearchQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF446F681D9310DA00812996 /* SearchQuestionViewController.swift */; };
 		AF62D3B91D8712A200C59234 /* CreateAQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF62D3B81D8712A200C59234 /* CreateAQuestionViewController.swift */; };
 		AF6808CA1D8C5D1900D6D5C1 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6808C91D8C5D1900D6D5C1 /* Post.swift */; };
+		AF960C0A1DDC243700F1DEB0 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF960C091DDC243700F1DEB0 /* Contact.swift */; };
+		AF960C0C1DDC3D2A00F1DEB0 /* ContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF960C0B1DDC3D2A00F1DEB0 /* ContactTableViewController.swift */; };
+		AF960C0E1DDC3E2300F1DEB0 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF960C0D1DDC3E2300F1DEB0 /* ContactTableViewCell.swift */; };
+		AFD46E5D1DBEF864009CE026 /* HomeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD46E5C1DBEF864009CE026 /* HomeNavigationController.swift */; };
+		AFD46E5F1DBEFAC1009CE026 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD46E5E1DBEFAC1009CE026 /* TabBarViewController.swift */; };
+		AFFC0AD31DC5C42400FA1A72 /* UserLookupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFC0AD21DC5C42400FA1A72 /* UserLookupViewController.swift */; };
+		AFFC0AD51DC834EC00FA1A72 /* PostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFC0AD41DC834EC00FA1A72 /* PostTableViewController.swift */; };
+		AFFC0AD81DC83B4D00FA1A72 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFC0AD71DC83B4D00FA1A72 /* PostTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,16 +75,27 @@
 		AF0DD9D71D77792F009B1F38 /* PhoneAFriendUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhoneAFriendUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF0DD9DB1D77792F009B1F38 /* PhoneAFriendUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneAFriendUITests.swift; sourceTree = "<group>"; };
 		AF0DD9DD1D77792F009B1F38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AF2FB6841D8201BD003EB3AA /* DataLoadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataLoadViewController.swift; sourceTree = "<group>"; };
+		AF2F5AC61DD3E5940035DEBD /* UserTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewController.swift; sourceTree = "<group>"; };
+		AF2F5AC81DD3E6900035DEBD /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		AF2FB6861D820266003EB3AA /* constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 		AF2FB6881D82034E003EB3AA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../LoginViewController.swift; sourceTree = "<group>"; };
 		AF2FB68A1D820387003EB3AA /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = ../SignUpViewController.swift; sourceTree = "<group>"; };
 		AF2FB68C1D820849003EB3AA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AF2FB68E1D820B0D003EB3AA /* LandingPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
-		AF2FB6921D826BB7003EB3AA /* CurrentUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentUser.swift; sourceTree = "<group>"; };
+		AF2FB6921D826BB7003EB3AA /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		AF2FB6941D826DA4003EB3AA /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		AF446F681D9310DA00812996 /* SearchQuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchQuestionViewController.swift; sourceTree = "<group>"; };
 		AF62D3B81D8712A200C59234 /* CreateAQuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAQuestionViewController.swift; sourceTree = "<group>"; };
 		AF6808C91D8C5D1900D6D5C1 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		AF960C091DDC243700F1DEB0 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		AF960C0B1DDC3D2A00F1DEB0 /* ContactTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewController.swift; sourceTree = "<group>"; };
+		AF960C0D1DDC3E2300F1DEB0 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		AFD46E5C1DBEF864009CE026 /* HomeNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeNavigationController.swift; sourceTree = "<group>"; };
+		AFD46E5E1DBEFAC1009CE026 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		AFFC0AD21DC5C42400FA1A72 /* UserLookupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLookupViewController.swift; sourceTree = "<group>"; };
+		AFFC0AD41DC834EC00FA1A72 /* PostTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewController.swift; sourceTree = "<group>"; };
+		AFFC0AD61DC8367B00FA1A72 /* Bridging-HeaderFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-HeaderFile.h"; sourceTree = "<group>"; };
+		AFFC0AD71DC83B4D00FA1A72 /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		C928DFEED22FBBEE1A0E6E9A /* Pods-PhoneAFriendUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoneAFriendUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhoneAFriendUITests/Pods-PhoneAFriendUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FDB211F8A55A4DA18EA3B419 /* Pods-PhoneAFriend.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoneAFriend.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhoneAFriend/Pods-PhoneAFriend.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -132,21 +153,10 @@
 		AF0DD9BA1D77792F009B1F38 /* PhoneAFriend */ = {
 			isa = PBXGroup;
 			children = (
-				AF2FB68A1D820387003EB3AA /* SignUpViewController.swift */,
-				AF2FB6881D82034E003EB3AA /* LoginViewController.swift */,
-				AF0DD9BB1D77792F009B1F38 /* AppDelegate.swift */,
-				AF2FB6861D820266003EB3AA /* constants.swift */,
-				AF62D3B81D8712A200C59234 /* CreateAQuestionViewController.swift */,
-				AF2FB6841D8201BD003EB3AA /* DataLoadViewController.swift */,
-				AF0DD9BF1D77792F009B1F38 /* Main.storyboard */,
-				AF2FB68E1D820B0D003EB3AA /* LandingPageViewController.swift */,
-				AF0DD9C21D77792F009B1F38 /* Assets.xcassets */,
-				AF0DD9C41D77792F009B1F38 /* LaunchScreen.storyboard */,
-				AF2FB68C1D820849003EB3AA /* GoogleService-Info.plist */,
-				AF0DD9C71D77792F009B1F38 /* Info.plist */,
-				AF2FB6921D826BB7003EB3AA /* CurrentUser.swift */,
-				AF6808C91D8C5D1900D6D5C1 /* Post.swift */,
-				AF2FB6941D826DA4003EB3AA /* HomePageViewController.swift */,
+				AFA54CC21DD4294200B81165 /* Models */,
+				AFA54CC51DD4296B00B81165 /* Views */,
+				AFA54CC61DD4297F00B81165 /* Controllers */,
+				AFA54CC71DD4299100B81165 /* Misc */,
 			);
 			path = PhoneAFriend;
 			sourceTree = "<group>";
@@ -167,6 +177,60 @@
 				AF0DD9DD1D77792F009B1F38 /* Info.plist */,
 			);
 			path = PhoneAFriendUITests;
+			sourceTree = "<group>";
+		};
+		AFA54CC21DD4294200B81165 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AF2FB6921D826BB7003EB3AA /* User.swift */,
+				AF6808C91D8C5D1900D6D5C1 /* Post.swift */,
+				AF960C091DDC243700F1DEB0 /* Contact.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		AFA54CC51DD4296B00B81165 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AF0DD9BF1D77792F009B1F38 /* Main.storyboard */,
+				AF0DD9C41D77792F009B1F38 /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		AFA54CC61DD4297F00B81165 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AF2FB68A1D820387003EB3AA /* SignUpViewController.swift */,
+				AF2FB6881D82034E003EB3AA /* LoginViewController.swift */,
+				AF2F5AC61DD3E5940035DEBD /* UserTableViewController.swift */,
+				AF62D3B81D8712A200C59234 /* CreateAQuestionViewController.swift */,
+				AFFC0AD21DC5C42400FA1A72 /* UserLookupViewController.swift */,
+				AF960C0B1DDC3D2A00F1DEB0 /* ContactTableViewController.swift */,
+				AF960C0D1DDC3E2300F1DEB0 /* ContactTableViewCell.swift */,
+				AF2F5AC81DD3E6900035DEBD /* UserTableViewCell.swift */,
+				AF446F681D9310DA00812996 /* SearchQuestionViewController.swift */,
+				AFFC0AD41DC834EC00FA1A72 /* PostTableViewController.swift */,
+				AFFC0AD71DC83B4D00FA1A72 /* PostTableViewCell.swift */,
+				AFD46E5C1DBEF864009CE026 /* HomeNavigationController.swift */,
+				AFD46E5E1DBEFAC1009CE026 /* TabBarViewController.swift */,
+				AF2FB68E1D820B0D003EB3AA /* LandingPageViewController.swift */,
+				AF2FB6941D826DA4003EB3AA /* HomePageViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		AFA54CC71DD4299100B81165 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				AF2FB6861D820266003EB3AA /* constants.swift */,
+				AFFC0AD61DC8367B00FA1A72 /* Bridging-HeaderFile.h */,
+				AF0DD9BB1D77792F009B1F38 /* AppDelegate.swift */,
+				AF0DD9C21D77792F009B1F38 /* Assets.xcassets */,
+				AF0DD9C71D77792F009B1F38 /* Info.plist */,
+				AF2FB68C1D820849003EB3AA /* GoogleService-Info.plist */,
+			);
+			name = Misc;
 			sourceTree = "<group>";
 		};
 		C63BCCC868F4CBB376BB9B73 /* Frameworks */ = {
@@ -458,15 +522,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF960C0C1DDC3D2A00F1DEB0 /* ContactTableViewController.swift in Sources */,
 				AF2FB6891D82034E003EB3AA /* LoginViewController.swift in Sources */,
+				AF960C0A1DDC243700F1DEB0 /* Contact.swift in Sources */,
 				AF2FB68F1D820B0D003EB3AA /* LandingPageViewController.swift in Sources */,
 				AF2FB6951D826DA4003EB3AA /* HomePageViewController.swift in Sources */,
-				AF2FB6851D8201BD003EB3AA /* DataLoadViewController.swift in Sources */,
+				AF446F691D9310DA00812996 /* SearchQuestionViewController.swift in Sources */,
+				AFFC0AD31DC5C42400FA1A72 /* UserLookupViewController.swift in Sources */,
 				AF0DD9BC1D77792F009B1F38 /* AppDelegate.swift in Sources */,
 				AF62D3B91D8712A200C59234 /* CreateAQuestionViewController.swift in Sources */,
 				AF2FB6871D820266003EB3AA /* constants.swift in Sources */,
-				AF2FB6931D826BB7003EB3AA /* CurrentUser.swift in Sources */,
+				AF2FB6931D826BB7003EB3AA /* User.swift in Sources */,
+				AF2F5AC91DD3E6900035DEBD /* UserTableViewCell.swift in Sources */,
+				AFFC0AD51DC834EC00FA1A72 /* PostTableViewController.swift in Sources */,
+				AFFC0AD81DC83B4D00FA1A72 /* PostTableViewCell.swift in Sources */,
 				AF2FB68B1D820387003EB3AA /* SignUpViewController.swift in Sources */,
+				AFD46E5F1DBEFAC1009CE026 /* TabBarViewController.swift in Sources */,
+				AF960C0E1DDC3E2300F1DEB0 /* ContactTableViewCell.swift in Sources */,
+				AF2F5AC71DD3E5940035DEBD /* UserTableViewController.swift in Sources */,
+				AFD46E5D1DBEF864009CE026 /* HomeNavigationController.swift in Sources */,
 				AF6808CA1D8C5D1900D6D5C1 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -619,6 +693,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.seniorDesign.PhoneAFriend;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Debug;
 		};
@@ -634,6 +710,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.seniorDesign.PhoneAFriend;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};

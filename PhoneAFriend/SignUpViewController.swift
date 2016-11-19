@@ -13,48 +13,69 @@ import FirebaseAuth
 
 class SignUpViewController : UIViewController {
     
+    
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var confirmPasswordField: UITextField!
-    
+    @IBOutlet weak var signupButton: UIButton!
+    @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var errorLabel: UILabel!
+    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
     @IBAction func createNewUser(sender: AnyObject) {
         if nameField.text! != "" && emailField.text! != "" && passwordField.text! != "" && confirmPasswordField.text! != "" && checkPasswordValidity(passwordField.text!, secondPass: confirmPasswordField.text!)  {
-            FIRAuth.auth()?.createUserWithEmail(emailField.text!, password: passwordField.text!, completion: {(user, error) in
-                if error != nil {
-                    dispatch_async(dispatch_get_main_queue(), {
-                        self.errorLabel.text! = "Error creating user. Email already used."
-                    })
-                }
-                else {
-                    let user = FIRAuth.auth()?.currentUser
-                    if let user = user {
-                        let changeRequest = user.profileChangeRequest()
-                        changeRequest.displayName = self.nameField.text!
-                        changeRequest.commitChangesWithCompletion { error in
+            let ref = FIRDatabase.database().reference()
+            print(ref)
+            print("Sign in clicked")
+            ref.child("users")
+                .queryOrderedByChild("username")
+                .queryEqualToValue(nameField.text!)
+                .observeSingleEventOfType(.Value, withBlock: { snapshot in
+                    if !snapshot.exists(){
+                        print("Made it to unique username")
+                        //do stuff with unique username
+                        FIRAuth.auth()?.createUserWithEmail(self.emailField.text!, password: self.passwordField.text!, completion: {(user, error) in
                             if error != nil {
-                                self.errorLabel.text! = "Unknown error occured"
-                            } else {
-                                currentUser = CurrentUser(name: user.displayName!, email: user.email!, uid: user.uid)
-                                currentUsername = (user.displayName!)
-
+                                print(error)
+                                dispatch_async(dispatch_get_main_queue(), {
+                                    self.errorLabel.text! = "Error creating user. Email already used."
+                                })
+                            }
+                            else {
+                                print("Made it to user save")
+                                let uid = user!.uid
+                                let username = self.nameField.text!
+                                let useremail = user!.email
+                                self.saveUserToDB(username, uid: uid, useremail: useremail!)
+                                currentUser!.username = username
+                                currentUser?.useremail = user!.email
+                                currentUser?.id = user!.uid
                                 dispatch_async(dispatch_get_main_queue(), {
                                     self.performSegueWithIdentifier("SegueToHomePage", sender: self)
                                 })
                             }
-                        }
+                        })
+                    } else {
+                        dispatch_async(dispatch_get_main_queue(), {
+                            self.errorLabel.text! = "Username already taken. Try again!"
+                        })
                     }
-                }
-            })
+                    }) { error in
+                    }
         }
-        else {
-            errorLabel.text = "Invalid input in one of the registration fields. Please fix and try again."
-        }
+        
     }
     
+    
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
+        super.viewDidLoad();
+        signupButton.layer.cornerRadius = 10
+        backButton.layer.cornerRadius = 10
     }
     
     func checkPasswordValidity(firstPass : String, secondPass : String) -> Bool{
@@ -71,6 +92,19 @@ class SignUpViewController : UIViewController {
             return false
         }
         return true
+    }
+    
+    func saveUserToDB(username: String, uid: String, useremail: String) {
+        let ref = FIRDatabase.database().reference()
+        
+        let key = ref.child("users").childByAutoId().key
+        
+        let user = ["uid": uid,
+                    "username": username,
+                    "useremail": useremail]
+        
+        let childUpdates = ["/users/\(key)": user]
+        ref.updateChildValues(childUpdates)
     }
     
 }

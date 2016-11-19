@@ -54,9 +54,9 @@ class CreateAQuestionViewController: UIViewController, UIPickerViewDataSource, U
         //Add checking functions to throw alerts if the user has not filled in all the data fields. 
         //Add checking function to see if the user upload an image. if so, call a save function to get the url of the saved image in firebase, otherwise, send an empty url string
         print(selectedPicker)
-        let post = Post(questionTitle: questionTitleField.text!, questionText: questionTextField.text!, questionImageURL: "www.fakeurl.com", datePosted: "fakedatefornow", subject: selectedPicker, postedBy: currentUsername, answered: "false")
+        let post = Post(questionTitle: questionTitleField.text!, questionText: questionTextField.text!, questionImageURL: "www.fakeurl.com", datePosted: "fakedatefornow", subject: selectedPicker, postedBy: currentUser!.username!, answered: "false")
         posts.append(post)
-        saveNewPost(questionTitleField.text!, questionText: questionTextField.text!, questionImageURL: "fakeUrl", datePosted: "fakedate", subject: selectedPicker, postedBy: currentUsername, answered: "false")
+        saveNewPost(questionTitleField.text!, questionText: questionTextField.text!, questionImageURL: "fakeUrl", datePosted: "fakedate", subject: selectedPicker, postedBy: currentUser!.username!, answered: "false")
     }
     
     func saveNewPost(questionTitle: String, questionText: String, questionImageURL : String, datePosted : String, subject : String, postedBy : String, answered : String){

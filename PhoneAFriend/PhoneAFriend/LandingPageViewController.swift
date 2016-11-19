@@ -10,8 +10,14 @@ import UIKit
 
 class LandingPageViewController: UIViewController {
     
+    
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var signupButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        loginButton.layer.cornerRadius = 5
+        signupButton.layer.cornerRadius = 5
     }
     
 }

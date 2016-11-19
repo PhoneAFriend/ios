@@ -7,176 +7,206 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		026FCE82253375653AAE06D7C2DBD94B /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D2129F7E0760C05D1202DE851EAF5F /* NSLayoutConstraint+PureLayout.m */; };
+		009BAB37D18C5275B0C6DB3511AB714E /* SwiftyCustomContentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845CFC19E03F121511F9782BA313F542 /* SwiftyCustomContentButton.swift */; };
 		06C50B2BCF358C0458AFD7DCBC4E7EF5 /* Pods-PhoneAFriendTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F156EAF44ED3AB6369F9FEE559B9FA /* Pods-PhoneAFriendTests-dummy.m */; };
-		164A3DB3D5FA04644C62FE5E1A2B0BAE /* SwiftyCustomContentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81695761AEFC9C4A15FBC51EF7103B81 /* SwiftyCustomContentButton.swift */; };
-		1C03485979F5DF99579405171A0BE657 /* TextFieldEffects-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5A06BDF1597F5204334262CFB239B9 /* TextFieldEffects-dummy.m */; };
-		2340DA6964727C504B44DEE97AB14C0B /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F688671BD67F0A51DCBB2E4138A221BA /* YoshikoTextField.swift */; };
-		291165AE722C55126D1E45FDFE6A1C92 /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E345C93F42D1E99E36FA2DDBDD499893 /* AkiraTextField.swift */; };
-		2E33D53B3A32FEEBDBA3FF6602DA981A /* PureLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A8E6F2390013F549A6646FD4BA7E2A /* PureLayout.framework */; };
-		4232F0521651EDDAC75BF29975F00260 /* PureLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D9E36EEF9B7B0231D9261C82FCB15203 /* PureLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		49A00366A43C1EA43740F4A7F6896CEB /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A42E9CC38B46E7A69F42DC923F511E09 /* NSArray+PureLayout.m */; };
-		5236556BBF44D7E1D63196AE09F8ED33 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9D195422A09205D5062E1F9506F1C7 /* Foundation.framework */; };
-		55DB5970F9720A492668DAF012D35A64 /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C492D9D47E5F528163EA6042A1841B01 /* HoshiTextField.swift */; };
+		0EFA93B77ACF71CB390972459CD7D50B /* IsaoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB0D7A619357C66FA1676A34B23A6E4 /* IsaoTextField.swift */; };
+		14924FB6F4F825FD76AD084633C8C708 /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 70222174259A653ABA951F9C40023D7F /* NSLayoutConstraint+PureLayout.m */; };
+		1526934C1582596369800ACF6338A0B3 /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 473749E6A158F2E50CA9C007D409D631 /* NSArray+PureLayout.m */; };
+		187ADACE41697B7CA92F0958BD55FB13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9D195422A09205D5062E1F9506F1C7 /* Foundation.framework */; };
+		1FC42812024F17A80FBB979B7E3341C5 /* SwiftyButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DABB43F9C09AFC4C7134D82CBB5C93EB /* SwiftyButton-dummy.m */; };
+		2192E1B65CAEB2E5212AE48E8F1FD78E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9D195422A09205D5062E1F9506F1C7 /* Foundation.framework */; };
+		22DC2D74E9117167CD17FD04C327EB9D /* DZNEmptyDataSet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 580A477389F63D49B8174A1880E1A7AA /* DZNEmptyDataSet-dummy.m */; };
+		31EDE7A968334AA8ACE9BCD4DCFA4B7A /* SwiftyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBE58827B0D2E27B7F607FD52655766 /* SwiftyButton.swift */; };
+		3BC49A2B50306C45D4EBCAA50600EBE7 /* UIScrollView+EmptyDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 61DC799B333CCA01695D088D92B1EDC4 /* UIScrollView+EmptyDataSet.m */; };
+		41D4E838D1FA417498DFEB4DAEFB57B7 /* PureLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F506E2194D6C57E426D2810D4789C777 /* PureLayout-dummy.m */; };
+		421DDFAE8819AD7E45D974181F1BEC0B /* JiroTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D171F1B791138D4EBDEC32748EBAEEC9 /* JiroTextField.swift */; };
+		47D6ED8B0C3095846607E3AE19472911 /* SwiftyButton+ResizableImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1247767AADB35B629EF772F47700055 /* SwiftyButton+ResizableImage.swift */; };
+		4B47769997B90C19F734D95A86240849 /* TextFieldEffects-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A1D0E046573B30EE1CB72F08A4D7BCF9 /* TextFieldEffects-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50CF0639B5661E690EB8B21268199E07 /* ALView+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D20F47B5CF85A33C3A2689795A96B67 /* ALView+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		570A89FAADC41C5E36A3ED099A4348AB /* Pods-PhoneAFriendTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CFBCA6113D587BF40F610B5AD2215ACD /* Pods-PhoneAFriendTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5BA8F38D4F3E812EF734E55C8C61BBDB /* PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = E6EF870F67EF00FCC3FEFE768D4333EF /* PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5C5286CB1C88FE31ABC788DE3D4ADC2C /* PureLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A596E8A89433F5608E88AA371D46AF55 /* PureLayout-dummy.m */; };
-		5CF76B415A3EF4CE5BED0B6BE9C1BB8E /* YokoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D634193A04B2DDB09275AB17CAF11C /* YokoTextField.swift */; };
-		670900951383EC63603A4663A18506AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9D195422A09205D5062E1F9506F1C7 /* Foundation.framework */; };
+		5BD4EAA2FA5CD3626774AF295E47287C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9D195422A09205D5062E1F9506F1C7 /* Foundation.framework */; };
+		62C9C7C1949238B9168B2B5579291CCB /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FA0D69C328CBFC7B1F5405C12E3289 /* AkiraTextField.swift */; };
+		63BCD299AAEA8F4C9EBE3873A801C502 /* PureLayout+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = A78FB09D20F790A64C10F90166E48C25 /* PureLayout+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65B18130F6C0FEF3FCB425C32FB92B12 /* NSLayoutConstraint+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 31EC90BBDA213180AF9F74A5B3BDB4BB /* NSLayoutConstraint+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67B755859B0D43545AB5A5585BCAE07E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 269E684E2A098B81FC437326735AAC83 /* UIKit.framework */; };
+		6D295119E3461A2C0293E9E1BE53C98C /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DE70D5425817A667F853A5A26C3E34 /* ALView+PureLayout.m */; };
+		714472D56B8569989E7FFDC9961E23DF /* PureLayoutDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EA894D7E99B27FFC04DD1AF2803A5C /* PureLayoutDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		79011387F75E19F4B6ED1565A862CB67 /* Pods-PhoneAFriendUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFA8DEF5CFE2200E6CC6456B81C6F2 /* Pods-PhoneAFriendUITests-dummy.m */; };
-		7D70FD6848092B3C05AD439C1C0F6F93 /* Pods-PhoneAFriend-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30061275D8A36DF8676A0953080F0106 /* Pods-PhoneAFriend-dummy.m */; };
-		834FCDB5023C42807D76DDBB2459A48A /* PureLayout+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = F36B32C7C597E8ECF01FA72795F69C57 /* PureLayout+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		86A20D5522299E7EFDD160595E8910BF /* SwiftyButton+ResizableImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5379D475179E1D0BBDCFB4DA4812D1F2 /* SwiftyButton+ResizableImage.swift */; };
-		8C2C685DDD0B5A5195B1CCE31CCDD674 /* NSArray+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = BF772BB751F29F750EE10495132B5670 /* NSArray+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		93829736F4F24ACFCC73C8FA68F49304 /* MadokaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0015D68ABAF7F25E44BEDC0488C69726 /* MadokaTextField.swift */; };
-		9760683481DFD725D5B974886567C1F2 /* SwiftyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB34B36B21B305A246D8C99E2A5FA38 /* SwiftyButton.swift */; };
-		9C80505A799E7352A0BCEC8557947412 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9D195422A09205D5062E1F9506F1C7 /* Foundation.framework */; };
-		9C9631A1808B031388DD9A13ACCB1E26 /* KaedeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8840085CAF3629FBC5F76A7C7E8EC77A /* KaedeTextField.swift */; };
-		AFCF9DE1A80EF37A1040902F3A216884 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 269E684E2A098B81FC437326735AAC83 /* UIKit.framework */; };
-		BCB6B8E5E136168790BB36BABF06117C /* TextFieldsEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B96C2AAA6622DBE2BFC294A64D50143 /* TextFieldsEffects.swift */; };
-		C444DD4F706624AAE9D390552736555C /* JiroTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AE6DB28AB9A9FD38BC228CE0876F47 /* JiroTextField.swift */; };
-		C4D6C781BD12BEC9F64AED63A1A0035F /* IsaoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4EB46D780D8B369647F55D48451E8B /* IsaoTextField.swift */; };
-		C4F1E679A3D3F4F1DE3274056C8E660E /* Pods-PhoneAFriend-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0511C4E35F411C8C2194AB1FD62C4829 /* Pods-PhoneAFriend-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D7E8B96FADD7956E1DCF175A8AC109E0 /* MinoruTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC932A3D4851C4F103F98DE3D4FF1967 /* MinoruTextField.swift */; };
-		DE51D261C75B1B551CF8505237AF1784 /* PureLayoutDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = B85D0BFB47600E20C2F5A17DC07CDFF3 /* PureLayoutDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E59A996EDC5067BBE1175F59EFB3F4BC /* ALView+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = C5590DD301D849DA15D4C619B6651CFE /* ALView+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E9656CCB851685C988F1A0E61BC9B1D2 /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 274926157AE58C5E5870D539BCCEE5DB /* ALView+PureLayout.m */; };
+		7F981DEC4D160D6FA5616670316B238F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 269E684E2A098B81FC437326735AAC83 /* UIKit.framework */; };
+		8C245B8B38141332EC1D7B188B2B4C4E /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDC82CA7EFC9FD3409701E07E8AC4AA /* YoshikoTextField.swift */; };
+		94C99B5E12251326512057F227691F75 /* Pods-PhoneAFriend-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30061275D8A36DF8676A0953080F0106 /* Pods-PhoneAFriend-dummy.m */; };
+		9CCA7D089C7F7407F5307062D5437F7D /* Pods-PhoneAFriend-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0511C4E35F411C8C2194AB1FD62C4829 /* Pods-PhoneAFriend-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A20D2701B2B951C2D6D51098163A96ED /* PureLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0723240B0D7E34C174A8F965E46A2AA2 /* PureLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A25052E23653CBE6E0D44DD9D9354E99 /* KaedeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E050036067F0DB6C20F6BB29F2E73D37 /* KaedeTextField.swift */; };
+		B116B651388E34E3CE3E9097BC83D47F /* DZNEmptyDataSet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D1BB11DE0C9908F3F57E86458BD81DB /* DZNEmptyDataSet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4394067D142BAAA8B3E71EDD1EA548A /* YokoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2F8605FB361DDBE2CD884D1B8A4080 /* YokoTextField.swift */; };
+		BBF4A88DD9F32BBB9382CC78518F1CD4 /* PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = D7D407D4A3B4F0F18AC40CEE6DF571A7 /* PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE9F89AF424C8FB7D1FB34D4D0DDECFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9D195422A09205D5062E1F9506F1C7 /* Foundation.framework */; };
+		C3D3A7AA010218F13C6607ACF3D0A3CD /* MinoruTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F925D41409072F2AEFF885302E5293EF /* MinoruTextField.swift */; };
+		D2BFF82DFC51757A5B3A232CDD22661C /* PureLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A8E6F2390013F549A6646FD4BA7E2A /* PureLayout.framework */; };
+		D84427333BDC3C742ED61772584C1E28 /* MadokaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12044BF14F3702DA2CF32641FF0CF3C1 /* MadokaTextField.swift */; };
+		D9C637F6CEDC7C26A2824AD56CAECB62 /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0CDE78EC3F8E8A57DD1444FA77A4DE /* HoshiTextField.swift */; };
+		DA9373A9CBA49C218C515A637E006434 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9D195422A09205D5062E1F9506F1C7 /* Foundation.framework */; };
+		E14B01B2BDDA7C86AC2EBC45FCFEF52E /* UIScrollView+EmptyDataSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 09D319FC16EF0CA435C1712A35D00584 /* UIScrollView+EmptyDataSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1B8F85EB63F1EE33BB4FC9893A061F8 /* NSArray+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C8276CC7BF1E931BDB619D07E040E27 /* NSArray+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E64BDE9B04E21F46AB4F3063145D40A5 /* TextFieldsEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D14E7FD6E38E1AC439578455BCAB26 /* TextFieldsEffects.swift */; };
 		ED0D93EBAEB8A2C069C59E00C6E7B837 /* Pods-PhoneAFriendUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F9CD1538FCEAC1DD8BFC1F76B8A69DC3 /* Pods-PhoneAFriendUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EDAE8FB6DF3218A63C7616CBB060B072 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9D195422A09205D5062E1F9506F1C7 /* Foundation.framework */; };
-		F1604395ADD28BE262B063C1C211741F /* SwiftyButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B40833CDA9DE80FD26E8A62C4D161673 /* SwiftyButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F3B1B55CAF3F48C9C844C23D8904DC13 /* NSLayoutConstraint+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F6C07567D57856EAFD7F9F4AA195196 /* NSLayoutConstraint+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F06927308013E848A44A49E42192C44E /* SwiftyButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 29E26CAE5503FFD0BB613375A694D9D3 /* SwiftyButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F25F1A06F69D6FB9DBE3B558017F3C79 /* TextFieldEffects-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 63AA2C4CED35FA47EFF110F396F1A8F2 /* TextFieldEffects-dummy.m */; };
 		F4C2586D967D259DE2D16AD1EB0BE608 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9D195422A09205D5062E1F9506F1C7 /* Foundation.framework */; };
-		F8AB0A8A19BCE4B0F39D0EFFA93CC21F /* SwiftyButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 63EF6599402C09D4A6BFC1874EF99C2A /* SwiftyButton-dummy.m */; };
 		FAD112CFF36FFFE23049A3923D9B17ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9D195422A09205D5062E1F9506F1C7 /* Foundation.framework */; };
-		FDB5B2A451A7B20970960CFC7F0F0246 /* TextFieldEffects-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FD454CBE7E787043AEA5986FFEA22436 /* TextFieldEffects-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3C0AEAB6ED0490D7645F71F5E1DB5A58 /* PBXContainerItemProxy */ = {
+		0C15A4123893250BD3F5615FC19CAF4F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9D5BDABCBD50B1B2C19771A23B89420C;
-			remoteInfo = PureLayout;
-		};
-		97C4DE3ED1C13847F4BB9211C4A9D347 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 64698EEECEE9410A44CDFDB30EAFD1DC;
+			remoteGlobalIDString = 6FAB0243920081E76953F4859C775D34;
 			remoteInfo = SwiftyButton;
 		};
-		DA96564026BCE5ABE45101CCE57540B0 /* PBXContainerItemProxy */ = {
+		1237FBF7A5A941FD2D4512FBA9BF0CC1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0C254D7C25D2E15DBE895C7BB2E8663D;
+			remoteGlobalIDString = BA5F1066E52983A300F26B621F54DDBD;
 			remoteInfo = TextFieldEffects;
 		};
-		F004952486C790A9F7794BFFB5211754 /* PBXContainerItemProxy */ = {
+		5F8158E6A62209E990FFADB8A3838144 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9D5BDABCBD50B1B2C19771A23B89420C;
+			remoteGlobalIDString = 5CFF69DF58B707271AB9F7CA99D7A58B;
+			remoteInfo = PureLayout;
+		};
+		C85A6E652E1B68EE34FBB45D0AD78F1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16FB872D0D2D4BA0F378AB34D47CF95F;
+			remoteInfo = DZNEmptyDataSet;
+		};
+		E81C3DDB44308015B3765DD1FC277F28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CFF69DF58B707271AB9F7CA99D7A58B;
 			remoteInfo = PureLayout;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0015D68ABAF7F25E44BEDC0488C69726 /* MadokaTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MadokaTextField.swift; path = TextFieldEffects/TextFieldEffects/MadokaTextField.swift; sourceTree = "<group>"; };
 		0511C4E35F411C8C2194AB1FD62C4829 /* Pods-PhoneAFriend-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PhoneAFriend-umbrella.h"; sourceTree = "<group>"; };
+		0723240B0D7E34C174A8F965E46A2AA2 /* PureLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-umbrella.h"; sourceTree = "<group>"; };
 		073B0C7128F44F1FBE1C4255E7E38524 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0A4866946E7B3D52CD8B2A76A8198883 /* Pods_PhoneAFriendTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhoneAFriendTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1B0B41A41FD2440DC7173B5E8D443A2B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08EA894D7E99B27FFC04DD1AF2803A5C /* PureLayoutDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayoutDefines.h; path = PureLayout/PureLayout/PureLayoutDefines.h; sourceTree = "<group>"; };
+		09D319FC16EF0CA435C1712A35D00584 /* UIScrollView+EmptyDataSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+EmptyDataSet.h"; path = "Source/UIScrollView+EmptyDataSet.h"; sourceTree = "<group>"; };
+		0C4DDCA15C1599FC5B94E3D7140235B3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EDC82CA7EFC9FD3409701E07E8AC4AA /* YoshikoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YoshikoTextField.swift; path = TextFieldEffects/TextFieldEffects/YoshikoTextField.swift; sourceTree = "<group>"; };
+		12044BF14F3702DA2CF32641FF0CF3C1 /* MadokaTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MadokaTextField.swift; path = TextFieldEffects/TextFieldEffects/MadokaTextField.swift; sourceTree = "<group>"; };
+		1303EA6676FE692A933872679A4849DB /* PureLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PureLayout.xcconfig; sourceTree = "<group>"; };
+		1A6B899B221DCAD0EC4E4917271A66B0 /* Pods_PhoneAFriendUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhoneAFriendUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B9A2F4097EE78146640E267365B1AEC /* Pods-PhoneAFriend-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PhoneAFriend-resources.sh"; sourceTree = "<group>"; };
-		20223BAB1A9BA636F58622BBCC3121E9 /* SwiftyButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyButton.modulemap; sourceTree = "<group>"; };
-		2043E67136C8FEF80B3CC99437210E21 /* SwiftyButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyButton-prefix.pch"; sourceTree = "<group>"; };
+		1CBE58827B0D2E27B7F607FD52655766 /* SwiftyButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyButton.swift; path = SwiftyButton/SwiftyButton.swift; sourceTree = "<group>"; };
+		1D44D39F97B510F7FCD464D163B2F10D /* SwiftyButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyButton-prefix.pch"; sourceTree = "<group>"; };
+		1E2F40B697955E5804DF483544B7AE4B /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAuth.framework; path = Frameworks/frameworks/FirebaseAuth.framework; sourceTree = "<group>"; };
 		21C797C658A4125DFF58980385C33427 /* Pods-PhoneAFriendTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PhoneAFriendTests.release.xcconfig"; sourceTree = "<group>"; };
 		269E684E2A098B81FC437326735AAC83 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		274926157AE58C5E5870D539BCCEE5DB /* ALView+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ALView+PureLayout.m"; path = "PureLayout/PureLayout/ALView+PureLayout.m"; sourceTree = "<group>"; };
-		2DB34B36B21B305A246D8C99E2A5FA38 /* SwiftyButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyButton.swift; path = SwiftyButton/SwiftyButton.swift; sourceTree = "<group>"; };
+		29E26CAE5503FFD0BB613375A694D9D3 /* SwiftyButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyButton-umbrella.h"; sourceTree = "<group>"; };
+		2EA6FAE9B7B6E7D35A63C1E3ABC62D8F /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
 		30061275D8A36DF8676A0953080F0106 /* Pods-PhoneAFriend-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PhoneAFriend-dummy.m"; sourceTree = "<group>"; };
-		31D634193A04B2DDB09275AB17CAF11C /* YokoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YokoTextField.swift; path = TextFieldEffects/TextFieldEffects/YokoTextField.swift; sourceTree = "<group>"; };
-		3B96C2AAA6622DBE2BFC294A64D50143 /* TextFieldsEffects.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFieldsEffects.swift; path = TextFieldEffects/TextFieldEffects/TextFieldsEffects.swift; sourceTree = "<group>"; };
-		3F7718BCCD07B5062B17CBABCDDB6E5B /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAuth.framework; path = Frameworks/frameworks/FirebaseAuth.framework; sourceTree = "<group>"; };
-		40A666FBA875E642518F1383D8B5AAC2 /* TextFieldEffects-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-prefix.pch"; sourceTree = "<group>"; };
-		437713B77228EA0B18BD01A860D22D09 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
-		47C68C1DDEDFE0551B4697F46BC101C0 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
-		496281FF6B775D0A3BA160D47EF09B2D /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Headers/Public/FIRInstanceID.h; sourceTree = "<group>"; };
-		497E4AA36407400471EF95D53F3B49D4 /* PureLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PureLayout.xcconfig; sourceTree = "<group>"; };
+		31EC90BBDA213180AF9F74A5B3BDB4BB /* NSLayoutConstraint+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+PureLayout.h"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.h"; sourceTree = "<group>"; };
+		39A47A329BD4BCA76BF5F9D2D1990119 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		3D1BB11DE0C9908F3F57E86458BD81DB /* DZNEmptyDataSet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DZNEmptyDataSet-umbrella.h"; sourceTree = "<group>"; };
+		3E4658F93C01D215857B07DCC8018198 /* PureLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-prefix.pch"; sourceTree = "<group>"; };
+		4692CE5208FF6C06A2B4FDE1A4212FCC /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
+		473749E6A158F2E50CA9C007D409D631 /* NSArray+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+PureLayout.m"; path = "PureLayout/PureLayout/NSArray+PureLayout.m"; sourceTree = "<group>"; };
 		49F156EAF44ED3AB6369F9FEE559B9FA /* Pods-PhoneAFriendTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PhoneAFriendTests-dummy.m"; sourceTree = "<group>"; };
+		4A0F7ACBA2F89094A2D242C180D84169 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Headers/Firebase.h; sourceTree = "<group>"; };
 		4C290FBB318F05E162E9DE45EBEA200D /* Pods-PhoneAFriend.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PhoneAFriend.modulemap"; sourceTree = "<group>"; };
 		4C782935A55A920C78520B8A22DCAEF8 /* Pods-PhoneAFriendUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PhoneAFriendUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		4D9D195422A09205D5062E1F9506F1C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		5118EFD65D142B79CE9F1F27CBE99731 /* Pods_PhoneAFriendUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhoneAFriendUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5379D475179E1D0BBDCFB4DA4812D1F2 /* SwiftyButton+ResizableImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwiftyButton+ResizableImage.swift"; path = "SwiftyButton/SwiftyButton+ResizableImage.swift"; sourceTree = "<group>"; };
+		580A477389F63D49B8174A1880E1A7AA /* DZNEmptyDataSet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DZNEmptyDataSet-dummy.m"; sourceTree = "<group>"; };
 		59948457839833C0E90F46E3CF955B66 /* Pods-PhoneAFriendUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PhoneAFriendUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5F6C07567D57856EAFD7F9F4AA195196 /* NSLayoutConstraint+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+PureLayout.h"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.h"; sourceTree = "<group>"; };
-		63EF6599402C09D4A6BFC1874EF99C2A /* SwiftyButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyButton-dummy.m"; sourceTree = "<group>"; };
+		59FA0D69C328CBFC7B1F5405C12E3289 /* AkiraTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AkiraTextField.swift; path = TextFieldEffects/TextFieldEffects/AkiraTextField.swift; sourceTree = "<group>"; };
+		5C0CDE78EC3F8E8A57DD1444FA77A4DE /* HoshiTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HoshiTextField.swift; path = TextFieldEffects/TextFieldEffects/HoshiTextField.swift; sourceTree = "<group>"; };
+		5D30484D64A970D5EC3736FF411C31BB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DB2F4DD5273E4F31089A3D73E26DF95 /* DZNEmptyDataSet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DZNEmptyDataSet-prefix.pch"; sourceTree = "<group>"; };
+		61DC799B333CCA01695D088D92B1EDC4 /* UIScrollView+EmptyDataSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+EmptyDataSet.m"; path = "Source/UIScrollView+EmptyDataSet.m"; sourceTree = "<group>"; };
+		63AA2C4CED35FA47EFF110F396F1A8F2 /* TextFieldEffects-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TextFieldEffects-dummy.m"; sourceTree = "<group>"; };
 		651E1DD2A600A3024358B94B875E8752 /* Pods-PhoneAFriendTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PhoneAFriendTests-frameworks.sh"; sourceTree = "<group>"; };
-		67BC0794012198B64911AA0E013E4D66 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Headers/Firebase.h; sourceTree = "<group>"; };
-		6E5A06BDF1597F5204334262CFB239B9 /* TextFieldEffects-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TextFieldEffects-dummy.m"; sourceTree = "<group>"; };
 		6FEFA8DEF5CFE2200E6CC6456B81C6F2 /* Pods-PhoneAFriendUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PhoneAFriendUITests-dummy.m"; sourceTree = "<group>"; };
+		70222174259A653ABA951F9C40023D7F /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+PureLayout.m"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
 		702C5499CCE3C3EFF27186C77706D63B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		738E3DEAEBC6F1F0FEBA102275F1581B /* Pods-PhoneAFriend-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PhoneAFriend-frameworks.sh"; sourceTree = "<group>"; };
-		75BCD4E0F6739F240365CEBEEA42B897 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
-		7E4511535B426A9B332FE01C48ED51C9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7698EB84FAD20B9528994F31EE30F81D /* DZNEmptyDataSet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DZNEmptyDataSet.modulemap; sourceTree = "<group>"; };
+		785E4EF0A501C4C98482E4F211A3488B /* TextFieldEffects.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TextFieldEffects.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AAF28BED670D87C69D0F05D3070B0B9 /* SwiftyButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyButton.xcconfig; sourceTree = "<group>"; };
+		7C8276CC7BF1E931BDB619D07E040E27 /* NSArray+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+PureLayout.h"; path = "PureLayout/PureLayout/NSArray+PureLayout.h"; sourceTree = "<group>"; };
+		7DF522DBB932170D2E1625EDF92DB297 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
 		7E5330F238A75599ED02D2E89D224FF6 /* Pods-PhoneAFriendUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PhoneAFriendUITests.release.xcconfig"; sourceTree = "<group>"; };
-		806BFC1A4B31387BB2D4B8C1DAE667B1 /* SwiftyButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyButton.xcconfig; sourceTree = "<group>"; };
-		81695761AEFC9C4A15FBC51EF7103B81 /* SwiftyCustomContentButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyCustomContentButton.swift; path = SwiftyButton/SwiftyCustomContentButton.swift; sourceTree = "<group>"; };
+		7F8E9BC6425CB349C2E9035F15E18C05 /* SwiftyButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81D2D63B3938733E81FC954BAB249798 /* Pods_PhoneAFriendTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhoneAFriendTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		845CFC19E03F121511F9782BA313F542 /* SwiftyCustomContentButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyCustomContentButton.swift; path = SwiftyButton/SwiftyCustomContentButton.swift; sourceTree = "<group>"; };
 		84A10664972979820824527A783EA864 /* Pods-PhoneAFriendTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PhoneAFriendTests.debug.xcconfig"; sourceTree = "<group>"; };
-		8840085CAF3629FBC5F76A7C7E8EC77A /* KaedeTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaedeTextField.swift; path = TextFieldEffects/TextFieldEffects/KaedeTextField.swift; sourceTree = "<group>"; };
+		86B88DCAE98FA8339C631771F56E57F8 /* Pods_PhoneAFriend.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhoneAFriend.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A2F8605FB361DDBE2CD884D1B8A4080 /* YokoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YokoTextField.swift; path = TextFieldEffects/TextFieldEffects/YokoTextField.swift; sourceTree = "<group>"; };
+		8BB0D7A619357C66FA1676A34B23A6E4 /* IsaoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IsaoTextField.swift; path = TextFieldEffects/TextFieldEffects/IsaoTextField.swift; sourceTree = "<group>"; };
+		8D548C848DB26E8EDEB4421C63D15874 /* PureLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PureLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92B1268B3743C9936FE4FFC48C39560A /* TextFieldEffects.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TextFieldEffects.modulemap; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93B5AA614FC3C268683C12DCF8D69C8C /* Pods-PhoneAFriendUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PhoneAFriendUITests.modulemap"; sourceTree = "<group>"; };
-		955C281071D422B5FC377E1259B39B88 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97A8E6F2390013F549A6646FD4BA7E2A /* PureLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PureLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9859B24FCA4589AD248F3167B4F9599D /* TextFieldEffects.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TextFieldEffects.modulemap; sourceTree = "<group>"; };
 		98D5EA99EC6163D02D47A580613AB674 /* Pods-PhoneAFriend-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PhoneAFriend-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A19CAFB467B75753182EE6505FF08AD1 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
-		A42E9CC38B46E7A69F42DC923F511E09 /* NSArray+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+PureLayout.m"; path = "PureLayout/PureLayout/NSArray+PureLayout.m"; sourceTree = "<group>"; };
-		A596E8A89433F5608E88AA371D46AF55 /* PureLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PureLayout-dummy.m"; sourceTree = "<group>"; };
-		A5F2B8A3CAB6FE8AD5B53406037EA6DD /* TextFieldEffects.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TextFieldEffects.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AC563508BC4172AB1D54A435BE5A435 /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleNetworkingUtilities.framework; path = Frameworks/GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
+		9D20F47B5CF85A33C3A2689795A96B67 /* ALView+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ALView+PureLayout.h"; path = "PureLayout/PureLayout/ALView+PureLayout.h"; sourceTree = "<group>"; };
+		A09F53A9489BF5760881066270F96E90 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1D0E046573B30EE1CB72F08A4D7BCF9 /* TextFieldEffects-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-umbrella.h"; sourceTree = "<group>"; };
+		A23DA7AEEF3DDA5AF673FB4A3894BF2B /* SwiftyButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyButton.modulemap; sourceTree = "<group>"; };
 		A71BDCEB810D422CBC621291EDC88ACC /* Pods-PhoneAFriendUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PhoneAFriendUITests-resources.sh"; sourceTree = "<group>"; };
 		A76376BD62A723DB80F409127609B648 /* Pods-PhoneAFriendTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PhoneAFriendTests-resources.sh"; sourceTree = "<group>"; };
-		A7AD50714C48DCB69E8935F14A7EA4EC /* PureLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = PureLayout.modulemap; sourceTree = "<group>"; };
-		ABBB8BC3171A6E16ED3E3AE9A1320942 /* GoogleParsingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleParsingUtilities.framework; path = Frameworks/GoogleParsingUtilities.framework; sourceTree = "<group>"; };
+		A78FB09D20F790A64C10F90166E48C25 /* PureLayout+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PureLayout+Internal.h"; path = "PureLayout/PureLayout/PureLayout+Internal.h"; sourceTree = "<group>"; };
+		AA3CBDA8A9BAE5CB7DB40A604705BF61 /* TextFieldEffects.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TextFieldEffects.xcconfig; sourceTree = "<group>"; };
 		AD2953644BD006421B62950C39C5F4BE /* Pods-PhoneAFriendUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PhoneAFriendUITests-frameworks.sh"; sourceTree = "<group>"; };
-		B40833CDA9DE80FD26E8A62C4D161673 /* SwiftyButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyButton-umbrella.h"; sourceTree = "<group>"; };
+		B0F07EF70FFC86F6855F12839956DABE /* GoogleParsingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleParsingUtilities.framework; path = Frameworks/GoogleParsingUtilities.framework; sourceTree = "<group>"; };
+		B1DE70D5425817A667F853A5A26C3E34 /* ALView+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ALView+PureLayout.m"; path = "PureLayout/PureLayout/ALView+PureLayout.m"; sourceTree = "<group>"; };
 		B4D8F52C22BBBC0C044B6964895B96CC /* Pods-PhoneAFriendTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PhoneAFriendTests.modulemap"; sourceTree = "<group>"; };
-		B85D0BFB47600E20C2F5A17DC07CDFF3 /* PureLayoutDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayoutDefines.h; path = PureLayout/PureLayout/PureLayoutDefines.h; sourceTree = "<group>"; };
-		BF772BB751F29F750EE10495132B5670 /* NSArray+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+PureLayout.h"; path = "PureLayout/PureLayout/NSArray+PureLayout.h"; sourceTree = "<group>"; };
+		BC0DB742A5239619685A9242B74A3967 /* DZNEmptyDataSet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DZNEmptyDataSet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF5DD249F055391CC81BD95C47E0F490 /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Headers/Public/FIRInstanceID.h; sourceTree = "<group>"; };
+		BFAF0F3D735CB767F0BE4EAE005CDA25 /* DZNEmptyDataSet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DZNEmptyDataSet.xcconfig; sourceTree = "<group>"; };
+		BFFF792E8AE1E88B6E9DC42A29C83116 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		C1247767AADB35B629EF772F47700055 /* SwiftyButton+ResizableImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwiftyButton+ResizableImage.swift"; path = "SwiftyButton/SwiftyButton+ResizableImage.swift"; sourceTree = "<group>"; };
 		C1852ED1C757F404B343EFA2B912ED53 /* Pods-PhoneAFriendUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PhoneAFriendUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		C492D9D47E5F528163EA6042A1841B01 /* HoshiTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HoshiTextField.swift; path = TextFieldEffects/TextFieldEffects/HoshiTextField.swift; sourceTree = "<group>"; };
-		C5590DD301D849DA15D4C619B6651CFE /* ALView+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ALView+PureLayout.h"; path = "PureLayout/PureLayout/ALView+PureLayout.h"; sourceTree = "<group>"; };
+		C5B2E867713922A965AC2F3712FB118F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C817B30977AC629A1C1C421F710F9DAC /* Pods-PhoneAFriend-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PhoneAFriend-acknowledgements.plist"; sourceTree = "<group>"; };
-		CBC1477F37398AF9BFC1B4661E5F55F8 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
-		CD4EB46D780D8B369647F55D48451E8B /* IsaoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IsaoTextField.swift; path = TextFieldEffects/TextFieldEffects/IsaoTextField.swift; sourceTree = "<group>"; };
 		CFBCA6113D587BF40F610B5AD2215ACD /* Pods-PhoneAFriendTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PhoneAFriendTests-umbrella.h"; sourceTree = "<group>"; };
-		D36D1A8BAD0E18F8335837598CF1B343 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
-		D386B2D5E844D965BE97DB5EBBF57D6B /* PureLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-prefix.pch"; sourceTree = "<group>"; };
+		D171F1B791138D4EBDEC32748EBAEEC9 /* JiroTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JiroTextField.swift; path = TextFieldEffects/TextFieldEffects/JiroTextField.swift; sourceTree = "<group>"; };
+		D7D407D4A3B4F0F18AC40CEE6DF571A7 /* PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayout.h; path = PureLayout/PureLayout/PureLayout.h; sourceTree = "<group>"; };
+		D8D455993A568D65DE954D8B5C9B0987 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
 		D9D21E06A60BDF06A72E49FC164C6B4E /* Pods-PhoneAFriend.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PhoneAFriend.release.xcconfig"; sourceTree = "<group>"; };
-		D9E36EEF9B7B0231D9261C82FCB15203 /* PureLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-umbrella.h"; sourceTree = "<group>"; };
-		DFB70794E8FE3DEA58A2462304A8C075 /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleNetworkingUtilities.framework; path = Frameworks/GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
+		DABB43F9C09AFC4C7134D82CBB5C93EB /* SwiftyButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyButton-dummy.m"; sourceTree = "<group>"; };
+		DD2D7EF7ECE758E218735C19DB3A168C /* TextFieldEffects-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-prefix.pch"; sourceTree = "<group>"; };
+		E050036067F0DB6C20F6BB29F2E73D37 /* KaedeTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaedeTextField.swift; path = TextFieldEffects/TextFieldEffects/KaedeTextField.swift; sourceTree = "<group>"; };
 		E07755CBE017F1562F6213D61FB81CC6 /* Pods-PhoneAFriend.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PhoneAFriend.debug.xcconfig"; sourceTree = "<group>"; };
-		E2D2129F7E0760C05D1202DE851EAF5F /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+PureLayout.m"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
-		E345C93F42D1E99E36FA2DDBDD499893 /* AkiraTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AkiraTextField.swift; path = TextFieldEffects/TextFieldEffects/AkiraTextField.swift; sourceTree = "<group>"; };
-		E6EF870F67EF00FCC3FEFE768D4333EF /* PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayout.h; path = PureLayout/PureLayout/PureLayout.h; sourceTree = "<group>"; };
-		E8C499ACEB6CF6AB8C2B0A8C30A8C8C3 /* Pods_PhoneAFriend.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhoneAFriend.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E973F7C594586CADAB9993B53584549F /* TextFieldEffects.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TextFieldEffects.xcconfig; sourceTree = "<group>"; };
+		E2D14E7FD6E38E1AC439578455BCAB26 /* TextFieldsEffects.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFieldsEffects.swift; path = TextFieldEffects/TextFieldEffects/TextFieldsEffects.swift; sourceTree = "<group>"; };
 		E9D75D8ED394019C68C5E724A761F29B /* Pods-PhoneAFriendTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PhoneAFriendTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		EC35E35D81B245E537A0329EAC9C2E17 /* PureLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PureLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F36B32C7C597E8ECF01FA72795F69C57 /* PureLayout+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PureLayout+Internal.h"; path = "PureLayout/PureLayout/PureLayout+Internal.h"; sourceTree = "<group>"; };
-		F688671BD67F0A51DCBB2E4138A221BA /* YoshikoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YoshikoTextField.swift; path = TextFieldEffects/TextFieldEffects/YoshikoTextField.swift; sourceTree = "<group>"; };
+		F20A76C852ED118CC25C5911245C8FEC /* PureLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = PureLayout.modulemap; sourceTree = "<group>"; };
+		F506E2194D6C57E426D2810D4789C777 /* PureLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PureLayout-dummy.m"; sourceTree = "<group>"; };
 		F6DE3CBC1A0481373AA4A51C545B8A1B /* Pods-PhoneAFriendTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PhoneAFriendTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		F8AE6DB28AB9A9FD38BC228CE0876F47 /* JiroTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JiroTextField.swift; path = TextFieldEffects/TextFieldEffects/JiroTextField.swift; sourceTree = "<group>"; };
+		F925D41409072F2AEFF885302E5293EF /* MinoruTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MinoruTextField.swift; path = TextFieldEffects/TextFieldEffects/MinoruTextField.swift; sourceTree = "<group>"; };
 		F9CD1538FCEAC1DD8BFC1F76B8A69DC3 /* Pods-PhoneAFriendUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PhoneAFriendUITests-umbrella.h"; sourceTree = "<group>"; };
-		FBDA77397CD5900228B899364D4FDB72 /* SwiftyButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF3D6A8C87DD0FACB3D2686006EFDC3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FC932A3D4851C4F103F98DE3D4FF1967 /* MinoruTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MinoruTextField.swift; path = TextFieldEffects/TextFieldEffects/MinoruTextField.swift; sourceTree = "<group>"; };
-		FD454CBE7E787043AEA5986FFEA22436 /* TextFieldEffects-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		03AC45F21D2CC76EC0789AB62B1C0ADD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BD4EAA2FA5CD3626774AF295E47287C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		08F243AE5D479DE75F3D50891703A782 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -185,29 +215,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		33092C1E4B48CDEC5DE64E4FD3470017 /* Frameworks */ = {
+		1F0DD23CD2BA9A502EFF81C79DF625A5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5236556BBF44D7E1D63196AE09F8ED33 /* Foundation.framework in Frameworks */,
+				187ADACE41697B7CA92F0958BD55FB13 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		547C567F32BAAA6AC5E61B1DF8D2E81F /* Frameworks */ = {
+		6EB585FEDB6799A91A1038C7D6EB334B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C80505A799E7352A0BCEC8557947412 /* Foundation.framework in Frameworks */,
-				2E33D53B3A32FEEBDBA3FF6602DA981A /* PureLayout.framework in Frameworks */,
-				AFCF9DE1A80EF37A1040902F3A216884 /* UIKit.framework in Frameworks */,
+				DA9373A9CBA49C218C515A637E006434 /* Foundation.framework in Frameworks */,
+				D2BFF82DFC51757A5B3A232CDD22661C /* PureLayout.framework in Frameworks */,
+				67B755859B0D43545AB5A5585BCAE07E /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6411B8FA3CE95C239505BC70E4455DA3 /* Frameworks */ = {
+		7880ACBD91554BB17C763EFC5D696B05 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				670900951383EC63603A4663A18506AB /* Foundation.framework in Frameworks */,
+				2192E1B65CAEB2E5212AE48E8F1FD78E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,31 +249,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E3DC3E68CBFB64EB91E49E1EBE35C759 /* Frameworks */ = {
+		FE1DA3D69104F85DD99D5550C2D31388 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDAE8FB6DF3218A63C7616CBB060B072 /* Foundation.framework in Frameworks */,
+				BE9F89AF424C8FB7D1FB34D4D0DDECFE /* Foundation.framework in Frameworks */,
+				7F981DEC4D160D6FA5616670316B238F /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		01F8BEDF24F3A04E3A5FD7A406125F41 /* CustomContent */ = {
+		03565D01DE7237D8699CBF11DEFD0C6F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				81695761AEFC9C4A15FBC51EF7103B81 /* SwiftyCustomContentButton.swift */,
+				4692CE5208FF6C06A2B4FDE1A4212FCC /* GoogleInterchangeUtilities.framework */,
 			);
-			name = CustomContent;
-			sourceTree = "<group>";
-		};
-		031D3F69640FF39B40444F38DFDE71C6 /* GoogleInterchangeUtilities */ = {
-			isa = PBXGroup;
-			children = (
-				B5F1282CF6FA991E1A43FDA473DD844D /* Frameworks */,
-			);
-			path = GoogleInterchangeUtilities;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		03DD22C6017D7CFCF076802066C72DA7 /* Targets Support Files */ = {
@@ -256,76 +279,120 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		0DC38C3D5E1B9EA32846F899D27E1476 /* Frameworks */ = {
+		08555189F1BFD8E553660351796C5A42 /* PureLayout */ = {
 			isa = PBXGroup;
 			children = (
-				D36D1A8BAD0E18F8335837598CF1B343 /* GoogleUtilities.framework */,
+				9D20F47B5CF85A33C3A2689795A96B67 /* ALView+PureLayout.h */,
+				B1DE70D5425817A667F853A5A26C3E34 /* ALView+PureLayout.m */,
+				7C8276CC7BF1E931BDB619D07E040E27 /* NSArray+PureLayout.h */,
+				473749E6A158F2E50CA9C007D409D631 /* NSArray+PureLayout.m */,
+				31EC90BBDA213180AF9F74A5B3BDB4BB /* NSLayoutConstraint+PureLayout.h */,
+				70222174259A653ABA951F9C40023D7F /* NSLayoutConstraint+PureLayout.m */,
+				D7D407D4A3B4F0F18AC40CEE6DF571A7 /* PureLayout.h */,
+				A78FB09D20F790A64C10F90166E48C25 /* PureLayout+Internal.h */,
+				08EA894D7E99B27FFC04DD1AF2803A5C /* PureLayoutDefines.h */,
+				C0581CDA6FDE05A21710BA2B6FD0E522 /* Support Files */,
+			);
+			path = PureLayout;
+			sourceTree = "<group>";
+		};
+		0C6269AABB8A8CF5501C797BC52C36AA /* FirebaseAuth */ = {
+			isa = PBXGroup;
+			children = (
+				24DD02AC40680147DF2163CC3E8BC942 /* Frameworks */,
+			);
+			path = FirebaseAuth;
+			sourceTree = "<group>";
+		};
+		11F75E88E851CD8802CB63A3AF3986E4 /* GoogleParsingUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				C739E0BFE16C5DD96D26EF86C379E0F3 /* Frameworks */,
+			);
+			path = GoogleParsingUtilities;
+			sourceTree = "<group>";
+		};
+		123380CCE395EB0BD83A2BA1F1BA9A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7DF522DBB932170D2E1625EDF92DB297 /* GoogleUtilities.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		0F0BC7EFE3D76379E76339267F0D700B /* Support Files */ = {
+		22FA908148966BEB02F4A7C7E3052E51 /* FirebaseDatabase */ = {
 			isa = PBXGroup;
 			children = (
-				955C281071D422B5FC377E1259B39B88 /* Info.plist */,
-				9859B24FCA4589AD248F3167B4F9599D /* TextFieldEffects.modulemap */,
-				E973F7C594586CADAB9993B53584549F /* TextFieldEffects.xcconfig */,
-				6E5A06BDF1597F5204334262CFB239B9 /* TextFieldEffects-dummy.m */,
-				40A666FBA875E642518F1383D8B5AAC2 /* TextFieldEffects-prefix.pch */,
-				FD454CBE7E787043AEA5986FFEA22436 /* TextFieldEffects-umbrella.h */,
+				9571CC70D4047E313902A0196A005FD2 /* Frameworks */,
+			);
+			path = FirebaseDatabase;
+			sourceTree = "<group>";
+		};
+		24DD02AC40680147DF2163CC3E8BC942 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E2F40B697955E5804DF483544B7AE4B /* FirebaseAuth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		257551085876BCA86534EEA521896830 /* GoogleNetworkingUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				EBCF4B1B57DA4DAB400C08B083D482B3 /* Frameworks */,
+			);
+			path = GoogleNetworkingUtilities;
+			sourceTree = "<group>";
+		};
+		3555593ED8200476A5310AB630A651B1 /* FirebaseAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				8C4EB8779163EB9E7C2A6015BBB9F1B1 /* Frameworks */,
+			);
+			path = FirebaseAnalytics;
+			sourceTree = "<group>";
+		};
+		35C03E6A1C975DD74A5BDC7034C5A357 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C5B2E867713922A965AC2F3712FB118F /* Info.plist */,
+				92B1268B3743C9936FE4FFC48C39560A /* TextFieldEffects.modulemap */,
+				AA3CBDA8A9BAE5CB7DB40A604705BF61 /* TextFieldEffects.xcconfig */,
+				63AA2C4CED35FA47EFF110F396F1A8F2 /* TextFieldEffects-dummy.m */,
+				DD2D7EF7ECE758E218735C19DB3A168C /* TextFieldEffects-prefix.pch */,
+				A1D0E046573B30EE1CB72F08A4D7BCF9 /* TextFieldEffects-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/TextFieldEffects";
 			sourceTree = "<group>";
 		};
-		1291B9AE3D8461CA02287C97DDA7D9FC /* GoogleNetworkingUtilities */ = {
+		3B64EADF9C7D3E5212E26C4BD7856F56 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BC537ABB4CBB5D0B2E57B40F4DB96CFD /* Frameworks */,
-			);
-			path = GoogleNetworkingUtilities;
-			sourceTree = "<group>";
-		};
-		222CA0D3E949AF55A1275EE654C2C426 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				7E4511535B426A9B332FE01C48ED51C9 /* Info.plist */,
-				A7AD50714C48DCB69E8935F14A7EA4EC /* PureLayout.modulemap */,
-				497E4AA36407400471EF95D53F3B49D4 /* PureLayout.xcconfig */,
-				A596E8A89433F5608E88AA371D46AF55 /* PureLayout-dummy.m */,
-				D386B2D5E844D965BE97DB5EBBF57D6B /* PureLayout-prefix.pch */,
-				D9E36EEF9B7B0231D9261C82FCB15203 /* PureLayout-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/PureLayout";
-			sourceTree = "<group>";
-		};
-		2EEF454B28FA03A9F208A44FAE78C4BB /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				75BCD4E0F6739F240365CEBEEA42B897 /* GoogleSymbolUtilities.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		2FA101A1F5116C4757E1B64EC0CFDCC2 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				5B3142EDFD1E214E237B867489C75E89 /* Firebase */,
-				CE60EFBF8894E9382FAF417397C0D46F /* FirebaseAnalytics */,
-				F074D29D22BFFC12FE3769DE7E805351 /* FirebaseAuth */,
-				A442CE4EAD0FB4EF75478CB1060D39B1 /* FirebaseDatabase */,
-				FA6980349C7835A05B41B0BB584A14ED /* FirebaseInstanceID */,
-				031D3F69640FF39B40444F38DFDE71C6 /* GoogleInterchangeUtilities */,
-				1291B9AE3D8461CA02287C97DDA7D9FC /* GoogleNetworkingUtilities */,
-				AA33727597DB2A7E9A2951CC6B704895 /* GoogleParsingUtilities */,
-				95FF973EBC32FECC7C6D9D6E2DD3BDBA /* GoogleSymbolUtilities */,
-				93E09B0CFE67BBD579044E59F068A7B6 /* GoogleUtilities */,
-				8073CB1A39D62ABD7B3DC8ED32A023B1 /* PureLayout */,
-				ADD752B0777F3688D0AD7276F26021F2 /* SwiftyButton */,
-				E3B516E49A248ED6FFA4F24E0030E16A /* TextFieldEffects */,
+				9032A5F5314FBBCAE83766C7AA295A49 /* DZNEmptyDataSet */,
+				83A244AC78A844B48B32153C4708B596 /* Firebase */,
+				3555593ED8200476A5310AB630A651B1 /* FirebaseAnalytics */,
+				0C6269AABB8A8CF5501C797BC52C36AA /* FirebaseAuth */,
+				22FA908148966BEB02F4A7C7E3052E51 /* FirebaseDatabase */,
+				6FE1C13FF9C5033EDB6720C3B488DA69 /* FirebaseInstanceID */,
+				E18A6E6E53518AAD6ABC3DC7D143A0D6 /* GoogleInterchangeUtilities */,
+				257551085876BCA86534EEA521896830 /* GoogleNetworkingUtilities */,
+				11F75E88E851CD8802CB63A3AF3986E4 /* GoogleParsingUtilities */,
+				5856ECB4F09A109131F7EAA987873DA4 /* GoogleSymbolUtilities */,
+				62AAF063407516222B9D8D9D5D379EB3 /* GoogleUtilities */,
+				08555189F1BFD8E553660351796C5A42 /* PureLayout */,
+				961E237732360A9964D04C265CCF38B7 /* SwiftyButton */,
+				93F1C06288AE080C5A39DF9FB0B22410 /* TextFieldEffects */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		3E1670C9D863D84F91CE6559E5929814 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8D455993A568D65DE954D8B5C9B0987 /* FirebaseInstanceID.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		427618D8431E33F4E119B24A0F32B0FA /* iOS */ = {
@@ -337,20 +404,20 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		4C0E350BF1A99526724A5BB8C66C6B6C /* Frameworks */ = {
+		45568DBF3F16F6F96A9CEE0B18D397A5 /* CustomContent */ = {
 			isa = PBXGroup;
 			children = (
-				3F7718BCCD07B5062B17CBABCDDB6E5B /* FirebaseAuth.framework */,
+				845CFC19E03F121511F9782BA313F542 /* SwiftyCustomContentButton.swift */,
 			);
-			name = Frameworks;
+			name = CustomContent;
 			sourceTree = "<group>";
 		};
-		5B3142EDFD1E214E237B867489C75E89 /* Firebase */ = {
+		5856ECB4F09A109131F7EAA987873DA4 /* GoogleSymbolUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				6AF3ED3BC577DC4F6FE950EB7389EABA /* Analytics */,
+				F0FE8D8A3185441EF949709C477049D0 /* Frameworks */,
 			);
-			path = Firebase;
+			path = GoogleSymbolUtilities;
 			sourceTree = "<group>";
 		};
 		621C5BFB9934C13C0146F6DB856624CB /* Pods-PhoneAFriendTests */ = {
@@ -371,34 +438,21 @@
 			path = "Target Support Files/Pods-PhoneAFriendTests";
 			sourceTree = "<group>";
 		};
-		661FA3D75E69C235FD0612430D22AC14 /* Support Files */ = {
+		62AAF063407516222B9D8D9D5D379EB3 /* GoogleUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				1B0B41A41FD2440DC7173B5E8D443A2B /* Info.plist */,
-				20223BAB1A9BA636F58622BBCC3121E9 /* SwiftyButton.modulemap */,
-				806BFC1A4B31387BB2D4B8C1DAE667B1 /* SwiftyButton.xcconfig */,
-				63EF6599402C09D4A6BFC1874EF99C2A /* SwiftyButton-dummy.m */,
-				2043E67136C8FEF80B3CC99437210E21 /* SwiftyButton-prefix.pch */,
-				B40833CDA9DE80FD26E8A62C4D161673 /* SwiftyButton-umbrella.h */,
+				123380CCE395EB0BD83A2BA1F1BA9A17 /* Frameworks */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftyButton";
+			path = GoogleUtilities;
 			sourceTree = "<group>";
 		};
-		6AF3ED3BC577DC4F6FE950EB7389EABA /* Analytics */ = {
+		6FE1C13FF9C5033EDB6720C3B488DA69 /* FirebaseInstanceID */ = {
 			isa = PBXGroup;
 			children = (
-				67BC0794012198B64911AA0E013E4D66 /* Firebase.h */,
+				BF5DD249F055391CC81BD95C47E0F490 /* FIRInstanceID.h */,
+				3E1670C9D863D84F91CE6559E5929814 /* Frameworks */,
 			);
-			name = Analytics;
-			sourceTree = "<group>";
-		};
-		74B434E0C3026ACBC02E201F7B2722A4 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				ABBB8BC3171A6E16ED3E3AE9A1320942 /* GoogleParsingUtilities.framework */,
-			);
-			name = Frameworks;
+			path = FirebaseInstanceID;
 			sourceTree = "<group>";
 		};
 		7B8692115B83CF0603FBB14AC029C28F /* Frameworks */ = {
@@ -415,43 +469,101 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				7B8692115B83CF0603FBB14AC029C28F /* Frameworks */,
-				2FA101A1F5116C4757E1B64EC0CFDCC2 /* Pods */,
-				E086CC7EF7323A987BB7B79A128B829E /* Products */,
+				3B64EADF9C7D3E5212E26C4BD7856F56 /* Pods */,
+				9096B6D1462FCEC5015691485F37CBE1 /* Products */,
 				03DD22C6017D7CFCF076802066C72DA7 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8073CB1A39D62ABD7B3DC8ED32A023B1 /* PureLayout */ = {
+		83A244AC78A844B48B32153C4708B596 /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
-				C5590DD301D849DA15D4C619B6651CFE /* ALView+PureLayout.h */,
-				274926157AE58C5E5870D539BCCEE5DB /* ALView+PureLayout.m */,
-				BF772BB751F29F750EE10495132B5670 /* NSArray+PureLayout.h */,
-				A42E9CC38B46E7A69F42DC923F511E09 /* NSArray+PureLayout.m */,
-				5F6C07567D57856EAFD7F9F4AA195196 /* NSLayoutConstraint+PureLayout.h */,
-				E2D2129F7E0760C05D1202DE851EAF5F /* NSLayoutConstraint+PureLayout.m */,
-				E6EF870F67EF00FCC3FEFE768D4333EF /* PureLayout.h */,
-				F36B32C7C597E8ECF01FA72795F69C57 /* PureLayout+Internal.h */,
-				B85D0BFB47600E20C2F5A17DC07CDFF3 /* PureLayoutDefines.h */,
-				222CA0D3E949AF55A1275EE654C2C426 /* Support Files */,
+				B63D8B3A281299C70997C3983566A501 /* Analytics */,
 			);
-			path = PureLayout;
+			path = Firebase;
 			sourceTree = "<group>";
 		};
-		93E09B0CFE67BBD579044E59F068A7B6 /* GoogleUtilities */ = {
+		8C4EB8779163EB9E7C2A6015BBB9F1B1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0DC38C3D5E1B9EA32846F899D27E1476 /* Frameworks */,
+				39A47A329BD4BCA76BF5F9D2D1990119 /* FirebaseAnalytics.framework */,
 			);
-			path = GoogleUtilities;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		95FF973EBC32FECC7C6D9D6E2DD3BDBA /* GoogleSymbolUtilities */ = {
+		9005DCDCE89C1ACD657535AA0D1FDF91 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2EEF454B28FA03A9F208A44FAE78C4BB /* Frameworks */,
+				0C4DDCA15C1599FC5B94E3D7140235B3 /* Info.plist */,
+				A23DA7AEEF3DDA5AF673FB4A3894BF2B /* SwiftyButton.modulemap */,
+				7AAF28BED670D87C69D0F05D3070B0B9 /* SwiftyButton.xcconfig */,
+				DABB43F9C09AFC4C7134D82CBB5C93EB /* SwiftyButton-dummy.m */,
+				1D44D39F97B510F7FCD464D163B2F10D /* SwiftyButton-prefix.pch */,
+				29E26CAE5503FFD0BB613375A694D9D3 /* SwiftyButton-umbrella.h */,
 			);
-			path = GoogleSymbolUtilities;
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyButton";
+			sourceTree = "<group>";
+		};
+		9032A5F5314FBBCAE83766C7AA295A49 /* DZNEmptyDataSet */ = {
+			isa = PBXGroup;
+			children = (
+				09D319FC16EF0CA435C1712A35D00584 /* UIScrollView+EmptyDataSet.h */,
+				61DC799B333CCA01695D088D92B1EDC4 /* UIScrollView+EmptyDataSet.m */,
+				FEA264337B623F7FAB58CA2B28A2E4A8 /* Support Files */,
+			);
+			path = DZNEmptyDataSet;
+			sourceTree = "<group>";
+		};
+		9096B6D1462FCEC5015691485F37CBE1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC0DB742A5239619685A9242B74A3967 /* DZNEmptyDataSet.framework */,
+				86B88DCAE98FA8339C631771F56E57F8 /* Pods_PhoneAFriend.framework */,
+				81D2D63B3938733E81FC954BAB249798 /* Pods_PhoneAFriendTests.framework */,
+				1A6B899B221DCAD0EC4E4917271A66B0 /* Pods_PhoneAFriendUITests.framework */,
+				8D548C848DB26E8EDEB4421C63D15874 /* PureLayout.framework */,
+				7F8E9BC6425CB349C2E9035F15E18C05 /* SwiftyButton.framework */,
+				785E4EF0A501C4C98482E4F211A3488B /* TextFieldEffects.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93F1C06288AE080C5A39DF9FB0B22410 /* TextFieldEffects */ = {
+			isa = PBXGroup;
+			children = (
+				59FA0D69C328CBFC7B1F5405C12E3289 /* AkiraTextField.swift */,
+				5C0CDE78EC3F8E8A57DD1444FA77A4DE /* HoshiTextField.swift */,
+				8BB0D7A619357C66FA1676A34B23A6E4 /* IsaoTextField.swift */,
+				D171F1B791138D4EBDEC32748EBAEEC9 /* JiroTextField.swift */,
+				E050036067F0DB6C20F6BB29F2E73D37 /* KaedeTextField.swift */,
+				12044BF14F3702DA2CF32641FF0CF3C1 /* MadokaTextField.swift */,
+				F925D41409072F2AEFF885302E5293EF /* MinoruTextField.swift */,
+				E2D14E7FD6E38E1AC439578455BCAB26 /* TextFieldsEffects.swift */,
+				8A2F8605FB361DDBE2CD884D1B8A4080 /* YokoTextField.swift */,
+				0EDC82CA7EFC9FD3409701E07E8AC4AA /* YoshikoTextField.swift */,
+				35C03E6A1C975DD74A5BDC7034C5A357 /* Support Files */,
+			);
+			path = TextFieldEffects;
+			sourceTree = "<group>";
+		};
+		9571CC70D4047E313902A0196A005FD2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2EA6FAE9B7B6E7D35A63C1E3ABC62D8F /* FirebaseDatabase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		961E237732360A9964D04C265CCF38B7 /* SwiftyButton */ = {
+			isa = PBXGroup;
+			children = (
+				1CBE58827B0D2E27B7F607FD52655766 /* SwiftyButton.swift */,
+				C1247767AADB35B629EF772F47700055 /* SwiftyButton+ResizableImage.swift */,
+				45568DBF3F16F6F96A9CEE0B18D397A5 /* CustomContent */,
+				9005DCDCE89C1ACD657535AA0D1FDF91 /* Support Files */,
+			);
+			path = SwiftyButton;
 			sourceTree = "<group>";
 		};
 		97078F738877E1E5BE3AA9641973B9A8 /* Pods-PhoneAFriend */ = {
@@ -472,71 +584,12 @@
 			path = "Target Support Files/Pods-PhoneAFriend";
 			sourceTree = "<group>";
 		};
-		A442CE4EAD0FB4EF75478CB1060D39B1 /* FirebaseDatabase */ = {
+		B63D8B3A281299C70997C3983566A501 /* Analytics */ = {
 			isa = PBXGroup;
 			children = (
-				AE8B2004EE1F19439A216BA1977FFE65 /* Frameworks */,
+				4A0F7ACBA2F89094A2D242C180D84169 /* Firebase.h */,
 			);
-			path = FirebaseDatabase;
-			sourceTree = "<group>";
-		};
-		A5B96521F76A2F3916555BB356392F2B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				47C68C1DDEDFE0551B4697F46BC101C0 /* FirebaseAnalytics.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		AA33727597DB2A7E9A2951CC6B704895 /* GoogleParsingUtilities */ = {
-			isa = PBXGroup;
-			children = (
-				74B434E0C3026ACBC02E201F7B2722A4 /* Frameworks */,
-			);
-			path = GoogleParsingUtilities;
-			sourceTree = "<group>";
-		};
-		AA9EA3D1148CAC9A80D24B79CD10A618 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				437713B77228EA0B18BD01A860D22D09 /* FirebaseInstanceID.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		ADD752B0777F3688D0AD7276F26021F2 /* SwiftyButton */ = {
-			isa = PBXGroup;
-			children = (
-				2DB34B36B21B305A246D8C99E2A5FA38 /* SwiftyButton.swift */,
-				5379D475179E1D0BBDCFB4DA4812D1F2 /* SwiftyButton+ResizableImage.swift */,
-				01F8BEDF24F3A04E3A5FD7A406125F41 /* CustomContent */,
-				661FA3D75E69C235FD0612430D22AC14 /* Support Files */,
-			);
-			path = SwiftyButton;
-			sourceTree = "<group>";
-		};
-		AE8B2004EE1F19439A216BA1977FFE65 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				CBC1477F37398AF9BFC1B4661E5F55F8 /* FirebaseDatabase.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B5F1282CF6FA991E1A43FDA473DD844D /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A19CAFB467B75753182EE6505FF08AD1 /* GoogleInterchangeUtilities.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BC537ABB4CBB5D0B2E57B40F4DB96CFD /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				DFB70794E8FE3DEA58A2462304A8C075 /* GoogleNetworkingUtilities.framework */,
-			);
-			name = Frameworks;
+			name = Analytics;
 			sourceTree = "<group>";
 		};
 		BD1EAD347F4A16C6CBCED578CEB4978B /* Pods-PhoneAFriendUITests */ = {
@@ -557,60 +610,64 @@
 			path = "Target Support Files/Pods-PhoneAFriendUITests";
 			sourceTree = "<group>";
 		};
-		CE60EFBF8894E9382FAF417397C0D46F /* FirebaseAnalytics */ = {
+		C0581CDA6FDE05A21710BA2B6FD0E522 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A5B96521F76A2F3916555BB356392F2B /* Frameworks */,
+				A09F53A9489BF5760881066270F96E90 /* Info.plist */,
+				F20A76C852ED118CC25C5911245C8FEC /* PureLayout.modulemap */,
+				1303EA6676FE692A933872679A4849DB /* PureLayout.xcconfig */,
+				F506E2194D6C57E426D2810D4789C777 /* PureLayout-dummy.m */,
+				3E4658F93C01D215857B07DCC8018198 /* PureLayout-prefix.pch */,
+				0723240B0D7E34C174A8F965E46A2AA2 /* PureLayout-umbrella.h */,
 			);
-			path = FirebaseAnalytics;
+			name = "Support Files";
+			path = "../Target Support Files/PureLayout";
 			sourceTree = "<group>";
 		};
-		E086CC7EF7323A987BB7B79A128B829E /* Products */ = {
+		C739E0BFE16C5DD96D26EF86C379E0F3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E8C499ACEB6CF6AB8C2B0A8C30A8C8C3 /* Pods_PhoneAFriend.framework */,
-				0A4866946E7B3D52CD8B2A76A8198883 /* Pods_PhoneAFriendTests.framework */,
-				5118EFD65D142B79CE9F1F27CBE99731 /* Pods_PhoneAFriendUITests.framework */,
-				EC35E35D81B245E537A0329EAC9C2E17 /* PureLayout.framework */,
-				FBDA77397CD5900228B899364D4FDB72 /* SwiftyButton.framework */,
-				A5F2B8A3CAB6FE8AD5B53406037EA6DD /* TextFieldEffects.framework */,
+				B0F07EF70FFC86F6855F12839956DABE /* GoogleParsingUtilities.framework */,
 			);
-			name = Products;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E3B516E49A248ED6FFA4F24E0030E16A /* TextFieldEffects */ = {
+		E18A6E6E53518AAD6ABC3DC7D143A0D6 /* GoogleInterchangeUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				E345C93F42D1E99E36FA2DDBDD499893 /* AkiraTextField.swift */,
-				C492D9D47E5F528163EA6042A1841B01 /* HoshiTextField.swift */,
-				CD4EB46D780D8B369647F55D48451E8B /* IsaoTextField.swift */,
-				F8AE6DB28AB9A9FD38BC228CE0876F47 /* JiroTextField.swift */,
-				8840085CAF3629FBC5F76A7C7E8EC77A /* KaedeTextField.swift */,
-				0015D68ABAF7F25E44BEDC0488C69726 /* MadokaTextField.swift */,
-				FC932A3D4851C4F103F98DE3D4FF1967 /* MinoruTextField.swift */,
-				3B96C2AAA6622DBE2BFC294A64D50143 /* TextFieldsEffects.swift */,
-				31D634193A04B2DDB09275AB17CAF11C /* YokoTextField.swift */,
-				F688671BD67F0A51DCBB2E4138A221BA /* YoshikoTextField.swift */,
-				0F0BC7EFE3D76379E76339267F0D700B /* Support Files */,
+				03565D01DE7237D8699CBF11DEFD0C6F /* Frameworks */,
 			);
-			path = TextFieldEffects;
+			path = GoogleInterchangeUtilities;
 			sourceTree = "<group>";
 		};
-		F074D29D22BFFC12FE3769DE7E805351 /* FirebaseAuth */ = {
+		EBCF4B1B57DA4DAB400C08B083D482B3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4C0E350BF1A99526724A5BB8C66C6B6C /* Frameworks */,
+				9AC563508BC4172AB1D54A435BE5A435 /* GoogleNetworkingUtilities.framework */,
 			);
-			path = FirebaseAuth;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FA6980349C7835A05B41B0BB584A14ED /* FirebaseInstanceID */ = {
+		F0FE8D8A3185441EF949709C477049D0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				496281FF6B775D0A3BA160D47EF09B2D /* FIRInstanceID.h */,
-				AA9EA3D1148CAC9A80D24B79CD10A618 /* Frameworks */,
+				BFFF792E8AE1E88B6E9DC42A29C83116 /* GoogleSymbolUtilities.framework */,
 			);
-			path = FirebaseInstanceID;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FEA264337B623F7FAB58CA2B28A2E4A8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7698EB84FAD20B9528994F31EE30F81D /* DZNEmptyDataSet.modulemap */,
+				BFAF0F3D735CB767F0BE4EAE005CDA25 /* DZNEmptyDataSet.xcconfig */,
+				580A477389F63D49B8174A1880E1A7AA /* DZNEmptyDataSet-dummy.m */,
+				5DB2F4DD5273E4F31089A3D73E26DF95 /* DZNEmptyDataSet-prefix.pch */,
+				3D1BB11DE0C9908F3F57E86458BD81DB /* DZNEmptyDataSet-umbrella.h */,
+				5D30484D64A970D5EC3736FF411C31BB /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DZNEmptyDataSet";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -624,25 +681,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0814224BC454EE440DFFE443DCFA1EA3 /* Headers */ = {
+		065E74E9536E08BE67C20B903CC15CDE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E59A996EDC5067BBE1175F59EFB3F4BC /* ALView+PureLayout.h in Headers */,
-				8C2C685DDD0B5A5195B1CCE31CCDD674 /* NSArray+PureLayout.h in Headers */,
-				F3B1B55CAF3F48C9C844C23D8904DC13 /* NSLayoutConstraint+PureLayout.h in Headers */,
-				834FCDB5023C42807D76DDBB2459A48A /* PureLayout+Internal.h in Headers */,
-				4232F0521651EDDAC75BF29975F00260 /* PureLayout-umbrella.h in Headers */,
-				5BA8F38D4F3E812EF734E55C8C61BBDB /* PureLayout.h in Headers */,
-				DE51D261C75B1B551CF8505237AF1784 /* PureLayoutDefines.h in Headers */,
+				9CCA7D089C7F7407F5307062D5437F7D /* Pods-PhoneAFriend-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1177202D6E7A2C0486FA7A3EBF330FEB /* Headers */ = {
+		06CBE3D2EE40D2F3C28F0B8D81D95FD5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1604395ADD28BE262B063C1C211741F /* SwiftyButton-umbrella.h in Headers */,
+				F06927308013E848A44A49E42192C44E /* SwiftyButton-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D9C9A2043A53A3AE91808894C7E05FB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B116B651388E34E3CE3E9097BC83D47F /* DZNEmptyDataSet-umbrella.h in Headers */,
+				E14B01B2BDDA7C86AC2EBC45FCFEF52E /* UIScrollView+EmptyDataSet.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -654,40 +714,46 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A6F58F9F132F0B47AD9E1EF416B21EA4 /* Headers */ = {
+		5B527E780D44129939E685E03FF1CF03 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4F1E679A3D3F4F1DE3274056C8E660E /* Pods-PhoneAFriend-umbrella.h in Headers */,
+				4B47769997B90C19F734D95A86240849 /* TextFieldEffects-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B02AB718BB439F5419E0F4DCCAB328C3 /* Headers */ = {
+		69F4B125AE373146D804334E10584E06 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDB5B2A451A7B20970960CFC7F0F0246 /* TextFieldEffects-umbrella.h in Headers */,
+				50CF0639B5661E690EB8B21268199E07 /* ALView+PureLayout.h in Headers */,
+				E1B8F85EB63F1EE33BB4FC9893A061F8 /* NSArray+PureLayout.h in Headers */,
+				65B18130F6C0FEF3FCB425C32FB92B12 /* NSLayoutConstraint+PureLayout.h in Headers */,
+				63BCD299AAEA8F4C9EBE3873A801C502 /* PureLayout+Internal.h in Headers */,
+				A20D2701B2B951C2D6D51098163A96ED /* PureLayout-umbrella.h in Headers */,
+				BBF4A88DD9F32BBB9382CC78518F1CD4 /* PureLayout.h in Headers */,
+				714472D56B8569989E7FFDC9961E23DF /* PureLayoutDefines.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0C254D7C25D2E15DBE895C7BB2E8663D /* TextFieldEffects */ = {
+		16FB872D0D2D4BA0F378AB34D47CF95F /* DZNEmptyDataSet */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7D67DEA2F3F674BC24012D4EAFAD14D0 /* Build configuration list for PBXNativeTarget "TextFieldEffects" */;
+			buildConfigurationList = 3ECB532EC0EA88D6927C7A7673C25700 /* Build configuration list for PBXNativeTarget "DZNEmptyDataSet" */;
 			buildPhases = (
-				28045D42C14519B036182FB9DA5318DA /* Sources */,
-				33092C1E4B48CDEC5DE64E4FD3470017 /* Frameworks */,
-				B02AB718BB439F5419E0F4DCCAB328C3 /* Headers */,
+				C5EE2B8C478333F5942E30C6FF944370 /* Sources */,
+				FE1DA3D69104F85DD99D5550C2D31388 /* Frameworks */,
+				4D9C9A2043A53A3AE91808894C7E05FB /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = TextFieldEffects;
-			productName = TextFieldEffects;
-			productReference = A5F2B8A3CAB6FE8AD5B53406037EA6DD /* TextFieldEffects.framework */;
+			name = DZNEmptyDataSet;
+			productName = DZNEmptyDataSet;
+			productReference = BC0DB742A5239619685A9242B74A3967 /* DZNEmptyDataSet.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		1929BDFE368BAF7E7F91DDBEF96139EB /* Pods-PhoneAFriendTests */ = {
@@ -704,25 +770,42 @@
 			);
 			name = "Pods-PhoneAFriendTests";
 			productName = "Pods-PhoneAFriendTests";
-			productReference = 0A4866946E7B3D52CD8B2A76A8198883 /* Pods_PhoneAFriendTests.framework */;
+			productReference = 81D2D63B3938733E81FC954BAB249798 /* Pods_PhoneAFriendTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		64698EEECEE9410A44CDFDB30EAFD1DC /* SwiftyButton */ = {
+		5CFF69DF58B707271AB9F7CA99D7A58B /* PureLayout */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1F130EEF6CC6D823086FBD25674178D4 /* Build configuration list for PBXNativeTarget "SwiftyButton" */;
+			buildConfigurationList = 00D71370C13E548132A880FEEF004D64 /* Build configuration list for PBXNativeTarget "PureLayout" */;
 			buildPhases = (
-				C59DFF7CC1F29DE6997A15FAED0014A6 /* Sources */,
-				547C567F32BAAA6AC5E61B1DF8D2E81F /* Frameworks */,
-				1177202D6E7A2C0486FA7A3EBF330FEB /* Headers */,
+				CE7148240C020010457B4923F023BC31 /* Sources */,
+				03AC45F21D2CC76EC0789AB62B1C0ADD /* Frameworks */,
+				69F4B125AE373146D804334E10584E06 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B2A3623105FE52FE223CD878A543D0EA /* PBXTargetDependency */,
+			);
+			name = PureLayout;
+			productName = PureLayout;
+			productReference = 8D548C848DB26E8EDEB4421C63D15874 /* PureLayout.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6FAB0243920081E76953F4859C775D34 /* SwiftyButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50D3B796577E1200F2CB0B9E9427A25A /* Build configuration list for PBXNativeTarget "SwiftyButton" */;
+			buildPhases = (
+				2BFE04E1A3283A80396414A0E1002BA5 /* Sources */,
+				6EB585FEDB6799A91A1038C7D6EB334B /* Frameworks */,
+				06CBE3D2EE40D2F3C28F0B8D81D95FD5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BBBA8E789FC81770084E59CCB45C85C2 /* PBXTargetDependency */,
 			);
 			name = SwiftyButton;
 			productName = SwiftyButton;
-			productReference = FBDA77397CD5900228B899364D4FDB72 /* SwiftyButton.framework */;
+			productReference = 7F8E9BC6425CB349C2E9035F15E18C05 /* SwiftyButton.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		7E246E5E5F84A7FFB20EBE27D04D27CD /* Pods-PhoneAFriendUITests */ = {
@@ -739,44 +822,45 @@
 			);
 			name = "Pods-PhoneAFriendUITests";
 			productName = "Pods-PhoneAFriendUITests";
-			productReference = 5118EFD65D142B79CE9F1F27CBE99731 /* Pods_PhoneAFriendUITests.framework */;
+			productReference = 1A6B899B221DCAD0EC4E4917271A66B0 /* Pods_PhoneAFriendUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		9D5BDABCBD50B1B2C19771A23B89420C /* PureLayout */ = {
+		BA5F1066E52983A300F26B621F54DDBD /* TextFieldEffects */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DD532D1B1B984034289BB96EE74EBA08 /* Build configuration list for PBXNativeTarget "PureLayout" */;
+			buildConfigurationList = 3D37665629D07A72AC017BE0E46BA3AF /* Build configuration list for PBXNativeTarget "TextFieldEffects" */;
 			buildPhases = (
-				F79FCDC8B4C9441D61EB923C3285C813 /* Sources */,
-				6411B8FA3CE95C239505BC70E4455DA3 /* Frameworks */,
-				0814224BC454EE440DFFE443DCFA1EA3 /* Headers */,
+				C850567ABA0C5C99E0A0BE71AE19B2D8 /* Sources */,
+				1F0DD23CD2BA9A502EFF81C79DF625A5 /* Frameworks */,
+				5B527E780D44129939E685E03FF1CF03 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = PureLayout;
-			productName = PureLayout;
-			productReference = EC35E35D81B245E537A0329EAC9C2E17 /* PureLayout.framework */;
+			name = TextFieldEffects;
+			productName = TextFieldEffects;
+			productReference = 785E4EF0A501C4C98482E4F211A3488B /* TextFieldEffects.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		FE8F22BF81024F58A4D18E9A94C508A9 /* Pods-PhoneAFriend */ = {
+		F48A469460AB43092E5671C2D764BB34 /* Pods-PhoneAFriend */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 71297D940E3A1C5739FCDC265ACDF1B1 /* Build configuration list for PBXNativeTarget "Pods-PhoneAFriend" */;
+			buildConfigurationList = E6DEE6D248F818747470FB81F76FC2F7 /* Build configuration list for PBXNativeTarget "Pods-PhoneAFriend" */;
 			buildPhases = (
-				77A415490CD7B9E00D4A069E07DA2B85 /* Sources */,
-				E3DC3E68CBFB64EB91E49E1EBE35C759 /* Frameworks */,
-				A6F58F9F132F0B47AD9E1EF416B21EA4 /* Headers */,
+				99BCC1DEC72992BC823397F85D0EE85D /* Sources */,
+				7880ACBD91554BB17C763EFC5D696B05 /* Frameworks */,
+				065E74E9536E08BE67C20B903CC15CDE /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				00F6E77BDF8B615B6D104B8DF278843B /* PBXTargetDependency */,
-				06568B05D541F5B810C29D3AE21439E1 /* PBXTargetDependency */,
-				71FA0D7EDA0725D21CC5C6184B4DBD5B /* PBXTargetDependency */,
+				7E7F7708FC41C0549DA2F82ECC18405C /* PBXTargetDependency */,
+				C40428ACF5BBA6F9CE12B59F94FFAF2D /* PBXTargetDependency */,
+				A6C17B03B23D2CE9048FA588EFF0D366 /* PBXTargetDependency */,
+				740E20D978458ED7A7E7AFB37CB6F083 /* PBXTargetDependency */,
 			);
 			name = "Pods-PhoneAFriend";
 			productName = "Pods-PhoneAFriend";
-			productReference = E8C499ACEB6CF6AB8C2B0A8C30A8C8C3 /* Pods_PhoneAFriend.framework */;
+			productReference = 86B88DCAE98FA8339C631771F56E57F8 /* Pods_PhoneAFriend.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -796,36 +880,30 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = E086CC7EF7323A987BB7B79A128B829E /* Products */;
+			productRefGroup = 9096B6D1462FCEC5015691485F37CBE1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FE8F22BF81024F58A4D18E9A94C508A9 /* Pods-PhoneAFriend */,
+				16FB872D0D2D4BA0F378AB34D47CF95F /* DZNEmptyDataSet */,
+				F48A469460AB43092E5671C2D764BB34 /* Pods-PhoneAFriend */,
 				1929BDFE368BAF7E7F91DDBEF96139EB /* Pods-PhoneAFriendTests */,
 				7E246E5E5F84A7FFB20EBE27D04D27CD /* Pods-PhoneAFriendUITests */,
-				9D5BDABCBD50B1B2C19771A23B89420C /* PureLayout */,
-				64698EEECEE9410A44CDFDB30EAFD1DC /* SwiftyButton */,
-				0C254D7C25D2E15DBE895C7BB2E8663D /* TextFieldEffects */,
+				5CFF69DF58B707271AB9F7CA99D7A58B /* PureLayout */,
+				6FAB0243920081E76953F4859C775D34 /* SwiftyButton */,
+				BA5F1066E52983A300F26B621F54DDBD /* TextFieldEffects */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		28045D42C14519B036182FB9DA5318DA /* Sources */ = {
+		2BFE04E1A3283A80396414A0E1002BA5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				291165AE722C55126D1E45FDFE6A1C92 /* AkiraTextField.swift in Sources */,
-				55DB5970F9720A492668DAF012D35A64 /* HoshiTextField.swift in Sources */,
-				C4D6C781BD12BEC9F64AED63A1A0035F /* IsaoTextField.swift in Sources */,
-				C444DD4F706624AAE9D390552736555C /* JiroTextField.swift in Sources */,
-				9C9631A1808B031388DD9A13ACCB1E26 /* KaedeTextField.swift in Sources */,
-				93829736F4F24ACFCC73C8FA68F49304 /* MadokaTextField.swift in Sources */,
-				D7E8B96FADD7956E1DCF175A8AC109E0 /* MinoruTextField.swift in Sources */,
-				1C03485979F5DF99579405171A0BE657 /* TextFieldEffects-dummy.m in Sources */,
-				BCB6B8E5E136168790BB36BABF06117C /* TextFieldsEffects.swift in Sources */,
-				5CF76B415A3EF4CE5BED0B6BE9C1BB8E /* YokoTextField.swift in Sources */,
-				2340DA6964727C504B44DEE97AB14C0B /* YoshikoTextField.swift in Sources */,
+				47D6ED8B0C3095846607E3AE19472911 /* SwiftyButton+ResizableImage.swift in Sources */,
+				1FC42812024F17A80FBB979B7E3341C5 /* SwiftyButton-dummy.m in Sources */,
+				31EDE7A968334AA8ACE9BCD4DCFA4B7A /* SwiftyButton.swift in Sources */,
+				009BAB37D18C5275B0C6DB3511AB714E /* SwiftyCustomContentButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -837,14 +915,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		77A415490CD7B9E00D4A069E07DA2B85 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7D70FD6848092B3C05AD439C1C0F6F93 /* Pods-PhoneAFriend-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8679813F66CA6618FD258F7D0CEF3F70 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -853,61 +923,91 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C59DFF7CC1F29DE6997A15FAED0014A6 /* Sources */ = {
+		99BCC1DEC72992BC823397F85D0EE85D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86A20D5522299E7EFDD160595E8910BF /* SwiftyButton+ResizableImage.swift in Sources */,
-				F8AB0A8A19BCE4B0F39D0EFFA93CC21F /* SwiftyButton-dummy.m in Sources */,
-				9760683481DFD725D5B974886567C1F2 /* SwiftyButton.swift in Sources */,
-				164A3DB3D5FA04644C62FE5E1A2B0BAE /* SwiftyCustomContentButton.swift in Sources */,
+				94C99B5E12251326512057F227691F75 /* Pods-PhoneAFriend-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F79FCDC8B4C9441D61EB923C3285C813 /* Sources */ = {
+		C5EE2B8C478333F5942E30C6FF944370 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9656CCB851685C988F1A0E61BC9B1D2 /* ALView+PureLayout.m in Sources */,
-				49A00366A43C1EA43740F4A7F6896CEB /* NSArray+PureLayout.m in Sources */,
-				026FCE82253375653AAE06D7C2DBD94B /* NSLayoutConstraint+PureLayout.m in Sources */,
-				5C5286CB1C88FE31ABC788DE3D4ADC2C /* PureLayout-dummy.m in Sources */,
+				22DC2D74E9117167CD17FD04C327EB9D /* DZNEmptyDataSet-dummy.m in Sources */,
+				3BC49A2B50306C45D4EBCAA50600EBE7 /* UIScrollView+EmptyDataSet.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C850567ABA0C5C99E0A0BE71AE19B2D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62C9C7C1949238B9168B2B5579291CCB /* AkiraTextField.swift in Sources */,
+				D9C637F6CEDC7C26A2824AD56CAECB62 /* HoshiTextField.swift in Sources */,
+				0EFA93B77ACF71CB390972459CD7D50B /* IsaoTextField.swift in Sources */,
+				421DDFAE8819AD7E45D974181F1BEC0B /* JiroTextField.swift in Sources */,
+				A25052E23653CBE6E0D44DD9D9354E99 /* KaedeTextField.swift in Sources */,
+				D84427333BDC3C742ED61772584C1E28 /* MadokaTextField.swift in Sources */,
+				C3D3A7AA010218F13C6607ACF3D0A3CD /* MinoruTextField.swift in Sources */,
+				F25F1A06F69D6FB9DBE3B558017F3C79 /* TextFieldEffects-dummy.m in Sources */,
+				E64BDE9B04E21F46AB4F3063145D40A5 /* TextFieldsEffects.swift in Sources */,
+				B4394067D142BAAA8B3E71EDD1EA548A /* YokoTextField.swift in Sources */,
+				8C245B8B38141332EC1D7B188B2B4C4E /* YoshikoTextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE7148240C020010457B4923F023BC31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D295119E3461A2C0293E9E1BE53C98C /* ALView+PureLayout.m in Sources */,
+				1526934C1582596369800ACF6338A0B3 /* NSArray+PureLayout.m in Sources */,
+				14924FB6F4F825FD76AD084633C8C708 /* NSLayoutConstraint+PureLayout.m in Sources */,
+				41D4E838D1FA417498DFEB4DAEFB57B7 /* PureLayout-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		00F6E77BDF8B615B6D104B8DF278843B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = PureLayout;
-			target = 9D5BDABCBD50B1B2C19771A23B89420C /* PureLayout */;
-			targetProxy = 3C0AEAB6ED0490D7645F71F5E1DB5A58 /* PBXContainerItemProxy */;
-		};
-		06568B05D541F5B810C29D3AE21439E1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftyButton;
-			target = 64698EEECEE9410A44CDFDB30EAFD1DC /* SwiftyButton */;
-			targetProxy = 97C4DE3ED1C13847F4BB9211C4A9D347 /* PBXContainerItemProxy */;
-		};
-		71FA0D7EDA0725D21CC5C6184B4DBD5B /* PBXTargetDependency */ = {
+		740E20D978458ED7A7E7AFB37CB6F083 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TextFieldEffects;
-			target = 0C254D7C25D2E15DBE895C7BB2E8663D /* TextFieldEffects */;
-			targetProxy = DA96564026BCE5ABE45101CCE57540B0 /* PBXContainerItemProxy */;
+			target = BA5F1066E52983A300F26B621F54DDBD /* TextFieldEffects */;
+			targetProxy = 1237FBF7A5A941FD2D4512FBA9BF0CC1 /* PBXContainerItemProxy */;
 		};
-		B2A3623105FE52FE223CD878A543D0EA /* PBXTargetDependency */ = {
+		7E7F7708FC41C0549DA2F82ECC18405C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DZNEmptyDataSet;
+			target = 16FB872D0D2D4BA0F378AB34D47CF95F /* DZNEmptyDataSet */;
+			targetProxy = C85A6E652E1B68EE34FBB45D0AD78F1B /* PBXContainerItemProxy */;
+		};
+		A6C17B03B23D2CE9048FA588EFF0D366 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyButton;
+			target = 6FAB0243920081E76953F4859C775D34 /* SwiftyButton */;
+			targetProxy = 0C15A4123893250BD3F5615FC19CAF4F /* PBXContainerItemProxy */;
+		};
+		BBBA8E789FC81770084E59CCB45C85C2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PureLayout;
-			target = 9D5BDABCBD50B1B2C19771A23B89420C /* PureLayout */;
-			targetProxy = F004952486C790A9F7794BFFB5211754 /* PBXContainerItemProxy */;
+			target = 5CFF69DF58B707271AB9F7CA99D7A58B /* PureLayout */;
+			targetProxy = E81C3DDB44308015B3765DD1FC277F28 /* PBXContainerItemProxy */;
+		};
+		C40428ACF5BBA6F9CE12B59F94FFAF2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PureLayout;
+			target = 5CFF69DF58B707271AB9F7CA99D7A58B /* PureLayout */;
+			targetProxy = 5F8158E6A62209E990FFADB8A3838144 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0D0FD16C1E0971E99324A9A65C6672A5 /* Release */ = {
+		1B7B573682E312A5CC753276E92A3B07 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 497E4AA36407400471EF95D53F3B49D4 /* PureLayout.xcconfig */;
+			baseConfigurationReference = 7AAF28BED670D87C69D0F05D3070B0B9 /* SwiftyButton.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -918,14 +1018,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/PureLayout/PureLayout-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PureLayout/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyButton/SwiftyButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyButton/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PureLayout/PureLayout.modulemap";
+				MODULEMAP_FILE = "Target Support Files/SwiftyButton/SwiftyButton.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = PureLayout;
+				PRODUCT_NAME = SwiftyButton;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -934,69 +1034,35 @@
 			};
 			name = Release;
 		};
-		10229FED33805F7945784915FFDE702D /* Debug */ = {
+		2D70797F4D691FBA8793F14AF4CDCC15 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E973F7C594586CADAB9993B53584549F /* TextFieldEffects.xcconfig */;
+			baseConfigurationReference = BFAF0F3D735CB767F0BE4EAE005CDA25 /* DZNEmptyDataSet.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TextFieldEffects/TextFieldEffects-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TextFieldEffects/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/DZNEmptyDataSet/DZNEmptyDataSet-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DZNEmptyDataSet/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TextFieldEffects/TextFieldEffects.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = TextFieldEffects;
+				MODULEMAP_FILE = "Target Support Files/DZNEmptyDataSet/DZNEmptyDataSet.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = DZNEmptyDataSet;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
-		};
-		3CA9978AAAC14FD3A541BFF4FC5BC7BB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E07755CBE017F1562F6213D61FB81CC6 /* Pods-PhoneAFriend.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-PhoneAFriend/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PhoneAFriend/Pods-PhoneAFriend.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_PhoneAFriend;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
+			name = Release;
 		};
 		3FA451D268613890FA8A5A03801E11D5 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1036,10 +1102,11 @@
 			};
 			name = Release;
 		};
-		411D03D6754744C5613A713E6AA747E8 /* Debug */ = {
+		401181344D9E4A1081ADD0D967E37A19 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 806BFC1A4B31387BB2D4B8C1DAE667B1 /* SwiftyButton.xcconfig */;
+			baseConfigurationReference = BFAF0F3D735CB767F0BE4EAE005CDA25 /* DZNEmptyDataSet.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -1049,14 +1116,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyButton/SwiftyButton-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyButton/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/DZNEmptyDataSet/DZNEmptyDataSet-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DZNEmptyDataSet/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftyButton/SwiftyButton.modulemap";
+				MODULEMAP_FILE = "Target Support Files/DZNEmptyDataSet/DZNEmptyDataSet.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SwiftyButton;
+				PRODUCT_NAME = DZNEmptyDataSet;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1141,42 +1208,42 @@
 			};
 			name = Debug;
 		};
-		872E517E905A8335A698E9288E8A90B0 /* Release */ = {
+		674850E869746FD93922E6B745653C51 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 806BFC1A4B31387BB2D4B8C1DAE667B1 /* SwiftyButton.xcconfig */;
+			baseConfigurationReference = 1303EA6676FE692A933872679A4849DB /* PureLayout.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyButton/SwiftyButton-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyButton/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/PureLayout/PureLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PureLayout/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftyButton/SwiftyButton.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SwiftyButton;
+				MODULEMAP_FILE = "Target Support Files/PureLayout/PureLayout.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PureLayout;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		A3FCE7511D824DC9D6B54B92DEC97C65 /* Release */ = {
+		7B7ADC1B12695FCC35654693464536E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E973F7C594586CADAB9993B53584549F /* TextFieldEffects.xcconfig */;
+			baseConfigurationReference = AA3CBDA8A9BAE5CB7DB40A604705BF61 /* TextFieldEffects.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1189,8 +1256,38 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/TextFieldEffects/TextFieldEffects.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = TextFieldEffects;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7F2958AB123F98BF62B1710395BE41F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1303EA6676FE692A933872679A4849DB /* PureLayout.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PureLayout/PureLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PureLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PureLayout/PureLayout.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PureLayout;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1198,6 +1295,36 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		9005FBAFA3B11BB151AA2231C65FF5CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AAF28BED670D87C69D0F05D3070B0B9 /* SwiftyButton.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyButton/SwiftyButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyButton/SwiftyButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		A5FC93FBD6D0E9F1E51E62CC9606AFE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1232,7 +1359,7 @@
 			};
 			name = Debug;
 		};
-		C1FD10FD33E44BEC9C2777CF8806E8A8 /* Release */ = {
+		C01D4A4C894060C58AFFC285F2AD8B43 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D9D21E06A60BDF06A72E49FC164C6B4E /* Pods-PhoneAFriend.release.xcconfig */;
 			buildSettings = {
@@ -1265,9 +1392,9 @@
 			};
 			name = Release;
 		};
-		C6D32EC9DA11699BD5DCA19AC4A6CABF /* Debug */ = {
+		C7591CF2CF655900631F27CF85CE602A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 497E4AA36407400471EF95D53F3B49D4 /* PureLayout.xcconfig */;
+			baseConfigurationReference = E07755CBE017F1562F6213D61FB81CC6 /* Pods-PhoneAFriend.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1278,21 +1405,55 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/PureLayout/PureLayout-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PureLayout/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-PhoneAFriend/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PhoneAFriend/Pods-PhoneAFriend.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PhoneAFriend;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CB4997B907A9276074F095450E3E2F94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA3CBDA8A9BAE5CB7DB40A604705BF61 /* TextFieldEffects.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TextFieldEffects/TextFieldEffects-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TextFieldEffects/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PureLayout/PureLayout.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = PureLayout;
+				MODULEMAP_FILE = "Target Support Files/TextFieldEffects/TextFieldEffects.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = TextFieldEffects;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		CC858788E9CFDB21AFBD54974B847F68 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1363,20 +1524,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		00D71370C13E548132A880FEEF004D64 /* Build configuration list for PBXNativeTarget "PureLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				674850E869746FD93922E6B745653C51 /* Debug */,
+				7F2958AB123F98BF62B1710395BE41F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0FD1FA45416784DD428E9F5BFE8516F4 /* Build configuration list for PBXNativeTarget "Pods-PhoneAFriendUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A5FC93FBD6D0E9F1E51E62CC9606AFE0 /* Debug */,
 				4FDEDAD37474806EE0B67492455A6D5F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1F130EEF6CC6D823086FBD25674178D4 /* Build configuration list for PBXNativeTarget "SwiftyButton" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				411D03D6754744C5613A713E6AA747E8 /* Debug */,
-				872E517E905A8335A698E9288E8A90B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1399,29 +1560,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		71297D940E3A1C5739FCDC265ACDF1B1 /* Build configuration list for PBXNativeTarget "Pods-PhoneAFriend" */ = {
+		3D37665629D07A72AC017BE0E46BA3AF /* Build configuration list for PBXNativeTarget "TextFieldEffects" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3CA9978AAAC14FD3A541BFF4FC5BC7BB /* Debug */,
-				C1FD10FD33E44BEC9C2777CF8806E8A8 /* Release */,
+				7B7ADC1B12695FCC35654693464536E6 /* Debug */,
+				CB4997B907A9276074F095450E3E2F94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7D67DEA2F3F674BC24012D4EAFAD14D0 /* Build configuration list for PBXNativeTarget "TextFieldEffects" */ = {
+		3ECB532EC0EA88D6927C7A7673C25700 /* Build configuration list for PBXNativeTarget "DZNEmptyDataSet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				10229FED33805F7945784915FFDE702D /* Debug */,
-				A3FCE7511D824DC9D6B54B92DEC97C65 /* Release */,
+				401181344D9E4A1081ADD0D967E37A19 /* Debug */,
+				2D70797F4D691FBA8793F14AF4CDCC15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DD532D1B1B984034289BB96EE74EBA08 /* Build configuration list for PBXNativeTarget "PureLayout" */ = {
+		50D3B796577E1200F2CB0B9E9427A25A /* Build configuration list for PBXNativeTarget "SwiftyButton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C6D32EC9DA11699BD5DCA19AC4A6CABF /* Debug */,
-				0D0FD16C1E0971E99324A9A65C6672A5 /* Release */,
+				9005FBAFA3B11BB151AA2231C65FF5CD /* Debug */,
+				1B7B573682E312A5CC753276E92A3B07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6DEE6D248F818747470FB81F76FC2F7 /* Build configuration list for PBXNativeTarget "Pods-PhoneAFriend" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7591CF2CF655900631F27CF85CE602A /* Debug */,
+				C01D4A4C894060C58AFFC285F2AD8B43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

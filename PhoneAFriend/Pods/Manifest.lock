@@ -1,4 +1,5 @@
 PODS:
+  - DZNEmptyDataSet (1.8.1)
   - Firebase (3.3.0):
     - Firebase/Core (= 3.3.0)
   - Firebase/Analytics (3.3.0):
@@ -42,6 +43,7 @@ PODS:
   - TextFieldEffects (1.2.0)
 
 DEPENDENCIES:
+  - DZNEmptyDataSet
   - Firebase
   - Firebase/Auth
   - Firebase/Database
@@ -49,6 +51,7 @@ DEPENDENCIES:
   - TextFieldEffects
 
 SPEC CHECKSUMS:
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   Firebase: 6250071f0e2440a5c4c67b8cb6b868f868237ac3
   FirebaseAnalytics: 0fd6532cb2c3d03cd5cf26ad295ccb091efd3104
   FirebaseAuth: 5efddc3fae47042b73585f083f956462be4f5b8e
@@ -63,6 +66,6 @@ SPEC CHECKSUMS:
   SwiftyButton: fffcc0d82b2b5f9ec1681f20ee9c67bed0d5c73b
   TextFieldEffects: bc4fd3bd557321bd61a0762f3f50965477a36f62
 
-PODFILE CHECKSUM: 6a0a20e4c2b249efb22c2b780bebfb0de6c5ef38
+PODFILE CHECKSUM: b57938c6981009c5bc7657259c89da2d4a4d8da8
 
 COCOAPODS: 1.0.1

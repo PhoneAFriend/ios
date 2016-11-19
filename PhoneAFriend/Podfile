@@ -11,6 +11,8 @@ target 'PhoneAFriend' do
   pod 'Firebase/Auth'
   pod 'TextFieldEffects'
   pod 'SwiftyButton'
+  pod 'DZNEmptyDataSet'
+
 
   target 'PhoneAFriendTests' do
     inherit! :search_paths
