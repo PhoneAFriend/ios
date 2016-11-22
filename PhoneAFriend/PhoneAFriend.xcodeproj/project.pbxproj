@@ -25,7 +25,9 @@
 		AF2FB68F1D820B0D003EB3AA /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2FB68E1D820B0D003EB3AA /* LandingPageViewController.swift */; };
 		AF2FB6931D826BB7003EB3AA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2FB6921D826BB7003EB3AA /* User.swift */; };
 		AF2FB6951D826DA4003EB3AA /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2FB6941D826DA4003EB3AA /* HomePageViewController.swift */; };
+		AF31CF901DE38825003C6933 /* NewMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF31CF8F1DE38825003C6933 /* NewMessageViewController.swift */; };
 		AF446F691D9310DA00812996 /* SearchQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF446F681D9310DA00812996 /* SearchQuestionViewController.swift */; };
+		AF4871EA1DE4D7DF00CA7509 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4871E91DE4D7DF00CA7509 /* Message.swift */; };
 		AF62D3B91D8712A200C59234 /* CreateAQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF62D3B81D8712A200C59234 /* CreateAQuestionViewController.swift */; };
 		AF6808CA1D8C5D1900D6D5C1 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6808C91D8C5D1900D6D5C1 /* Post.swift */; };
 		AF960C0A1DDC243700F1DEB0 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF960C091DDC243700F1DEB0 /* Contact.swift */; };
@@ -84,7 +86,9 @@
 		AF2FB68E1D820B0D003EB3AA /* LandingPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
 		AF2FB6921D826BB7003EB3AA /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		AF2FB6941D826DA4003EB3AA /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		AF31CF8F1DE38825003C6933 /* NewMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageViewController.swift; sourceTree = "<group>"; };
 		AF446F681D9310DA00812996 /* SearchQuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchQuestionViewController.swift; sourceTree = "<group>"; };
+		AF4871E91DE4D7DF00CA7509 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		AF62D3B81D8712A200C59234 /* CreateAQuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAQuestionViewController.swift; sourceTree = "<group>"; };
 		AF6808C91D8C5D1900D6D5C1 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		AF960C091DDC243700F1DEB0 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
@@ -185,6 +189,7 @@
 				AF2FB6921D826BB7003EB3AA /* User.swift */,
 				AF6808C91D8C5D1900D6D5C1 /* Post.swift */,
 				AF960C091DDC243700F1DEB0 /* Contact.swift */,
+				AF4871E91DE4D7DF00CA7509 /* Message.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -203,6 +208,7 @@
 			children = (
 				AF2FB68A1D820387003EB3AA /* SignUpViewController.swift */,
 				AF2FB6881D82034E003EB3AA /* LoginViewController.swift */,
+				AF31CF8F1DE38825003C6933 /* NewMessageViewController.swift */,
 				AF2F5AC61DD3E5940035DEBD /* UserTableViewController.swift */,
 				AF62D3B81D8712A200C59234 /* CreateAQuestionViewController.swift */,
 				AFFC0AD21DC5C42400FA1A72 /* UserLookupViewController.swift */,
@@ -535,9 +541,11 @@
 				AF2FB6931D826BB7003EB3AA /* User.swift in Sources */,
 				AF2F5AC91DD3E6900035DEBD /* UserTableViewCell.swift in Sources */,
 				AFFC0AD51DC834EC00FA1A72 /* PostTableViewController.swift in Sources */,
+				AF31CF901DE38825003C6933 /* NewMessageViewController.swift in Sources */,
 				AFFC0AD81DC83B4D00FA1A72 /* PostTableViewCell.swift in Sources */,
 				AF2FB68B1D820387003EB3AA /* SignUpViewController.swift in Sources */,
 				AFD46E5F1DBEFAC1009CE026 /* TabBarViewController.swift in Sources */,
+				AF4871EA1DE4D7DF00CA7509 /* Message.swift in Sources */,
 				AF960C0E1DDC3E2300F1DEB0 /* ContactTableViewCell.swift in Sources */,
 				AF2F5AC71DD3E5940035DEBD /* UserTableViewController.swift in Sources */,
 				AFD46E5D1DBEF864009CE026 /* HomeNavigationController.swift in Sources */,

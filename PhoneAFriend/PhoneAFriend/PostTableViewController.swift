@@ -29,7 +29,6 @@ class PostTableViewController: UITableViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        self.tableView.reloadData()
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -67,7 +66,6 @@ class PostTableViewController: UITableViewController {
             }
             
             self.postArray = newPosts
-            self.tableView.reloadData()
         })
         
     }

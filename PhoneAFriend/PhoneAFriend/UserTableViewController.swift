@@ -42,7 +42,6 @@ class UserTableViewController : UITableViewController {
         let add = UITableViewRowAction(style: .Normal, title: "Add") { action, index in
             //call generic contact add function here to pull in username that was clicked and current user's username
             self.addUser(self.users[indexPath.row].username!)
-            
         }
         add.backgroundColor = UIColor(netHex: 0xCDDC39)
         
@@ -86,9 +85,6 @@ class UserTableViewController : UITableViewController {
                 activeContacts.append(contact)
                 inactiveContacts.removeAtIndex(userFound1!)
                 contact.ref.updateChildValues(["u12":true])
-                dispatch_async(dispatch_get_main_queue(), {
-                    ContactTableViewController().tableView.reloadData()
-                })
             } else {
                 let userFound2 = inactiveContacts.indexOf({$0.username1 == username})
                 if userFound2 != nil {
@@ -97,11 +93,10 @@ class UserTableViewController : UITableViewController {
                     let username = contact.username1
                     displayContacts.append(username)
                     activeContacts.append(contact)
+                    ContactTableViewController().dispContacts.append(username)
                     inactiveContacts.removeAtIndex(userFound2!)
                     contact.ref.updateChildValues(["u21":true])
-                    dispatch_async(dispatch_get_main_queue(), {
-                        ContactTableViewController().tableView.reloadData()
-                    })
+                    ContactTableViewController().insertData(contact)
                 } else {
                     FIRDatabase.database().reference().child("Contacts").queryOrderedByChild("username1").queryEqualToValue(username).queryOrderedByChild("username2").queryEqualToValue(currentUser?.username).observeEventType(.Value, withBlock: { (snapshot) -> Void in
                         if snapshot.childrenCount != 0 {
@@ -109,14 +104,15 @@ class UserTableViewController : UITableViewController {
                             contact.u21 = true
                             activeContacts.append(contact)
                             displayContacts.append(username)
+                            ContactTableViewController().dispContacts.append(username)
                             contact.ref.updateChildValues(["u21":true])
-                            dispatch_async(dispatch_get_main_queue(), {
-                                ContactTableViewController().tableView.reloadData()
-                            })
+                            ContactTableViewController().insertData(contact)
+
                         } else {
                             let contact = Contact(u12: true, u21: false, username1: currentUser!.username!, username2: username)
                             activeContacts.append(contact)
                             displayContacts.append(username)
+                            ContactTableViewController().dispContacts.append(username)
                             let key = FIRDatabase.database().reference().child("Contacts").childByAutoId().key
                             let newPost = ["u12" : true,
                                 "u21" : false,
@@ -125,9 +121,8 @@ class UserTableViewController : UITableViewController {
                             ]
                             let childUpdates = ["/Contacts/\(key)": newPost]
                             FIRDatabase.database().reference().updateChildValues(childUpdates)
-                            dispatch_async(dispatch_get_main_queue(), {
-                                ContactTableViewController().tableView.reloadData()
-                            })
+                            ContactTableViewController().insertData(contact)
+
                         }
                         
                     })
@@ -142,9 +137,8 @@ class UserTableViewController : UITableViewController {
                     ]
                     let childUpdates = ["/Contacts/\(key)": newPost]
                     FIRDatabase.database().reference().updateChildValues(childUpdates)
-                    dispatch_async(dispatch_get_main_queue(), {
-                        ContactTableViewController().tableView.reloadData()
-                    })
+                    ContactTableViewController().insertData(contact)
+
                 }
             }
             
