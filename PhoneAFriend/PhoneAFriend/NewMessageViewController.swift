@@ -53,7 +53,25 @@ class NewMessageViewController : UIViewController {
         } else {
             // Good to go. Send the message
             
+            let messageToSend = Message(senderUsername: currentUser!.username!, recipientUsername: username, subject: subject, message: message, unread: true)
+            sendMessage(messageToSend)
         }
+    }
+    
+    func sendMessage(messageToSend: Message) {
+        let key = FIRDatabase.database().reference().child("messages").childByAutoId().key
+        let newMessage = ["recipientUsername": messageToSend.recipientUsername,
+                          "senderUsername": messageToSend.senderUsername,
+                          "subject": messageToSend.subject,
+                          "message": messageToSend.message,
+                          "unread": true
+        ]
+        let childUpdates = ["/messages/\(key)": newMessage]
+        FIRDatabase.database().reference().updateChildValues(childUpdates)
+    }
+    
+    @IBAction func sendMessage(segue:UIStoryboardSegue) {
+        
     }
     
 }

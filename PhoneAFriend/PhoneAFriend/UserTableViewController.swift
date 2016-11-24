@@ -13,6 +13,7 @@ import UIKit
 class UserTableViewController : UITableViewController {
     let cellIdentifier = "userCell"
     var users = [User]()
+    var usernameToPass: String = ""
     override func viewDidLoad(){
         super.viewDidLoad()
     }
@@ -47,7 +48,9 @@ class UserTableViewController : UITableViewController {
         
         
         let message = UITableViewRowAction(style: .Normal, title: "Message") { action, index in
-            
+            self.usernameToPass = self.users[indexPath.row].username!
+            self.performSegueWithIdentifier("UsersToMessage", sender: nil)
+
         }
         message.backgroundColor = UIColor(netHex: 0x2196f3)
         return [message, add]
@@ -145,6 +148,13 @@ class UserTableViewController : UITableViewController {
             
             
             
+        }
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "UsersToMessage" {
+            let nextScene =  segue.destinationViewController as! NewMessageViewController
+            nextScene.username = usernameToPass
         }
     }
 }

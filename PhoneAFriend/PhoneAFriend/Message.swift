@@ -9,27 +9,29 @@
 import Firebase
 
 class Message {
-    var sentBy: String!
-    var sentTo: String!
+    var senderUsername: String!
+    var recipientUsername: String!
     var subject: String!
     var message: String!
+    var unread: Bool!
     var ref: FIRDatabaseReference!
     
     init (snapshot : FIRDataSnapshot) {
         ref = snapshot.ref
         let data = snapshot.value as! NSDictionary
-        sentBy = data["sentBy"] as! String
-        sentTo = data["sentTo"] as! String
+        senderUsername = data["senderUsername"] as! String
+        recipientUsername = data["recipientUsername"] as! String
         subject = data["subject"] as! String
         message = data["message"] as! String
+        unread = data["unread"] as! Bool
     }
     
-    init (ref: FIRDatabaseReference, sentBy : String, sentTo: String, subject: String, message: String) {
-        self.ref = ref
-        self.sentTo = sentTo
-        self.sentBy = sentBy
+    init (senderUsername : String, recipientUsername: String, subject: String, message: String, unread: Bool) {
+        self.recipientUsername = recipientUsername
+        self.senderUsername = senderUsername
         self.message = message
         self.subject = subject
+        self.unread = unread
     }
     
 }

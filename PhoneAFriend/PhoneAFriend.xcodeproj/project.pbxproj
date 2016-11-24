@@ -28,6 +28,10 @@
 		AF31CF901DE38825003C6933 /* NewMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF31CF8F1DE38825003C6933 /* NewMessageViewController.swift */; };
 		AF446F691D9310DA00812996 /* SearchQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF446F681D9310DA00812996 /* SearchQuestionViewController.swift */; };
 		AF4871EA1DE4D7DF00CA7509 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4871E91DE4D7DF00CA7509 /* Message.swift */; };
+		AF4871EC1DE54E2F00CA7509 /* InboxTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4871EB1DE54E2F00CA7509 /* InboxTableViewController.swift */; };
+		AF4871EE1DE54E3900CA7509 /* InboxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4871ED1DE54E3900CA7509 /* InboxTableViewCell.swift */; };
+		AF4871F01DE551AF00CA7509 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4871EF1DE551AF00CA7509 /* MessageViewController.swift */; };
+		AF4871F21DE5723D00CA7509 /* no_uploaded.png in Resources */ = {isa = PBXBuildFile; fileRef = AF4871F11DE5723D00CA7509 /* no_uploaded.png */; };
 		AF62D3B91D8712A200C59234 /* CreateAQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF62D3B81D8712A200C59234 /* CreateAQuestionViewController.swift */; };
 		AF6808CA1D8C5D1900D6D5C1 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6808C91D8C5D1900D6D5C1 /* Post.swift */; };
 		AF960C0A1DDC243700F1DEB0 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF960C091DDC243700F1DEB0 /* Contact.swift */; };
@@ -89,6 +93,10 @@
 		AF31CF8F1DE38825003C6933 /* NewMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageViewController.swift; sourceTree = "<group>"; };
 		AF446F681D9310DA00812996 /* SearchQuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchQuestionViewController.swift; sourceTree = "<group>"; };
 		AF4871E91DE4D7DF00CA7509 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		AF4871EB1DE54E2F00CA7509 /* InboxTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InboxTableViewController.swift; sourceTree = "<group>"; };
+		AF4871ED1DE54E3900CA7509 /* InboxTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InboxTableViewCell.swift; sourceTree = "<group>"; };
+		AF4871EF1DE551AF00CA7509 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		AF4871F11DE5723D00CA7509 /* no_uploaded.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = no_uploaded.png; sourceTree = "<group>"; };
 		AF62D3B81D8712A200C59234 /* CreateAQuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAQuestionViewController.swift; sourceTree = "<group>"; };
 		AF6808C91D8C5D1900D6D5C1 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		AF960C091DDC243700F1DEB0 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
@@ -206,22 +214,25 @@
 		AFA54CC61DD4297F00B81165 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AF2FB68A1D820387003EB3AA /* SignUpViewController.swift */,
-				AF2FB6881D82034E003EB3AA /* LoginViewController.swift */,
-				AF31CF8F1DE38825003C6933 /* NewMessageViewController.swift */,
-				AF2F5AC61DD3E5940035DEBD /* UserTableViewController.swift */,
-				AF62D3B81D8712A200C59234 /* CreateAQuestionViewController.swift */,
-				AFFC0AD21DC5C42400FA1A72 /* UserLookupViewController.swift */,
-				AF960C0B1DDC3D2A00F1DEB0 /* ContactTableViewController.swift */,
 				AF960C0D1DDC3E2300F1DEB0 /* ContactTableViewCell.swift */,
-				AF2F5AC81DD3E6900035DEBD /* UserTableViewCell.swift */,
-				AF446F681D9310DA00812996 /* SearchQuestionViewController.swift */,
-				AFFC0AD41DC834EC00FA1A72 /* PostTableViewController.swift */,
-				AFFC0AD71DC83B4D00FA1A72 /* PostTableViewCell.swift */,
+				AF960C0B1DDC3D2A00F1DEB0 /* ContactTableViewController.swift */,
+				AF62D3B81D8712A200C59234 /* CreateAQuestionViewController.swift */,
 				AFD46E5C1DBEF864009CE026 /* HomeNavigationController.swift */,
-				AFD46E5E1DBEFAC1009CE026 /* TabBarViewController.swift */,
-				AF2FB68E1D820B0D003EB3AA /* LandingPageViewController.swift */,
 				AF2FB6941D826DA4003EB3AA /* HomePageViewController.swift */,
+				AF4871ED1DE54E3900CA7509 /* InboxTableViewCell.swift */,
+				AF4871EB1DE54E2F00CA7509 /* InboxTableViewController.swift */,
+				AF2FB68E1D820B0D003EB3AA /* LandingPageViewController.swift */,
+				AF2FB6881D82034E003EB3AA /* LoginViewController.swift */,
+				AF4871EF1DE551AF00CA7509 /* MessageViewController.swift */,
+				AF31CF8F1DE38825003C6933 /* NewMessageViewController.swift */,
+				AFFC0AD71DC83B4D00FA1A72 /* PostTableViewCell.swift */,
+				AFFC0AD41DC834EC00FA1A72 /* PostTableViewController.swift */,
+				AF446F681D9310DA00812996 /* SearchQuestionViewController.swift */,
+				AF2FB68A1D820387003EB3AA /* SignUpViewController.swift */,
+				AFD46E5E1DBEFAC1009CE026 /* TabBarViewController.swift */,
+				AFFC0AD21DC5C42400FA1A72 /* UserLookupViewController.swift */,
+				AF2F5AC81DD3E6900035DEBD /* UserTableViewCell.swift */,
+				AF2F5AC61DD3E5940035DEBD /* UserTableViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -230,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				AF2FB6861D820266003EB3AA /* constants.swift */,
+				AF4871F11DE5723D00CA7509 /* no_uploaded.png */,
 				AFFC0AD61DC8367B00FA1A72 /* Bridging-HeaderFile.h */,
 				AF0DD9BB1D77792F009B1F38 /* AppDelegate.swift */,
 				AF0DD9C21D77792F009B1F38 /* Assets.xcassets */,
@@ -378,6 +390,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF2FB68D1D820849003EB3AA /* GoogleService-Info.plist in Resources */,
+				AF4871F21DE5723D00CA7509 /* no_uploaded.png in Resources */,
 				AF0DD9C61D77792F009B1F38 /* LaunchScreen.storyboard in Resources */,
 				AF0DD9C31D77792F009B1F38 /* Assets.xcassets in Resources */,
 				AF0DD9C11D77792F009B1F38 /* Main.storyboard in Resources */,
@@ -531,16 +544,19 @@
 				AF960C0C1DDC3D2A00F1DEB0 /* ContactTableViewController.swift in Sources */,
 				AF2FB6891D82034E003EB3AA /* LoginViewController.swift in Sources */,
 				AF960C0A1DDC243700F1DEB0 /* Contact.swift in Sources */,
+				AF4871EC1DE54E2F00CA7509 /* InboxTableViewController.swift in Sources */,
 				AF2FB68F1D820B0D003EB3AA /* LandingPageViewController.swift in Sources */,
 				AF2FB6951D826DA4003EB3AA /* HomePageViewController.swift in Sources */,
 				AF446F691D9310DA00812996 /* SearchQuestionViewController.swift in Sources */,
 				AFFC0AD31DC5C42400FA1A72 /* UserLookupViewController.swift in Sources */,
 				AF0DD9BC1D77792F009B1F38 /* AppDelegate.swift in Sources */,
+				AF4871F01DE551AF00CA7509 /* MessageViewController.swift in Sources */,
 				AF62D3B91D8712A200C59234 /* CreateAQuestionViewController.swift in Sources */,
 				AF2FB6871D820266003EB3AA /* constants.swift in Sources */,
 				AF2FB6931D826BB7003EB3AA /* User.swift in Sources */,
 				AF2F5AC91DD3E6900035DEBD /* UserTableViewCell.swift in Sources */,
 				AFFC0AD51DC834EC00FA1A72 /* PostTableViewController.swift in Sources */,
+				AF4871EE1DE54E3900CA7509 /* InboxTableViewCell.swift in Sources */,
 				AF31CF901DE38825003C6933 /* NewMessageViewController.swift in Sources */,
 				AFFC0AD81DC83B4D00FA1A72 /* PostTableViewCell.swift in Sources */,
 				AF2FB68B1D820387003EB3AA /* SignUpViewController.swift in Sources */,

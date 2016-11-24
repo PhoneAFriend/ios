@@ -7,74 +7,159 @@
 //
 
 import UIKit
+import AVFoundation
 import Firebase
 
-class CreateAQuestionViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class CreateAQuestionViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate  {
     
-    
-    @IBOutlet weak var questionTitleField: UITextField!
-    @IBOutlet weak var questionTextField: UITextField!
-    @IBOutlet weak var picker: UIPickerView!
-    var pickerData: [String] = [String]()
-    var selectedPicker : String = ""
+    var image : UIImage! = nil
+    var questionTitle = ""
+    var subject = ""
+    var question = ""
+    var imagePicker:UIImagePickerController!
+    var previewLayer : AVCaptureVideoPreviewLayer?
+    var captureDevice : AVCaptureDevice?
+    let captureSession = AVCaptureSession()
+    var imageURL : String = "nil"
+    var postKey = ""
+
+    @IBOutlet weak var questionTitleTextField: UITextField!
+    @IBOutlet weak var questionTextView: UITextView!
+    @IBOutlet weak var subjectTextField: UITextField!
+
+    @IBOutlet weak var addButton: UIButton!
+    @IBOutlet weak var captureButton: UIButton!
+    var subjectOption = ["Math", "Science", "Computer Science", "Writing", "Other"]
+
     override func viewDidLoad(){
         super.viewDidLoad()
-        self.picker.delegate = self
-        self.picker.dataSource = self
+        questionTextView.layer.borderColor = UIColor.blackColor().CGColor
+        questionTextView.layer.borderWidth = 1
+        addButton.layer.cornerRadius = 10
+        captureButton.layer.cornerRadius = 10
+        let pickerView = UIPickerView()
         
-        pickerData = ["Math", "Math", "Math"]
+        pickerView.delegate = self
+        
+        subjectTextField.inputView = pickerView
     }
     
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return subjectOption.count
+    }
+    
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return subjectOption[row]
+    }
+    
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        subjectTextField.text = subjectOption[row]
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-    
-    // The number of columns of data
-    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
-        return 1
+    @IBAction func postPressed(sender: AnyObject) {
+        questionTitle = questionTitleTextField.text!
+        subject = subjectTextField.text!
+        question = questionTextView.text
+        if questionTitle != "" && subject != "" && question != "" {
+            startSave(questionTitle, username: currentUser!.username!, questionText: question, subject: subject)
+        } else {
+            let alert = UIAlertController(title: "Can not post", message: "You did not fill in all necessary fields", preferredStyle: .Alert)
+            let cancel = UIAlertAction(title: "Cancel", style: .Cancel, handler: { (action: UIAlertAction) in
+            })
+            alert.addAction(cancel)
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
     }
     
-    // The number of rows of data
-    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return pickerData.count
+    @IBAction func capturePressed(sender: AnyObject){
+        imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
+        imageCaptureInit(imagePicker)
+
+    }
+    func saveImage(imageName: String, image: UIImage, completion : (result:Bool) -> ()){
+        let storage = FIRStorage.storage()
+        let storageRef = storage.reference()
+        let imagedata = UIImageJPEGRepresentation(image, 0.8)
+        let metaData = FIRStorageMetadata()
+        metaData.contentType = "image/jpg"
+        storageRef.child("images/\(postKey)").putData(imagedata!, metadata: metaData){(metaData,error) in
+            if let error = error {
+                print(error.localizedDescription)
+                completion(result: false)
+            }else{
+                //consider doing an update to an alred posted post here to make it run quicker?
+                self.imageURL = metaData!.downloadURL()!.absoluteString
+                completion(result: true)
+            }
+        }
     }
     
-    // The data to return for the row and component (column) that's being passed in
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return pickerData[row]
+    func startSave(questionTitle: String, username: String, questionText: String, subject: String) {
+        postKey = FIRDatabase.database().reference().child("posts").childByAutoId().key
+        if image == nil {
+            imageURL = "nil"
+            let post = ["answered": "false",
+                        "datePosted": "Need to configure",
+                        "postedBy": username,
+                        "questionImageURL" :imageURL,
+                        "questionText" : questionText,
+                        "questionTitle" : questionTitle,
+                        "subject" : subject]
+            saveNewPost(post)
+        } else {
+            let imageName = currentUser!.username! + (questionTitleTextField.text?.lowercaseString.stringByReplacingOccurrencesOfString(" ", withString: ""))!
+            saveImage(imageName, image:  image) { (boolValue) -> Void in
+                if boolValue {
+                    let post = ["answered": "false",
+                                "datePosted": "Need to configure",
+                                "postedBy": username,
+                                "questionImageURL" :self.imageURL,
+                                "questionText" : questionText,
+                                "questionTitle" : questionTitle,
+                                "subject" : subject]
+                    self.saveNewPost(post)
+                } else {
+                    print("an error occured")
+                }
+            }
+        }
+    }
+    func saveNewPost(post: NSDictionary) {
+        let childUpdates = ["/posts/\(postKey)":post]
+        FIRDatabase.database().reference().updateChildValues(childUpdates)
     }
     
-    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-         selectedPicker = pickerData[row]
+    @IBAction func addImagePressed(sender: AnyObject) {
+        imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
+        imagePickerInit(imagePicker)
+    }
+    func imagePickerInit(imagePicker: UIImagePickerController){
+        imagePicker.sourceType = .PhotoLibrary
+        self.presentViewController(imagePicker, animated: true, completion: nil)
+    }
+    func imageCaptureInit(imagePicker: UIImagePickerController) {
+        imagePicker.sourceType = .Camera
+        self.presentViewController(imagePicker, animated: true, completion: nil)
     }
     
-    @IBAction func postQuestion(sender: AnyObject) {
-        //Add checking functions to throw alerts if the user has not filled in all the data fields. 
-        //Add checking function to see if the user upload an image. if so, call a save function to get the url of the saved image in firebase, otherwise, send an empty url string
-        print(selectedPicker)
-        let post = Post(questionTitle: questionTitleField.text!, questionText: questionTextField.text!, questionImageURL: "www.fakeurl.com", datePosted: "fakedatefornow", subject: selectedPicker, postedBy: currentUser!.username!, answered: "false")
-        posts.append(post)
-        saveNewPost(questionTitleField.text!, questionText: questionTextField.text!, questionImageURL: "fakeUrl", datePosted: "fakedate", subject: selectedPicker, postedBy: currentUser!.username!, answered: "false")
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]){
+        imagePicker.dismissViewControllerAnimated(true, completion: nil)
+        image = info[UIImagePickerControllerOriginalImage] as? UIImage
     }
     
-    func saveNewPost(questionTitle: String, questionText: String, questionImageURL : String, datePosted : String, subject : String, postedBy : String, answered : String){
-        let firebaseRef = FIRDatabase.database().reference()
-        
-        let key = firebaseRef.child("posts").childByAutoId().key
-        
-        let newPost = ["postedBy" : postedBy,
-                       "questionText" : questionText,
-                       "questionTitle" : questionTitle,
-                       "questionImageURL" : questionImageURL,
-                       "datePosted" : datePosted,
-                       "subject" : subject,
-                       "answered" : answered
-        ]
-        
-        let childUpdates = ["/posts/\(key)": newPost]
-        firebaseRef.updateChildValues(childUpdates)
+    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
+        imagePicker.dismissViewControllerAnimated(true, completion: nil)
     }
+
 
 }

@@ -13,6 +13,7 @@ var posts : [Post] = []
 var activeContacts : [Contact] = []
 var inactiveContacts : [Contact] = []
 var displayContacts : [String] = []
+var messages : [Message] = []
 
 let firebaseURL = "https://phoneafriend-7fb6b.firebaseio.com/"
 extension UIColor {

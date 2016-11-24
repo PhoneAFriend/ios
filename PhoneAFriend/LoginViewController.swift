@@ -38,17 +38,17 @@ class LoginViewController : UIViewController {
                                 if boolValue {
                                     self.fetchUsername2Contacts(currentUser!.username!) { (boolValue) -> () in
                                         if boolValue {
-                                            dispatch_async(dispatch_get_main_queue(), {
-                                                self.performSegueWithIdentifier("SegueFromLoginToHomePage", sender: self)
-                                            })
+                                            self.fetchUserMessages(currentUser!.username!) { (boolValue) -> () in
+                                                if boolValue {
+                                                    dispatch_async(dispatch_get_main_queue(), {
+                                                        self.performSegueWithIdentifier("SegueFromLoginToHomePage", sender: self)
+                                                    })
+                                                }
+                                            }
                                         }
                                     }
-                                } else {
-                                    print("Error getting contact list")
                                 }
                             }
-                        } else {
-                            print("error getting current username")
                         }
                     }
                 }
@@ -96,7 +96,6 @@ class LoginViewController : UIViewController {
                 
                 for contactSnapshot in snapshot.children {
                     let contact = Contact(snapshot: contactSnapshot as! FIRDataSnapshot)
-                    print(contact.ref)
                     if contact.u21 == true{
                         activeContacts.append(contact)
                         displayContacts.append(contact.username1)
@@ -107,6 +106,18 @@ class LoginViewController : UIViewController {
                 }
                 completion(result: true)
             } else {
+                completion(result: true)
+            }
+        })
+    }
+    
+    func fetchUserMessages(username: String, completion: (result: Bool) -> () ) {
+        FIRDatabase.database().reference().child("messages").queryOrderedByChild("recipientUsername").queryEqualToValue(username).observeEventType(.Value, withBlock: { (snapshot) -> Void in
+            if snapshot.childrenCount != 0 {
+                for messageSnapshot in snapshot.children {
+                    let message = Message(snapshot: messageSnapshot as! FIRDataSnapshot)
+                    messages.append(message)
+                }
                 completion(result: true)
             }
         })
