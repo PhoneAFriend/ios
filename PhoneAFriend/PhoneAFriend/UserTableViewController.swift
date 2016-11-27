@@ -157,4 +157,6 @@ class UserTableViewController : UITableViewController {
             nextScene.username = usernameToPass
         }
     }
+    
+    @IBAction func unwindToUserLookup(segue: UIStoryboardSegue) {}
 }

@@ -127,15 +127,22 @@ class CreateAQuestionViewController: UIViewController, UIPickerViewDataSource, U
                                 "questionTitle" : questionTitle,
                                 "subject" : subject]
                     self.saveNewPost(post)
+                    self.navigationController?.popViewControllerAnimated(true)
+
                 } else {
                     print("an error occured")
+                    self.navigationController?.popViewControllerAnimated(true)
+
                 }
             }
         }
+        UserPostsTableViewController().refreshData()
+        PostTableViewController().refreshData()
     }
     func saveNewPost(post: NSDictionary) {
         let childUpdates = ["/posts/\(postKey)":post]
         FIRDatabase.database().reference().updateChildValues(childUpdates)
+        
     }
     
     @IBAction func addImagePressed(sender: AnyObject) {

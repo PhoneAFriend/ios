@@ -70,5 +70,7 @@ class InboxTableViewController : UITableViewController {
         self.performSegueWithIdentifier("InboxToMessage", sender: nil)
     }
     
+    @IBAction func unwindToMessages(segue: UIStoryboardSegue) {}
+    
 
 }

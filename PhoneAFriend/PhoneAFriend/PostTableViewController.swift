@@ -13,10 +13,11 @@ import Firebase
 class PostTableViewController: UITableViewController {
    
     let cellIdentifier = "postCell"
-    var imageUrlToPass: String!
+    var postToPass : Post! = nil
     var post: Post!
     var postArray = [Post]()
     var ref: FIRDatabaseReference!
+    var reload: Bool = false
     private var databaseHandle: FIRDatabaseHandle!
 
     override func viewDidLoad() {
@@ -52,11 +53,15 @@ class PostTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return postArray.count
+        if reload {
+            return 0
+        } else {
+            return postArray.count
+        }
     }
     
     func startObservingDatabase () {
-        databaseHandle = ref.child("posts").observeEventType(.Value, withBlock: { (snapshot) in
+        ref.child("posts").observeSingleEventOfType(.Value, withBlock: { (snapshot) in
             var newPosts = [Post]()
             
             for postSnapShot in snapshot.children {
@@ -66,9 +71,37 @@ class PostTableViewController: UITableViewController {
             }
             
             self.postArray = newPosts
+            self.tableView.reloadData()
         })
         
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "PostsToPost" {
+            let nextScene =  segue.destinationViewController as! PostViewController
+            nextScene.post = postToPass
+        }
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        postToPass = postArray[indexPath.row]
+        self.performSegueWithIdentifier("PostsToPost", sender: nil)
+    }
 
+    func refreshData(){
+        postArray.removeAll()
+        tableView.reloadData()
+        reload = true
+        FIRDatabase.database().reference().child("posts").observeSingleEventOfType(.Value, withBlock: { (snapshot) -> Void in
+            if snapshot.childrenCount != 0 {
+                for postSnapshot in snapshot.children {
+                    let post = Post(snapshot: postSnapshot as! FIRDataSnapshot)
+                    self.postArray.append(post)
+                }
+            }
+            self.reload = false
+            self.tableView.reloadData()
+        })
+    }
 
 }

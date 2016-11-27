@@ -121,5 +121,7 @@ class ContactTableViewController : UITableViewController {
             nextScene.username = usernameToPass
         }
     }
+    
+    @IBAction func unwindToContacts(segue: UIStoryboardSegue){}
 
 }

@@ -14,11 +14,11 @@ class NewMessageViewController : UIViewController {
     var subject : String = ""
     var message : String = ""
     
+    @IBOutlet weak var usernameText: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        sendButton.layer.cornerRadius = 10
-        usernameLabel.text = "To: " + username
+        usernameText.text = username
         if subject != "" {
             subjectTextField.text = subject
         }
@@ -26,7 +26,6 @@ class NewMessageViewController : UIViewController {
         messageTextView.layer.borderWidth = 1.0
     }
     
-    @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var subjectTextField: UITextField!
     @IBOutlet weak var messageTextView: UITextView!
     @IBOutlet weak var sendButton: UIButton!
@@ -56,6 +55,7 @@ class NewMessageViewController : UIViewController {
             let messageToSend = Message(senderUsername: currentUser!.username!, recipientUsername: username, subject: subject, message: message, unread: true)
             sendMessage(messageToSend)
         }
+        self.navigationController?.popViewControllerAnimated(true)
     }
     
     func sendMessage(messageToSend: Message) {

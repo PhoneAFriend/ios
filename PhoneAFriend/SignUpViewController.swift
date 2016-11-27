@@ -50,8 +50,8 @@ class SignUpViewController : UIViewController {
                                 let uid = user!.uid
                                 let username = self.nameField.text!
                                 let useremail = user!.email
-                                self.saveUserToDB(username, uid: uid, useremail: useremail!)
-                                currentUser!.username = username
+                                self.saveUserToDB(username, id: uid, useremail: useremail!)
+                                currentUser?.username = username
                                 currentUser?.useremail = user!.email
                                 currentUser?.id = user!.uid
                                 dispatch_async(dispatch_get_main_queue(), {
@@ -94,12 +94,12 @@ class SignUpViewController : UIViewController {
         return true
     }
     
-    func saveUserToDB(username: String, uid: String, useremail: String) {
+    func saveUserToDB(username: String, id: String, useremail: String) {
         let ref = FIRDatabase.database().reference()
         
         let key = ref.child("users").childByAutoId().key
         
-        let user = ["uid": uid,
+        let user = ["id": id,
                     "username": username,
                     "useremail": useremail]
         

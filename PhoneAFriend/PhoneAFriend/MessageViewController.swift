@@ -14,21 +14,21 @@ class MessageViewController: UIViewController {
     var message : Message! = nil
     var usernameToPass : String = ""
     var subjectToPass: String = ""
-    @IBOutlet weak var subjectLabel: UILabel!
-    @IBOutlet weak var sentFromLabel: UILabel!
-    @IBOutlet weak var messageLabel: UITextView!
+    
     @IBOutlet weak var replyButton: UIButton!
+    @IBOutlet weak var subjectLabel: UITextField!
+    @IBOutlet weak var sentFromLabel: UITextField!
+    @IBOutlet weak var messageLabel: UITextView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        replyButton.layer.cornerRadius = 10
+        
         if message != nil {
             subjectLabel.text = message.subject
             sentFromLabel.text = message.senderUsername
             messageLabel.text = message.message
         }
-        
     }
     @IBAction func replyPressed(sender: AnyObject) {
         usernameToPass = message.senderUsername
