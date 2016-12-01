@@ -18,6 +18,7 @@ class UserLookupController: UIViewController {
     @IBOutlet weak var searchTextField: UITextField!
     let cellIdentifier = "usernameCell"
     @IBAction func lookupButtonPressed(sender: AnyObject) {
+        errorLabel.text = ""
         let searchTerm = searchTextField.text!
         if searchTerm.characters.count == 0{
             dispatch_async(dispatch_get_main_queue(), {

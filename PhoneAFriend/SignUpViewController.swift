@@ -27,10 +27,11 @@ class SignUpViewController : UIViewController {
     }
     
     @IBAction func createNewUser(sender: AnyObject) {
+        clearData()
         if nameField.text! != "" && emailField.text! != "" && passwordField.text! != "" && confirmPasswordField.text! != "" && checkPasswordValidity(passwordField.text!, secondPass: confirmPasswordField.text!)  {
             let ref = FIRDatabase.database().reference()
             print(ref)
-            print("Sign in clicked")
+            print("Sign in clicked", terminator: "")
             ref.child("users")
                 .queryOrderedByChild("username")
                 .queryEqualToValue(nameField.text!)
@@ -105,6 +106,15 @@ class SignUpViewController : UIViewController {
         
         let childUpdates = ["/users/\(key)": user]
         ref.updateChildValues(childUpdates)
+    }
+    func clearData(){
+        currentUser = nil
+        posts.removeAll()
+        activeContacts.removeAll()
+        inactiveContacts.removeAll()
+        displayContacts.removeAll()
+        messages.removeAll()
+        userPosts.removeAll()
     }
     
 }

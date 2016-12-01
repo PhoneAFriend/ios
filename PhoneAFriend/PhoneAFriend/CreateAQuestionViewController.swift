@@ -20,7 +20,7 @@ class CreateAQuestionViewController: UIViewController, UIPickerViewDataSource, U
     var previewLayer : AVCaptureVideoPreviewLayer?
     var captureDevice : AVCaptureDevice?
     let captureSession = AVCaptureSession()
-    var imageURL : String = "nil"
+    var imageURL : String = "None"
     var postKey = ""
 
     @IBOutlet weak var questionTitleTextField: UITextField!
@@ -106,7 +106,7 @@ class CreateAQuestionViewController: UIViewController, UIPickerViewDataSource, U
     func startSave(questionTitle: String, username: String, questionText: String, subject: String) {
         postKey = FIRDatabase.database().reference().child("posts").childByAutoId().key
         if image == nil {
-            imageURL = "nil"
+            imageURL = "None"
             let post = ["answered": "false",
                         "datePosted": "Need to configure",
                         "postedBy": username,
@@ -127,22 +127,22 @@ class CreateAQuestionViewController: UIViewController, UIPickerViewDataSource, U
                                 "questionTitle" : questionTitle,
                                 "subject" : subject]
                     self.saveNewPost(post)
-                    self.navigationController?.popViewControllerAnimated(true)
 
                 } else {
-                    print("an error occured")
-                    self.navigationController?.popViewControllerAnimated(true)
+                    print("an error occured", terminator: "")
 
                 }
             }
         }
-        UserPostsTableViewController().refreshData()
-        PostTableViewController().refreshData()
+
     }
     func saveNewPost(post: NSDictionary) {
         let childUpdates = ["/posts/\(postKey)":post]
         FIRDatabase.database().reference().updateChildValues(childUpdates)
+        NSNotificationCenter.defaultCenter().postNotificationName("reloadUserPosts", object: nil)
+        NSNotificationCenter.defaultCenter().postNotificationName("reloadPosts", object: nil)
         
+        self.navigationController?.popViewControllerAnimated(true)
     }
     
     @IBAction func addImagePressed(sender: AnyObject) {

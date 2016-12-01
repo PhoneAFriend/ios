@@ -23,7 +23,8 @@ class MessageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        messageLabel.layer.borderWidth = 1
+        messageLabel.layer.borderColor = UIColor.blackColor().CGColor
         if message != nil {
             subjectLabel.text = message.subject
             sentFromLabel.text = message.senderUsername

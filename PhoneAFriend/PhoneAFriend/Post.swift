@@ -17,21 +17,10 @@ class Post {
     var postedBy : String?
     var answered : String?
     var ref: FIRDatabaseReference?
-    
-    init(questionTitle: String, questionText: String, questionImageURL : String, datePosted : String, subject : String, postedBy : String, answered : String){
-        
-        self.questionTitle = questionTitle
-        self.questionText = questionText
-        self.questionImageURL = questionImageURL
-        self.datePosted = datePosted
-        self.subject = subject
-        self.postedBy = postedBy
-        self.answered = answered
-        
-    }
+    var key:String
     
     init (snapshot: FIRDataSnapshot) {
-        
+        key = snapshot.key
         ref = snapshot.ref
         let data = snapshot.value as! Dictionary<String, String>
         questionTitle = data["questionTitle"]! as String

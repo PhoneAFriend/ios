@@ -13,18 +13,18 @@ class ContactTableViewController : UITableViewController {
     
     let cellIdentifier = "contactCell"
     var usernameToPass : String = ""
+    var reload : Bool = false
     
     override func viewDidLoad(){
         super.viewDidLoad()
         self.tableView.dataSource = self
         self.tableView.delegate = self
-        self.dispContacts = displayContacts
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ContactTableViewController.reloadContacts(_:)),name:"reloadContacts", object: nil)
+
     }
-    var dispContacts = [String]()
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(true)
-        self.dispContacts = displayContacts
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
@@ -33,7 +33,7 @@ class ContactTableViewController : UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let contact = dispContacts[indexPath.row]
+        let contact = displayContacts[indexPath.row]
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as! ContactTableViewCell!
         cell.configure(contact)
         return cell
@@ -44,13 +44,17 @@ class ContactTableViewController : UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dispContacts.count
+        if reload {
+            return 0
+        } else {
+            return displayContacts.count
+        }
     }
     
     override func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
         
         let message = UITableViewRowAction(style: .Normal, title: "Message") { action, index in
-            self.usernameToPass = self.dispContacts[indexPath.row]
+            self.usernameToPass = displayContacts[indexPath.row]
             self.performSegueWithIdentifier("contactToMessage", sender: nil)
 
         }
@@ -59,7 +63,7 @@ class ContactTableViewController : UITableViewController {
         let unfriend = UITableViewRowAction(style: .Normal, title: "Unfriend") { action, index in
             let alert = UIAlertController(title: "Unfriend Contact", message: "Are you sure you want to unfriend this contact?", preferredStyle: .Alert)
             let removeAction = UIAlertAction(title: "Unfriend", style: .Default, handler: { (action: UIAlertAction) in
-                self.doUnfriend(self.dispContacts[indexPath.row], index: indexPath.row)
+                self.doUnfriend(displayContacts[indexPath.row], index: indexPath.row)
                 tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
 
                 
@@ -84,8 +88,8 @@ class ContactTableViewController : UITableViewController {
     }
     
     func doUnfriend(username: String, index: Int) {
-        dispContacts.removeAtIndex(index)
         displayContacts.removeAtIndex(index)
+        print(displayContacts.count)
         let activeIndex = activeContacts.indexOf({$0.username1 == username})
         if activeIndex != nil {
             let contact = activeContacts[activeIndex!]
@@ -107,14 +111,6 @@ class ContactTableViewController : UITableViewController {
         }
     }
     
-    func insertData(contact:Contact){
-        let indexPath = NSIndexPath(forRow: dispContacts.count-1, inSection: 0)
-        
-        self.tableView.beginUpdates()
-        self.tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
-        self.tableView.endUpdates()
-    }
-    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "contactToMessage" {
             let nextScene =  segue.destinationViewController as! NewMessageViewController
@@ -123,5 +119,69 @@ class ContactTableViewController : UITableViewController {
     }
     
     @IBAction func unwindToContacts(segue: UIStoryboardSegue){}
+    
+    func initialLoad() {
+       
+        fetchUsername1Contacts(currentUser!.username!, completion: { (boolValue) -> Void in
+            self.fetchUsername2Contacts(currentUser!.username!, completion: { (boolValue) -> Void in
+                self.reload = false
+                self.tableView.reloadData()
+            })
+        })
+        
+
+    }
+    
+    func fetchUsername1Contacts(username: String, completion: (result: Bool)->()) {
+        FIRDatabase.database().reference().child("Contacts").queryOrderedByChild("username1").queryEqualToValue(username).observeSingleEventOfType(.Value, withBlock: { (snapshot) -> Void in
+            if (snapshot.childrenCount != 0) {
+                for contactSnapshot in snapshot.children {
+                    let contact = Contact(snapshot: contactSnapshot as! FIRDataSnapshot)
+                    if contact.u12 == true{
+                        activeContacts.append(contact)
+                        displayContacts.append(contact.username2)
+                    } else {
+                        inactiveContacts.append(contact)
+                    }
+                }
+                completion(result: true)
+            } else {
+                completion(result: true)
+            }
+        })
+    }
+    
+    func fetchUsername2Contacts(username: String, completion: (result: Bool)->()) {
+        FIRDatabase.database().reference().child("Contacts").queryOrderedByChild("username2").queryEqualToValue(username).observeSingleEventOfType(.Value, withBlock: { (snapshot) -> Void in
+            if (snapshot.childrenCount != 0) {
+                
+                for contactSnapshot in snapshot.children {
+                    let contact = Contact(snapshot: contactSnapshot as! FIRDataSnapshot)
+                    if contact.u21 == true{
+                        activeContacts.append(contact)
+                        displayContacts.append(contact.username1)
+                    } else {
+                        inactiveContacts.append(contact)
+                    }
+                    
+                }
+                completion(result: true)
+            } else {
+                completion(result: true)
+            }
+        })
+    }
+    
+    func reloadContacts(notification: NSNotification) {
+        reload = true
+        tableView.reloadData()
+        /*displayContacts.removeAll()
+        activeContacts.removeAll()
+        inactiveContacts.removeAll()
+        initialLoad()*/
+        reload = false
+        tableView.reloadData()
+        print(displayContacts.count)
+    }
 
 }

@@ -24,6 +24,7 @@ class LoginViewController : UIViewController {
     @IBOutlet weak var backButton: UIButton!
     
     @IBAction func signInPressed(sender: AnyObject) {
+        clearData()
         if emailField.text! != "" && passwordField != "" {
             FIRAuth.auth()?.signInWithEmail(emailField.text!, password: passwordField.text!, completion: {(user, error) in
                 if error != nil {
@@ -76,7 +77,7 @@ class LoginViewController : UIViewController {
     }
     
     func fetchUsername1Contacts(username: String, completion: (result: Bool)->()) {
-        FIRDatabase.database().reference().child("Contacts").queryOrderedByChild("username1").queryEqualToValue(username).observeEventType(.Value, withBlock: { (snapshot) -> Void in
+        FIRDatabase.database().reference().child("Contacts").queryOrderedByChild("username1").queryEqualToValue(username).observeSingleEventOfType(.Value, withBlock: { (snapshot) -> Void in
             if (snapshot.childrenCount != 0) {
                 for contactSnapshot in snapshot.children {
                     let contact = Contact(snapshot: contactSnapshot as! FIRDataSnapshot)
@@ -120,7 +121,7 @@ class LoginViewController : UIViewController {
             if snapshot.childrenCount != 0 {
                 for messageSnapshot in snapshot.children {
                     let message = Message(snapshot: messageSnapshot as! FIRDataSnapshot)
-                    messages.append(message)
+                    messages.insert(message, atIndex: messages.startIndex)
                 }
                 
             }
@@ -133,11 +134,21 @@ class LoginViewController : UIViewController {
             if snapshot.childrenCount != 0 {
                 for postSnapshot in snapshot.children {
                     let post = Post(snapshot: postSnapshot as! FIRDataSnapshot)
-                    userPosts.append(post)
+                    userPosts.insert(post, atIndex: userPosts.startIndex)
                 }
             }
             completion(result: true)
         })
+    }
+    
+    func clearData(){
+        currentUser = nil
+        posts.removeAll()
+        activeContacts.removeAll()
+        inactiveContacts.removeAll()
+        displayContacts.removeAll()
+        messages.removeAll()
+        userPosts.removeAll()
     }
     
     
