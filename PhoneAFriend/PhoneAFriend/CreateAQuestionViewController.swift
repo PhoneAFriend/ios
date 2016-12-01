@@ -97,7 +97,7 @@ class CreateAQuestionViewController: UIViewController, UIPickerViewDataSource, U
                 completion(result: false)
             }else{
                 //consider doing an update to an alred posted post here to make it run quicker?
-                self.imageURL = metaData!.downloadURL()!.absoluteString
+                self.imageURL = metaData!.downloadURL()!.absoluteString!
                 completion(result: true)
             }
         }

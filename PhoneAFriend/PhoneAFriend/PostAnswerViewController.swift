@@ -90,7 +90,7 @@ class PostAnswerViewController: UIViewController, UIImagePickerControllerDelegat
         }
     }
     
-    func saveImage(image: UIImage, completion : (result:Bool) -> ()){
+    func saveImage(image: UIImage, completion : ( result:Bool) -> ()){
         let storage = FIRStorage.storage()
         let storageRef = storage.reference()
         let imagedata = UIImageJPEGRepresentation(image, 0.8)
@@ -101,7 +101,7 @@ class PostAnswerViewController: UIViewController, UIImagePickerControllerDelegat
                 print(error.localizedDescription)
                 completion(result: false)
             }else{
-                self.imageURL = metaData!.downloadURL()!.absoluteString
+                self.imageURL = metaData!.downloadURL()!.absoluteString!
                 completion(result: true)
             }
         }
