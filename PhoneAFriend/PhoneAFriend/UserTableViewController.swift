@@ -88,6 +88,7 @@ class UserTableViewController : UITableViewController {
                 activeContacts.append(contact)
                 inactiveContacts.removeAtIndex(userFound1!)
                 contact.ref.updateChildValues(["u12":true])
+                NSNotificationCenter.defaultCenter().postNotificationName("reloadContacts", object: nil)
             } else {
                 let userFound2 = inactiveContacts.indexOf({$0.username1 == username})
                 if userFound2 != nil {
@@ -96,12 +97,11 @@ class UserTableViewController : UITableViewController {
                     let username = contact.username1
                     displayContacts.append(username)
                     activeContacts.append(contact)
-                    ContactTableViewController().dispContacts.append(username)
                     inactiveContacts.removeAtIndex(userFound2!)
                     contact.ref.updateChildValues(["u21":true])
-                    ContactTableViewController().insertData(contact)
+                    NSNotificationCenter.defaultCenter().postNotificationName("reloadContacts", object: nil)
                 } else {
-                    FIRDatabase.database().reference().child("Contacts").queryOrderedByChild("username1").queryEqualToValue(username).queryOrderedByChild("username2").queryEqualToValue(currentUser?.username).observeEventType(.Value, withBlock: { (snapshot) -> Void in
+                    /*FIRDatabase.database().reference().child("Contacts").queryOrderedByChild("username1").queryEqualToValue(username).queryOrderedByChild("username2").queryEqualToValue(currentUser?.username).observeEventType(.Value, withBlock: { (snapshot) -> Void in
                         if snapshot.childrenCount != 0 {
                             let contact = Contact(snapshot: snapshot)
                             contact.u21 = true
@@ -128,7 +128,7 @@ class UserTableViewController : UITableViewController {
 
                         }
                         
-                    })
+                    })*/
                     let contact = Contact(u12: true, u21: false, username1: currentUser!.username!, username2: username)
                     activeContacts.append(contact)
                     displayContacts.append(username)
@@ -140,8 +140,7 @@ class UserTableViewController : UITableViewController {
                     ]
                     let childUpdates = ["/Contacts/\(key)": newPost]
                     FIRDatabase.database().reference().updateChildValues(childUpdates)
-                    ContactTableViewController().insertData(contact)
-
+                    NSNotificationCenter.defaultCenter().postNotificationName("reloadContacts", object: nil)
                 }
             }
             
@@ -149,6 +148,7 @@ class UserTableViewController : UITableViewController {
             
             
         }
+        
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

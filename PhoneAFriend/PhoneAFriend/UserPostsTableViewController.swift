@@ -16,6 +16,15 @@ class UserPostsTableViewController : UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(UserPostsTableViewController.reloadUserPosts(_:)),name:"reloadUserPosts", object: nil)
+    }
+    
+    func reloadUserPosts(notification: NSNotification) {
+        print("This was called first", terminator: "")
+        userPosts.removeAll()
+        reload = true
+        tableView.reloadData()
+        refreshData()
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -64,16 +73,15 @@ class UserPostsTableViewController : UITableViewController {
     @IBAction func unwindToUserPosts(segue: UIStoryboardSegue){}
     
     func refreshData(){
-        userPosts.removeAll()
-        tableView.reloadData()
-        reload = true
-        FIRDatabase.database().reference().child("posts").queryOrderedByChild("postedBy").queryEqualToValue(currentUser!.username!).observeSingleEventOfType(.Value, withBlock: { (snapshot) -> Void in
+        print("This was called", terminator: "")
+        FIRDatabase.database().reference().child("posts").queryOrderedByChild("postedBy").queryEqualToValue(currentUser!.username!).observeSingleEventOfType(.Value, withBlock: { (snapshot) in
             if snapshot.childrenCount != 0 {
                 for postSnapshot in snapshot.children {
                     let post = Post(snapshot: postSnapshot as! FIRDataSnapshot)
                     userPosts.append(post)
                 }
             }
+            userPosts = userPosts.reverse()
             self.reload = false
             self.tableView.reloadData()
         })

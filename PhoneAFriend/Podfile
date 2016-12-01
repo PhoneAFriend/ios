@@ -10,9 +10,6 @@ target 'PhoneAFriend' do
   pod 'Firebase/Database'
   pod 'Firebase/Auth'
   pod 'Firebase/Storage'
-  pod 'TextFieldEffects'
-  pod 'SwiftyButton'
-  pod 'DZNEmptyDataSet'
 
 
 

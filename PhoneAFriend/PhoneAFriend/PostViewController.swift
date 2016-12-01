@@ -14,16 +14,19 @@ class PostViewController : UIViewController {
     var imageURLToPass : String! = ""
     var usernameToPass : String! = ""
     var subjectToPass : String! = ""
+    var keyToPass : String! = ""
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var subjectTextField: UITextField!
     @IBOutlet weak var questionTextView: UITextView!
     @IBOutlet weak var viewImageButton: UIButton!
+    @IBOutlet weak var answerButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         questionTextView.layer.borderColor = UIColor.blackColor().CGColor
         questionTextView.layer.borderWidth = 1
         viewImageButton.layer.cornerRadius = 10
+        answerButton.layer.cornerRadius = 10
         if post != nil {
             titleTextField.text = post.questionTitle
             subjectTextField.text = post.subject
@@ -33,15 +36,24 @@ class PostViewController : UIViewController {
     }
     
     @IBAction func viewPressed(sender: AnyObject) {
-        if post.questionImageURL != "nil"{
+        if post.questionImageURL != "None"{
             imageURLToPass = post.questionImageURL
             self.performSegueWithIdentifier("PostToPhoto", sender: nil)
+        } else {
+            let alert = UIAlertController(title: "No Image Available", message: "No image was uploaded with this post", preferredStyle: .Alert)
+            let cancel = UIAlertAction(title: "Cancel", style: .Default, handler: { (action: UIAlertAction) in })
+            alert.addAction(cancel)
+            self.presentViewController(alert, animated: true, completion: nil)
         }
     }
     @IBAction func replyPressed(sender: AnyObject) {
         usernameToPass = post.postedBy
-        subjectToPass = post.subject
+        subjectToPass = post.questionTitle
         self.performSegueWithIdentifier("PostToMessage", sender: nil)
+    }
+    @IBAction func answerPressed(sender: AnyObject) {
+        keyToPass = post.key
+        self.performSegueWithIdentifier("showAnswers", sender: nil)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -52,6 +64,10 @@ class PostViewController : UIViewController {
             let nextScene =  segue.destinationViewController as! NewMessageViewController
             nextScene.username = usernameToPass
             nextScene.subject = subjectToPass
+        } else if segue.identifier == "showAnswers" {
+            let nextScene =  segue.destinationViewController as! AnswerTableViewController
+            nextScene.key = keyToPass
+
         }
     }
     

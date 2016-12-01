@@ -24,8 +24,15 @@ class PostTableViewController: UITableViewController {
         super.viewDidLoad()
         ref = FIRDatabase.database().reference()
         startObservingDatabase()
-
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(PostTableViewController.reloadPosts(_:)),name:"reloadPosts", object: nil)
         
+    }
+    
+    func reloadPosts(notification: NSNotification) {
+        postArray.removeAll()
+        reload = true
+        tableView.reloadData()
+        startObservingDatabase()
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -43,7 +50,7 @@ class PostTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let post = postArray[indexPath.row]
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as! PostTableViewCell!
-        print(post.questionTitle!)
+        print(post.questionTitle!, terminator: "")
         cell.configure((post.questionTitle)!, answered: post.answered!, datePosted: post.datePosted!, postedBy: post.postedBy!, questionImageURL: post.questionImageURL!, questionText: post.questionText!, subject: post.subject!)
         return cell
     }
@@ -69,7 +76,7 @@ class PostTableViewController: UITableViewController {
                 
                 newPosts.append(post)
             }
-            
+            newPosts = newPosts.reverse()
             self.postArray = newPosts
             self.tableView.reloadData()
         })

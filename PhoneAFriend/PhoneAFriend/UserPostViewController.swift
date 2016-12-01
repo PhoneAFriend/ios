@@ -27,42 +27,20 @@ class UserPostViewController : UIViewController {
             subject.text = post.subject!
             questionText.text = post.questionText!
         }
-        
     }
+    
+    
     @IBAction func deletePost(sender: AnyObject) {
-        userPosts.removeAll()
-        UserPostsTableViewController().tableView.reloadData()
-        UserPostsTableViewController().reload = true
         post.ref?.removeValue()
-        FIRDatabase.database().reference().child("posts").queryOrderedByChild("postedBy").queryEqualToValue(currentUser!.username!).observeSingleEventOfType(.Value, withBlock: { (snapshot) -> Void in
-            if snapshot.childrenCount != 0 {
-                for postSnapshot in snapshot.children {
-                    let post = Post(snapshot: postSnapshot as! FIRDataSnapshot)
-                    userPosts.append(post)
-                }
-            }
-            UserPostsTableViewController().reload = false
-            UserPostsTableViewController().tableView.reloadData()
-            self.navigationController?.popViewControllerAnimated(true)
+        NSNotificationCenter.defaultCenter().postNotificationName("reloadPosts", object: nil)
+        NSNotificationCenter.defaultCenter().postNotificationName("reloadUserPosts", object: nil)
+        self.navigationController?.popViewControllerAnimated(true)
 
-        })
     }
     @IBAction func answered(sender: AnyObject) {
-        userPosts.removeAll()
-        UserPostsTableViewController().tableView.reloadData()
-        UserPostsTableViewController().reload = true
-        post.ref?.removeValue()
-        FIRDatabase.database().reference().child("posts").queryOrderedByChild("postedBy").queryEqualToValue(currentUser!.username!).observeSingleEventOfType(.Value, withBlock: { (snapshot) -> Void in
-            if snapshot.childrenCount != 0 {
-                for postSnapshot in snapshot.children {
-                    let post = Post(snapshot: postSnapshot as! FIRDataSnapshot)
-                    userPosts.append(post)
-                }
-            }
-            UserPostsTableViewController().reload = false
-            UserPostsTableViewController().tableView.reloadData()
-            self.navigationController?.popViewControllerAnimated(true)
-
-        })
+        post.ref?.updateChildValues(["answered": "true"])
+        NSNotificationCenter.defaultCenter().postNotificationName("reloadPosts", object: nil)
+        NSNotificationCenter.defaultCenter().postNotificationName("reloadUserPosts", object: nil)
+        self.navigationController?.popViewControllerAnimated(true)
     }
 }
