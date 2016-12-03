@@ -605,7 +605,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UyU-aV-twb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4359" y="473"/>
+            <point key="canvasLocation" x="3791" y="-42"/>
         </scene>
         <!--My Posts-->
         <scene sceneID="Lmu-iP-WB1">
@@ -658,7 +658,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CFw-cF-sqG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4460" y="21"/>
+            <point key="canvasLocation" x="4459.420289855073" y="20.380434782608699"/>
         </scene>
         <!--Post-->
         <scene sceneID="k9P-3O-aGp">
@@ -886,6 +886,13 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAC-WL-8jo">
+                                            <rect key="frame" x="-138" y="89" width="42" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -904,10 +911,19 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Search Questions" id="37S-OC-eTf"/>
                     <connections>
+                        <outlet property="searchDisplayController" destination="Hmn-nm-krl" id="e68-EJ-uXj"/>
                         <segue destination="dzy-bE-wTc" kind="show" identifier="PostsToPost" id="T3G-4d-EGu"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O5B-up-FWL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="Hmn-nm-krl">
+                    <connections>
+                        <outlet property="delegate" destination="4UG-T1-Dsx" id="wsA-ab-3JP"/>
+                        <outlet property="searchContentsController" destination="4UG-T1-Dsx" id="D6T-ZY-d5a"/>
+                        <outlet property="searchResultsDataSource" destination="4UG-T1-Dsx" id="23R-y9-cYc"/>
+                        <outlet property="searchResultsDelegate" destination="4UG-T1-Dsx" id="5kE-TJ-BxY"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="4460" y="-2051"/>
         </scene>
@@ -1304,102 +1320,11 @@
                     <navigationItem key="navigationItem" title="Contacts" id="8p0-cC-wsC"/>
                     <connections>
                         <segue destination="Wf7-d1-nmE" kind="show" identifier="contactToMessage" id="vJC-AL-Njj"/>
-                        <segue destination="hR1-59-59h" kind="presentation" identifier="ContactsToContact" id="FCH-oJ-7rk"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MAt-Sq-RgC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3953" y="2975"/>
-        </scene>
-        <!--Contact View Controller-->
-        <scene sceneID="v7O-UJ-xbD">
-            <objects>
-                <viewController modalPresentationStyle="overCurrentContext" id="hR1-59-59h" customClass="ContactViewController" customModule="PhoneAFriend" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Fmt-HU-826"/>
-                        <viewControllerLayoutGuide type="bottom" id="wXw-e0-ZYU"/>
-                    </layoutGuides>
-                    <view key="view" opaque="NO" contentMode="scaleToFill" id="RW5-PQ-j7V">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4ga-ly-4LJ">
-                                <rect key="frame" x="87" y="140" width="240" height="177"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVd-HW-yck">
-                                        <rect key="frame" x="62" y="51" width="117" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.80392156859999997" green="0.86274509799999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Message">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="messagePressed:" destination="hR1-59-59h" eventType="touchUpInside" id="aPj-gO-P1n"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66a-hM-Igp">
-                                        <rect key="frame" x="62" y="89" width="117" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.80392156859999997" green="0.86274509799999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Unfriend">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OgA-iX-ctz">
-                                        <rect key="frame" x="62" y="127" width="117" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.80392156859999997" green="0.86274509799999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Start a Session">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="startSessionPressed:" destination="hR1-59-59h" eventType="touchUpInside" id="ozK-HM-ey6"/>
-                                        </connections>
-                                    </button>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pzu-qS-3gV">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="43"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nt2-7H-ogB">
-                                                <rect key="frame" x="8" y="8" width="139" height="27"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTX-tu-xzZ">
-                                                <rect key="frame" x="176" y="8" width="52" height="27"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <state key="normal" title="Done">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="donePressed:" destination="hR1-59-59h" eventType="touchUpInside" id="pPh-Yp-jJv"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.12941176469999999" green="0.58823529409999997" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="NavView" destination="Pzu-qS-3gV" id="ing-b4-C2p"/>
-                        <outlet property="contactView" destination="4ga-ly-4LJ" id="hQG-kB-qU1"/>
-                        <outlet property="messageButton" destination="hVd-HW-yck" id="CXO-m6-lEq"/>
-                        <outlet property="startASessionButton" destination="OgA-iX-ctz" id="eBn-lc-z1F"/>
-                        <outlet property="unfriendButton" destination="66a-hM-Igp" id="24j-9i-oEB"/>
-                        <outlet property="usernameLabel" destination="Nt2-7H-ogB" id="zWD-go-uCS"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LHd-I7-09M" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4615.9420289855079" y="2973.097826086957"/>
         </scene>
         <!--Inbox-->
         <scene sceneID="Oh9-j6-VRw">
@@ -1432,6 +1357,10 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mn6-1Y-viv">
+                                            <rect key="frame" x="361" y="8" width="45" height="42"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1459,7 +1388,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qnM-FR-NMM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3679" y="853"/>
+            <point key="canvasLocation" x="3678.2608695652175" y="852.71739130434787"/>
         </scene>
         <!--Message-->
         <scene sceneID="bLl-OG-GGJ">

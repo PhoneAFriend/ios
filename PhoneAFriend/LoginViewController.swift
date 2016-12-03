@@ -41,13 +41,9 @@ class LoginViewController : UIViewController {
                                         if boolValue {
                                             self.fetchUserMessages(currentUser!.username!) { (boolValue) -> () in
                                                 if boolValue {
-                                                    self.fetchUserPosts(currentUser!.username!) { (boolValue) -> () in
-                                                        if boolValue {
-                                                            dispatch_async(dispatch_get_main_queue(), {
-                                                                self.performSegueWithIdentifier("SegueFromLoginToHomePage", sender: self)
-                                                            })
-                                                        }
-                                                    }
+                                                    dispatch_async(dispatch_get_main_queue(), {
+                                                        self.performSegueWithIdentifier("SegueFromLoginToHomePage", sender: self)
+                                                    })
                                                 }
                                             }
                                         }

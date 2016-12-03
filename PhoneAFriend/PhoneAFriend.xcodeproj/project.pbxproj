@@ -14,7 +14,6 @@
 		AF0216CB1DF1633B001DC068 /* home-7.png in Resources */ = {isa = PBXBuildFile; fileRef = AF0216C71DF1633B001DC068 /* home-7.png */; };
 		AF0216CC1DF1633B001DC068 /* house-7.png in Resources */ = {isa = PBXBuildFile; fileRef = AF0216C81DF1633B001DC068 /* house-7.png */; };
 		AF0216CD1DF1633B001DC068 /* message-7.png in Resources */ = {isa = PBXBuildFile; fileRef = AF0216C91DF1633B001DC068 /* message-7.png */; };
-		AF0216CF1DF214DE001DC068 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0216CE1DF214DE001DC068 /* ContactViewController.swift */; };
 		AF0216D11DF21D7F001DC068 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0216D01DF21D7F001DC068 /* Session.swift */; };
 		AF0216D31DF21FE8001DC068 /* Stroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0216D21DF21FE8001DC068 /* Stroke.swift */; };
 		AF0216D51DF22BFD001DC068 /* SessionsTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0216D41DF22BFD001DC068 /* SessionsTableTableViewController.swift */; };
@@ -97,7 +96,6 @@
 		AF0216C71DF1633B001DC068 /* home-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-7.png"; sourceTree = "<group>"; };
 		AF0216C81DF1633B001DC068 /* house-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "house-7.png"; sourceTree = "<group>"; };
 		AF0216C91DF1633B001DC068 /* message-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "message-7.png"; sourceTree = "<group>"; };
-		AF0216CE1DF214DE001DC068 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		AF0216D01DF21D7F001DC068 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		AF0216D21DF21FE8001DC068 /* Stroke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stroke.swift; sourceTree = "<group>"; };
 		AF0216D41DF22BFD001DC068 /* SessionsTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionsTableTableViewController.swift; sourceTree = "<group>"; };
@@ -273,7 +271,6 @@
 				AF960C0D1DDC3E2300F1DEB0 /* ContactTableViewCell.swift */,
 				AF0216D81DF24183001DC068 /* SessionViewController.swift */,
 				AF960C0B1DDC3D2A00F1DEB0 /* ContactTableViewController.swift */,
-				AF0216CE1DF214DE001DC068 /* ContactViewController.swift */,
 				AF62D3B81D8712A200C59234 /* CreateAQuestionViewController.swift */,
 				AFD46E5C1DBEF864009CE026 /* HomeNavigationController.swift */,
 				AF2FB6941D826DA4003EB3AA /* HomePageViewController.swift */,
@@ -757,7 +754,6 @@
 				AF960C0C1DDC3D2A00F1DEB0 /* ContactTableViewController.swift in Sources */,
 				AF0216D31DF21FE8001DC068 /* Stroke.swift in Sources */,
 				AF2FB6891D82034E003EB3AA /* LoginViewController.swift in Sources */,
-				AF0216CF1DF214DE001DC068 /* ContactViewController.swift in Sources */,
 				AF960C0A1DDC243700F1DEB0 /* Contact.swift in Sources */,
 				AF0216D51DF22BFD001DC068 /* SessionsTableTableViewController.swift in Sources */,
 				AF4871EC1DE54E2F00CA7509 /* InboxTableViewController.swift in Sources */,
