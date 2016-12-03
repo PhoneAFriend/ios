@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 
 class ContactTableViewController : UITableViewController {
-    
+    var contactToPass: String! = ""
     let cellIdentifier = "contactCell"
     var usernameToPass : String = ""
     var reload : Bool = false
@@ -37,6 +37,20 @@ class ContactTableViewController : UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as! ContactTableViewCell!
         cell.configure(contact)
         return cell
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        //showModal()
+        contactToPass = displayContacts[indexPath.row]
+        self.performSegueWithIdentifier("ContactsToContact", sender: nil)
+    }
+    
+    
+    
+    func showModal() {
+        let modalViewController = ContactViewController()
+        modalViewController.modalPresentationStyle = .OverCurrentContext
+        presentViewController(modalViewController, animated: true, completion: nil)
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -115,6 +129,9 @@ class ContactTableViewController : UITableViewController {
         if segue.identifier == "contactToMessage" {
             let nextScene =  segue.destinationViewController as! NewMessageViewController
             nextScene.username = usernameToPass
+        } else if segue.identifier == "ContactsToContact" {
+            let nextScene = segue.destinationViewController as! ContactViewController
+            nextScene.contact = contactToPass
         }
     }
     

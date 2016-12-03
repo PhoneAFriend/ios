@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class HomePageViewController: UIViewController {
     @IBOutlet weak var userLookUpButton: UIButton!
@@ -21,5 +22,9 @@ class HomePageViewController: UIViewController {
         searchPostButton.layer.cornerRadius = 10
         sessionStartButton.layer.cornerRadius = 10
         myPostsButton.layer.cornerRadius = 10
+    }
+    
+    
+    @IBAction func startASession(sender: AnyObject) {
     }
 }
