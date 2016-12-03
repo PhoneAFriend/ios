@@ -139,9 +139,9 @@ class CreateAQuestionViewController: UIViewController, UIPickerViewDataSource, U
     func saveNewPost(post: NSDictionary) {
         let childUpdates = ["/posts/\(postKey)":post]
         FIRDatabase.database().reference().updateChildValues(childUpdates)
-        NSNotificationCenter.defaultCenter().postNotificationName("reloadUserPosts", object: nil)
         NSNotificationCenter.defaultCenter().postNotificationName("reloadPosts", object: nil)
-        
+        NSNotificationCenter.defaultCenter().postNotificationName("reloadUserPosts", object: nil)
+
         self.navigationController?.popViewControllerAnimated(true)
     }
     

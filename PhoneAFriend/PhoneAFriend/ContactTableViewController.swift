@@ -40,18 +40,39 @@ class ContactTableViewController : UITableViewController {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        //showModal()
         contactToPass = displayContacts[indexPath.row]
-        self.performSegueWithIdentifier("ContactsToContact", sender: nil)
+        let alert = UIAlertController(title: contactToPass, message: "What would you like to do?", preferredStyle: .Alert)
+        let message = UIAlertAction(title: "Message", style: .Default, handler: { (action: UIAlertAction) in
+            self.usernameToPass = displayContacts[indexPath.row]
+            self.performSegueWithIdentifier("contactToMessage", sender: nil)
+        })
+        let unfriend = UIAlertAction(title: "Unfriend", style: .Default, handler: { (action: UIAlertAction) in
+            let unfriendalert = UIAlertController(title: "Unfriend Contact", message: "Are you sure you want to unfriend this contact?", preferredStyle: .Alert)
+            let removeAction = UIAlertAction(title: "Unfriend", style: .Default, handler: { (action: UIAlertAction) in
+                self.doUnfriend(displayContacts[indexPath.row], index: indexPath.row)
+                tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+                
+                
+            })
+            unfriendalert.addAction(removeAction)
+            let cancelAction = UIAlertAction(title: "Cancel", style: .Default, handler: { (action: UIAlertAction) in
+            })
+            unfriendalert.addAction(cancelAction)
+            self.presentViewController(unfriendalert, animated: true, completion: nil)
+        })
+        let startSession = UIAlertAction(title: "Start Session", style: .Default, handler: { (action: UIAlertAction) in
+            //MICHAEL ADD YOUR START SESSION TRANSITIONS HERE
+        })
+        let cancel = UIAlertAction(title: "Cancel", style: .Cancel, handler: { (action: UIAlertAction) in
+            
+        })
+        alert.addAction(message)
+        alert.addAction(unfriend)
+        alert.addAction(startSession)
+        alert.addAction(cancel)
+        self.presentViewController(alert, animated: true, completion: nil)
     }
     
-    
-    
-    func showModal() {
-        let modalViewController = ContactViewController()
-        modalViewController.modalPresentationStyle = .OverCurrentContext
-        presentViewController(modalViewController, animated: true, completion: nil)
-    }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
@@ -65,41 +86,6 @@ class ContactTableViewController : UITableViewController {
         }
     }
     
-    override func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
-        
-        let message = UITableViewRowAction(style: .Normal, title: "Message") { action, index in
-            self.usernameToPass = displayContacts[indexPath.row]
-            self.performSegueWithIdentifier("contactToMessage", sender: nil)
-
-        }
-        message.backgroundColor = UIColor(netHex: 0x2196f3)
-        
-        let unfriend = UITableViewRowAction(style: .Normal, title: "Unfriend") { action, index in
-            let alert = UIAlertController(title: "Unfriend Contact", message: "Are you sure you want to unfriend this contact?", preferredStyle: .Alert)
-            let removeAction = UIAlertAction(title: "Unfriend", style: .Default, handler: { (action: UIAlertAction) in
-                self.doUnfriend(displayContacts[indexPath.row], index: indexPath.row)
-                tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
-
-                
-            })
-            alert.addAction(removeAction)
-            let cancelAction = UIAlertAction(title: "Cancel", style: .Default, handler: { (action: UIAlertAction) in
-            })
-            alert.addAction(cancelAction)
-            self.presentViewController(alert, animated: true, completion: nil)
-        }
-        unfriend.backgroundColor = UIColor.redColor()
-        return [unfriend, message]
-    }
-    
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // the cells you would like the actions to appear needs to be editable
-        return true
-    }
-    
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        // you need to implement this method too or you can't swipe to display the actions
-    }
     
     func doUnfriend(username: String, index: Int) {
         displayContacts.removeAtIndex(index)
@@ -129,10 +115,7 @@ class ContactTableViewController : UITableViewController {
         if segue.identifier == "contactToMessage" {
             let nextScene =  segue.destinationViewController as! NewMessageViewController
             nextScene.username = usernameToPass
-        } else if segue.identifier == "ContactsToContact" {
-            let nextScene = segue.destinationViewController as! ContactViewController
-            nextScene.contact = contactToPass
-        }
+        } 
     }
     
     @IBAction func unwindToContacts(segue: UIStoryboardSegue){}

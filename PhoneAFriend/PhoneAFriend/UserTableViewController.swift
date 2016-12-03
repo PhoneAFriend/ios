@@ -31,38 +31,32 @@ class UserTableViewController : UITableViewController {
         return cell
     }
     
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        let alert = UIAlertController(title: users[indexPath.row].username, message: "What would you like to do?", preferredStyle: .Alert)
+        let add = UIAlertAction(title: "Add as Contact", style: .Default, handler: { (action: UIAlertAction) in
+            self.addUser(self.users[indexPath.row].username!)
+        })
+        let message = UIAlertAction(title: "Message", style: .Default, handler: { (action: UIAlertAction) in
+            self.usernameToPass = self.users[indexPath.row].username!
+            self.performSegueWithIdentifier("UsersToMessage", sender: nil)
+        })
+        
+        let cancel = UIAlertAction(title: "Cancel", style: .Cancel, handler: { (action: UIAlertAction) in
+            
+        })
+        alert.addAction(add)
+        alert.addAction(message)
+        alert.addAction(cancel)
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
+    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return users.count
-    }
-    
-    override func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
-        let add = UITableViewRowAction(style: .Normal, title: "Add") { action, index in
-            //call generic contact add function here to pull in username that was clicked and current user's username
-            self.addUser(self.users[indexPath.row].username!)
-        }
-        add.backgroundColor = UIColor(netHex: 0xCDDC39)
-        
-        
-        let message = UITableViewRowAction(style: .Normal, title: "Message") { action, index in
-            self.usernameToPass = self.users[indexPath.row].username!
-            self.performSegueWithIdentifier("UsersToMessage", sender: nil)
-
-        }
-        message.backgroundColor = UIColor(netHex: 0x2196f3)
-        return [message, add]
-    }
-    
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // the cells you would like the actions to appear needs to be editable
-        return true
-    }
-    
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        // you need to implement this method too or you can't swipe to display the actions
     }
     
     func addUser(username: String){
@@ -148,6 +142,12 @@ class UserTableViewController : UITableViewController {
             
             
         }
+        let added = UIAlertController(title: "Added!", message: "User was successfully added to your contact list.", preferredStyle: .ActionSheet)
+        let dismiss = UIAlertAction(title: "Dismiss", style: .Cancel, handler: { (action: UIAlertAction) in
+        })
+        added.addAction(dismiss)
+        self.presentViewController(added, animated: true, completion: nil)
+
         
     }
     
