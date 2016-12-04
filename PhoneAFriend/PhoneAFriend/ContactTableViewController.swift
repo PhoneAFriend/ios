@@ -8,19 +8,35 @@
 
 import UIKit
 import Firebase
-
+extension ContactTableViewController: UISearchResultsUpdating {
+    func updateSearchResultsForSearchController(searchController: UISearchController) {
+        filterContentForSearchText(searchController.searchBar.text!)
+    }
+}
 class ContactTableViewController : UITableViewController {
     var contactToPass: String! = ""
     let cellIdentifier = "contactCell"
     var usernameToPass : String = ""
     var reload : Bool = false
-    
+    let searchController = UISearchController(searchResultsController: nil)
+    var filteredContacts = [String]()
     override func viewDidLoad(){
         super.viewDidLoad()
         self.tableView.dataSource = self
         self.tableView.delegate = self
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ContactTableViewController.reloadContacts(_:)),name:"reloadContacts", object: nil)
+        searchController.searchResultsUpdater = self
+        searchController.dimsBackgroundDuringPresentation = false
+        definesPresentationContext = true
+        tableView.tableHeaderView = searchController.searchBar
 
+    }
+    
+    func filterContentForSearchText(searchText: String, scope: String = "All") {
+        filteredContacts = displayContacts.filter { contact in
+            return contact.lowercaseString.containsString(searchText.lowercaseString)
+        }
+        tableView.reloadData()
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -33,23 +49,33 @@ class ContactTableViewController : UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let contact = displayContacts[indexPath.row]
+        var contact = ""
+        if searchController.active && searchController.searchBar.text != "" {
+            contact = filteredContacts[indexPath.row]
+        } else {
+            contact = displayContacts[indexPath.row]
+        }
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as! ContactTableViewCell!
         cell.configure(contact)
         return cell
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        contactToPass = displayContacts[indexPath.row]
+        if searchController.active && searchController.searchBar.text != "" {
+            contactToPass = filteredContacts[indexPath.row]
+        } else {
+            contactToPass = displayContacts[indexPath.row]
+        }
+        
         let alert = UIAlertController(title: contactToPass, message: "What would you like to do?", preferredStyle: .Alert)
         let message = UIAlertAction(title: "Message", style: .Default, handler: { (action: UIAlertAction) in
-            self.usernameToPass = displayContacts[indexPath.row]
+            self.usernameToPass = self.contactToPass
             self.performSegueWithIdentifier("contactToMessage", sender: nil)
         })
         let unfriend = UIAlertAction(title: "Unfriend", style: .Default, handler: { (action: UIAlertAction) in
             let unfriendalert = UIAlertController(title: "Unfriend Contact", message: "Are you sure you want to unfriend this contact?", preferredStyle: .Alert)
             let removeAction = UIAlertAction(title: "Unfriend", style: .Default, handler: { (action: UIAlertAction) in
-                self.doUnfriend(displayContacts[indexPath.row], index: indexPath.row)
+                self.doUnfriend(self.contactToPass, index: indexPath.row)
                 tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
                 
                 
@@ -79,6 +105,9 @@ class ContactTableViewController : UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if searchController.active && searchController.searchBar.text != "" {
+            return filteredContacts.count
+        }
         if reload {
             return 0
         } else {
@@ -113,7 +142,7 @@ class ContactTableViewController : UITableViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "contactToMessage" {
-            let nextScene =  segue.destinationViewController as! NewMessageViewController
+            let nextScene =  segue.destinationViewController as! NewMessageTableViewController
             nextScene.username = usernameToPass
         } 
     }

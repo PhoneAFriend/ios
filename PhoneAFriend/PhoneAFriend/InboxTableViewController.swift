@@ -8,14 +8,34 @@
 
 import UIKit
 import Firebase
-
+extension InboxTableViewController: UISearchResultsUpdating {
+    func updateSearchResultsForSearchController(searchController: UISearchController) {
+        filterContentForSearchText(searchController.searchBar.text!)
+    }
+}
 class InboxTableViewController : UITableViewController {
     
     let cellIdentifier = "messageCell"
     var messageToPass : Message! = nil
     var reload : Bool = false
+    let searchController = UISearchController(searchResultsController: nil)
+    var filterMessages = [Message]()
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        messages = messages.reverse()
+        searchController.searchResultsUpdater = self
+        searchController.dimsBackgroundDuringPresentation = false
+        definesPresentationContext = true
+        tableView.tableHeaderView = searchController.searchBar
+    }
+    
+    func filterContentForSearchText(searchText: String, scope: String = "All") {
+        filterMessages = messages.filter { message in
+            return message.message.lowercaseString.containsString(searchText.lowercaseString) || message.senderUsername.lowercaseString.containsString(searchText.lowercaseString) || message.subject.lowercaseString.containsString(searchText.lowercaseString)
+        }
+        
+        tableView.reloadData()
     }
     
     @IBAction func refreshPressed(sender: AnyObject) {
@@ -29,6 +49,7 @@ class InboxTableViewController : UITableViewController {
                     messages.append(message)
                 }
             }
+            messages = messages.reverse()
             self.reload = false
             self.tableView.reloadData()
         })
@@ -40,7 +61,13 @@ class InboxTableViewController : UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let message = messages[indexPath.row]
+        var message : Message
+        
+        if searchController.active && searchController.searchBar.text != "" {
+            message = filterMessages[indexPath.row]
+        } else {
+            message = messages[indexPath.row]
+        }
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as! InboxTableViewCell!
         cell.configure(message)
         return cell
@@ -51,6 +78,9 @@ class InboxTableViewController : UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if searchController.active && searchController.searchBar.text != "" {
+            return filterMessages.count
+        }
         if reload {
             return 0
         } else {
@@ -66,7 +96,11 @@ class InboxTableViewController : UITableViewController {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        messageToPass = messages[indexPath.row]
+        if searchController.active && searchController.searchBar.text != "" {
+            messageToPass = filterMessages[indexPath.row]
+        } else {
+            messageToPass = messages[indexPath.row]
+        }
         self.performSegueWithIdentifier("InboxToMessage", sender: nil)
     }
     

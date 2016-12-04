@@ -19,14 +19,14 @@ class UserPostViewController : UIViewController {
     @IBOutlet weak var answeredButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        answeredButton.layer.cornerRadius = 10
-        questionText.layer.borderColor = UIColor.blackColor().CGColor
-        questionText.layer.borderWidth = 1
         if post != nil {
+            questionText.textContainerInset = UIEdgeInsetsMake(10, 7, 10, 0)
+            
             titleText.text = post.questionTitle!
             subject.text = post.subject!
             questionText.text = post.questionText!
         }
+        self.automaticallyAdjustsScrollViewInsets = false
     }
     
     
@@ -38,7 +38,7 @@ class UserPostViewController : UIViewController {
 
     }
     @IBAction func answered(sender: AnyObject) {
-        post.ref?.updateChildValues(["answered": "true"])
+        post.ref?.updateChildValues(["answered" : "true"])
         NSNotificationCenter.defaultCenter().postNotificationName("reloadPosts", object: nil)
         NSNotificationCenter.defaultCenter().postNotificationName("reloadUserPosts", object: nil)
         self.navigationController?.popViewControllerAnimated(true)

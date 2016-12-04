@@ -25,10 +25,8 @@ class PostAnswerViewController: UIViewController, UIImagePickerControllerDelegat
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        addImageButton.layer.cornerRadius = 10
-        captureImageButton.layer.cornerRadius = 10
-        textView.layer.borderColor = UIColor.blackColor().CGColor
-        textView.layer.borderWidth = 1
+        self.automaticallyAdjustsScrollViewInsets = false
+        
     }
     @IBAction func addImagePressed(sender: AnyObject) {
         imagePicker = UIImagePickerController()

@@ -14,6 +14,7 @@ class PostViewController : UIViewController {
     var imageURLToPass : String! = ""
     var usernameToPass : String! = ""
     var subjectToPass : String! = ""
+    var postKeyToPass : String! = ""
     var keyToPass : String! = ""
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var subjectTextField: UITextField!
@@ -23,10 +24,10 @@ class PostViewController : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        questionTextView.layer.borderColor = UIColor.blackColor().CGColor
-        questionTextView.layer.borderWidth = 1
-        viewImageButton.layer.cornerRadius = 10
-        answerButton.layer.cornerRadius = 10
+        self.automaticallyAdjustsScrollViewInsets = false
+        questionTextView.textContainerInset = UIEdgeInsetsMake(10, 7, 10, 0)
+
+        
         if post != nil {
             titleTextField.text = post.questionTitle
             subjectTextField.text = post.subject
@@ -49,6 +50,7 @@ class PostViewController : UIViewController {
     @IBAction func replyPressed(sender: AnyObject) {
         usernameToPass = post.postedBy
         subjectToPass = post.questionTitle
+        postKeyToPass = post.ref?.key
         self.performSegueWithIdentifier("PostToMessage", sender: nil)
     }
     @IBAction func answerPressed(sender: AnyObject) {
@@ -61,9 +63,10 @@ class PostViewController : UIViewController {
             let nextScene =  segue.destinationViewController as! PostImageViewController
             nextScene.imageURL = imageURLToPass
         } else if segue.identifier == "PostToMessage" {
-            let nextScene =  segue.destinationViewController as! NewMessageViewController
+            let nextScene =  segue.destinationViewController as! NewMessageTableViewController
             nextScene.username = usernameToPass
             nextScene.subject = subjectToPass
+            nextScene.postKey = postKeyToPass
         } else if segue.identifier == "showAnswers" {
             let nextScene =  segue.destinationViewController as! AnswerTableViewController
             nextScene.key = keyToPass

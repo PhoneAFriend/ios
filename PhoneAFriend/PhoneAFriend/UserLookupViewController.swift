@@ -64,7 +64,6 @@ class UserLookupController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        lookupButton.layer.cornerRadius = 5
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
