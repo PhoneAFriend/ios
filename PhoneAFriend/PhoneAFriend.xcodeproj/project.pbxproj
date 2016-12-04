@@ -31,7 +31,6 @@
 		AF2FB6891D82034E003EB3AA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2FB6881D82034E003EB3AA /* LoginViewController.swift */; };
 		AF2FB68B1D820387003EB3AA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2FB68A1D820387003EB3AA /* SignUpViewController.swift */; };
 		AF2FB68D1D820849003EB3AA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF2FB68C1D820849003EB3AA /* GoogleService-Info.plist */; };
-		AF2FB68F1D820B0D003EB3AA /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2FB68E1D820B0D003EB3AA /* LandingPageViewController.swift */; };
 		AF2FB6931D826BB7003EB3AA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2FB6921D826BB7003EB3AA /* User.swift */; };
 		AF2FB6951D826DA4003EB3AA /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2FB6941D826DA4003EB3AA /* HomePageViewController.swift */; };
 		AF31CF901DE38825003C6933 /* NewMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF31CF8F1DE38825003C6933 /* NewMessageViewController.swift */; };
@@ -121,7 +120,6 @@
 		AF2FB6881D82034E003EB3AA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../LoginViewController.swift; sourceTree = "<group>"; };
 		AF2FB68A1D820387003EB3AA /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = ../SignUpViewController.swift; sourceTree = "<group>"; };
 		AF2FB68C1D820849003EB3AA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		AF2FB68E1D820B0D003EB3AA /* LandingPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
 		AF2FB6921D826BB7003EB3AA /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		AF2FB6941D826DA4003EB3AA /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		AF31CF8F1DE38825003C6933 /* NewMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageViewController.swift; sourceTree = "<group>"; };
@@ -278,7 +276,6 @@
 				AF2FB6941D826DA4003EB3AA /* HomePageViewController.swift */,
 				AF4871ED1DE54E3900CA7509 /* InboxTableViewCell.swift */,
 				AF4871EB1DE54E2F00CA7509 /* InboxTableViewController.swift */,
-				AF2FB68E1D820B0D003EB3AA /* LandingPageViewController.swift */,
 				AF2FB6881D82034E003EB3AA /* LoginViewController.swift */,
 				AF4871EF1DE551AF00CA7509 /* MessageViewController.swift */,
 				AF4872011DECAA1600CA7509 /* MoreViewController.swift */,
@@ -765,7 +762,6 @@
 				AF0216D51DF22BFD001DC068 /* SessionsTableTableViewController.swift in Sources */,
 				AF4871EC1DE54E2F00CA7509 /* InboxTableViewController.swift in Sources */,
 				AF48720A1DED3B9200CA7509 /* PostAnswerViewController.swift in Sources */,
-				AF2FB68F1D820B0D003EB3AA /* LandingPageViewController.swift in Sources */,
 				AF4871F61DE6B75B00CA7509 /* PostImageViewController.swift in Sources */,
 				AF4871F81DEA908800CA7509 /* UserPostsTableViewCell.swift in Sources */,
 				AF4872041DECF65C00CA7509 /* Answer.swift in Sources */,

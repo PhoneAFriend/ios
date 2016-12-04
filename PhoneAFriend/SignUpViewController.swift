@@ -75,8 +75,7 @@ class SignUpViewController : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad();
-        signupButton.layer.cornerRadius = 10
-        backButton.layer.cornerRadius = 10
+
     }
     
     func checkPasswordValidity(firstPass : String, secondPass : String) -> Bool{

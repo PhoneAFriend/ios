@@ -13,8 +13,7 @@ import Firebase
 class LoginViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        signInButton.layer.cornerRadius = 10
-        backButton.layer.cornerRadius = 10
+
     }
     
     @IBOutlet weak var errorLabel: UILabel!
