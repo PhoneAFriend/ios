@@ -11,8 +11,15 @@ import UIKit
 class UserPostsTableViewCell : UITableViewCell {
     @IBOutlet weak var titleTextField: UILabel!
     @IBOutlet weak var subjectTextField: UILabel!
-    func configure(title: String, subject: String) {
+    @IBOutlet weak var answeredLabel: UILabel!
+    func configure(title: String, subject: String, answered: String) {
         titleTextField.text = title
         subjectTextField.text = subject
+        if answered == "false" {
+            answeredLabel.text = "Unanswered"
+            
+        } else {
+            answeredLabel.text = "Answered"
+        }
     }
 }

@@ -17,11 +17,7 @@ class HomePageViewController: UIViewController {
     @IBOutlet weak var myPostsButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        userLookUpButton.layer.cornerRadius = 10
-        postButton.layer.cornerRadius = 10
-        searchPostButton.layer.cornerRadius = 10
-        sessionStartButton.layer.cornerRadius = 10
-        myPostsButton.layer.cornerRadius = 10
+ 
     }
     
     

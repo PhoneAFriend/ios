@@ -14,12 +14,12 @@ class AnswerViewController: UIViewController {
     var imageURLToPass:String = ""
     override func viewDidLoad(){
         super.viewDidLoad()
-        answerTextView.layer.borderWidth = 1
-        answerTextView.layer.borderColor = UIColor.blackColor().CGColor
-        viewButton.layer.cornerRadius = 10
+        answerTextView.textContainerInset = UIEdgeInsetsMake(10, 10, 10, 0)
+
         if answer != nil {
             answerTextView.text = answer.answerText
         }
+        self.automaticallyAdjustsScrollViewInsets = false
     }
 
     @IBOutlet weak var answerTextView: UITextView!

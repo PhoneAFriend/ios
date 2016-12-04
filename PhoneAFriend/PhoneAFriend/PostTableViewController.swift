@@ -10,21 +10,41 @@ import UIKit
 import FirebaseDatabase
 import Firebase
 
+extension PostTableViewController: UISearchResultsUpdating {
+    func updateSearchResultsForSearchController(searchController: UISearchController) {
+        filterContentForSearchText(searchController.searchBar.text!)
+    }
+}
+
 class PostTableViewController: UITableViewController {
    
     let cellIdentifier = "postCell"
+    var filteredPosts = [Post]()
+    var searchActive: Bool = false
     var postToPass : Post! = nil
     var post: Post!
     var postArray = [Post]()
     var ref: FIRDatabaseReference!
     var reload: Bool = false
     private var databaseHandle: FIRDatabaseHandle!
+    let searchController = UISearchController(searchResultsController: nil)
 
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        view.endEditing(true)
+        super.touchesBegan(touches, withEvent: event)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.delegate = self
+        tableView.dataSource = self
         ref = FIRDatabase.database().reference()
         startObservingDatabase()
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(PostTableViewController.reloadPosts(_:)),name:"reloadPosts", object: nil)
+        searchController.searchResultsUpdater = self
+        searchController.dimsBackgroundDuringPresentation = false
+        definesPresentationContext = true
+        tableView.tableHeaderView = searchController.searchBar
         
     }
     
@@ -35,22 +55,38 @@ class PostTableViewController: UITableViewController {
         startObservingDatabase()
     }
     
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-    }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
     
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        view.endEditing(true)
-        super.touchesBegan(touches, withEvent: event)
+    
+    func filterContentForSearchText(searchText: String, scope: String = "All") {
+        
+            filteredPosts = postArray.filter({dictionary in
+                let questionTextTemp : NSString = dictionary.questionText!
+                let postedBy : NSString = dictionary.postedBy!
+                let questionTitleTemp : NSString = dictionary.questionTitle!
+                let subjectTemp : NSString = dictionary.subject!
+                let datePostedTemp : NSString = dictionary.datePosted!
+                let answeredTemp : NSString = dictionary.answered!
+                let range = questionTextTemp.rangeOfString(searchText, options: NSStringCompareOptions.CaseInsensitiveSearch)
+                let range2 = postedBy.rangeOfString(searchText, options: NSStringCompareOptions.CaseInsensitiveSearch)
+                let range3 = questionTitleTemp.rangeOfString(searchText, options: NSStringCompareOptions.CaseInsensitiveSearch)
+                let range4 = subjectTemp.rangeOfString(searchText, options: NSStringCompareOptions.CaseInsensitiveSearch)
+                let range5 = datePostedTemp.rangeOfString(searchText, options: NSStringCompareOptions.CaseInsensitiveSearch)
+                let range6 = answeredTemp.rangeOfString(searchText, options: NSStringCompareOptions.CaseInsensitiveSearch)
+                return range.location != NSNotFound || range2.location != NSNotFound || range3.location != NSNotFound || range4.location != NSNotFound || range5.location != NSNotFound || range6.location != NSNotFound
+            })
+        
+        self.tableView.reloadData()
     }
+
+    
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let post = postArray[indexPath.row]
+        if searchController.active && searchController.searchBar.text != "" {
+            post = filteredPosts[indexPath.row]
+        } else {
+            post = postArray[indexPath.row]
+        }
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as! PostTableViewCell!
-        print(post.questionTitle!, terminator: "")
         cell.configure((post.questionTitle)!, answered: post.answered!, datePosted: post.datePosted!, postedBy: post.postedBy!, questionImageURL: post.questionImageURL!, questionText: post.questionText!, subject: post.subject!)
         return cell
     }
@@ -60,14 +96,17 @@ class PostTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if searchController.active && searchController.searchBar.text != "" {
+            return filteredPosts.count
+        }
         if reload {
             return 0
-        } else {
-            return postArray.count
         }
+        return postArray.count
     }
     
     func startObservingDatabase () {
+        reload = false
         ref.child("posts").observeSingleEventOfType(.Value, withBlock: { (snapshot) in
             var newPosts = [Post]()
             
@@ -91,7 +130,11 @@ class PostTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        postToPass = postArray[indexPath.row]
+        if searchController.active && searchController.searchBar.text != "" {
+            postToPass = postArray[indexPath.row]
+        } else {
+            postToPass = postArray[indexPath.row]
+        }
         self.performSegueWithIdentifier("PostsToPost", sender: nil)
     }
 

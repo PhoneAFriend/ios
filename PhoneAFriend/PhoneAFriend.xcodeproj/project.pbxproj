@@ -56,9 +56,11 @@
 		AF48720C1DED47E700CA7509 /* AnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF48720B1DED47E700CA7509 /* AnswerViewController.swift */; };
 		AF62D3B91D8712A200C59234 /* CreateAQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF62D3B81D8712A200C59234 /* CreateAQuestionViewController.swift */; };
 		AF6808CA1D8C5D1900D6D5C1 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6808C91D8C5D1900D6D5C1 /* Post.swift */; };
+		AF725C5C1DF3C53300EF4A3E /* NewMessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF725C5B1DF3C53300EF4A3E /* NewMessageTableViewController.swift */; };
 		AF960C0A1DDC243700F1DEB0 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF960C091DDC243700F1DEB0 /* Contact.swift */; };
 		AF960C0C1DDC3D2A00F1DEB0 /* ContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF960C0B1DDC3D2A00F1DEB0 /* ContactTableViewController.swift */; };
 		AF960C0E1DDC3E2300F1DEB0 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF960C0D1DDC3E2300F1DEB0 /* ContactTableViewCell.swift */; };
+		AFA64EF31DF3635E007C958A /* checked-icon-73080.png in Resources */ = {isa = PBXBuildFile; fileRef = AFA64EF21DF3635E007C958A /* checked-icon-73080.png */; };
 		AFD46E5D1DBEF864009CE026 /* HomeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD46E5C1DBEF864009CE026 /* HomeNavigationController.swift */; };
 		AFD46E5F1DBEFAC1009CE026 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD46E5E1DBEFAC1009CE026 /* TabBarViewController.swift */; };
 		AFFC0AD31DC5C42400FA1A72 /* UserLookupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFC0AD21DC5C42400FA1A72 /* UserLookupViewController.swift */; };
@@ -144,9 +146,11 @@
 		AF48720B1DED47E700CA7509 /* AnswerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerViewController.swift; sourceTree = "<group>"; };
 		AF62D3B81D8712A200C59234 /* CreateAQuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAQuestionViewController.swift; sourceTree = "<group>"; };
 		AF6808C91D8C5D1900D6D5C1 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		AF725C5B1DF3C53300EF4A3E /* NewMessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageTableViewController.swift; sourceTree = "<group>"; };
 		AF960C091DDC243700F1DEB0 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		AF960C0B1DDC3D2A00F1DEB0 /* ContactTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewController.swift; sourceTree = "<group>"; };
 		AF960C0D1DDC3E2300F1DEB0 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		AFA64EF21DF3635E007C958A /* checked-icon-73080.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checked-icon-73080.png"; sourceTree = "<group>"; };
 		AFD46E5C1DBEF864009CE026 /* HomeNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeNavigationController.swift; sourceTree = "<group>"; };
 		AFD46E5E1DBEFAC1009CE026 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		AFFC0AD21DC5C42400FA1A72 /* UserLookupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLookupViewController.swift; sourceTree = "<group>"; };
@@ -255,6 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				AF0DD9BF1D77792F009B1F38 /* Main.storyboard */,
+				AF725C5B1DF3C53300EF4A3E /* NewMessageTableViewController.swift */,
 				AF0DD9C41D77792F009B1F38 /* LaunchScreen.storyboard */,
 			);
 			name = Views;
@@ -263,13 +268,10 @@
 		AFA54CC61DD4297F00B81165 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AF48720B1DED47E700CA7509 /* AnswerViewController.swift */,
-				AF0216D41DF22BFD001DC068 /* SessionsTableTableViewController.swift */,
-				AF0216D61DF22C5E001DC068 /* SessionsTableViewCell.swift */,
 				AF4872071DED00CA00CA7509 /* AnswerTableViewCell.swift */,
 				AF4872051DECFD8A00CA7509 /* AnswerTableViewController.swift */,
+				AF48720B1DED47E700CA7509 /* AnswerViewController.swift */,
 				AF960C0D1DDC3E2300F1DEB0 /* ContactTableViewCell.swift */,
-				AF0216D81DF24183001DC068 /* SessionViewController.swift */,
 				AF960C0B1DDC3D2A00F1DEB0 /* ContactTableViewController.swift */,
 				AF62D3B81D8712A200C59234 /* CreateAQuestionViewController.swift */,
 				AFD46E5C1DBEF864009CE026 /* HomeNavigationController.swift */,
@@ -287,6 +289,9 @@
 				AFFC0AD41DC834EC00FA1A72 /* PostTableViewController.swift */,
 				AF4871F31DE6B01000CA7509 /* PostViewController.swift */,
 				AF446F681D9310DA00812996 /* SearchQuestionViewController.swift */,
+				AF0216D41DF22BFD001DC068 /* SessionsTableTableViewController.swift */,
+				AF0216D61DF22C5E001DC068 /* SessionsTableViewCell.swift */,
+				AF0216D81DF24183001DC068 /* SessionViewController.swift */,
 				AF2FB68A1D820387003EB3AA /* SignUpViewController.swift */,
 				AFD46E5E1DBEFAC1009CE026 /* TabBarViewController.swift */,
 				AF4871FD1DECA96C00CA7509 /* UpdateEmailViewController.swift */,
@@ -306,6 +311,7 @@
 			children = (
 				AF2FB6861D820266003EB3AA /* constants.swift */,
 				AF4871F11DE5723D00CA7509 /* no_uploaded.png */,
+				AFA64EF21DF3635E007C958A /* checked-icon-73080.png */,
 				AF0216C61DF1633B001DC068 /* email-7.png */,
 				AF0216C71DF1633B001DC068 /* home-7.png */,
 				AF0216C81DF1633B001DC068 /* house-7.png */,
@@ -478,6 +484,7 @@
 				AF2FB68D1D820849003EB3AA /* GoogleService-Info.plist in Resources */,
 				AF4871F21DE5723D00CA7509 /* no_uploaded.png in Resources */,
 				AF0216CD1DF1633B001DC068 /* message-7.png in Resources */,
+				AFA64EF31DF3635E007C958A /* checked-icon-73080.png in Resources */,
 				AF0216CA1DF1633B001DC068 /* email-7.png in Resources */,
 				AF0216CB1DF1633B001DC068 /* home-7.png in Resources */,
 				AF0DD9C61D77792F009B1F38 /* LaunchScreen.storyboard in Resources */,
@@ -779,6 +786,7 @@
 				AF4871F41DE6B01000CA7509 /* PostViewController.swift in Sources */,
 				AF4872061DECFD8A00CA7509 /* AnswerTableViewController.swift in Sources */,
 				AF31CF901DE38825003C6933 /* NewMessageViewController.swift in Sources */,
+				AF725C5C1DF3C53300EF4A3E /* NewMessageTableViewController.swift in Sources */,
 				AFFC0AD81DC83B4D00FA1A72 /* PostTableViewCell.swift in Sources */,
 				AF2FB68B1D820387003EB3AA /* SignUpViewController.swift in Sources */,
 				AFD46E5F1DBEFAC1009CE026 /* TabBarViewController.swift in Sources */,

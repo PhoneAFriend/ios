@@ -44,7 +44,7 @@ class UserPostsTableViewController : UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let post = userPosts[indexPath.row]
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as! UserPostsTableViewCell!
-        cell.configure(post.questionTitle!, subject: post.subject!)
+        cell.configure(post.questionTitle!, subject: post.subject!, answered: post.answered!)
         return cell
     }
     

@@ -33,14 +33,11 @@ class CreateAQuestionViewController: UIViewController, UIPickerViewDataSource, U
 
     override func viewDidLoad(){
         super.viewDidLoad()
-        questionTextView.layer.borderColor = UIColor.blackColor().CGColor
-        questionTextView.layer.borderWidth = 1
-        addButton.layer.cornerRadius = 10
-        captureButton.layer.cornerRadius = 10
         let pickerView = UIPickerView()
-        
+        questionTextView.textContainerInset = UIEdgeInsetsMake(10, 7, 10, 0)
+
         pickerView.delegate = self
-        
+        self.automaticallyAdjustsScrollViewInsets = false
         subjectTextField.inputView = pickerView
     }
     
@@ -113,7 +110,8 @@ class CreateAQuestionViewController: UIViewController, UIPickerViewDataSource, U
                         "questionImageURL" :imageURL,
                         "questionText" : questionText,
                         "questionTitle" : questionTitle,
-                        "subject" : subject]
+                        "subject" : subject,
+                        "postKey" : self.postKey]
             saveNewPost(post)
         } else {
             let imageName = currentUser!.username! + (questionTitleTextField.text?.lowercaseString.stringByReplacingOccurrencesOfString(" ", withString: ""))!
@@ -125,7 +123,8 @@ class CreateAQuestionViewController: UIViewController, UIPickerViewDataSource, U
                                 "questionImageURL" :self.imageURL,
                                 "questionText" : questionText,
                                 "questionTitle" : questionTitle,
-                                "subject" : subject]
+                                "subject" : subject,
+                                "postKey" : self.postKey]
                     self.saveNewPost(post)
 
                 } else {

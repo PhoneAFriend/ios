@@ -13,6 +13,7 @@ class NewMessageViewController : UIViewController {
     var username : String = ""
     var subject : String = ""
     var message : String = ""
+    var postKey : String = ""
     
     @IBOutlet weak var usernameText: UITextField!
     
@@ -34,8 +35,6 @@ class NewMessageViewController : UIViewController {
         subject = subjectTextField.text!
         message = messageTextView.text!
         if subject == "" {
-            // No subject was entered
-            // create alert and make the user click send again
             let alert =  UIAlertController(title: "Invalid Submission", message: "You need to input a subject before you can send the message.", preferredStyle: .Alert)
             let cancelButton = UIAlertAction(title: "Cancel", style: .Cancel, handler: { (action: UIAlertAction) in
             })
@@ -52,7 +51,7 @@ class NewMessageViewController : UIViewController {
         } else {
             // Good to go. Send the message
             
-            let messageToSend = Message(senderUsername: currentUser!.username!, recipientUsername: username, subject: subject, message: message, unread: true)
+            let messageToSend = Message(senderUsername: currentUser!.username!, recipientUsername: username, subject: subject, message: message, unread: true, postKey: postKey)
             sendMessage(messageToSend)
         }
         self.navigationController?.popViewControllerAnimated(true)
@@ -64,7 +63,8 @@ class NewMessageViewController : UIViewController {
                           "senderUsername": messageToSend.senderUsername,
                           "subject": messageToSend.subject,
                           "message": messageToSend.message,
-                          "unread": true
+                          "unread": true,
+                          "postKey": messageToSend.postKey
         ]
         let childUpdates = ["/messages/\(key)": newMessage]
         FIRDatabase.database().reference().updateChildValues(childUpdates)

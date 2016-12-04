@@ -153,7 +153,7 @@ class UserTableViewController : UITableViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "UsersToMessage" {
-            let nextScene =  segue.destinationViewController as! NewMessageViewController
+            let nextScene =  segue.destinationViewController as! NewMessageTableViewController
             nextScene.username = usernameToPass
         }
     }
