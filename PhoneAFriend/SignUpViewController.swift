@@ -31,11 +31,13 @@ class SignUpViewController : UIViewController {
         if nameField.text! != "" && emailField.text! != "" && passwordField.text! != "" && confirmPasswordField.text! != "" && checkPasswordValidity(passwordField.text!, secondPass: confirmPasswordField.text!)  {
             let ref = FIRDatabase.database().reference()
             print(ref)
-            print("Sign in clicked", terminator: "")
+            print("Sign up clicked", terminator: "")
+            AppEvents.showLoadingOverlay("Signing Up...")
             ref.child("users")
                 .queryOrderedByChild("username")
                 .queryEqualToValue(nameField.text!)
                 .observeSingleEventOfType(.Value, withBlock: { snapshot in
+                    AppEvents.hideLoadingOverlay()
                     if !snapshot.exists(){
                         print("Made it to unique username")
                         //do stuff with unique username

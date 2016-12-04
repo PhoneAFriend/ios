@@ -88,8 +88,7 @@ class TwilioClient: NSObject, TCDeviceDelegate, TCConnectionDelegate {
         let okAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
         alertController.addAction(okAction)
         
-        let topController = getTopmostViewController();
-        topController!.presentViewController(alertController, animated: true, completion: nil)
+        AppEvents.getTopmostViewController()?.presentViewController(alertController, animated: true, completion: nil)
     }
     
     
@@ -122,7 +121,7 @@ class TwilioClient: NSObject, TCDeviceDelegate, TCConnectionDelegate {
             alertController.addAction(acceptAction)
             alertController.addAction(declineAction)
             
-            getTopmostViewController()?.presentViewController(alertController, animated: true, completion: nil)
+            AppEvents.getTopmostViewController()?.presentViewController(alertController, animated: true, completion: nil)
         }
     }
 
@@ -143,7 +142,7 @@ class TwilioClient: NSObject, TCDeviceDelegate, TCConnectionDelegate {
         
         let resultViewController = storyBoard.instantiateInitialViewController()
         
-        getTopmostViewController()?.presentViewController(resultViewController!, animated:true, completion:nil)
+        AppEvents.getTopmostViewController()?.presentViewController(resultViewController!, animated:true, completion:nil)
     }
     
     func connectionDidDisconnect(connection: TCConnection) {
@@ -200,20 +199,5 @@ class TwilioClient: NSObject, TCDeviceDelegate, TCConnectionDelegate {
         // Show alert
         alert.view.addSubview(loadingIndicator)
         currentViewController.presentViewController(alert, animated: true, completion: nil)
-    }
-    
-    func getTopmostViewController() -> UIViewController? {
-
-        // Find root view controller
-        var topController = UIApplication.sharedApplication().keyWindow?.rootViewController
-        
-        // Recursively find topmost view controller
-        if (topController != nil) {
-            while (topController!.presentedViewController != nil) {
-                topController = topController!.presentedViewController
-            }
-        }
-            
-        return topController
     }
 }

@@ -25,7 +25,9 @@ class LoginViewController : UIViewController {
     @IBAction func signInPressed(sender: AnyObject) {
         clearData()
         if emailField.text! != "" && passwordField != "" {
-            FIRAuth.auth()?.signInWithEmail(emailField.text!, password: passwordField.text!, completion: {(user, error) in
+            AppEvents.showLoadingOverlay("Logging in...")
+            FIRAuth.auth()?.signInWithEmail(emailField.text!, password: passwordField.text!, completion: { (user, error) in
+                AppEvents.hideLoadingOverlay()
                 if error != nil {
                     print(error)
                     
@@ -146,6 +148,5 @@ class LoginViewController : UIViewController {
         messages.removeAll()
         userPosts.removeAll()
     }
-    
     
 }
