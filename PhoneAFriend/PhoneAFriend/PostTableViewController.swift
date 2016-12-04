@@ -35,6 +35,10 @@ class PostTableViewController: UITableViewController {
     }
     
     override func viewDidLoad() {
+        FIRDatabase.database().reference().child("TwilioServer").queryOrderedByChild("url").observeSingleEventOfType(.Value, withBlock: { (snapshot) in
+            let data = snapshot.value as! Dictionary<String, String>
+            print(data["url"])
+        })
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
@@ -47,6 +51,7 @@ class PostTableViewController: UITableViewController {
         tableView.tableHeaderView = searchController.searchBar
         
     }
+    
     
     func reloadPosts(notification: NSNotification) {
         postArray.removeAll()
