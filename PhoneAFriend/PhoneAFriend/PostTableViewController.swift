@@ -35,7 +35,7 @@ class PostTableViewController: UITableViewController {
     }
     
     override func viewDidLoad() {
-        
+        TwilioClient.configure()
         FIRDatabase.database().reference().child("TwilioServer").queryOrderedByChild("url").observeSingleEventOfType(.Value, withBlock: { (snapshot) in
             let data = snapshot.value as! Dictionary<String, String>
             print(data["url"])
@@ -113,7 +113,7 @@ class PostTableViewController: UITableViewController {
     
     func startObservingDatabase () {
         reload = false
-        ref.child("posts").observeSingleEventOfType(.Value, withBlock: { (snapshot) in
+        ref.child("posts").observeEventType(.Value, withBlock: { (snapshot) in
             var newPosts = [Post]()
             
             for postSnapShot in snapshot.children {
@@ -137,7 +137,7 @@ class PostTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         if searchController.active && searchController.searchBar.text != "" {
-            postToPass = postArray[indexPath.row]
+            postToPass = filteredPosts[indexPath.row]
         } else {
             postToPass = postArray[indexPath.row]
         }

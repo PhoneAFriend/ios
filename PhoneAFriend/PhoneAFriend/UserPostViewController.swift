@@ -32,14 +32,14 @@ class UserPostViewController : UIViewController {
     
     @IBAction func deletePost(sender: AnyObject) {
         post.ref?.removeValue()
-        NSNotificationCenter.defaultCenter().postNotificationName("reloadPosts", object: nil)
+        //NSNotificationCenter.defaultCenter().postNotificationName("reloadPosts", object: nil)
         NSNotificationCenter.defaultCenter().postNotificationName("reloadUserPosts", object: nil)
         self.navigationController?.popViewControllerAnimated(true)
 
     }
     @IBAction func answered(sender: AnyObject) {
         post.ref?.updateChildValues(["answered" : "true"])
-        NSNotificationCenter.defaultCenter().postNotificationName("reloadPosts", object: nil)
+        //NSNotificationCenter.defaultCenter().postNotificationName("reloadPosts", object: nil)
         NSNotificationCenter.defaultCenter().postNotificationName("reloadUserPosts", object: nil)
         self.navigationController?.popViewControllerAnimated(true)
     }

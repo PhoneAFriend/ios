@@ -36,6 +36,15 @@ class MessageViewController: UITableViewController {
         }
         self.automaticallyAdjustsScrollViewInsets = false
     }
+    @IBAction func startSessionPressed(sender: AnyObject) {
+        var postRef: String = ""
+        if message.postKey != "" {
+            postRef = message.postKey
+        }
+        let sessionRefString = Session.create(self.message.senderUsername, postRef: postRef)
+        // Call through Twilio
+        twilioClient!.dialUser(self, contactName: self.message.senderUsername, sessionRefString: sessionRefString)
+    }
 
     @IBAction func replyPressed(sender: AnyObject) {
         usernameToPass = message.senderUsername

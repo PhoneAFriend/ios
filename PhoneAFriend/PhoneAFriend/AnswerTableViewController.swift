@@ -64,11 +64,13 @@ class AnswerTableViewController : UITableViewController {
     }
     func initialLoad() {
         FIRDatabase.database().reference().child("answers").queryOrderedByChild("key").queryEqualToValue(key).observeSingleEventOfType(.Value, withBlock: { (snapshot) -> Void in
+            var tempArray = [Answer]()
             if snapshot.childrenCount != 0 {
                 for answerSnapshot in snapshot.children {
                     let answer = Answer(snapshot: answerSnapshot as! FIRDataSnapshot)
-                    self.answerArray.append(answer)
+                    tempArray.append(answer)
                 }
+                self.answerArray = tempArray.sort({ $0.upvotes > $1.upvotes })
                 self.tableView.reloadData()
                 self.reload = false
             } else {

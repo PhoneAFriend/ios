@@ -47,21 +47,14 @@ class LoginViewController : UIViewController {
                                 if boolValue {
                                     self.fetchUsername2Contacts(currentUser!.username!) { (boolValue) -> () in
                                         if boolValue {
-                                            self.fetchUserMessages(currentUser!.username!) { (boolValue) -> () in
-                                                if boolValue {
-                                                    TwilioClient.configure()
-
+                                            
                                                     dispatch_async(dispatch_get_main_queue(), {
                                                         self.signInButton.enabled = true
 
                                                         self.performSegueWithIdentifier("SegueFromLoginToHomePage", sender: self)
                                                     })
-                                                } else {
-                                                    self.signInButton.enabled = true
-
-                                                    
-                                                }
-                                            }
+                                    
+                                            
                                         } else {
                                             self.signInButton.enabled = true
 
@@ -137,18 +130,7 @@ class LoginViewController : UIViewController {
         })
     }
     
-    func fetchUserMessages(username: String, completion: (result: Bool) -> () ) {
-        FIRDatabase.database().reference().child("messages").queryOrderedByChild("recipientUsername").queryEqualToValue(username).observeSingleEventOfType(.Value, withBlock: { (snapshot) -> Void in
-            if snapshot.childrenCount != 0 {
-                for messageSnapshot in snapshot.children {
-                    let message = Message(snapshot: messageSnapshot as! FIRDataSnapshot)
-                    messages.insert(message, atIndex: messages.startIndex)
-                }
-                
-            }
-            completion(result: true)
-        })
-    }
+
     
     func fetchUserPosts(username: String, completion: (result: Bool) -> ()) {
         FIRDatabase.database().reference().child("posts").queryOrderedByChild("postedBy").queryEqualToValue(username).observeSingleEventOfType(.Value, withBlock: { (snapshot) -> Void in

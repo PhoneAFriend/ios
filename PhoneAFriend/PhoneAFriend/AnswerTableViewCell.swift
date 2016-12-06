@@ -10,8 +10,10 @@ import UIKit
 
 class AnswerTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var upvoteLabel: UILabel!
     @IBOutlet weak var answerText: UILabel!
     func configure(answer: Answer) {
         answerText.text = answer.answerText
+        upvoteLabel.text = "Upvotes: " + String(answer.upvotes)
     }
 }

@@ -61,7 +61,7 @@ class TwilioClient: NSObject, TCDeviceDelegate, TCConnectionDelegate {
 
                 // Create a GET request to the capability token endpoint
                 let session = NSURLSession.sharedSession()
-
+            
                 let url = NSURL(string: self.serverURL + "token/" + currentUser!.username!)
                 let request = NSURLRequest(URL: url!, cachePolicy: .UseProtocolCachePolicy, timeoutInterval: 30.0)
 

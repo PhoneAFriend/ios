@@ -78,9 +78,6 @@ class NewMessageTableViewController: UITableViewController {
             FIRDatabase.database().reference().updateChildValues(childUpdates)
         }
         
-        @IBAction func sendMessage(segue:UIStoryboardSegue) {
-            
-        }
     
 
 }

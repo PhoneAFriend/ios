@@ -19,7 +19,6 @@ class User {
         self.username = username
         self.useremail = useremail
         self.id = id
-        self.ref = FIRDatabase.database().reference()
     }
     
     init (snapshot: FIRDataSnapshot) {

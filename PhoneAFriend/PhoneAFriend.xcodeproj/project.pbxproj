@@ -62,6 +62,7 @@
 		AF48720C1DED47E700CA7509 /* AnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF48720B1DED47E700CA7509 /* AnswerViewController.swift */; };
 		AF62D3B91D8712A200C59234 /* CreateAQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF62D3B81D8712A200C59234 /* CreateAQuestionViewController.swift */; };
 		AF6808CA1D8C5D1900D6D5C1 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6808C91D8C5D1900D6D5C1 /* Post.swift */; };
+		AF72336A1DF698D400DE28BA /* Upvote.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7233691DF698D400DE28BA /* Upvote.swift */; };
 		AF725C5C1DF3C53300EF4A3E /* NewMessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF725C5B1DF3C53300EF4A3E /* NewMessageTableViewController.swift */; };
 		AF960C0A1DDC243700F1DEB0 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF960C091DDC243700F1DEB0 /* Contact.swift */; };
 		AF960C0C1DDC3D2A00F1DEB0 /* ContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF960C0B1DDC3D2A00F1DEB0 /* ContactTableViewController.swift */; };
@@ -159,6 +160,7 @@
 		AF48720B1DED47E700CA7509 /* AnswerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerViewController.swift; sourceTree = "<group>"; };
 		AF62D3B81D8712A200C59234 /* CreateAQuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAQuestionViewController.swift; sourceTree = "<group>"; };
 		AF6808C91D8C5D1900D6D5C1 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		AF7233691DF698D400DE28BA /* Upvote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Upvote.swift; sourceTree = "<group>"; };
 		AF725C5B1DF3C53300EF4A3E /* NewMessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageTableViewController.swift; sourceTree = "<group>"; };
 		AF960C091DDC243700F1DEB0 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		AF960C0B1DDC3D2A00F1DEB0 /* ContactTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewController.swift; sourceTree = "<group>"; };
@@ -261,6 +263,7 @@
 			children = (
 				36BCCC651DF4F3C70068F192 /* AppEvents.swift */,
 				AF2FB6921D826BB7003EB3AA /* User.swift */,
+				AF7233691DF698D400DE28BA /* Upvote.swift */,
 				AF6808C91D8C5D1900D6D5C1 /* Post.swift */,
 				AF960C091DDC243700F1DEB0 /* Contact.swift */,
 				AF4871E91DE4D7DF00CA7509 /* Message.swift */,
@@ -296,16 +299,16 @@
 				AF2FB6941D826DA4003EB3AA /* HomePageViewController.swift */,
 				AF4871ED1DE54E3900CA7509 /* InboxTableViewCell.swift */,
 				AF4871EB1DE54E2F00CA7509 /* InboxTableViewController.swift */,
+				AF4871F31DE6B01000CA7509 /* PostViewController.swift */,
+				AF4872011DECAA1600CA7509 /* MoreViewController.swift */,
 				AF2FB6881D82034E003EB3AA /* LoginViewController.swift */,
 				AF4871EF1DE551AF00CA7509 /* MessageViewController.swift */,
-				AF4872011DECAA1600CA7509 /* MoreViewController.swift */,
 				AF725C5B1DF3C53300EF4A3E /* NewMessageTableViewController.swift */,
 				AF31CF8F1DE38825003C6933 /* NewMessageViewController.swift */,
 				AF4872091DED3B9200CA7509 /* PostAnswerViewController.swift */,
 				AF4871F51DE6B75B00CA7509 /* PostImageViewController.swift */,
 				AFFC0AD71DC83B4D00FA1A72 /* PostTableViewCell.swift */,
 				AFFC0AD41DC834EC00FA1A72 /* PostTableViewController.swift */,
-				AF4871F31DE6B01000CA7509 /* PostViewController.swift */,
 				AF446F681D9310DA00812996 /* SearchQuestionViewController.swift */,
 				3627BCBE1DF37741005D7749 /* SessionBlackboardViewController.swift */,
 				367F117A1DF67CFE00DF18CF /* SessionChatViewController.swift */,
@@ -883,6 +886,7 @@
 				AF960C0A1DDC243700F1DEB0 /* Contact.swift in Sources */,
 				AF0216D51DF22BFD001DC068 /* SessionsTableTableViewController.swift in Sources */,
 				AF4871EC1DE54E2F00CA7509 /* InboxTableViewController.swift in Sources */,
+				AF72336A1DF698D400DE28BA /* Upvote.swift in Sources */,
 				AF48720A1DED3B9200CA7509 /* PostAnswerViewController.swift in Sources */,
 				AF4871F61DE6B75B00CA7509 /* PostImageViewController.swift in Sources */,
 				AF4871F81DEA908800CA7509 /* UserPostsTableViewCell.swift in Sources */,
