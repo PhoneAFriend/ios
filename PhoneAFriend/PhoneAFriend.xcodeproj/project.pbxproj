@@ -12,6 +12,7 @@
 		3627BCBF1DF37741005D7749 /* SessionBlackboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3627BCBE1DF37741005D7749 /* SessionBlackboardViewController.swift */; };
 		3627BCC11DF37BA3005D7749 /* Session.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3627BCC01DF37BA3005D7749 /* Session.storyboard */; };
 		362915C51DF3AAC0000F1A7B /* SessionTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362915C41DF3AAC0000F1A7B /* SessionTabBarController.swift */; };
+		36BCCC661DF4F3C70068F192 /* AppEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BCCC651DF4F3C70068F192 /* AppEvents.swift */; };
 		52060E8A27A0662CF272380D /* Pods_PhoneAFriendTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 876792C0CDB42FA2B0CA41C1 /* Pods_PhoneAFriendTests.framework */; };
 		81F8CFF6A3B86999DC05E4AE /* Pods_PhoneAFriendUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 327EDFD036E02D01803A84B6 /* Pods_PhoneAFriendUITests.framework */; };
 		AF0216CA1DF1633B001DC068 /* email-7.png in Resources */ = {isa = PBXBuildFile; fileRef = AF0216C61DF1633B001DC068 /* email-7.png */; };
@@ -97,6 +98,7 @@
 		3627BCBE1DF37741005D7749 /* SessionBlackboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionBlackboardViewController.swift; sourceTree = "<group>"; };
 		3627BCC01DF37BA3005D7749 /* Session.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Session.storyboard; sourceTree = "<group>"; };
 		362915C41DF3AAC0000F1A7B /* SessionTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionTabBarController.swift; sourceTree = "<group>"; };
+		36BCCC651DF4F3C70068F192 /* AppEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppEvents.swift; sourceTree = "<group>"; };
 		5615DA110FD91232A5DE34EA /* Pods-PhoneAFriendTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoneAFriendTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhoneAFriendTests/Pods-PhoneAFriendTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7581D0F787511BFD0EA6CAF2 /* Pods-PhoneAFriend.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoneAFriend.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhoneAFriend/Pods-PhoneAFriend.debug.xcconfig"; sourceTree = "<group>"; };
 		876792C0CDB42FA2B0CA41C1 /* Pods_PhoneAFriendTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhoneAFriendTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -254,6 +256,7 @@
 		AFA54CC21DD4294200B81165 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				36BCCC651DF4F3C70068F192 /* AppEvents.swift */,
 				AF2FB6921D826BB7003EB3AA /* User.swift */,
 				AF6808C91D8C5D1900D6D5C1 /* Post.swift */,
 				AF960C091DDC243700F1DEB0 /* Contact.swift */,
@@ -864,7 +867,7 @@
 				AF2F5AC71DD3E5940035DEBD /* UserTableViewController.swift in Sources */,
 				AF48720C1DED47E700CA7509 /* AnswerViewController.swift in Sources */,
 				AFD46E5D1DBEF864009CE026 /* HomeNavigationController.swift in Sources */,
-				AFC7DFBA1DF4F3E600F7DD39 /* AppEvents.swift in Sources */,
+				36BCCC661DF4F3C70068F192 /* AppEvents.swift in Sources */,
 				AF0216D91DF24183001DC068 /* SessionViewController.swift in Sources */,
 				AF6808CA1D8C5D1900D6D5C1 /* Post.swift in Sources */,
 				AF4871FA1DEA909400CA7509 /* UserPostsTableViewController.swift in Sources */,

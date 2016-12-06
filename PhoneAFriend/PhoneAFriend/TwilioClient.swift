@@ -9,18 +9,29 @@
 import Foundation
 import UIKit
 import Firebase
+import AVFoundation // Audio devices
 
 class TwilioClient: NSObject, TCDeviceDelegate, TCConnectionDelegate {
     
-    var serverURL = ""
+    enum CallStatus {
+        case NoCall
+        case Host
+        case Client
+    }
     
+    var callStatus = CallStatus.NoCall
+    var serverURL = ""
+
+    var sessionID = ""
+    var postRef = ""
+
     var device: TCDevice?
     var connection: TCConnection?
 
     //MARK: Initialization methods
-    
+
     static func configure() {
-    
+
         /*FIRDatabase.database().reference().child("TwilioServerURL").observeSingleEventOfType(.Value, withBlock: { (snapshot) in
             if snapshot.childrenCount != 0 {
                 for data in snapshot.children {
@@ -30,15 +41,13 @@ class TwilioClient: NSObject, TCDeviceDelegate, TCConnectionDelegate {
             }
         })
         print("Connecting to \(twilioClient!.serverURL)")*/
-        
+
         twilioClient = TwilioClient()
         twilioClient!.retrieveToken()
     }
-    
+
     func initializeTwilioDevice(token:String) {
         device = TCDevice.init(capabilityToken: token, delegate: self)
-        
-        //self.dialButton.enabled = true
     }
 
     func retrieveToken() {
@@ -80,9 +89,9 @@ class TwilioClient: NSObject, TCDeviceDelegate, TCConnectionDelegate {
                 task.resume()
             })
     }
-    
+
     //MARK: Utility Methods
-    
+
     func displayError(errorMessage:String) {
         let alertController = UIAlertController(title: "Error", message: errorMessage, preferredStyle: .Alert)
         let okAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
@@ -90,25 +99,25 @@ class TwilioClient: NSObject, TCDeviceDelegate, TCConnectionDelegate {
         
         AppEvents.getTopmostViewController()?.presentViewController(alertController, animated: true, completion: nil)
     }
-    
-    
+
     //MARK: TCDeviceDelegate
-    
+
     func device(device:TCDevice, didStopListeningForIncomingConnections:NSError?) {
         if let error = didStopListeningForIncomingConnections {
             print("Stopped listening for incoming connections: " + error.localizedDescription)
         }
     }
-    
+
     func deviceDidStartListeningForIncomingConnections(device: TCDevice) {
         print("Started listening for incoming connections")
     }
-    
+
     func device(device: TCDevice, didReceiveIncomingConnection connection: TCConnection) {
         if let parameters = connection.parameters {
 
-            let from = parameters["From"]
-            let message = "Incoming call from \(from)"
+            let _from = parameters["From"]
+
+            let message = "\(_from) wants to start a live session"
             let alertController = UIAlertController(title: "Incoming Call", message: message, preferredStyle: .Alert)
             let acceptAction = UIAlertAction(title: "Accept", style: .Default, handler: { (action:UIAlertAction) in
                 connection.delegate = self
@@ -131,22 +140,35 @@ class TwilioClient: NSObject, TCDeviceDelegate, TCConnectionDelegate {
             print(error.localizedDescription)
         }
     }
-    
+
     func connectionDidStartConnecting(connection: TCConnection) {
         //statusLabel.text = "Started connecting...."
     }
-    
+
     func connectionDidConnect(connection: TCConnection) {
+
+        // Turn on speaker
+        twilioClient!.enableSpeaker(true)
+
         // Transition to session view
         let storyBoard : UIStoryboard = UIStoryboard(name: "Session", bundle:nil)
-        
+
         let resultViewController = storyBoard.instantiateInitialViewController()
-        
+
         AppEvents.getTopmostViewController()?.presentViewController(resultViewController!, animated:true, completion:nil)
+
+        // If recipient, join the caller's session
+        if (callStatus == .NoCall) {
+            Session.join(sessionID, senderName: peerUsername!, postRef: postRef)
+            print("Joining session \(sessionID)")
+        }
     }
-    
+
     func connectionDidDisconnect(connection: TCConnection) {
-        // Do nothing
+        // End the session when the call disconnects
+        // * Session.swift transitions back to the menus
+        //   on deletion
+        activeSession = nil
     }
     
     //MARK: UITextFieldDelegate
@@ -156,46 +178,63 @@ class TwilioClient: NSObject, TCDeviceDelegate, TCConnectionDelegate {
         return true;
     }*/
 
+    func enableSpeaker(enabled: Bool) {
+        do {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayAndRecord)
+        } catch _ {
+        }
+        do {
+            try AVAudioSession.sharedInstance().setActive(true)
+        } catch _ {
+        }
+        do {
+            try AVAudioSession.sharedInstance().overrideOutputAudioPort(AVAudioSessionPortOverride.Speaker)
+        } catch _ {
+        }
+    }
+
     // Stop dialing
     @IBAction func hangUp() {
         if (device != nil) {
             device!.disconnectAll()
+            callStatus = .NoCall
         }
     }
 
     // Begin dialing by username
-    func dial(contactName: String, sessionRefString: String) {
+    func dial(contactName: String, sessionRefString: String, postRefString: String) {
         if (device != nil) {
-            device!.connect(["To" : contactName, "Session" : sessionRefString], delegate: self)
+            device!.connect(["To" : contactName, "From" : (currentUser?.username)!, "Session" : sessionRefString, "Post" : postRefString], delegate: self)
+            callStatus = .Host
             print("Dialing \"\(contactName)\"...");
         }
     }
-    
+
     // Begin dialing and show dialing popup
     func dialUser(currentViewController: UIViewController, contactName: String, sessionRefString: String) {
         /*
          * Begin dialing
          */
-        dial(contactName, sessionRefString: sessionRefString);
+        dial(contactName, sessionRefString: sessionRefString, postRefString: "");
 
         /*
          * Show dialing overlay
          */
         let alert = UIAlertController(title: nil, message: "Dialing...", preferredStyle: .Alert)
-        
+
         // Show dialing indicator
         alert.view.tintColor = UIColor.blackColor()
         let loadingIndicator: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRectMake(10, 5, 50, 50)) as UIActivityIndicatorView
         loadingIndicator.hidesWhenStopped = true
         loadingIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.Gray
         loadingIndicator.startAnimating();
-        
+
         // Show cancel button
         let cancel = UIAlertAction(title: "Cancel", style: .Cancel, handler: { (action: UIAlertAction) in
             self.hangUp()
         })
         alert.addAction(cancel)
-        
+
         // Show alert
         alert.view.addSubview(loadingIndicator)
         currentViewController.presentViewController(alert, animated: true, completion: nil)

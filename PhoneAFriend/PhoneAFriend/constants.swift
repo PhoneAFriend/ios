@@ -17,6 +17,7 @@ var messages : [Message] = []
 var userPosts : [Post] = []
 var twilioClient : TwilioClient?
 var activeSession : Session?
+var peerUsername: String?
 
 let firebaseURL = "https://phoneafriend-7fb6b.firebaseio.com/"
 extension UIColor {

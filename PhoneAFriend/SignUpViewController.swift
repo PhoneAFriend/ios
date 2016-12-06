@@ -50,6 +50,7 @@ class SignUpViewController : UIViewController {
                             }
                             else {
                                 print("Made it to user save")
+                                TwilioClient.configure()
                                 let uid = user!.uid
                                 let username = self.nameField.text!
                                 let useremail = user!.email
