@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Session Post View Controller-->
+        <!--Session Chat View Controller-->
         <scene sceneID="20Y-lQ-M5I">
             <objects>
-                <viewController id="aUL-0M-aNX" customClass="SessionPostViewController" customModule="PhoneAFriend" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="aUL-0M-aNX" customClass="SessionChatViewController" customModule="PhoneAFriend" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="skB-WC-CCJ"/>
                         <viewControllerLayoutGuide type="bottom" id="hFh-DR-L2e"/>
@@ -22,7 +22,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="dXF-1C-gX0"/>
+                    <navigationItem key="navigationItem" id="dXF-1C-gX0">
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="stop" id="mHw-S2-k4m">
+                            <connections>
+                                <action selector="quitButtonTouched:" destination="aUL-0M-aNX" id="JEQ-BR-ZCK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fKZ-Bs-fkA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -41,16 +47,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="NV3-YM-ufs"/>
+                    <navigationItem key="navigationItem" id="NV3-YM-ufs">
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="stop" id="5d1-Pr-79d">
+                            <connections>
+                                <action selector="quitButtonTouched:" destination="fgZ-TG-94N" id="C2Y-VB-wtJ"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="trash" id="ev0-O8-0B9">
+                            <connections>
+                                <action selector="clearButtonTouched:" destination="fgZ-TG-94N" id="hTm-oc-xur"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Byi-bW-OeR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2337.481259370315" y="901.60000000000002"/>
         </scene>
-        <!--Session Chat View Controller-->
+        <!--Session Post View Controller-->
         <scene sceneID="hKo-8W-zQb">
             <objects>
-                <viewController id="6T1-JD-vOv" customClass="SessionChatViewController" customModule="PhoneAFriend" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="6T1-JD-vOv" customClass="SessionPostViewController" customModule="PhoneAFriend" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HoG-L2-fSu"/>
                         <viewControllerLayoutGuide type="bottom" id="ghq-Z3-p3N"/>
@@ -60,7 +77,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="X1w-56-odA"/>
+                    <navigationItem key="navigationItem" id="X1w-56-odA">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="stop" id="YN6-4f-ikg">
+                            <connections>
+                                <action selector="quitButtonTouched:" destination="6T1-JD-vOv" id="nOb-xo-eF5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B31-JP-iUa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

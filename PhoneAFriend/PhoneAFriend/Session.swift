@@ -12,7 +12,8 @@ class Session {
     var recipientName: String!
     var senderName: String!
     var postRef: String!
-    var strokes: [Stroke]!
+    
+    var live = false
     
     var ref: FIRDatabaseReference?
     var strokesRef: FIRDatabaseReference?
@@ -33,6 +34,7 @@ class Session {
         self.senderName = senderName
         self.recipientName = recipientName
         self.postRef = postRef
+        self.live = true
         
         strokesRef = ref.child("Strokes")
     }
@@ -51,6 +53,7 @@ class Session {
                     "postRef": postRef,
                     "Strokes": []]
         activeSession!.updateSession(post)
+        activeSession!.beginListening()
 
         return ref.key;
     }
@@ -59,7 +62,7 @@ class Session {
 
         var sessions = [Session]()
 
-        FIRDatabase.database().reference().child("Sessions").queryOrderedByChild("recipientUsername").queryEqualToValue(currentUser!.username!).observeSingleEventOfType(.Value, withBlock: { (snapshot) -> Void in
+        FIRDatabase.database().reference().child("Sessions").queryOrderedByChild("recipientName").queryEqualToValue(currentUser!.username!).observeSingleEventOfType(.Value, withBlock: { (snapshot) -> Void in
             if snapshot.childrenCount != 0 {
                 for sessionSnapshot in snapshot.children {
                     let session = Session(snapshot: sessionSnapshot as! FIRDataSnapshot)
@@ -72,10 +75,30 @@ class Session {
             for session in sessions {
                 if session.recipientName == currentUser?.username {
                     activeSession = session
-                    print("Joining session: " + activeSession.debugDescription)
-                    break
+                    activeSession!.beginListening()
+                    activeSession!.live = true
+                    print("Joining session")
+                    return
                 }
             }
+            
+            print("ERROR: Could not join session")
+        })
+    }
+    
+    
+    func beginListening() {
+        
+        // Listen for new strokes
+        strokesRef!.observeEventType(.ChildAdded, withBlock: { (snapshot) -> Void in
+            print("Stroke received")
+            sessionController!.addStroke(snapshot)
+        })
+        
+        // Listen for erasures
+        strokesRef!.observeEventType(.ChildRemoved, withBlock: { (snapshot) -> Void in
+            print("Stroke removed; clearing all strokes")
+            sessionController!.clear()
         })
     }
     
@@ -86,11 +109,15 @@ class Session {
     
     // End the session and return to the menus
     deinit {
-        // Go back to menus
-        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-        
-        let resultViewController = storyBoard.instantiateInitialViewController()
-        
-        AppEvents.getTopmostViewController()?.presentViewController(resultViewController!, animated:true, completion:nil)
+        if live {
+            print("Active session was deleted; returning to menus")
+            
+            // Go back to menus
+            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+            
+            let resultViewController = storyBoard.instantiateInitialViewController()
+            
+            AppEvents.getTopmostViewController()?.presentViewController(resultViewController!, animated:true, completion:nil)
+        }
     }
 }

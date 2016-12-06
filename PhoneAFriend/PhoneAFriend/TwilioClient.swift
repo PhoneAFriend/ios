@@ -156,11 +156,11 @@ class TwilioClient: NSObject, TCDeviceDelegate, TCConnectionDelegate {
         let resultViewController = storyBoard.instantiateInitialViewController()
 
         AppEvents.getTopmostViewController()?.presentViewController(resultViewController!, animated:true, completion:nil)
-
+        
         // If recipient, join the caller's session
         if (callStatus == .NoCall) {
-            Session.join()
-            print("Joining session")
+            print("Preparing to join session")
+            callStatus = .Client
         }
     }
 
@@ -168,6 +168,7 @@ class TwilioClient: NSObject, TCDeviceDelegate, TCConnectionDelegate {
         // End the session when the call disconnects
         // * Session.swift transitions back to the menus
         //   on deletion
+        print("Call disconnected; returning to menus")
         activeSession = nil
     }
     

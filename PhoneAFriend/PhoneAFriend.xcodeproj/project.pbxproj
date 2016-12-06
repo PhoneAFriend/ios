@@ -67,7 +67,6 @@
 		AF960C0C1DDC3D2A00F1DEB0 /* ContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF960C0B1DDC3D2A00F1DEB0 /* ContactTableViewController.swift */; };
 		AF960C0E1DDC3E2300F1DEB0 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF960C0D1DDC3E2300F1DEB0 /* ContactTableViewCell.swift */; };
 		AFA64EF31DF3635E007C958A /* checked-icon-73080.png in Resources */ = {isa = PBXBuildFile; fileRef = AFA64EF21DF3635E007C958A /* checked-icon-73080.png */; };
-		AFC7DFBA1DF4F3E600F7DD39 /* AppEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC7DFB91DF4F3E600F7DD39 /* AppEvents.swift */; };
 		AFD46E5D1DBEF864009CE026 /* HomeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD46E5C1DBEF864009CE026 /* HomeNavigationController.swift */; };
 		AFD46E5F1DBEFAC1009CE026 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD46E5E1DBEFAC1009CE026 /* TabBarViewController.swift */; };
 		AFFC0AD31DC5C42400FA1A72 /* UserLookupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFC0AD21DC5C42400FA1A72 /* UserLookupViewController.swift */; };
@@ -309,6 +308,8 @@
 				AF4871F31DE6B01000CA7509 /* PostViewController.swift */,
 				AF446F681D9310DA00812996 /* SearchQuestionViewController.swift */,
 				3627BCBE1DF37741005D7749 /* SessionBlackboardViewController.swift */,
+				367F117A1DF67CFE00DF18CF /* SessionChatViewController.swift */,
+				367F11781DF67C7800DF18CF /* SessionPostViewController.swift */,
 				AF0216D41DF22BFD001DC068 /* SessionsTableTableViewController.swift */,
 				AF0216D61DF22C5E001DC068 /* SessionsTableViewCell.swift */,
 				362915C41DF3AAC0000F1A7B /* SessionTabBarController.swift */,
@@ -323,8 +324,6 @@
 				AF4871FB1DEA909E00CA7509 /* UserPostViewController.swift */,
 				AF2F5AC81DD3E6900035DEBD /* UserTableViewCell.swift */,
 				AF2F5AC61DD3E5940035DEBD /* UserTableViewController.swift */,
-				367F11781DF67C7800DF18CF /* SessionPostViewController.swift */,
-				367F117A1DF67CFE00DF18CF /* SessionChatViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -378,6 +377,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF0DD9E01D77792F009B1F38 /* Build configuration list for PBXNativeTarget "PhoneAFriend" */;
 			buildPhases = (
+				5F36F79493FA2285F11461DF /* 📦 Check Pods Manifest.lock */,
 				110B38DDA7D1CBF57AEA2C31 /* [CP] Check Pods Manifest.lock */,
 				104068FF9A062A8E22CC3B65 /* [CP] Check Pods Manifest.lock */,
 				FE40599C5913D644F88C2048 /* [CP] Check Pods Manifest.lock */,
@@ -402,6 +402,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF0DD9E31D77792F009B1F38 /* Build configuration list for PBXNativeTarget "PhoneAFriendTests" */;
 			buildPhases = (
+				C8A507F4537FDEF47700684F /* 📦 Check Pods Manifest.lock */,
 				CF25DB27D758E7D644F79373 /* [CP] Check Pods Manifest.lock */,
 				9EB8050E2090F9F8918C8FFD /* [CP] Check Pods Manifest.lock */,
 				0AF0302821CEE5661F71B90C /* [CP] Check Pods Manifest.lock */,
@@ -427,6 +428,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF0DD9E61D77792F009B1F38 /* Build configuration list for PBXNativeTarget "PhoneAFriendUITests" */;
 			buildPhases = (
+				6910369DCE342DE184403431 /* 📦 Check Pods Manifest.lock */,
 				9A32764C0E482E07003A58A0 /* [CP] Check Pods Manifest.lock */,
 				D364FF8C04EC9E29A0938B96 /* [CP] Check Pods Manifest.lock */,
 				DB1BAEE1CA50DF19CCB36EDE /* [CP] Check Pods Manifest.lock */,
@@ -628,6 +630,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhoneAFriend/Pods-PhoneAFriend-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		5F36F79493FA2285F11461DF /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		656094A9BEECDB6961BD9399 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -641,6 +658,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhoneAFriend/Pods-PhoneAFriend-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6910369DCE342DE184403431 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		7FE1F3468A6CA0FB92F9305A /* [CP] Copy Pods Resources */ = {
@@ -761,6 +793,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhoneAFriendTests/Pods-PhoneAFriendTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8A507F4537FDEF47700684F /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		CF25DB27D758E7D644F79373 /* [CP] Check Pods Manifest.lock */ = {

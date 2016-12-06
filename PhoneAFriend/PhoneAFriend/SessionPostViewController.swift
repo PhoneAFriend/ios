@@ -9,7 +9,12 @@
 import UIKit
 
 class SessionPostViewController: UIViewController {
-
+    
+    @IBAction func quitButtonTouched(sender: AnyObject) {
+        print("Quit button pressed")
+        twilioClient?.hangUp()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

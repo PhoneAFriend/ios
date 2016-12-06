@@ -9,18 +9,43 @@
 import UIKit
 import Firebase
 
+var sessionController: SessionBlackboardViewController?
+
 class SessionBlackboardViewController: UIViewController {
     
     var drawImage = UIImageView()
     var strokes: [Stroke] = []
     var currentStroke: Stroke!
-    var lastPoint: CGPoint!
+    
+    static var viewWidth = 667.0
+    static var viewHeight = 375.0
+
+    @IBAction func quitButtonTouched(sender: AnyObject) {
+        print("Quit button pressed")
+        twilioClient?.hangUp()
+    }
+    
+    @IBAction func clearButtonTouched(sender: AnyObject) {
+        print("Clear button pressed")
+        sessionController?.clear()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         drawImage.frame = view.bounds
         view.addSubview(drawImage)
         UIDevice.currentDevice().setValue(Int(UIInterfaceOrientation.LandscapeLeft.rawValue), forKey: "orientation")
+        
+        SessionBlackboardViewController.viewWidth = Double(self.view.frame.size.width)
+        SessionBlackboardViewController.viewHeight = Double(self.view.frame.size.height)
+        
+        sessionController = self
+        
+        // If recipient, join the caller's session
+        if (twilioClient!.callStatus == .Client) {
+            print("Attempting to join session")
+            Session.join()
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -29,44 +54,59 @@ class SessionBlackboardViewController: UIViewController {
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        lastPoint = (touches.first! as UITouch).locationInView(view)
-        currentStroke = Stroke(ref: activeSession!.strokesRef!.childByAutoId())
-        currentStroke.points.append(CGPoint(x: lastPoint.x, y: lastPoint.y))
+        let point = (touches.first! as UITouch).locationInView(view)
+        currentStroke = newStroke()
+        addPoint(currentStroke, point: point)
     }
     
     override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        if (currentStroke == nil) {
+            return
+        }
+
         let point = (touches.first! as UITouch).locationInView(view)
-        currentStroke.points.append(CGPoint(x: point.x, y: point.y))
-        
-        UIGraphicsBeginImageContext(view.bounds.size)
-        drawImage.image?.drawInRect(view.bounds)
-        CGContextSetLineCap(UIGraphicsGetCurrentContext()!, .Round)
-        CGContextSetLineWidth(UIGraphicsGetCurrentContext()!, 5.0)
-        CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext()!, 0, 0, 0, 1)
-        CGContextBeginPath(UIGraphicsGetCurrentContext()!)
-        CGContextMoveToPoint(UIGraphicsGetCurrentContext()!, lastPoint.x, lastPoint.y)
-        CGContextAddLineToPoint(UIGraphicsGetCurrentContext()!, point.x, point.y)
-        CGContextStrokePath(UIGraphicsGetCurrentContext()!)
-        drawImage.image = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        
-        lastPoint = point
+        addPoint(currentStroke, point: point)
     }
     
-    // Not for use
-    /*@IBAction func clear(sender: AnyObject) {
-        for stroke in strokes {
-            do {
-                //try stroke.deleteDocument()
-            } catch {
-                
-            }
+    func addPoint(stroke: Stroke, point: CGPoint) {
+        stroke.points.append(CGPoint(x: point.x, y: point.y))
+        
+        if (stroke.lastPoint != nil) {
+            UIGraphicsBeginImageContext(view.bounds.size)
+            drawImage.image?.drawInRect(view.bounds)
+            CGContextSetLineCap(UIGraphicsGetCurrentContext()!, .Round)
+            CGContextSetLineWidth(UIGraphicsGetCurrentContext()!, CGFloat(stroke.width))
+            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext()!, 0, 0, 0, 1)
+            CGContextBeginPath(UIGraphicsGetCurrentContext()!)
+            CGContextMoveToPoint(UIGraphicsGetCurrentContext()!, stroke.lastPoint!.x, stroke.lastPoint!.y)
+            CGContextAddLineToPoint(UIGraphicsGetCurrentContext()!, point.x, point.y)
+            CGContextStrokePath(UIGraphicsGetCurrentContext()!)
+            drawImage.image = UIGraphicsGetImageFromCurrentImageContext()
+            UIGraphicsEndImageContext()
         }
+        
+        stroke.lastPoint = point
+    }
+    
+    func newStroke() -> Stroke {
+        let stroke = Stroke()
+        strokes.append(stroke)
+        
+        return stroke
+    }
+    
+    func addStroke(snapshot: FIRDataSnapshot) {
+        let stroke = Stroke(snapshot: snapshot)
+        strokes.append(stroke)
+    }
+
+    func clear() {
         strokes = []
         drawImage.image = nil
-    }*/
+    }
 
     override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        currentStroke.register()
         currentStroke.save()
     }
     
@@ -117,7 +157,6 @@ class SessionBlackboardViewController: UIViewController {
     
     override func viewDidLayoutSubviews() {
         UIDevice.currentDevice().setValue(Int(UIInterfaceOrientation.LandscapeLeft.rawValue), forKey: "orientation")
-        print("View Size Rot Hur: " + String(self.view.frame.size))
     }
     
     // Return view to portrait when segueing out
