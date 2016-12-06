@@ -35,6 +35,7 @@ class PostTableViewController: UITableViewController {
     }
     
     override func viewDidLoad() {
+        
         FIRDatabase.database().reference().child("TwilioServer").queryOrderedByChild("url").observeSingleEventOfType(.Value, withBlock: { (snapshot) in
             let data = snapshot.value as! Dictionary<String, String>
             print(data["url"])

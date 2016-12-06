@@ -122,8 +122,14 @@ class ContactTableViewController : UITableViewController {
     
     
     func doUnfriend(username: String, index: Int) {
-        displayContacts.removeAtIndex(index)
-        print(displayContacts.count)
+         if searchController.active && searchController.searchBar.text != "" {
+            filteredContacts.removeAtIndex(index)
+            let displayContactsIndex = displayContacts.indexOf(username)
+            displayContacts.removeAtIndex(displayContactsIndex!)
+         } else {
+            displayContacts.removeAtIndex(index)
+
+        }
         let activeIndex = activeContacts.indexOf({$0.username1 == username})
         if activeIndex != nil {
             let contact = activeContacts[activeIndex!]

@@ -13,6 +13,7 @@ class AnswerViewController: UIViewController {
     var answer: Answer! = nil
     var imageURLToPass:String = ""
     override func viewDidLoad(){
+        self.hideKeyboardWhenTappedAround() 
         super.viewDidLoad()
         answerTextView.textContainerInset = UIEdgeInsetsMake(10, 10, 10, 0)
 
@@ -34,4 +35,5 @@ class AnswerViewController: UIViewController {
             nextScene.imageURL = imageURLToPass
         }
     }
+    
 }

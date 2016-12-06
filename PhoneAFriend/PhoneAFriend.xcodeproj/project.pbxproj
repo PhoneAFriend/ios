@@ -64,6 +64,7 @@
 		AF960C0C1DDC3D2A00F1DEB0 /* ContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF960C0B1DDC3D2A00F1DEB0 /* ContactTableViewController.swift */; };
 		AF960C0E1DDC3E2300F1DEB0 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF960C0D1DDC3E2300F1DEB0 /* ContactTableViewCell.swift */; };
 		AFA64EF31DF3635E007C958A /* checked-icon-73080.png in Resources */ = {isa = PBXBuildFile; fileRef = AFA64EF21DF3635E007C958A /* checked-icon-73080.png */; };
+		AFC7DFBA1DF4F3E600F7DD39 /* AppEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC7DFB91DF4F3E600F7DD39 /* AppEvents.swift */; };
 		AFD46E5D1DBEF864009CE026 /* HomeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD46E5C1DBEF864009CE026 /* HomeNavigationController.swift */; };
 		AFD46E5F1DBEFAC1009CE026 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD46E5E1DBEFAC1009CE026 /* TabBarViewController.swift */; };
 		AFFC0AD31DC5C42400FA1A72 /* UserLookupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFC0AD21DC5C42400FA1A72 /* UserLookupViewController.swift */; };
@@ -158,6 +159,7 @@
 		AF960C0B1DDC3D2A00F1DEB0 /* ContactTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewController.swift; sourceTree = "<group>"; };
 		AF960C0D1DDC3E2300F1DEB0 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
 		AFA64EF21DF3635E007C958A /* checked-icon-73080.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checked-icon-73080.png"; sourceTree = "<group>"; };
+		AFC7DFB91DF4F3E600F7DD39 /* AppEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppEvents.swift; sourceTree = "<group>"; };
 		AFD46E5C1DBEF864009CE026 /* HomeNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeNavigationController.swift; sourceTree = "<group>"; };
 		AFD46E5E1DBEFAC1009CE026 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		AFFC0AD21DC5C42400FA1A72 /* UserLookupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLookupViewController.swift; sourceTree = "<group>"; };
@@ -257,6 +259,7 @@
 				AF960C091DDC243700F1DEB0 /* Contact.swift */,
 				AF4871E91DE4D7DF00CA7509 /* Message.swift */,
 				AF4872031DECF65C00CA7509 /* Answer.swift */,
+				AFC7DFB91DF4F3E600F7DD39 /* AppEvents.swift */,
 				AF0216D01DF21D7F001DC068 /* Session.swift */,
 				AF0216D21DF21FE8001DC068 /* Stroke.swift */,
 				3627BCBB1DF35FF2005D7749 /* TwilioClient.swift */,
@@ -268,7 +271,6 @@
 			isa = PBXGroup;
 			children = (
 				AF0DD9BF1D77792F009B1F38 /* Main.storyboard */,
-				AF725C5B1DF3C53300EF4A3E /* NewMessageTableViewController.swift */,
 				AF0DD9C41D77792F009B1F38 /* LaunchScreen.storyboard */,
 				3627BCC01DF37BA3005D7749 /* Session.storyboard */,
 			);
@@ -291,6 +293,7 @@
 				AF2FB6881D82034E003EB3AA /* LoginViewController.swift */,
 				AF4871EF1DE551AF00CA7509 /* MessageViewController.swift */,
 				AF4872011DECAA1600CA7509 /* MoreViewController.swift */,
+				AF725C5B1DF3C53300EF4A3E /* NewMessageTableViewController.swift */,
 				AF31CF8F1DE38825003C6933 /* NewMessageViewController.swift */,
 				AF4872091DED3B9200CA7509 /* PostAnswerViewController.swift */,
 				AF4871F51DE6B75B00CA7509 /* PostImageViewController.swift */,
@@ -298,8 +301,10 @@
 				AFFC0AD41DC834EC00FA1A72 /* PostTableViewController.swift */,
 				AF4871F31DE6B01000CA7509 /* PostViewController.swift */,
 				AF446F681D9310DA00812996 /* SearchQuestionViewController.swift */,
+				3627BCBE1DF37741005D7749 /* SessionBlackboardViewController.swift */,
 				AF0216D41DF22BFD001DC068 /* SessionsTableTableViewController.swift */,
 				AF0216D61DF22C5E001DC068 /* SessionsTableViewCell.swift */,
+				362915C41DF3AAC0000F1A7B /* SessionTabBarController.swift */,
 				AF0216D81DF24183001DC068 /* SessionViewController.swift */,
 				AF2FB68A1D820387003EB3AA /* SignUpViewController.swift */,
 				AFD46E5E1DBEFAC1009CE026 /* TabBarViewController.swift */,
@@ -311,8 +316,6 @@
 				AF4871FB1DEA909E00CA7509 /* UserPostViewController.swift */,
 				AF2F5AC81DD3E6900035DEBD /* UserTableViewCell.swift */,
 				AF2F5AC61DD3E5940035DEBD /* UserTableViewController.swift */,
-				3627BCBE1DF37741005D7749 /* SessionBlackboardViewController.swift */,
-				362915C41DF3AAC0000F1A7B /* SessionTabBarController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -366,7 +369,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF0DD9E01D77792F009B1F38 /* Build configuration list for PBXNativeTarget "PhoneAFriend" */;
 			buildPhases = (
-				110B38DDA7D1CBF57AEA2C31 /* 📦 Check Pods Manifest.lock */,
+				110B38DDA7D1CBF57AEA2C31 /* [CP] Check Pods Manifest.lock */,
 				104068FF9A062A8E22CC3B65 /* [CP] Check Pods Manifest.lock */,
 				FE40599C5913D644F88C2048 /* [CP] Check Pods Manifest.lock */,
 				AF0DD9B41D77792F009B1F38 /* Sources */,
@@ -390,7 +393,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF0DD9E31D77792F009B1F38 /* Build configuration list for PBXNativeTarget "PhoneAFriendTests" */;
 			buildPhases = (
-				CF25DB27D758E7D644F79373 /* 📦 Check Pods Manifest.lock */,
+				CF25DB27D758E7D644F79373 /* [CP] Check Pods Manifest.lock */,
 				9EB8050E2090F9F8918C8FFD /* [CP] Check Pods Manifest.lock */,
 				0AF0302821CEE5661F71B90C /* [CP] Check Pods Manifest.lock */,
 				AF0DD9C81D77792F009B1F38 /* Sources */,
@@ -415,7 +418,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF0DD9E61D77792F009B1F38 /* Build configuration list for PBXNativeTarget "PhoneAFriendUITests" */;
 			buildPhases = (
-				9A32764C0E482E07003A58A0 /* 📦 Check Pods Manifest.lock */,
+				9A32764C0E482E07003A58A0 /* [CP] Check Pods Manifest.lock */,
 				D364FF8C04EC9E29A0938B96 /* [CP] Check Pods Manifest.lock */,
 				DB1BAEE1CA50DF19CCB36EDE /* [CP] Check Pods Manifest.lock */,
 				AF0DD9D31D77792F009B1F38 /* Sources */,
@@ -571,14 +574,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		110B38DDA7D1CBF57AEA2C31 /* 📦 Check Pods Manifest.lock */ = {
+		110B38DDA7D1CBF57AEA2C31 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -661,14 +664,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhoneAFriendTests/Pods-PhoneAFriendTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9A32764C0E482E07003A58A0 /* 📦 Check Pods Manifest.lock */ = {
+		9A32764C0E482E07003A58A0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -751,14 +754,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhoneAFriendTests/Pods-PhoneAFriendTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CF25DB27D758E7D644F79373 /* 📦 Check Pods Manifest.lock */ = {
+		CF25DB27D758E7D644F79373 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -861,6 +864,7 @@
 				AF2F5AC71DD3E5940035DEBD /* UserTableViewController.swift in Sources */,
 				AF48720C1DED47E700CA7509 /* AnswerViewController.swift in Sources */,
 				AFD46E5D1DBEF864009CE026 /* HomeNavigationController.swift in Sources */,
+				AFC7DFBA1DF4F3E600F7DD39 /* AppEvents.swift in Sources */,
 				AF0216D91DF24183001DC068 /* SessionViewController.swift in Sources */,
 				AF6808CA1D8C5D1900D6D5C1 /* Post.swift in Sources */,
 				AF4871FA1DEA909400CA7509 /* UserPostsTableViewController.swift in Sources */,

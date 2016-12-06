@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import AVFoundation
 
-class PostAnswerViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class PostAnswerViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextViewDelegate {
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var addImageButton: UIButton!
     @IBOutlet weak var captureImageButton: UIButton!
@@ -25,9 +25,19 @@ class PostAnswerViewController: UIViewController, UIImagePickerControllerDelegat
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
         self.automaticallyAdjustsScrollViewInsets = false
-        
+        self.textView.delegate = self
     }
+    func textView(textView: UITextView, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
+        if(text == "\n") {
+            textView.resignFirstResponder()
+            return false
+        }
+        return true
+    }
+ 
+    
     @IBAction func addImagePressed(sender: AnyObject) {
         imagePicker = UIImagePickerController()
         imagePicker.delegate = self
