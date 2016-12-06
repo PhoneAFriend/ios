@@ -50,10 +50,27 @@ class Session {
         return ref.key;
     }
     
+    static func join(sessionID: String, senderName: String, postRef: String) {
+        
+        let joinRef = FIRDatabase.database().reference().child("Sessions").child(sessionID)
+
+        activeSession = Session(ref: joinRef, senderName: senderName, recipientName: (currentUser?.username)!, postRef: postRef)
+    }
+    
     func updateSession(sessionRef: FIRDatabaseReference, post: NSDictionary) {
         let childUpdates = ["/Sessions/\(sessionRef.key)":post]
         FIRDatabase.database().reference().updateChildValues(childUpdates)
         NSNotificationCenter.defaultCenter().postNotificationName("reloadPosts", object: nil)
         NSNotificationCenter.defaultCenter().postNotificationName("reloadUserPosts", object: nil)
+    }
+    
+    // End the session and return to the menus
+    deinit {
+        // Go back to menus
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+
+        let resultViewController = storyBoard.instantiateInitialViewController()
+        
+        AppEvents.getTopmostViewController()?.presentViewController(resultViewController!, animated:true, completion:nil)
     }
 }

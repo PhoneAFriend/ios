@@ -9,17 +9,22 @@
 import Firebase
 
 class Stroke {
-    var color: String!
-    var startPoint: Int!
-    var endPoint: Int!
-    var ref : FIRDatabaseReference
+    var color: Int
+    var width: Int
+    var ref : FIRDatabaseReference?
 
-    
+    var points = [CGPoint]()
+
     init (snapshot: FIRDataSnapshot) {
         ref = snapshot.ref
         let data = snapshot.value as! NSDictionary
-        color = data["color"] as! String
-        startPoint = data["startPoint"] as! Int
-        endPoint = data["endPoint"] as! Int
+        color = data["color"] as! Int
+        width = data["width"] as! Int
+    }
+
+    init() {
+        color = 0x000000
+        width = 4
+        ref = nil
     }
 }
