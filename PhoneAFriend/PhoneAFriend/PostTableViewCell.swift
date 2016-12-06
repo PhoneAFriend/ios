@@ -14,9 +14,11 @@ class PostTableViewCell: UITableViewCell {
     var datePostedOn: String = ""
     var questionText_Var: String = ""
     @IBOutlet weak var answeredLabel: UILabel!
+    @IBOutlet weak var cellView: UIView!
     @IBOutlet weak var postedByHolder: UILabel!
     @IBOutlet weak var questionTitleHolder: UILabel!
     func configure(questionTitle : String, answered: String, datePosted: String, postedBy: String, questionImageURL: String, questionText: String, subject: String) {
+        sendSubviewToBack(cellView)
         postedByHolder.text = "Posted to " + subject + " by " + postedBy
         answeredBool = answered
         questionImageURL_Var = questionImageURL

@@ -142,7 +142,7 @@ class UserTableViewController : UITableViewController {
             
             
         }
-        let added = UIAlertController(title: "Added!", message: "User was successfully added to your contact list.", preferredStyle: .ActionSheet)
+        let added = UIAlertController(title: "Added!", message: "User was successfully added to your contact list.", preferredStyle: .Alert)
         let dismiss = UIAlertAction(title: "Dismiss", style: .Cancel, handler: { (action: UIAlertAction) in
         })
         added.addAction(dismiss)

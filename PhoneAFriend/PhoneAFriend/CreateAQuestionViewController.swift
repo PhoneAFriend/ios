@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 import Firebase
 
-class CreateAQuestionViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate  {
+class CreateAQuestionViewController: UITableViewController, UIPickerViewDataSource, UIPickerViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate  {
     
     var image : UIImage! = nil
     var questionTitle = ""
@@ -32,6 +32,10 @@ class CreateAQuestionViewController: UIViewController, UIPickerViewDataSource, U
     var subjectOption = ["Math", "Science", "Computer Science", "Writing", "Other"]
 
     override func viewDidLoad(){
+        self.hideKeyboardWhenTappedAround()
+
+        self.tableView.contentInset = UIEdgeInsetsMake(44,0,0,0)
+
         super.viewDidLoad()
         let pickerView = UIPickerView()
         questionTextView.textContainerInset = UIEdgeInsetsMake(10, 7, 10, 0)
@@ -61,11 +65,14 @@ class CreateAQuestionViewController: UIViewController, UIPickerViewDataSource, U
         super.didReceiveMemoryWarning()
     }
     
-    @IBAction func postPressed(sender: AnyObject) {
+    @IBAction func postPress(sender: AnyObject) {
+
         questionTitle = questionTitleTextField.text!
         subject = subjectTextField.text!
         question = questionTextView.text
         if questionTitle != "" && subject != "" && question != "" {
+            AppEvents.showLoadingOverlay("Posting...")
+
             startSave(questionTitle, username: currentUser!.username!, questionText: question, subject: subject)
         } else {
             let alert = UIAlertController(title: "Can not post", message: "You did not fill in all necessary fields", preferredStyle: .Alert)
@@ -76,12 +83,7 @@ class CreateAQuestionViewController: UIViewController, UIPickerViewDataSource, U
         }
     }
     
-    @IBAction func capturePressed(sender: AnyObject){
-        imagePicker = UIImagePickerController()
-        imagePicker.delegate = self
-        imageCaptureInit(imagePicker)
 
-    }
     func saveImage(imageName: String, image: UIImage, completion : (result:Bool) -> ()){
         let storage = FIRStorage.storage()
         let storageRef = storage.reference()
@@ -112,6 +114,8 @@ class CreateAQuestionViewController: UIViewController, UIPickerViewDataSource, U
                         "questionTitle" : questionTitle,
                         "subject" : subject,
                         "postKey" : self.postKey]
+            AppEvents.hideLoadingOverlay()
+
             saveNewPost(post)
         } else {
             let imageName = currentUser!.username! + (questionTitleTextField.text?.lowercaseString.stringByReplacingOccurrencesOfString(" ", withString: ""))!
@@ -125,6 +129,8 @@ class CreateAQuestionViewController: UIViewController, UIPickerViewDataSource, U
                                 "questionTitle" : questionTitle,
                                 "subject" : subject,
                                 "postKey" : self.postKey]
+                    AppEvents.hideLoadingOverlay()
+
                     self.saveNewPost(post)
 
                 } else {
@@ -133,6 +139,7 @@ class CreateAQuestionViewController: UIViewController, UIPickerViewDataSource, U
                 }
             }
         }
+        
 
     }
     func saveNewPost(post: NSDictionary) {
@@ -144,6 +151,16 @@ class CreateAQuestionViewController: UIViewController, UIPickerViewDataSource, U
         self.navigationController?.popViewControllerAnimated(true)
     }
     
+    @IBAction func capturePressed(sender: AnyObject) {
+        imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
+        imageCaptureInit(imagePicker)
+    }
+    @IBAction func addPressed(sender: AnyObject) {
+        imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
+        imagePickerInit(imagePicker)
+    }
     @IBAction func addImagePressed(sender: AnyObject) {
         imagePicker = UIImagePickerController()
         imagePicker.delegate = self

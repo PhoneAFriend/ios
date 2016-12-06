@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import AVFoundation
 
-class PostAnswerViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class PostAnswerViewController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextViewDelegate {
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var addImageButton: UIButton!
     @IBOutlet weak var captureImageButton: UIButton!
@@ -25,36 +25,16 @@ class PostAnswerViewController: UIViewController, UIImagePickerControllerDelegat
     
     override func viewDidLoad() {
         super.viewDidLoad()
+         self.tableView.contentInset = UIEdgeInsetsMake(44,0,0,0)
+        self.hideKeyboardWhenTappedAround()
         self.automaticallyAdjustsScrollViewInsets = false
-        
+        self.textView.delegate = self
     }
-    @IBAction func addImagePressed(sender: AnyObject) {
-        imagePicker = UIImagePickerController()
-        imagePicker.delegate = self
-        imagePickerInit(imagePicker)
-    }
-    
-    @IBAction func captureImagePressed(sender: AnyObject) {
-        imagePicker = UIImagePickerController()
-        imagePicker.delegate = self
-        imageCaptureInit(imagePicker)
-    }
-    
-    func imagePickerInit(imagePicker: UIImagePickerController){
-        imagePicker.sourceType = .PhotoLibrary
-        self.presentViewController(imagePicker, animated: true, completion: nil)
-    }
-    func imageCaptureInit(imagePicker: UIImagePickerController) {
-        imagePicker.sourceType = .Camera
-        self.presentViewController(imagePicker, animated: true, completion: nil)
-    }
-    
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]){
-        imagePicker.dismissViewControllerAnimated(true, completion: nil)
-        image = info[UIImagePickerControllerOriginalImage] as? UIImage
-    }
-    @IBAction func saveAnswer(sender: AnyObject) {
+ 
+    @IBAction func postPressed(sender: AnyObject) {
         if textView.text != "" {
+            AppEvents.showLoadingOverlay("Posting Answer...")
+            
             answerKey = FIRDatabase.database().reference().child("answers").childByAutoId().key
             if image == nil {
                 imageURL = "None"
@@ -74,6 +54,7 @@ class PostAnswerViewController: UIViewController, UIImagePickerControllerDelegat
                                       "answerText" : self.textView.text,
                                       "key" : self.key
                         ]
+                        AppEvents.hideLoadingOverlay()
                         self.saveToDB(answer)
                     } else {
                         print("It done went and broke", terminator: "")
@@ -87,6 +68,35 @@ class PostAnswerViewController: UIViewController, UIImagePickerControllerDelegat
             self.presentViewController(alert, animated: true, completion: nil)
         }
     }
+    
+    @IBAction func addPressed(sender: AnyObject) {
+        imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
+        imagePickerInit(imagePicker)
+    }
+
+    
+    @IBAction func captureImagePressed(sender: AnyObject) {
+        imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
+        imageCaptureInit(imagePicker)
+    }
+
+    
+    func imagePickerInit(imagePicker: UIImagePickerController){
+        imagePicker.sourceType = .PhotoLibrary
+        self.presentViewController(imagePicker, animated: true, completion: nil)
+    }
+    func imageCaptureInit(imagePicker: UIImagePickerController) {
+        imagePicker.sourceType = .Camera
+        self.presentViewController(imagePicker, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]){
+        imagePicker.dismissViewControllerAnimated(true, completion: nil)
+        image = info[UIImagePickerControllerOriginalImage] as? UIImage
+    }
+
     
     func saveImage(image: UIImage, completion : ( result:Bool) -> ()){
         let storage = FIRStorage.storage()
@@ -105,6 +115,7 @@ class PostAnswerViewController: UIViewController, UIImagePickerControllerDelegat
         }
     }
     func saveToDB(answer: NSDictionary) {
+
         let childUpdates = ["/answers/\(answerKey)":answer]
         FIRDatabase.database().reference().updateChildValues(childUpdates)
         NSNotificationCenter.defaultCenter().postNotificationName("reloadAnswers", object: nil)

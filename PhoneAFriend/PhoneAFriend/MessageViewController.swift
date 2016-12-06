@@ -24,6 +24,7 @@ class MessageViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tableView.contentInset = UIEdgeInsetsMake(44,0,0,0)
         sentFromLabel.textContainerInset = UIEdgeInsetsMake(10, 10, 10, 0)
         subjectLabel.textContainerInset = UIEdgeInsetsMake(10, 10, 10, 0)
         messageLabel.textContainerInset = UIEdgeInsetsMake(10, 10, 10, 0)

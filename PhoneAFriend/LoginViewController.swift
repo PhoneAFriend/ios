@@ -13,7 +13,8 @@ import Firebase
 class LoginViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        emailField.text = ""
+        passwordField.text = ""
     }
     
     @IBOutlet weak var errorLabel: UILabel!
@@ -22,18 +23,24 @@ class LoginViewController : UIViewController {
     @IBOutlet weak var signInButton: UIButton!
     @IBOutlet weak var backButton: UIButton!
     
+    @IBAction func unwindToLogOut(segue: UIStoryboardSegue) {}
+    
     @IBAction func signInPressed(sender: AnyObject) {
         clearData()
+        signInButton.enabled = false
         if emailField.text! != "" && passwordField != "" {
             AppEvents.showLoadingOverlay("Logging in...")
             FIRAuth.auth()?.signInWithEmail(emailField.text!, password: passwordField.text!, completion: { (user, error) in
-                AppEvents.hideLoadingOverlay()
                 if error != nil {
                     print(error)
-                    
+                    AppEvents.hideLoadingOverlay()
+
+                    self.signInButton.enabled = true
                     self.errorLabel.text = "Error. Incorrect Email/Password combination."
                 }
                 else {
+                    AppEvents.hideLoadingOverlay()
+
                     self.getCurrentUsername(self.emailField.text!.lowercaseString) { (boolValue) ->() in
                         if boolValue {
                             self.fetchUsername1Contacts((currentUser!.username)!) { (boolValue) -> () in
@@ -43,15 +50,31 @@ class LoginViewController : UIViewController {
                                             self.fetchUserMessages(currentUser!.username!) { (boolValue) -> () in
                                                 if boolValue {
                                                     TwilioClient.configure()
+
                                                     dispatch_async(dispatch_get_main_queue(), {
+                                                        self.signInButton.enabled = true
+
                                                         self.performSegueWithIdentifier("SegueFromLoginToHomePage", sender: self)
                                                     })
+                                                } else {
+                                                    self.signInButton.enabled = true
+
+                                                    
                                                 }
                                             }
+                                        } else {
+                                            self.signInButton.enabled = true
+
                                         }
                                     }
+                                }else {
+                                    self.signInButton.enabled = true
+
                                 }
                             }
+                        } else {
+                            self.signInButton.enabled = true
+
                         }
                     }
                 }
