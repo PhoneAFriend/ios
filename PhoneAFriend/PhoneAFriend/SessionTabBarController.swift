@@ -14,6 +14,7 @@ class SessionTabBarController: UITabBarController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        UIDevice.currentDevice().setValue(Int(UIInterfaceOrientation.LandscapeLeft.rawValue), forKey: "orientation")
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,5 +31,16 @@ class SessionTabBarController: UITabBarController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    // Return view to portrait when segueing out
+    override func viewWillDisappear(animated : Bool) {
+        super.viewWillDisappear(animated)
+        
+        if (self.isMovingFromParentViewController()) {
+            UIDevice.currentDevice().setValue(Int(UIInterfaceOrientation.Portrait.rawValue), forKey: "orientation")
+        }
+    }
+    
+    // Force view to portrait
+    func canRotate() -> Void {}
 }

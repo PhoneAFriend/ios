@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Session Post View Controller-->
         <scene sceneID="20Y-lQ-M5I">
             <objects>
-                <viewController id="aUL-0M-aNX" sceneMemberID="viewController">
+                <viewController id="aUL-0M-aNX" customClass="SessionPostViewController" customModule="PhoneAFriend" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="skB-WC-CCJ"/>
                         <viewControllerLayoutGuide type="bottom" id="hFh-DR-L2e"/>
@@ -47,10 +47,10 @@
             </objects>
             <point key="canvasLocation" x="2337.481259370315" y="901.60000000000002"/>
         </scene>
-        <!--View Controller-->
+        <!--Session Chat View Controller-->
         <scene sceneID="hKo-8W-zQb">
             <objects>
-                <viewController id="6T1-JD-vOv" sceneMemberID="viewController">
+                <viewController id="6T1-JD-vOv" customClass="SessionChatViewController" customModule="PhoneAFriend" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HoG-L2-fSu"/>
                         <viewControllerLayoutGuide type="bottom" id="ghq-Z3-p3N"/>

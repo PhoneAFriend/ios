@@ -43,7 +43,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
+    
+    func application(application: UIApplication, supportedInterfaceOrientationsForWindow window: UIWindow?) -> UIInterfaceOrientationMask {
+        if let rootViewController = self.topViewControllerWithRootViewController(window?.rootViewController) {
+            if (rootViewController.respondsToSelector(Selector("canRotate"))) {
+                // Unlock landscape view orientations for this view controller
+                return .LandscapeLeft;
+            }
+        }
+        
+        // Only allow portrait (standard behaviour)
+        return .Portrait;
+    }
+    
+    private func topViewControllerWithRootViewController(rootViewController: UIViewController!) -> UIViewController? {
+        if (rootViewController == nil) { return nil }
+        if (rootViewController.isKindOfClass(UITabBarController)) {
+            return topViewControllerWithRootViewController((rootViewController as! UITabBarController).selectedViewController)
+        } else if (rootViewController.isKindOfClass(UINavigationController)) {
+            return topViewControllerWithRootViewController((rootViewController as! UINavigationController).visibleViewController)
+        } else if (rootViewController.presentedViewController != nil) {
+            return topViewControllerWithRootViewController(rootViewController.presentedViewController)
+        }
+        return rootViewController
+    }
 
 }
 

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class SessionBlackboardViewController: UIViewController {
     
@@ -19,14 +20,7 @@ class SessionBlackboardViewController: UIViewController {
         super.viewDidLoad()
         drawImage.frame = view.bounds
         view.addSubview(drawImage)
-        
-        /*liveQuery = kDatabase.createAllDocumentsQuery().asLiveQuery()
-        liveQuery.addObserver(self, forKeyPath: "rows", options: [], context: nil)
-        do {
-            try liveQuery.run()
-        } catch {
-         
-        }*/
+        UIDevice.currentDevice().setValue(Int(UIInterfaceOrientation.LandscapeLeft.rawValue), forKey: "orientation")
     }
     
     override func didReceiveMemoryWarning() {
@@ -36,7 +30,7 @@ class SessionBlackboardViewController: UIViewController {
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         lastPoint = (touches.first! as UITouch).locationInView(view)
-        currentStroke = Stroke()
+        currentStroke = Stroke(ref: activeSession!.strokesRef!.childByAutoId())
         currentStroke.points.append(CGPoint(x: lastPoint.x, y: lastPoint.y))
     }
     
@@ -60,7 +54,7 @@ class SessionBlackboardViewController: UIViewController {
     }
     
     // Not for use
-    @IBAction func clear(sender: AnyObject) {
+    /*@IBAction func clear(sender: AnyObject) {
         for stroke in strokes {
             do {
                 //try stroke.deleteDocument()
@@ -70,15 +64,10 @@ class SessionBlackboardViewController: UIViewController {
         }
         strokes = []
         drawImage.image = nil
-    }
+    }*/
 
     override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        do {
-            //try currentPolyline.save()
-        } catch {
-            
-        }
-        
+        currentStroke.save()
     }
     
     /*override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
@@ -117,5 +106,29 @@ class SessionBlackboardViewController: UIViewController {
         drawImage.image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
     }
-
+    
+    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.LandscapeLeft
+    }
+    
+    override func preferredInterfaceOrientationForPresentation() -> UIInterfaceOrientation {
+        return UIInterfaceOrientation.LandscapeLeft
+    }
+    
+    override func viewDidLayoutSubviews() {
+        UIDevice.currentDevice().setValue(Int(UIInterfaceOrientation.LandscapeLeft.rawValue), forKey: "orientation")
+        print("View Size Rot Hur: " + String(self.view.frame.size))
+    }
+    
+    // Return view to portrait when segueing out
+    /*override func viewWillDisappear(animated : Bool) {
+        super.viewWillDisappear(animated)
+        
+        if (self.isMovingFromParentViewController()) {
+            UIDevice.currentDevice().setValue(Int(UIInterfaceOrientation.Portrait.rawValue), forKey: "orientation")
+        }
+    }*/
+    
+    // Force view to portrait
+    func canRotate() -> Void {}
 }

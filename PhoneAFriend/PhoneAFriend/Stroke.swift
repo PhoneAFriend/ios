@@ -22,9 +22,31 @@ class Stroke {
         width = data["width"] as! Int
     }
 
-    init() {
+    init(ref: FIRDatabaseReference) {
         color = 0x000000
         width = 4
-        ref = nil
+        self.ref = ref
+    }
+
+    func save() -> Dictionary<String, String> {
+        // Properties
+        let data = ["color": String(color),
+                    "width": String(width)]
+        ref!.updateChildValues(data)
+
+        // Get points list ref
+        let pointsRef = ref!.child("Points")
+
+        // Points
+        for point in points {
+            // Get point info
+            let pointData = ["x": String(point.x/100),
+                             "y": String(point.y/100)]
+
+            // Post point to database
+            let pointRef = pointsRef.childByAutoId()
+            pointRef.updateChildValues(pointData)
+        }
+        return data
     }
 }

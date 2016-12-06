@@ -117,7 +117,7 @@ class TwilioClient: NSObject, TCDeviceDelegate, TCConnectionDelegate {
 
             let _from = parameters["From"]
 
-            let message = "\(_from) wants to start a live session"
+            let message = "\(_from!) wants to start a live session"
             let alertController = UIAlertController(title: "Incoming Call", message: message, preferredStyle: .Alert)
             let acceptAction = UIAlertAction(title: "Accept", style: .Default, handler: { (action:UIAlertAction) in
                 connection.delegate = self
@@ -159,8 +159,8 @@ class TwilioClient: NSObject, TCDeviceDelegate, TCConnectionDelegate {
 
         // If recipient, join the caller's session
         if (callStatus == .NoCall) {
-            Session.join(sessionID, senderName: peerUsername!, postRef: postRef)
-            print("Joining session \(sessionID)")
+            Session.join()
+            print("Joining session")
         }
     }
 
@@ -204,7 +204,7 @@ class TwilioClient: NSObject, TCDeviceDelegate, TCConnectionDelegate {
     // Begin dialing by username
     func dial(contactName: String, sessionRefString: String, postRefString: String) {
         if (device != nil) {
-            device!.connect(["To" : contactName, "From" : (currentUser?.username)!, "Session" : sessionRefString, "Post" : postRefString], delegate: self)
+            device!.connect(["To" : contactName], delegate: self)
             callStatus = .Host
             print("Dialing \"\(contactName)\"...");
         }

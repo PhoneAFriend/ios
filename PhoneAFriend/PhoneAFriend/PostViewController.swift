@@ -26,7 +26,6 @@ class PostViewController : UIViewController {
         super.viewDidLoad()
         self.automaticallyAdjustsScrollViewInsets = false
         questionTextView.textContainerInset = UIEdgeInsetsMake(10, 7, 10, 0)
-
         
         if post != nil {
             titleTextField.text = post.questionTitle
