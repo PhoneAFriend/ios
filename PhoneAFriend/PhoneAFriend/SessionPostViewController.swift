@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class SessionPostViewController: UIViewController {
+class SessionPostViewController: UITableViewController {
     
     @IBAction func quitButtonTouched(sender: AnyObject) {
         print("Quit button pressed")
