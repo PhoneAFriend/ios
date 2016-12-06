@@ -23,7 +23,7 @@ class InboxTableViewController : UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        messages = messages.reverse()
+        fetchUserMessages(currentUser!.username!)
         searchController.searchResultsUpdater = self
         searchController.dimsBackgroundDuringPresentation = false
         definesPresentationContext = true
@@ -39,7 +39,7 @@ class InboxTableViewController : UITableViewController {
     }
     
     @IBAction func refreshPressed(sender: AnyObject) {
-        messages.removeAll()
+       /* messages.removeAll()
         reload = true
         tableView.reloadData()
         FIRDatabase.database().reference().child("messages").queryOrderedByChild("recipientUsername").queryEqualToValue(currentUser!.username!).observeSingleEventOfType(.Value, withBlock: { (snapshot) -> Void in
@@ -53,7 +53,7 @@ class InboxTableViewController : UITableViewController {
             self.reload = false
             self.tableView.reloadData()
         })
-        
+        */
     }
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         view.endEditing(true)
@@ -86,6 +86,23 @@ class InboxTableViewController : UITableViewController {
         } else {
             return messages.count
         }
+    }
+    
+    func fetchUserMessages(username: String) {
+        FIRDatabase.database().reference().child("messages").queryOrderedByChild("recipientUsername").queryEqualToValue(username).observeEventType(.Value, withBlock: { (snapshot) -> Void in
+            var newMessages = [Message]()
+            if snapshot.childrenCount != 0{
+                for messageSnapShot in snapshot.children {
+                    let post = Message(snapshot: messageSnapShot as! FIRDataSnapshot)
+                    
+                    newMessages.append(post)
+                }
+                newMessages = newMessages.reverse()
+                messages = newMessages
+                self.tableView.reloadData()
+            }
+            
+        })
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

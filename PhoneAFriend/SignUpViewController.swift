@@ -50,14 +50,11 @@ class SignUpViewController : UIViewController {
                             }
                             else {
                                 print("Made it to user save")
-                                TwilioClient.configure()
                                 let uid = user!.uid
                                 let username = self.nameField.text!
                                 let useremail = user!.email
                                 self.saveUserToDB(username, id: uid, useremail: useremail!)
-                                currentUser?.username = username
-                                currentUser?.useremail = user!.email
-                                currentUser?.id = user!.uid
+                                currentUser = User(username: username, useremail: user!.email!, id: user!.uid)
                                 dispatch_async(dispatch_get_main_queue(), {
                                     self.performSegueWithIdentifier("SegueToHomePage", sender: self)
                                 })

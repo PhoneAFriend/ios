@@ -71,9 +71,9 @@ class CreateAQuestionViewController: UITableViewController, UIPickerViewDataSour
         subject = subjectTextField.text!
         question = questionTextView.text
         if questionTitle != "" && subject != "" && question != "" {
-            AppEvents.showLoadingOverlay("Posting...")
 
             startSave(questionTitle, username: currentUser!.username!, questionText: question, subject: subject)
+
         } else {
             let alert = UIAlertController(title: "Can not post", message: "You did not fill in all necessary fields", preferredStyle: .Alert)
             let cancel = UIAlertAction(title: "Cancel", style: .Cancel, handler: { (action: UIAlertAction) in
@@ -103,6 +103,7 @@ class CreateAQuestionViewController: UITableViewController, UIPickerViewDataSour
     }
     
     func startSave(questionTitle: String, username: String, questionText: String, subject: String) {
+
         postKey = FIRDatabase.database().reference().child("posts").childByAutoId().key
         if image == nil {
             imageURL = "None"
@@ -114,10 +115,10 @@ class CreateAQuestionViewController: UITableViewController, UIPickerViewDataSour
                         "questionTitle" : questionTitle,
                         "subject" : subject,
                         "postKey" : self.postKey]
-            AppEvents.hideLoadingOverlay()
 
             saveNewPost(post)
         } else {
+            AppEvents.showLoadingOverlay("Posting...")
             let imageName = currentUser!.username! + (questionTitleTextField.text?.lowercaseString.stringByReplacingOccurrencesOfString(" ", withString: ""))!
             saveImage(imageName, image:  image) { (boolValue) -> Void in
                 if boolValue {
@@ -130,7 +131,6 @@ class CreateAQuestionViewController: UITableViewController, UIPickerViewDataSour
                                 "subject" : subject,
                                 "postKey" : self.postKey]
                     AppEvents.hideLoadingOverlay()
-
                     self.saveNewPost(post)
 
                 } else {
@@ -145,8 +145,8 @@ class CreateAQuestionViewController: UITableViewController, UIPickerViewDataSour
     func saveNewPost(post: NSDictionary) {
         let childUpdates = ["/posts/\(postKey)":post]
         FIRDatabase.database().reference().updateChildValues(childUpdates)
-        NSNotificationCenter.defaultCenter().postNotificationName("reloadPosts", object: nil)
-        NSNotificationCenter.defaultCenter().postNotificationName("reloadUserPosts", object: nil)
+        //NSNotificationCenter.defaultCenter().postNotificationName("reloadPosts", object: nil)
+        //NSNotificationCenter.defaultCenter().postNotificationName("reloadUserPosts", object: nil)
 
         self.navigationController?.popViewControllerAnimated(true)
     }

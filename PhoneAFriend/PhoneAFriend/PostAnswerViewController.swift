@@ -33,7 +33,6 @@ class PostAnswerViewController: UITableViewController, UIImagePickerControllerDe
  
     @IBAction func postPressed(sender: AnyObject) {
         if textView.text != "" {
-            AppEvents.showLoadingOverlay("Posting Answer...")
             
             answerKey = FIRDatabase.database().reference().child("answers").childByAutoId().key
             if image == nil {
@@ -46,6 +45,8 @@ class PostAnswerViewController: UITableViewController, UIImagePickerControllerDe
                 ]
                 saveToDB(answer)
             } else {
+                AppEvents.showLoadingOverlay("Posting Answer...")
+
                 saveImage(image) { (boolValue) -> Void in
                     if boolValue {
                         let answer = ["upvotes": 0,
